@@ -6,6 +6,8 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface LoginTitleWrapper {
+    }
     interface PageHeader {
         /**
           * The brand
@@ -14,6 +16,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLLoginTitleWrapperElement extends Components.LoginTitleWrapper, HTMLStencilElement {
+    }
+    var HTMLLoginTitleWrapperElement: {
+        prototype: HTMLLoginTitleWrapperElement;
+        new (): HTMLLoginTitleWrapperElement;
+    };
     interface HTMLPageHeaderElement extends Components.PageHeader, HTMLStencilElement {
     }
     var HTMLPageHeaderElement: {
@@ -21,10 +29,13 @@ declare global {
         new (): HTMLPageHeaderElement;
     };
     interface HTMLElementTagNameMap {
+        "login-title-wrapper": HTMLLoginTitleWrapperElement;
         "page-header": HTMLPageHeaderElement;
     }
 }
 declare namespace LocalJSX {
+    interface LoginTitleWrapper {
+    }
     interface PageHeader {
         /**
           * The brand
@@ -32,6 +43,7 @@ declare namespace LocalJSX {
         "brand"?: string;
     }
     interface IntrinsicElements {
+        "login-title-wrapper": LoginTitleWrapper;
         "page-header": PageHeader;
     }
 }
@@ -39,6 +51,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "login-title-wrapper": LocalJSX.LoginTitleWrapper & JSXBase.HTMLAttributes<HTMLLoginTitleWrapperElement>;
             "page-header": LocalJSX.PageHeader & JSXBase.HTMLAttributes<HTMLPageHeaderElement>;
         }
     }
