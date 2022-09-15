@@ -8,21 +8,9 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface PageHeader {
         /**
-          * The first name
+          * The brand
          */
-        "first": string;
-        /**
-          * The Image to display
-         */
-        "image": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+        "brand": string;
     }
 }
 declare global {
@@ -39,21 +27,9 @@ declare global {
 declare namespace LocalJSX {
     interface PageHeader {
         /**
-          * The first name
+          * The brand
          */
-        "first"?: string;
-        /**
-          * The Image to display
-         */
-        "image"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+        "brand"?: string;
     }
     interface IntrinsicElements {
         "page-header": PageHeader;

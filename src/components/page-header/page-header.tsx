@@ -1,44 +1,36 @@
 import { Component, Prop, h, getAssetPath } from '@stencil/core';
-import { format } from '../../utils/utils';
 
 @Component({
   tag: 'page-header',
   styleUrl: 'page-header.css',
-  assetsDirs: ['./assets']
+  assetsDirs: ['./assets'],
+  shadow: false,
 })
 export class PageHeader {
-
   /**
-   * The Image to display
+   * The brand
    */
-  @Prop() image = "admiral.png";
-  /**
-   * The first name
-   */
-  @Prop() first: string;
+  @Prop() brand: string;
 
-  /**
-   * The middle name
-   */
-  @Prop() middle: string;
-
-  /**
-   * The last name
-   */
-  @Prop() last: string;
-
-  private getText(): string {
-    return format(this.first, this.middle, this.last);
+  componentWillLoad() {
+    const body = document.getElementsByTagName('body')[0];
+    body.classList.add(`${this.brand}`);
   }
 
   render() {
-    const imageSrc = getAssetPath(`./assets/${this.image}`);
+    const imageSrc = getAssetPath(`./assets/${this.brand}logo.svg`);
+    const imageAltText = `${this.brand} logo placeholder`
     console.log(imageSrc);
     return (
-      <div>
-        <div>Hello, World! I'm <span class="person">{this.getText()}</span></div>
-        <div><img src={imageSrc} /></div>
-      </div>
+        <header>
+          <div class="logoContainer">
+            <a href="/myaccount/login/">
+              <div id="loginHeaderLogo" class="jss591">
+                <img id="loginLogo" src={imageSrc} alt={imageAltText}/>
+              </div>
+            </a>
+          </div>
+        </header>
     );
   }
 }

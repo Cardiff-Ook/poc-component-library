@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-09-15T10:03:11",
+  "timestamp": "2022-09-15T12:30:07",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -9,7 +9,7 @@
     "fsNamespace": "poc-adm-components",
     "components": 1,
     "entries": 1,
-    "bundles": 21,
+    "bundles": 23,
     "outputs": [
       {
         "name": "dist-custom-elements",
@@ -21,12 +21,13 @@
       },
       {
         "name": "dist-lazy",
-        "files": 16,
+        "files": 18,
         "generatedFiles": [
           "./dist/poc-adm-components/app-globals-0f993ce5.js",
           "./dist/poc-adm-components/css-shim-5064654c.js",
           "./dist/poc-adm-components/dom-104fb833.js",
-          "./dist/poc-adm-components/index-5756e4c3.js",
+          "./dist/poc-adm-components/index-71d1cde2.js",
+          "./dist/poc-adm-components/index-a5fb3d3b.js",
           "./dist/poc-adm-components/index.esm.js",
           "./dist/poc-adm-components/page-header.entry.js",
           "./dist/poc-adm-components/poc-adm-components.esm.js",
@@ -34,7 +35,8 @@
           "./public/build/app-globals-0f993ce5.js",
           "./public/build/css-shim-5064654c.js",
           "./public/build/dom-104fb833.js",
-          "./public/build/index-5756e4c3.js",
+          "./public/build/index-71d1cde2.js",
+          "./public/build/index-a5fb3d3b.js",
           "./public/build/index.esm.js",
           "./public/build/page-header.entry.js",
           "./public/build/poc-adm-components.esm.js",
@@ -75,9 +77,9 @@
         "bundleId": "page-header",
         "fileName": "page-header.entry.js",
         "imports": [
-          "index-5756e4c3.js"
+          "index-a5fb3d3b.js"
         ],
-        "originalByteSize": 951
+        "originalByteSize": 1243
       }
     ],
     "esm": [],
@@ -118,29 +120,9 @@
       "potentialCmpRefs": [],
       "properties": [
         {
-          "name": "image",
+          "name": "brand",
           "type": "string",
-          "attribute": "image",
-          "reflect": false,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "defaultValue": "\"admiral.png\"",
-          "complexType": {
-            "original": "string",
-            "resolved": "string",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": "The Image to display"
-          },
-          "internal": false
-        },
-        {
-          "name": "first",
-          "type": "string",
-          "attribute": "first",
+          "attribute": "brand",
           "reflect": false,
           "mutable": false,
           "required": false,
@@ -152,45 +134,7 @@
           },
           "docs": {
             "tags": [],
-            "text": "The first name"
-          },
-          "internal": false
-        },
-        {
-          "name": "middle",
-          "type": "string",
-          "attribute": "middle",
-          "reflect": false,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "complexType": {
-            "original": "string",
-            "resolved": "string",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": "The middle name"
-          },
-          "internal": false
-        },
-        {
-          "name": "last",
-          "type": "string",
-          "attribute": "last",
-          "reflect": false,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "complexType": {
-            "original": "string",
-            "resolved": "string",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": "The last name"
+            "text": "The brand"
           },
           "internal": false
         }
@@ -212,29 +156,9 @@
           "shadowDelegatesFocus": null,
           "properties": [
             {
-              "name": "image",
+              "name": "brand",
               "type": "string",
-              "attribute": "image",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "\"admiral.png\"",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "The Image to display"
-              },
-              "internal": false
-            },
-            {
-              "name": "first",
-              "type": "string",
-              "attribute": "first",
+              "attribute": "brand",
               "reflect": false,
               "mutable": false,
               "required": false,
@@ -246,45 +170,7 @@
               },
               "docs": {
                 "tags": [],
-                "text": "The first name"
-              },
-              "internal": false
-            },
-            {
-              "name": "middle",
-              "type": "string",
-              "attribute": "middle",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "The middle name"
-              },
-              "internal": false
-            },
-            {
-              "name": "last",
-              "type": "string",
-              "attribute": "last",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "The last name"
+                "text": "The brand"
               },
               "internal": false
             }
@@ -329,7 +215,7 @@
           "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-header/page-header.tsx",
           "sourceMapPath": null,
           "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
+          "hasComponentWillLoadFn": true,
           "hasComponentDidLoadFn": false,
           "hasComponentShouldUpdateFn": false,
           "hasComponentWillUpdateFn": false,
@@ -341,7 +227,7 @@
           "hasDisconnectedCallbackFn": false,
           "hasElement": false,
           "hasEvent": false,
-          "hasLifecycle": false,
+          "hasLifecycle": true,
           "hasListener": false,
           "hasListenerTarget": false,
           "hasListenerTargetWindow": false,
@@ -371,16 +257,20 @@
           "hasVdomRef": false,
           "hasVdomRender": true,
           "hasVdomStyle": false,
-          "hasVdomText": true,
+          "hasVdomText": false,
           "hasWatchCallback": false,
           "isPlain": false,
           "htmlAttrNames": [
             "class",
-            "src"
+            "href",
+            "id",
+            "src",
+            "alt"
           ],
           "htmlTagNames": [
+            "header",
             "div",
-            "span",
+            "a",
             "img"
           ],
           "htmlParts": [],
@@ -397,13 +287,11 @@
   ],
   "componentGraph": {
     "sc-page-header": [
-      "index-5756e4c3.js"
+      "index-a5fb3d3b.js"
     ]
   },
   "sourceGraph": {
-    "./src/components/page-header/page-header.tsx": [
-      "./src/utils/utils"
-    ],
+    "./src/components/page-header/page-header.tsx": [],
     "./src/index.ts": [],
     "./src/utils/utils.ts": []
   },

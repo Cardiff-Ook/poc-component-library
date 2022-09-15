@@ -1,26 +1,20 @@
-import { r as registerInstance, g as getAssetPath, h } from './index-5756e4c3.js';
+import { r as registerInstance, g as getAssetPath, h } from './index-a5fb3d3b.js';
 
-function format(first, middle, last) {
-  return (first || '') + (middle ? ` ${middle}` : '') + (last ? ` ${last}` : '');
-}
-
-const pageHeaderCss = ":host{display:block}.person{font-weight:bolder;font-size:x-large;color:chartreuse}";
+const pageHeaderCss = ":host{display:block}header #loginHeaderLogo{width:100%;height:100%}header{width:100%;height:86px;display:flex;z-index:6;position:absolute;background:#F2F0EE;justify-content:center}header .logoContainer{width:140px;display:flex;margin-top:40px;justify-content:center}.jss591{width:100px;cursor:pointer;height:35px;display:flex;align-items:center;justify-content:center}img{width:154px}";
 
 const PageHeader = class {
   constructor(hostRef) {
     registerInstance(this, hostRef);
-    /**
-     * The Image to display
-     */
-    this.image = "admiral.png";
   }
-  getText() {
-    return format(this.first, this.middle, this.last);
+  componentWillLoad() {
+    const body = document.getElementsByTagName('body')[0];
+    body.classList.add(`${this.brand}`);
   }
   render() {
-    const imageSrc = getAssetPath(`./assets/${this.image}`);
+    const imageSrc = getAssetPath(`./assets/${this.brand}logo.svg`);
+    const imageAltText = `${this.brand} logo placeholder`;
     console.log(imageSrc);
-    return (h("div", null, h("div", null, "Hello, World! I'm ", h("span", { class: "person" }, this.getText())), h("div", null, h("img", { src: imageSrc }))));
+    return (h("header", null, h("div", { class: "logoContainer" }, h("a", { href: "/myaccount/login/" }, h("div", { id: "loginHeaderLogo", class: "jss591" }, h("img", { id: "loginLogo", src: imageSrc, alt: imageAltText }))))));
   }
   static get assetsDirs() { return ["./assets"]; }
 };

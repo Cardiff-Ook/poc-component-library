@@ -2,8 +2,37 @@
   display: block;
 }
 
-.person {
-  font-weight: bolder;
-  font-size: x-large;
-  color: chartreuse;
+header #loginHeaderLogo {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 86px;
+  display: flex;
+  z-index: 6;
+  position: absolute;
+  background: #F2F0EE;
+  justify-content: center;
+}
+
+header .logoContainer {
+  width: 140px;
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.jss591 {
+  width: 100px;
+  cursor: pointer;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 154px;
 }
