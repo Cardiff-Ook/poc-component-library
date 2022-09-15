@@ -13,7 +13,6 @@ header {
   display: flex;
   z-index: 6;
   position: absolute;
-  background: #F2F0EE;
   justify-content: center;
 }
 

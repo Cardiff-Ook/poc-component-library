@@ -125,5 +125,5 @@ const patchCloneNodeFix = (HTMLElementPrototype) => {
 
 patchBrowser().then(options => {
   globalScripts();
-  return bootstrapLazy([["login-title-wrapper",[[0,"login-title-wrapper"]]],["page-header",[[0,"page-header",{"brand":[1]}]]]], options);
+  return bootstrapLazy([["login-title-wrapper",[[0,"login-title-wrapper",{"titleText":[1,"title-text"]}]]],["page-header",[[0,"page-header",{"brand":[1]}]]],["text-title-bar",[[0,"text-title-bar",{"titleText":[1,"title-text"]}]]]], options);
 });

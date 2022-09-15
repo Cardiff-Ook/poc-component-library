@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-09-15T13:56:19",
+  "timestamp": "2022-09-15T14:46:43",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -7,22 +7,23 @@
   "app": {
     "namespace": "PocAdmComponents",
     "fsNamespace": "poc-adm-components",
-    "components": 2,
-    "entries": 2,
-    "bundles": 24,
+    "components": 3,
+    "entries": 3,
+    "bundles": 27,
     "outputs": [
       {
         "name": "dist-custom-elements",
-        "files": 3,
+        "files": 4,
         "generatedFiles": [
           "./dist/components/index.d.ts",
           "./dist/components/login-title-wrapper.d.ts",
-          "./dist/components/page-header.d.ts"
+          "./dist/components/page-header.d.ts",
+          "./dist/components/text-title-bar.d.ts"
         ]
       },
       {
         "name": "dist-lazy",
-        "files": 18,
+        "files": 20,
         "generatedFiles": [
           "./dist/poc-adm-components/app-globals-0f993ce5.js",
           "./dist/poc-adm-components/css-shim-5064654c.js",
@@ -33,6 +34,7 @@
           "./dist/poc-adm-components/page-header.entry.js",
           "./dist/poc-adm-components/poc-adm-components.esm.js",
           "./dist/poc-adm-components/shadow-css-4261c637.js",
+          "./dist/poc-adm-components/text-title-bar.entry.js",
           "./public/build/app-globals-0f993ce5.js",
           "./public/build/css-shim-5064654c.js",
           "./public/build/dom-104fb833.js",
@@ -41,7 +43,8 @@
           "./public/build/login-title-wrapper.entry.js",
           "./public/build/page-header.entry.js",
           "./public/build/poc-adm-components.esm.js",
-          "./public/build/shadow-css-4261c637.js"
+          "./public/build/shadow-css-4261c637.js",
+          "./public/build/text-title-bar.entry.js"
         ]
       },
       {
@@ -80,7 +83,7 @@
         "imports": [
           "index-150330db.js"
         ],
-        "originalByteSize": 902
+        "originalByteSize": 683
       },
       {
         "key": "page-header.entry",
@@ -92,7 +95,19 @@
         "imports": [
           "index-150330db.js"
         ],
-        "originalByteSize": 1242
+        "originalByteSize": 1223
+      },
+      {
+        "key": "text-title-bar.entry",
+        "components": [
+          "text-title-bar"
+        ],
+        "bundleId": "text-title-bar",
+        "fileName": "text-title-bar.entry.js",
+        "imports": [
+          "index-150330db.js"
+        ],
+        "originalByteSize": 498
       }
     ],
     "esm": [],
@@ -108,9 +123,13 @@
       "elementRef": null,
       "componentClassName": "LoginTitleWrapper",
       "assetsDirs": [],
-      "dependencies": [],
+      "dependencies": [
+        "text-title-bar"
+      ],
       "dependents": [],
-      "directDependencies": [],
+      "directDependencies": [
+        "text-title-bar"
+      ],
       "directDependents": [],
       "docs": {
         "tags": [],
@@ -124,8 +143,30 @@
       "legacyContext": [],
       "listeners": [],
       "methods": [],
-      "potentialCmpRefs": [],
-      "properties": [],
+      "potentialCmpRefs": [
+        "text-title-bar"
+      ],
+      "properties": [
+        {
+          "name": "titleText",
+          "type": "string",
+          "attribute": "title-text",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "The text to display as the page title"
+          },
+          "internal": false
+        }
+      ],
       "shadowDelegatesFocus": null,
       "states": []
     },
@@ -182,6 +223,58 @@
       ],
       "shadowDelegatesFocus": null,
       "states": []
+    },
+    {
+      "tag": "text-title-bar",
+      "path": "./src/components/text-title-bar/text-title-bar.js",
+      "source": "./src/components/text-title-bar/text-title-bar.tsx",
+      "elementRef": null,
+      "componentClassName": "TextTitleBar",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [
+        "login-title-wrapper"
+      ],
+      "directDependencies": [],
+      "directDependents": [
+        "login-title-wrapper"
+      ],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "titleText",
+          "type": "string",
+          "attribute": "title-text",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "The text to display"
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": null,
+      "states": []
     }
   ],
   "entries": [
@@ -195,7 +288,27 @@
           "elementRef": null,
           "encapsulation": "none",
           "shadowDelegatesFocus": null,
-          "properties": [],
+          "properties": [
+            {
+              "name": "titleText",
+              "type": "string",
+              "attribute": "title-text",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "The text to display as the page title"
+              },
+              "internal": false
+            }
+          ],
           "virtualProperties": [],
           "states": [],
           "methods": [],
@@ -249,14 +362,14 @@
           "hasListenerTargetDocument": false,
           "hasListenerTargetBody": false,
           "hasListenerTargetParent": false,
-          "hasMember": false,
+          "hasMember": true,
           "hasMethod": false,
           "hasMode": false,
-          "hasAttribute": false,
-          "hasProp": false,
+          "hasAttribute": true,
+          "hasProp": true,
           "hasPropNumber": false,
           "hasPropBoolean": false,
-          "hasPropString": false,
+          "hasPropString": true,
           "hasPropMutable": false,
           "hasReflect": false,
           "hasRenderFn": true,
@@ -272,22 +385,29 @@
           "hasVdomRef": false,
           "hasVdomRender": true,
           "hasVdomStyle": false,
-          "hasVdomText": true,
+          "hasVdomText": false,
           "hasWatchCallback": false,
           "isPlain": false,
           "htmlAttrNames": [
             "id",
-            "class"
+            "class",
+            "titleText"
           ],
           "htmlTagNames": [
             "div",
-            "p"
+            "text-title-bar"
           ],
           "htmlParts": [],
-          "isUpdateable": false,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [
+            "text-title-bar"
+          ],
+          "directDependencies": [
+            "text-title-bar"
+          ],
+          "dependencies": [
+            "text-title-bar"
+          ],
           "dependents": [],
           "directDependents": []
         }
@@ -433,6 +553,138 @@
         }
       ],
       "entryKey": "page-header.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "text-title-bar",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "TextTitleBar",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "titleText",
+              "type": "string",
+              "attribute": "title-text",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "The text to display"
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "TEXT-TITLE-BAR",
+              "styleStr": null,
+              "styleIdentifier": "textTitleBarStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/text-title-bar/text-title-bar.css",
+                  "relativePath": "text-title-bar.css",
+                  "originalComponentPath": "text-title-bar.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/text-title-bar/text-title-bar.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/text-title-bar/text-title-bar.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": false,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class"
+          ],
+          "htmlTagNames": [
+            "div",
+            "p"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [
+            "login-title-wrapper"
+          ],
+          "directDependents": [
+            "login-title-wrapper"
+          ]
+        }
+      ],
+      "entryKey": "text-title-bar.entry"
     }
   ],
   "componentGraph": {
@@ -441,11 +693,15 @@
     ],
     "sc-page-header": [
       "index-150330db.js"
+    ],
+    "sc-text-title-bar": [
+      "index-150330db.js"
     ]
   },
   "sourceGraph": {
     "./src/components/login-title-wrapper/login-title-wrapper.tsx": [],
     "./src/components/page-header/page-header.tsx": [],
+    "./src/components/text-title-bar/text-title-bar.tsx": [],
     "./src/index.ts": [],
     "./src/utils/utils.ts": []
   },

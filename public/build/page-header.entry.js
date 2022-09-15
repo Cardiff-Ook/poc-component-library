@@ -1,6 +1,6 @@
 import { r as registerInstance, g as getAssetPath, h } from './index-150330db.js';
 
-const pageHeaderCss = ":host{display:block}header #loginHeaderLogo{width:100%;height:100%}header{width:100%;height:86px;display:flex;z-index:6;position:absolute;background:#F2F0EE;justify-content:center}header .logoContainer{width:140px;display:flex;margin-top:40px;justify-content:center}.jss591{width:100px;cursor:pointer;height:35px;display:flex;align-items:center;justify-content:center}img{width:154px}";
+const pageHeaderCss = ":host{display:block}header #loginHeaderLogo{width:100%;height:100%}header{width:100%;height:86px;display:flex;z-index:6;position:absolute;justify-content:center}header .logoContainer{width:140px;display:flex;margin-top:40px;justify-content:center}.jss591{width:100px;cursor:pointer;height:35px;display:flex;align-items:center;justify-content:center}img{width:154px}";
 
 const PageHeader = class {
   constructor(hostRef) {
