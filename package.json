@@ -1,7 +1,7 @@
 {
-  "name": "stencil-starter-project-name",
-  "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "name": "poc-adm-components",
+  "version": "0.0.2",
+  "description": "Component Library for PoC",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
   "es2015": "dist/esm/index.mjs",
@@ -9,10 +9,10 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/stencil-starter-project-name/stencil-starter-project-name.esm.js",
+  "unpkg": "dist/poc-adm-components/poc-adm-components.esm.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ionic-team/stencil-component-starter.git"
+    "url": "https://github.com/Cardiff-Ook/poc-adm-components.git"
   },
   "files": [
     "dist/",
@@ -26,9 +26,11 @@
     "generate": "stencil generate"
   },
   "dependencies": {
-    "@stencil/core": "^2.13.0"
+    "@stencil/core": "^2.13.0",
+    "@stencil/sass": "^2.0.0"
   },
   "devDependencies": {
+    "@stencil/angular-output-target": "^0.4.0",
     "@types/jest": "^27.0.3",
     "jest": "^27.4.5",
     "jest-cli": "^27.4.5",

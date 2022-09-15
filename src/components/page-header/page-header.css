@@ -1,0 +1,9 @@
+:host {
+  display: block;
+}
+
+.person {
+  font-weight: bolder;
+  font-size: x-large;
+  color: chartreuse;
+}

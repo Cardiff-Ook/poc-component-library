@@ -6,11 +6,15 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
+    interface PageHeader {
         /**
           * The first name
          */
         "first": string;
+        /**
+          * The Image to display
+         */
+        "image": string;
         /**
           * The last name
          */
@@ -22,22 +26,26 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLPageHeaderElement extends Components.PageHeader, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLPageHeaderElement: {
+        prototype: HTMLPageHeaderElement;
+        new (): HTMLPageHeaderElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "page-header": HTMLPageHeaderElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
+    interface PageHeader {
         /**
           * The first name
          */
         "first"?: string;
+        /**
+          * The Image to display
+         */
+        "image"?: string;
         /**
           * The last name
          */
@@ -48,14 +56,14 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "page-header": PageHeader;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "page-header": LocalJSX.PageHeader & JSXBase.HTMLAttributes<HTMLPageHeaderElement>;
         }
     }
 }

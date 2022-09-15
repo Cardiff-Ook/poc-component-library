@@ -1,0 +1,10 @@
+:root {
+    --color: #ff792a!important;
+    --size: 100px;
+    --thickness: 1.5;
+}
+body {
+    margin: 0;
+    background-color: #EBF0E1;
+}
+@import url("https://use.fontawesome.com/releases/v5.7.1/css/all.css");

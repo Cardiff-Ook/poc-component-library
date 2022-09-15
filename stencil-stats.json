@@ -1,0 +1,411 @@
+{
+  "timestamp": "2022-09-15T10:03:11",
+  "compiler": {
+    "name": "node",
+    "version": "16.17.0"
+  },
+  "app": {
+    "namespace": "PocAdmComponents",
+    "fsNamespace": "poc-adm-components",
+    "components": 1,
+    "entries": 1,
+    "bundles": 21,
+    "outputs": [
+      {
+        "name": "dist-custom-elements",
+        "files": 2,
+        "generatedFiles": [
+          "./dist/components/index.d.ts",
+          "./dist/components/page-header.d.ts"
+        ]
+      },
+      {
+        "name": "dist-lazy",
+        "files": 16,
+        "generatedFiles": [
+          "./dist/poc-adm-components/app-globals-0f993ce5.js",
+          "./dist/poc-adm-components/css-shim-5064654c.js",
+          "./dist/poc-adm-components/dom-104fb833.js",
+          "./dist/poc-adm-components/index-5756e4c3.js",
+          "./dist/poc-adm-components/index.esm.js",
+          "./dist/poc-adm-components/page-header.entry.js",
+          "./dist/poc-adm-components/poc-adm-components.esm.js",
+          "./dist/poc-adm-components/shadow-css-4261c637.js",
+          "./public/build/app-globals-0f993ce5.js",
+          "./public/build/css-shim-5064654c.js",
+          "./public/build/dom-104fb833.js",
+          "./public/build/index-5756e4c3.js",
+          "./public/build/index.esm.js",
+          "./public/build/page-header.entry.js",
+          "./public/build/poc-adm-components.esm.js",
+          "./public/build/shadow-css-4261c637.js"
+        ]
+      },
+      {
+        "name": "dist-types",
+        "files": 1,
+        "generatedFiles": [
+          "./dist/types/stencil-public-runtime.d.ts"
+        ]
+      },
+      {
+        "name": "www",
+        "files": 2,
+        "generatedFiles": [
+          "./public/host.config.json",
+          "./public/index.html"
+        ]
+      }
+    ]
+  },
+  "options": {
+    "minifyJs": false,
+    "minifyCss": false,
+    "hashFileNames": false,
+    "hashedFileNameLength": 8,
+    "buildEs5": false
+  },
+  "formats": {
+    "esmBrowser": [
+      {
+        "key": "page-header.entry",
+        "components": [
+          "page-header"
+        ],
+        "bundleId": "page-header",
+        "fileName": "page-header.entry.js",
+        "imports": [
+          "index-5756e4c3.js"
+        ],
+        "originalByteSize": 951
+      }
+    ],
+    "esm": [],
+    "es5": [],
+    "system": [],
+    "commonjs": []
+  },
+  "components": [
+    {
+      "tag": "page-header",
+      "path": "./src/components/page-header/page-header.js",
+      "source": "./src/components/page-header/page-header.tsx",
+      "elementRef": null,
+      "componentClassName": "PageHeader",
+      "assetsDirs": [
+        {
+          "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-header/assets",
+          "cmpRelativePath": "./assets",
+          "originalComponentPath": "./assets"
+        }
+      ],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "image",
+          "type": "string",
+          "attribute": "image",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "\"admiral.png\"",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "The Image to display"
+          },
+          "internal": false
+        },
+        {
+          "name": "first",
+          "type": "string",
+          "attribute": "first",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "The first name"
+          },
+          "internal": false
+        },
+        {
+          "name": "middle",
+          "type": "string",
+          "attribute": "middle",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "The middle name"
+          },
+          "internal": false
+        },
+        {
+          "name": "last",
+          "type": "string",
+          "attribute": "last",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "The last name"
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": null,
+      "states": []
+    }
+  ],
+  "entries": [
+    {
+      "cmps": [
+        {
+          "tagName": "page-header",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "PageHeader",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "image",
+              "type": "string",
+              "attribute": "image",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "\"admiral.png\"",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "The Image to display"
+              },
+              "internal": false
+            },
+            {
+              "name": "first",
+              "type": "string",
+              "attribute": "first",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "The first name"
+              },
+              "internal": false
+            },
+            {
+              "name": "middle",
+              "type": "string",
+              "attribute": "middle",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "The middle name"
+              },
+              "internal": false
+            },
+            {
+              "name": "last",
+              "type": "string",
+              "attribute": "last",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "The last name"
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "PAGE-HEADER",
+              "styleStr": null,
+              "styleIdentifier": "pageHeaderStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-header/page-header.css",
+                  "relativePath": "page-header.css",
+                  "originalComponentPath": "page-header.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [
+            {
+              "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-header/assets",
+              "cmpRelativePath": "./assets",
+              "originalComponentPath": "./assets"
+            }
+          ],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-header/page-header.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-header/page-header.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "src"
+          ],
+          "htmlTagNames": [
+            "div",
+            "span",
+            "img"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "page-header.entry"
+    }
+  ],
+  "componentGraph": {
+    "sc-page-header": [
+      "index-5756e4c3.js"
+    ]
+  },
+  "sourceGraph": {
+    "./src/components/page-header/page-header.tsx": [
+      "./src/utils/utils"
+    ],
+    "./src/index.ts": [],
+    "./src/utils/utils.ts": []
+  },
+  "collections": []
+}
