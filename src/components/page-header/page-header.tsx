@@ -18,7 +18,7 @@ export class PageHeader {
   }
 
   render() {
-    const imageSrc = getAssetPath(`./assets/${this.brand}logo.svg`);
+    const imageSrc = getAssetPath(`/assets/${this.brand}logo.svg`);
     const imageAltText = `${this.brand} logo placeholder`
     console.log(imageSrc);
     return (

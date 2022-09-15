@@ -19,7 +19,7 @@
 }
 
 #tagIcons {
-  background-image: url(build/assets/icon-strip.png);
+  background-image: url(/assets/icon-strip.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;

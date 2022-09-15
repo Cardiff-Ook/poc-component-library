@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-09-15T12:57:11",
+  "timestamp": "2022-09-15T13:56:19",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -80,7 +80,7 @@
         "imports": [
           "index-150330db.js"
         ],
-        "originalByteSize": 907
+        "originalByteSize": 902
       },
       {
         "key": "page-header.entry",
@@ -92,7 +92,7 @@
         "imports": [
           "index-150330db.js"
         ],
-        "originalByteSize": 1243
+        "originalByteSize": 1242
       }
     ],
     "esm": [],

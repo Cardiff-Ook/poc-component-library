@@ -11,7 +11,7 @@ const PageHeader = class {
     body.classList.add(`${this.brand}`);
   }
   render() {
-    const imageSrc = getAssetPath(`./assets/${this.brand}logo.svg`);
+    const imageSrc = getAssetPath(`/assets/${this.brand}logo.svg`);
     const imageAltText = `${this.brand} logo placeholder`;
     console.log(imageSrc);
     return (h("header", null, h("div", { class: "logoContainer" }, h("a", { href: "/myaccount/login/" }, h("div", { id: "loginHeaderLogo", class: "jss591" }, h("img", { id: "loginLogo", src: imageSrc, alt: imageAltText }))))));
