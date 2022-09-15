@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-09-15T14:46:43",
+  "timestamp": "2022-09-15T14:58:56",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -9,42 +9,58 @@
     "fsNamespace": "poc-adm-components",
     "components": 3,
     "entries": 3,
-    "bundles": 27,
+    "bundles": 37,
     "outputs": [
       {
+        "name": "dist-collection",
+        "files": 5,
+        "generatedFiles": [
+          "./dist/collection/components/login-title-wrapper/login-title-wrapper.js",
+          "./dist/collection/components/page-header/page-header.js",
+          "./dist/collection/components/text-title-bar/text-title-bar.js",
+          "./dist/collection/index.js",
+          "./dist/collection/utils/utils.js"
+        ]
+      },
+      {
         "name": "dist-custom-elements",
-        "files": 4,
+        "files": 9,
         "generatedFiles": [
           "./dist/components/index.d.ts",
+          "./dist/components/index.js",
           "./dist/components/login-title-wrapper.d.ts",
+          "./dist/components/login-title-wrapper.js",
           "./dist/components/page-header.d.ts",
-          "./dist/components/text-title-bar.d.ts"
+          "./dist/components/page-header.js",
+          "./dist/components/text-title-bar.d.ts",
+          "./dist/components/text-title-bar.js",
+          "./dist/components/text-title-bar2.js"
         ]
       },
       {
         "name": "dist-lazy",
         "files": 20,
         "generatedFiles": [
-          "./dist/poc-adm-components/app-globals-0f993ce5.js",
-          "./dist/poc-adm-components/css-shim-5064654c.js",
-          "./dist/poc-adm-components/dom-104fb833.js",
-          "./dist/poc-adm-components/index-150330db.js",
+          "./dist/cjs/index-661f1a52.js",
+          "./dist/cjs/index.cjs.js",
+          "./dist/cjs/loader.cjs.js",
+          "./dist/cjs/login-title-wrapper_3.cjs.entry.js",
+          "./dist/cjs/poc-adm-components.cjs.js",
+          "./dist/esm/index-bd748902.js",
+          "./dist/esm/index.js",
+          "./dist/esm/loader.js",
+          "./dist/esm/login-title-wrapper_3.entry.js",
+          "./dist/esm/poc-adm-components.js",
+          "./dist/index.cjs.js",
+          "./dist/index.js",
           "./dist/poc-adm-components/index.esm.js",
-          "./dist/poc-adm-components/login-title-wrapper.entry.js",
-          "./dist/poc-adm-components/page-header.entry.js",
+          "./dist/poc-adm-components/p-949191f5.js",
+          "./dist/poc-adm-components/p-c8b51cc8.entry.js",
           "./dist/poc-adm-components/poc-adm-components.esm.js",
-          "./dist/poc-adm-components/shadow-css-4261c637.js",
-          "./dist/poc-adm-components/text-title-bar.entry.js",
-          "./public/build/app-globals-0f993ce5.js",
-          "./public/build/css-shim-5064654c.js",
-          "./public/build/dom-104fb833.js",
-          "./public/build/index-150330db.js",
           "./public/build/index.esm.js",
-          "./public/build/login-title-wrapper.entry.js",
-          "./public/build/page-header.entry.js",
-          "./public/build/poc-adm-components.esm.js",
-          "./public/build/shadow-css-4261c637.js",
-          "./public/build/text-title-bar.entry.js"
+          "./public/build/p-949191f5.js",
+          "./public/build/p-c8b51cc8.entry.js",
+          "./public/build/poc-adm-components.esm.js"
         ]
       },
       {
@@ -65,55 +81,63 @@
     ]
   },
   "options": {
-    "minifyJs": false,
-    "minifyCss": false,
-    "hashFileNames": false,
+    "minifyJs": true,
+    "minifyCss": true,
+    "hashFileNames": true,
     "hashedFileNameLength": 8,
     "buildEs5": false
   },
   "formats": {
     "esmBrowser": [
       {
-        "key": "login-title-wrapper.entry",
+        "key": "login-title-wrapper.page-header.text-title-bar.entry",
         "components": [
-          "login-title-wrapper"
-        ],
-        "bundleId": "login-title-wrapper",
-        "fileName": "login-title-wrapper.entry.js",
-        "imports": [
-          "index-150330db.js"
-        ],
-        "originalByteSize": 683
-      },
-      {
-        "key": "page-header.entry",
-        "components": [
-          "page-header"
-        ],
-        "bundleId": "page-header",
-        "fileName": "page-header.entry.js",
-        "imports": [
-          "index-150330db.js"
-        ],
-        "originalByteSize": 1223
-      },
-      {
-        "key": "text-title-bar.entry",
-        "components": [
+          "login-title-wrapper",
+          "page-header",
           "text-title-bar"
         ],
-        "bundleId": "text-title-bar",
-        "fileName": "text-title-bar.entry.js",
+        "bundleId": "p-c8b51cc8",
+        "fileName": "p-c8b51cc8.entry.js",
         "imports": [
-          "index-150330db.js"
+          "p-949191f5.js"
         ],
-        "originalByteSize": 498
+        "originalByteSize": 2248
       }
     ],
-    "esm": [],
+    "esm": [
+      {
+        "key": "login-title-wrapper.page-header.text-title-bar.entry",
+        "components": [
+          "login-title-wrapper",
+          "page-header",
+          "text-title-bar"
+        ],
+        "bundleId": "login-title-wrapper_3",
+        "fileName": "login-title-wrapper_3.entry.js",
+        "imports": [
+          "index-bd748902.js"
+        ],
+        "originalByteSize": 2252
+      }
+    ],
     "es5": [],
     "system": [],
-    "commonjs": []
+    "commonjs": [
+      {
+        "key": "login-title-wrapper.page-header.text-title-bar.entry",
+        "components": [
+          "login-title-wrapper",
+          "page-header",
+          "text-title-bar"
+        ],
+        "bundleId": "login-title-wrapper_3.cjs",
+        "fileName": "login-title-wrapper_3.cjs.entry.js",
+        "imports": [
+          "index-661f1a52.js"
+        ],
+        "originalByteSize": 2388
+      }
+    ]
   },
   "components": [
     {
@@ -410,12 +434,7 @@
           ],
           "dependents": [],
           "directDependents": []
-        }
-      ],
-      "entryKey": "login-title-wrapper.entry"
-    },
-    {
-      "cmps": [
+        },
         {
           "tagName": "page-header",
           "excludeFromCollection": false,
@@ -550,12 +569,7 @@
           "dependencies": [],
           "dependents": [],
           "directDependents": []
-        }
-      ],
-      "entryKey": "page-header.entry"
-    },
-    {
-      "cmps": [
+        },
         {
           "tagName": "text-title-bar",
           "excludeFromCollection": false,
@@ -684,18 +698,18 @@
           ]
         }
       ],
-      "entryKey": "text-title-bar.entry"
+      "entryKey": "login-title-wrapper.page-header.text-title-bar.entry"
     }
   ],
   "componentGraph": {
     "sc-login-title-wrapper": [
-      "index-150330db.js"
+      "p-949191f5.js"
     ],
     "sc-page-header": [
-      "index-150330db.js"
+      "p-949191f5.js"
     ],
     "sc-text-title-bar": [
-      "index-150330db.js"
+      "p-949191f5.js"
     ]
   },
   "sourceGraph": {
