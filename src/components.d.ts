@@ -7,10 +7,6 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface LoginTitleWrapper {
-        /**
-          * The text to display as the page title
-         */
-        "titleText": string;
     }
     interface PageHeader {
         /**
@@ -18,11 +14,23 @@ export namespace Components {
          */
         "brand": string;
     }
+    interface ProductTile {
+        /**
+          * The link for the product
+         */
+        "linkText": string;
+        /**
+          * The image to display
+         */
+        "productImage": string;
+    }
     interface TextTitleBar {
         /**
           * The text to display
          */
         "titleText": string;
+    }
+    interface TileContainer {
     }
 }
 declare global {
@@ -38,24 +46,34 @@ declare global {
         prototype: HTMLPageHeaderElement;
         new (): HTMLPageHeaderElement;
     };
+    interface HTMLProductTileElement extends Components.ProductTile, HTMLStencilElement {
+    }
+    var HTMLProductTileElement: {
+        prototype: HTMLProductTileElement;
+        new (): HTMLProductTileElement;
+    };
     interface HTMLTextTitleBarElement extends Components.TextTitleBar, HTMLStencilElement {
     }
     var HTMLTextTitleBarElement: {
         prototype: HTMLTextTitleBarElement;
         new (): HTMLTextTitleBarElement;
     };
+    interface HTMLTileContainerElement extends Components.TileContainer, HTMLStencilElement {
+    }
+    var HTMLTileContainerElement: {
+        prototype: HTMLTileContainerElement;
+        new (): HTMLTileContainerElement;
+    };
     interface HTMLElementTagNameMap {
         "login-title-wrapper": HTMLLoginTitleWrapperElement;
         "page-header": HTMLPageHeaderElement;
+        "product-tile": HTMLProductTileElement;
         "text-title-bar": HTMLTextTitleBarElement;
+        "tile-container": HTMLTileContainerElement;
     }
 }
 declare namespace LocalJSX {
     interface LoginTitleWrapper {
-        /**
-          * The text to display as the page title
-         */
-        "titleText"?: string;
     }
     interface PageHeader {
         /**
@@ -63,16 +81,30 @@ declare namespace LocalJSX {
          */
         "brand"?: string;
     }
+    interface ProductTile {
+        /**
+          * The link for the product
+         */
+        "linkText"?: string;
+        /**
+          * The image to display
+         */
+        "productImage"?: string;
+    }
     interface TextTitleBar {
         /**
           * The text to display
          */
         "titleText"?: string;
     }
+    interface TileContainer {
+    }
     interface IntrinsicElements {
         "login-title-wrapper": LoginTitleWrapper;
         "page-header": PageHeader;
+        "product-tile": ProductTile;
         "text-title-bar": TextTitleBar;
+        "tile-container": TileContainer;
     }
 }
 export { LocalJSX as JSX };
@@ -81,7 +113,9 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "login-title-wrapper": LocalJSX.LoginTitleWrapper & JSXBase.HTMLAttributes<HTMLLoginTitleWrapperElement>;
             "page-header": LocalJSX.PageHeader & JSXBase.HTMLAttributes<HTMLPageHeaderElement>;
+            "product-tile": LocalJSX.ProductTile & JSXBase.HTMLAttributes<HTMLProductTileElement>;
             "text-title-bar": LocalJSX.TextTitleBar & JSXBase.HTMLAttributes<HTMLTextTitleBarElement>;
+            "tile-container": LocalJSX.TileContainer & JSXBase.HTMLAttributes<HTMLTileContainerElement>;
         }
     }
 }

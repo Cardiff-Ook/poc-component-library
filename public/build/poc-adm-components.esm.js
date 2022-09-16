@@ -1,4 +1,4 @@
-import { B as BUILD, c as consoleDevInfo, p as plt, w as win, H, d as doc, N as NAMESPACE, a as promiseResolve, b as bootstrapLazy } from './index-150330db.js';
+import { B as BUILD, c as consoleDevInfo, p as plt, w as win, H, d as doc, N as NAMESPACE, a as promiseResolve, b as bootstrapLazy } from './index-c52c5fca.js';
 import { g as globalScripts } from './app-globals-0f993ce5.js';
 
 /*
@@ -125,5 +125,5 @@ const patchCloneNodeFix = (HTMLElementPrototype) => {
 
 patchBrowser().then(options => {
   globalScripts();
-  return bootstrapLazy([["login-title-wrapper",[[0,"login-title-wrapper",{"titleText":[1,"title-text"]}]]],["page-header",[[0,"page-header",{"brand":[1]}]]],["text-title-bar",[[0,"text-title-bar",{"titleText":[1,"title-text"]}]]]], options);
+  return bootstrapLazy([["login-title-wrapper",[[4,"login-title-wrapper"]]],["page-header",[[0,"page-header",{"brand":[1]}]]],["product-tile",[[0,"product-tile",{"linkText":[1,"link-text"],"productImage":[1,"product-image"]}]]],["text-title-bar",[[0,"text-title-bar",{"titleText":[1,"title-text"]}]]],["tile-container",[[4,"tile-container"]]]], options);
 });

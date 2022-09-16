@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-09-16T09:59:04",
+  "timestamp": "2022-09-16T10:34:06",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -7,44 +7,52 @@
   "app": {
     "namespace": "PocAdmComponents",
     "fsNamespace": "poc-adm-components",
-    "components": 3,
-    "entries": 3,
-    "bundles": 27,
+    "components": 5,
+    "entries": 5,
+    "bundles": 35,
     "outputs": [
       {
         "name": "dist-custom-elements",
-        "files": 4,
+        "files": 6,
         "generatedFiles": [
           "./dist/components/index.d.ts",
           "./dist/components/login-title-wrapper.d.ts",
           "./dist/components/page-header.d.ts",
-          "./dist/components/text-title-bar.d.ts"
+          "./dist/components/product-tile.d.ts",
+          "./dist/components/text-title-bar.d.ts",
+          "./dist/components/tile-container.d.ts"
         ]
       },
       {
         "name": "dist-lazy",
-        "files": 20,
+        "files": 26,
         "generatedFiles": [
           "./dist/poc-adm-components/app-globals-0f993ce5.js",
           "./dist/poc-adm-components/css-shim-5064654c.js",
           "./dist/poc-adm-components/dom-104fb833.js",
-          "./dist/poc-adm-components/index-150330db.js",
+          "./dist/poc-adm-components/index-79891d80.js",
+          "./dist/poc-adm-components/index-c52c5fca.js",
           "./dist/poc-adm-components/index.esm.js",
           "./dist/poc-adm-components/login-title-wrapper.entry.js",
           "./dist/poc-adm-components/page-header.entry.js",
           "./dist/poc-adm-components/poc-adm-components.esm.js",
+          "./dist/poc-adm-components/product-tile.entry.js",
           "./dist/poc-adm-components/shadow-css-4261c637.js",
           "./dist/poc-adm-components/text-title-bar.entry.js",
+          "./dist/poc-adm-components/tile-container.entry.js",
           "./public/build/app-globals-0f993ce5.js",
           "./public/build/css-shim-5064654c.js",
           "./public/build/dom-104fb833.js",
-          "./public/build/index-150330db.js",
+          "./public/build/index-79891d80.js",
+          "./public/build/index-c52c5fca.js",
           "./public/build/index.esm.js",
           "./public/build/login-title-wrapper.entry.js",
           "./public/build/page-header.entry.js",
           "./public/build/poc-adm-components.esm.js",
+          "./public/build/product-tile.entry.js",
           "./public/build/shadow-css-4261c637.js",
-          "./public/build/text-title-bar.entry.js"
+          "./public/build/text-title-bar.entry.js",
+          "./public/build/tile-container.entry.js"
         ]
       },
       {
@@ -81,9 +89,9 @@
         "bundleId": "login-title-wrapper",
         "fileName": "login-title-wrapper.entry.js",
         "imports": [
-          "index-150330db.js"
+          "index-c52c5fca.js"
         ],
-        "originalByteSize": 682
+        "originalByteSize": 647
       },
       {
         "key": "page-header.entry",
@@ -93,9 +101,21 @@
         "bundleId": "page-header",
         "fileName": "page-header.entry.js",
         "imports": [
-          "index-150330db.js"
+          "index-c52c5fca.js"
         ],
         "originalByteSize": 1205
+      },
+      {
+        "key": "product-tile.entry",
+        "components": [
+          "product-tile"
+        ],
+        "bundleId": "product-tile",
+        "fileName": "product-tile.entry.js",
+        "imports": [
+          "index-c52c5fca.js"
+        ],
+        "originalByteSize": 743
       },
       {
         "key": "text-title-bar.entry",
@@ -105,9 +125,21 @@
         "bundleId": "text-title-bar",
         "fileName": "text-title-bar.entry.js",
         "imports": [
-          "index-150330db.js"
+          "index-c52c5fca.js"
         ],
         "originalByteSize": 576
+      },
+      {
+        "key": "tile-container.entry",
+        "components": [
+          "tile-container"
+        ],
+        "bundleId": "tile-container",
+        "fileName": "tile-container.entry.js",
+        "imports": [
+          "index-c52c5fca.js"
+        ],
+        "originalByteSize": 509
       }
     ],
     "esm": [],
@@ -123,13 +155,9 @@
       "elementRef": null,
       "componentClassName": "LoginTitleWrapper",
       "assetsDirs": [],
-      "dependencies": [
-        "text-title-bar"
-      ],
+      "dependencies": [],
       "dependents": [],
-      "directDependencies": [
-        "text-title-bar"
-      ],
+      "directDependencies": [],
       "directDependents": [],
       "docs": {
         "tags": [],
@@ -143,30 +171,8 @@
       "legacyContext": [],
       "listeners": [],
       "methods": [],
-      "potentialCmpRefs": [
-        "text-title-bar"
-      ],
-      "properties": [
-        {
-          "name": "titleText",
-          "type": "string",
-          "attribute": "title-text",
-          "reflect": false,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "complexType": {
-            "original": "string",
-            "resolved": "string",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": "The text to display as the page title"
-          },
-          "internal": false
-        }
-      ],
+      "potentialCmpRefs": [],
+      "properties": [],
       "shadowDelegatesFocus": null,
       "states": []
     },
@@ -225,6 +231,73 @@
       "states": []
     },
     {
+      "tag": "product-tile",
+      "path": "./src/components/product-tile/product-tile.js",
+      "source": "./src/components/product-tile/product-tile.tsx",
+      "elementRef": null,
+      "componentClassName": "ProductTile",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "linkText",
+          "type": "string",
+          "attribute": "link-text",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "The link for the product"
+          },
+          "internal": false
+        },
+        {
+          "name": "productImage",
+          "type": "string",
+          "attribute": "product-image",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "The image to display"
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": null,
+      "states": []
+    },
+    {
       "tag": "text-title-bar",
       "path": "./src/components/text-title-bar/text-title-bar.js",
       "source": "./src/components/text-title-bar/text-title-bar.tsx",
@@ -232,13 +305,9 @@
       "componentClassName": "TextTitleBar",
       "assetsDirs": [],
       "dependencies": [],
-      "dependents": [
-        "login-title-wrapper"
-      ],
+      "dependents": [],
       "directDependencies": [],
-      "directDependents": [
-        "login-title-wrapper"
-      ],
+      "directDependents": [],
       "docs": {
         "tags": [],
         "text": ""
@@ -275,6 +344,34 @@
       ],
       "shadowDelegatesFocus": null,
       "states": []
+    },
+    {
+      "tag": "tile-container",
+      "path": "./src/components/tile-container/tile-container.js",
+      "source": "./src/components/tile-container/tile-container.tsx",
+      "elementRef": null,
+      "componentClassName": "TileContainer",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [],
+      "shadowDelegatesFocus": null,
+      "states": []
     }
   ],
   "entries": [
@@ -288,27 +385,7 @@
           "elementRef": null,
           "encapsulation": "none",
           "shadowDelegatesFocus": null,
-          "properties": [
-            {
-              "name": "titleText",
-              "type": "string",
-              "attribute": "title-text",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "The text to display as the page title"
-              },
-              "internal": false
-            }
-          ],
+          "properties": [],
           "virtualProperties": [],
           "states": [],
           "methods": [],
@@ -362,14 +439,14 @@
           "hasListenerTargetDocument": false,
           "hasListenerTargetBody": false,
           "hasListenerTargetParent": false,
-          "hasMember": true,
+          "hasMember": false,
           "hasMethod": false,
           "hasMode": false,
-          "hasAttribute": true,
-          "hasProp": true,
+          "hasAttribute": false,
+          "hasProp": false,
           "hasPropNumber": false,
           "hasPropBoolean": false,
-          "hasPropString": true,
+          "hasPropString": false,
           "hasPropMutable": false,
           "hasReflect": false,
           "hasRenderFn": true,
@@ -390,24 +467,17 @@
           "isPlain": false,
           "htmlAttrNames": [
             "id",
-            "class",
-            "titleText"
+            "class"
           ],
           "htmlTagNames": [
             "div",
-            "text-title-bar"
+            "slot"
           ],
           "htmlParts": [],
-          "isUpdateable": true,
-          "potentialCmpRefs": [
-            "text-title-bar"
-          ],
-          "directDependencies": [
-            "text-title-bar"
-          ],
-          "dependencies": [
-            "text-title-bar"
-          ],
+          "isUpdateable": false,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
           "dependents": [],
           "directDependents": []
         }
@@ -557,6 +627,156 @@
     {
       "cmps": [
         {
+          "tagName": "product-tile",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "ProductTile",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "linkText",
+              "type": "string",
+              "attribute": "link-text",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "The link for the product"
+              },
+              "internal": false
+            },
+            {
+              "name": "productImage",
+              "type": "string",
+              "attribute": "product-image",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "The image to display"
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "PRODUCT-TILE",
+              "styleStr": null,
+              "styleIdentifier": "productTileStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/product-tile/product-tile.css",
+                  "relativePath": "product-tile.css",
+                  "originalComponentPath": "product-tile.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/product-tile/product-tile.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/product-tile/product-tile.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "href",
+            "src"
+          ],
+          "htmlTagNames": [
+            "div",
+            "a",
+            "img"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "product-tile.entry"
+    },
+    {
+      "cmps": [
+        {
           "tagName": "text-title-bar",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -676,32 +896,144 @@
           "potentialCmpRefs": [],
           "directDependencies": [],
           "dependencies": [],
-          "dependents": [
-            "login-title-wrapper"
-          ],
-          "directDependents": [
-            "login-title-wrapper"
-          ]
+          "dependents": [],
+          "directDependents": []
         }
       ],
       "entryKey": "text-title-bar.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "tile-container",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "TileContainer",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "TILE-CONTAINER",
+              "styleStr": null,
+              "styleIdentifier": "tileContainerStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/tile-container/tile-container.css",
+                  "relativePath": "tile-container.css",
+                  "originalComponentPath": "tile-container.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/tile-container/tile-container.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/tile-container/tile-container.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": false,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": false,
+          "hasProp": false,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": false,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": false,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class"
+          ],
+          "htmlTagNames": [
+            "div",
+            "slot"
+          ],
+          "htmlParts": [],
+          "isUpdateable": false,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "tile-container.entry"
     }
   ],
   "componentGraph": {
     "sc-login-title-wrapper": [
-      "index-150330db.js"
+      "index-c52c5fca.js"
     ],
     "sc-page-header": [
-      "index-150330db.js"
+      "index-c52c5fca.js"
+    ],
+    "sc-product-tile": [
+      "index-c52c5fca.js"
     ],
     "sc-text-title-bar": [
-      "index-150330db.js"
+      "index-c52c5fca.js"
+    ],
+    "sc-tile-container": [
+      "index-c52c5fca.js"
     ]
   },
   "sourceGraph": {
     "./src/components/login-title-wrapper/login-title-wrapper.tsx": [],
     "./src/components/page-header/page-header.tsx": [],
+    "./src/components/product-tile/product-tile.tsx": [],
     "./src/components/text-title-bar/text-title-bar.tsx": [],
+    "./src/components/tile-container/tile-container.tsx": [],
     "./src/index.ts": [],
     "./src/utils/utils.ts": []
   },

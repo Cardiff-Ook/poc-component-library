@@ -6,6 +6,11 @@
 body {
     margin: 0;
 }
+
+img {
+    border-style: none
+}
+
 body.admiral {
     background-color: #EBF0E1;
     border: none;
