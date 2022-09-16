@@ -115,3 +115,41 @@ div.tagDiv>div {
   max-width: 636px;
   padding: 0 10px;
 }
+
+button {
+    color: #333333;
+    width: 100%;
+    position: relative;
+}
+
+button.submitButton {
+    color: #FFFFFF;
+    height: 48px;
+    font-size: 14px;
+    box-shadow: none;
+    font-style: normal;
+    font-family: jaf-facitweb, Helvetica, Arial;
+    font-weight: normal;
+    line-height: 24px;
+    border-radius: 24px;
+    background-color: #0A8A19;
+    margin: 16px 0 16px 0;
+    opacity: 1;
+    padding: 6px 16px;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: none;
+    text-transform: none;    
+    border: 0;
+    cursor: pointer;
+    display: inline-flex;
+    outline: 0;
+    position: relative;
+    align-items: center;
+    user-select: none;
+    vertical-align: middle;
+    justify-content: center;
+    text-decoration: none;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}

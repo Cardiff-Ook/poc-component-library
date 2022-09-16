@@ -1,4 +1,4 @@
-import { r as registerInstance, g as getAssetPath, h } from './index-998450d5.js';
+import { r as registerInstance, f as getAssetPath, h } from './index-fbd3ef49.js';
 
 const productTileCss = ".productTile{background-color:#FFF;border-radius:8px;border:1px solid #E9E9EF;width:308px;height:148px;text-align:center;color:#4A4643;font-weight:bold;background-repeat:no-repeat;background-position:center;background-size:contain}img{width:100%}";
 

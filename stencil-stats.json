@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-09-16T12:48:55",
+  "timestamp": "2022-09-16T13:59:43",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -7,17 +7,18 @@
   "app": {
     "namespace": "PocAdmComponents",
     "fsNamespace": "poc-adm-components",
-    "components": 7,
-    "entries": 7,
-    "bundles": 41,
+    "components": 8,
+    "entries": 8,
+    "bundles": 42,
     "outputs": [
       {
         "name": "dist-custom-elements",
-        "files": 8,
+        "files": 9,
         "generatedFiles": [
           "./dist/components/content-container.d.ts",
           "./dist/components/header-text.d.ts",
           "./dist/components/index.d.ts",
+          "./dist/components/login-form.d.ts",
           "./dist/components/login-title-wrapper.d.ts",
           "./dist/components/page-header.d.ts",
           "./dist/components/product-tile.d.ts",
@@ -34,9 +35,9 @@
           "./dist/poc-adm-components/css-shim-5064654c.js",
           "./dist/poc-adm-components/dom-104fb833.js",
           "./dist/poc-adm-components/header-text.entry.js",
-          "./dist/poc-adm-components/index-998450d5.js",
-          "./dist/poc-adm-components/index-c4da4142.js",
+          "./dist/poc-adm-components/index-fbd3ef49.js",
           "./dist/poc-adm-components/index.esm.js",
+          "./dist/poc-adm-components/login-form.entry.js",
           "./dist/poc-adm-components/login-title-wrapper.entry.js",
           "./dist/poc-adm-components/page-header.entry.js",
           "./dist/poc-adm-components/poc-adm-components.esm.js",
@@ -49,9 +50,9 @@
           "./public/build/css-shim-5064654c.js",
           "./public/build/dom-104fb833.js",
           "./public/build/header-text.entry.js",
-          "./public/build/index-998450d5.js",
-          "./public/build/index-c4da4142.js",
+          "./public/build/index-fbd3ef49.js",
           "./public/build/index.esm.js",
+          "./public/build/login-form.entry.js",
           "./public/build/login-title-wrapper.entry.js",
           "./public/build/page-header.entry.js",
           "./public/build/poc-adm-components.esm.js",
@@ -95,7 +96,7 @@
         "bundleId": "content-container",
         "fileName": "content-container.entry.js",
         "imports": [
-          "index-998450d5.js"
+          "index-fbd3ef49.js"
         ],
         "originalByteSize": 804
       },
@@ -107,9 +108,21 @@
         "bundleId": "header-text",
         "fileName": "header-text.entry.js",
         "imports": [
-          "index-998450d5.js"
+          "index-fbd3ef49.js"
         ],
         "originalByteSize": 678
+      },
+      {
+        "key": "login-form.entry",
+        "components": [
+          "login-form"
+        ],
+        "bundleId": "login-form",
+        "fileName": "login-form.entry.js",
+        "imports": [
+          "index-fbd3ef49.js"
+        ],
+        "originalByteSize": 3748
       },
       {
         "key": "login-title-wrapper.entry",
@@ -119,7 +132,7 @@
         "bundleId": "login-title-wrapper",
         "fileName": "login-title-wrapper.entry.js",
         "imports": [
-          "index-998450d5.js"
+          "index-fbd3ef49.js"
         ],
         "originalByteSize": 647
       },
@@ -131,7 +144,7 @@
         "bundleId": "page-header",
         "fileName": "page-header.entry.js",
         "imports": [
-          "index-998450d5.js"
+          "index-fbd3ef49.js"
         ],
         "originalByteSize": 1205
       },
@@ -143,7 +156,7 @@
         "bundleId": "product-tile",
         "fileName": "product-tile.entry.js",
         "imports": [
-          "index-998450d5.js"
+          "index-fbd3ef49.js"
         ],
         "originalByteSize": 743
       },
@@ -155,7 +168,7 @@
         "bundleId": "text-title-bar",
         "fileName": "text-title-bar.entry.js",
         "imports": [
-          "index-998450d5.js"
+          "index-fbd3ef49.js"
         ],
         "originalByteSize": 577
       },
@@ -167,7 +180,7 @@
         "bundleId": "tile-container",
         "fileName": "tile-container.entry.js",
         "imports": [
-          "index-998450d5.js"
+          "index-fbd3ef49.js"
         ],
         "originalByteSize": 504
       }
@@ -232,6 +245,81 @@
       "potentialCmpRefs": [],
       "properties": [],
       "shadowDelegatesFocus": false,
+      "states": []
+    },
+    {
+      "tag": "login-form",
+      "path": "./src/components/login-form/login-form.js",
+      "source": "./src/components/login-form/login-form.tsx",
+      "elementRef": "host",
+      "componentClassName": "LoginForm",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [
+        {
+          "name": "loginShouldOccur",
+          "method": "loginShouldOccur",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": {
+            "tags": [],
+            "text": "Event: loginShouldOccur: EventEmitter\nEvent to fire if data validates"
+          },
+          "complexType": {
+            "original": "any",
+            "resolved": "any",
+            "references": {}
+          },
+          "internal": false
+        }
+      ],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [
+        {
+          "name": "keydown.enter",
+          "method": "handleEnter",
+          "capture": false,
+          "passive": false
+        }
+      ],
+      "methods": [],
+      "potentialCmpRefs": [
+        "stencil-route-link"
+      ],
+      "properties": [
+        {
+          "name": "forgotPasswordUrl",
+          "type": "string",
+          "attribute": "forgot-password-url",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop: forgotPasswordUrl: string\nPage to redirect to if user se;ects forgot password"
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": null,
       "states": []
     },
     {
@@ -659,6 +747,173 @@
         }
       ],
       "entryKey": "header-text.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "login-form",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "LoginForm",
+          "elementRef": "host",
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "forgotPasswordUrl",
+              "type": "string",
+              "attribute": "forgot-password-url",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop: forgotPasswordUrl: string\nPage to redirect to if user se;ects forgot password"
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [
+            {
+              "name": "keydown.enter",
+              "method": "handleEnter",
+              "capture": false,
+              "passive": false
+            }
+          ],
+          "events": [
+            {
+              "name": "loginShouldOccur",
+              "method": "loginShouldOccur",
+              "bubbles": true,
+              "cancelable": true,
+              "composed": true,
+              "docs": {
+                "tags": [],
+                "text": "Event: loginShouldOccur: EventEmitter\nEvent to fire if data validates"
+              },
+              "complexType": {
+                "original": "any",
+                "resolved": "any",
+                "references": {}
+              },
+              "internal": false
+            }
+          ],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "LOGIN-FORM",
+              "styleStr": null,
+              "styleIdentifier": "loginFormStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/login-form/login-form.css",
+                  "relativePath": "login-form.css",
+                  "originalComponentPath": "login-form.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/login-form/login-form.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/login-form/login-form.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": true,
+          "hasLifecycle": false,
+          "hasListener": true,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": true,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "id",
+            "class",
+            "name",
+            "required",
+            "type",
+            "url",
+            "onClick"
+          ],
+          "htmlTagNames": [
+            "div",
+            "form",
+            "label",
+            "span",
+            "input",
+            "p",
+            "stencil-route-link",
+            "button"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [
+            "stencil-route-link"
+          ],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "login-form.entry"
     },
     {
       "cmps": [
@@ -1279,30 +1534,34 @@
   ],
   "componentGraph": {
     "sc-content-container": [
-      "index-998450d5.js"
+      "index-fbd3ef49.js"
     ],
     "sc-header-text": [
-      "index-998450d5.js"
+      "index-fbd3ef49.js"
+    ],
+    "sc-login-form": [
+      "index-fbd3ef49.js"
     ],
     "sc-login-title-wrapper": [
-      "index-998450d5.js"
+      "index-fbd3ef49.js"
     ],
     "sc-page-header": [
-      "index-998450d5.js"
+      "index-fbd3ef49.js"
     ],
     "sc-product-tile": [
-      "index-998450d5.js"
+      "index-fbd3ef49.js"
     ],
     "sc-text-title-bar": [
-      "index-998450d5.js"
+      "index-fbd3ef49.js"
     ],
     "sc-tile-container": [
-      "index-998450d5.js"
+      "index-fbd3ef49.js"
     ]
   },
   "sourceGraph": {
     "./src/components/content-container/content-container.tsx": [],
     "./src/components/header-text/header-text.tsx": [],
+    "./src/components/login-form/login-form.tsx": [],
     "./src/components/login-title-wrapper/login-title-wrapper.tsx": [],
     "./src/components/page-header/page-header.tsx": [],
     "./src/components/product-tile/product-tile.tsx": [],

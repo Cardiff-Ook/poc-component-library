@@ -1,4 +1,4 @@
-import { r as registerInstance, h } from './index-998450d5.js';
+import { r as registerInstance, h } from './index-fbd3ef49.js';
 
 const loginTitleWrapperCss = ":host{display:block}#loginTitleWrapper{margin-top:30px}#tagIcons{background-image:url(/assets/icon-strip.png);background-repeat:no-repeat;background-position:center;background-size:auto;height:40px;width:185px}";
 
