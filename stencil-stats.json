@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-09-16T10:34:06",
+  "timestamp": "2022-09-16T12:48:55",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -7,14 +7,16 @@
   "app": {
     "namespace": "PocAdmComponents",
     "fsNamespace": "poc-adm-components",
-    "components": 5,
-    "entries": 5,
-    "bundles": 35,
+    "components": 7,
+    "entries": 7,
+    "bundles": 41,
     "outputs": [
       {
         "name": "dist-custom-elements",
-        "files": 6,
+        "files": 8,
         "generatedFiles": [
+          "./dist/components/content-container.d.ts",
+          "./dist/components/header-text.d.ts",
           "./dist/components/index.d.ts",
           "./dist/components/login-title-wrapper.d.ts",
           "./dist/components/page-header.d.ts",
@@ -25,13 +27,15 @@
       },
       {
         "name": "dist-lazy",
-        "files": 26,
+        "files": 30,
         "generatedFiles": [
           "./dist/poc-adm-components/app-globals-0f993ce5.js",
+          "./dist/poc-adm-components/content-container.entry.js",
           "./dist/poc-adm-components/css-shim-5064654c.js",
           "./dist/poc-adm-components/dom-104fb833.js",
-          "./dist/poc-adm-components/index-79891d80.js",
-          "./dist/poc-adm-components/index-c52c5fca.js",
+          "./dist/poc-adm-components/header-text.entry.js",
+          "./dist/poc-adm-components/index-998450d5.js",
+          "./dist/poc-adm-components/index-c4da4142.js",
           "./dist/poc-adm-components/index.esm.js",
           "./dist/poc-adm-components/login-title-wrapper.entry.js",
           "./dist/poc-adm-components/page-header.entry.js",
@@ -41,10 +45,12 @@
           "./dist/poc-adm-components/text-title-bar.entry.js",
           "./dist/poc-adm-components/tile-container.entry.js",
           "./public/build/app-globals-0f993ce5.js",
+          "./public/build/content-container.entry.js",
           "./public/build/css-shim-5064654c.js",
           "./public/build/dom-104fb833.js",
-          "./public/build/index-79891d80.js",
-          "./public/build/index-c52c5fca.js",
+          "./public/build/header-text.entry.js",
+          "./public/build/index-998450d5.js",
+          "./public/build/index-c4da4142.js",
           "./public/build/index.esm.js",
           "./public/build/login-title-wrapper.entry.js",
           "./public/build/page-header.entry.js",
@@ -82,6 +88,30 @@
   "formats": {
     "esmBrowser": [
       {
+        "key": "content-container.entry",
+        "components": [
+          "content-container"
+        ],
+        "bundleId": "content-container",
+        "fileName": "content-container.entry.js",
+        "imports": [
+          "index-998450d5.js"
+        ],
+        "originalByteSize": 804
+      },
+      {
+        "key": "header-text.entry",
+        "components": [
+          "header-text"
+        ],
+        "bundleId": "header-text",
+        "fileName": "header-text.entry.js",
+        "imports": [
+          "index-998450d5.js"
+        ],
+        "originalByteSize": 678
+      },
+      {
         "key": "login-title-wrapper.entry",
         "components": [
           "login-title-wrapper"
@@ -89,7 +119,7 @@
         "bundleId": "login-title-wrapper",
         "fileName": "login-title-wrapper.entry.js",
         "imports": [
-          "index-c52c5fca.js"
+          "index-998450d5.js"
         ],
         "originalByteSize": 647
       },
@@ -101,7 +131,7 @@
         "bundleId": "page-header",
         "fileName": "page-header.entry.js",
         "imports": [
-          "index-c52c5fca.js"
+          "index-998450d5.js"
         ],
         "originalByteSize": 1205
       },
@@ -113,7 +143,7 @@
         "bundleId": "product-tile",
         "fileName": "product-tile.entry.js",
         "imports": [
-          "index-c52c5fca.js"
+          "index-998450d5.js"
         ],
         "originalByteSize": 743
       },
@@ -125,9 +155,9 @@
         "bundleId": "text-title-bar",
         "fileName": "text-title-bar.entry.js",
         "imports": [
-          "index-c52c5fca.js"
+          "index-998450d5.js"
         ],
-        "originalByteSize": 576
+        "originalByteSize": 577
       },
       {
         "key": "tile-container.entry",
@@ -137,9 +167,9 @@
         "bundleId": "tile-container",
         "fileName": "tile-container.entry.js",
         "imports": [
-          "index-c52c5fca.js"
+          "index-998450d5.js"
         ],
-        "originalByteSize": 509
+        "originalByteSize": 504
       }
     ],
     "esm": [],
@@ -148,6 +178,62 @@
     "commonjs": []
   },
   "components": [
+    {
+      "tag": "content-container",
+      "path": "./src/components/content-container/content-container.js",
+      "source": "./src/components/content-container/content-container.tsx",
+      "elementRef": null,
+      "componentClassName": "ContentContainer",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [],
+      "shadowDelegatesFocus": null,
+      "states": []
+    },
+    {
+      "tag": "header-text",
+      "path": "./src/components/header-text/header-text.js",
+      "source": "./src/components/header-text/header-text.tsx",
+      "elementRef": null,
+      "componentClassName": "HeaderText",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "shadow",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [],
+      "shadowDelegatesFocus": false,
+      "states": []
+    },
     {
       "tag": "login-title-wrapper",
       "path": "./src/components/login-title-wrapper/login-title-wrapper.js",
@@ -321,27 +407,7 @@
       "listeners": [],
       "methods": [],
       "potentialCmpRefs": [],
-      "properties": [
-        {
-          "name": "titleText",
-          "type": "string",
-          "attribute": "title-text",
-          "reflect": false,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "complexType": {
-            "original": "string",
-            "resolved": "string",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": "The text to display"
-          },
-          "internal": false
-        }
-      ],
+      "properties": [],
       "shadowDelegatesFocus": null,
       "states": []
     },
@@ -375,6 +441,225 @@
     }
   ],
   "entries": [
+    {
+      "cmps": [
+        {
+          "tagName": "content-container",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "ContentContainer",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "CONTENT-CONTAINER",
+              "styleStr": null,
+              "styleIdentifier": "contentContainerStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/content-container/content-container.css",
+                  "relativePath": "content-container.css",
+                  "originalComponentPath": "content-container.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/content-container/content-container.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/content-container/content-container.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": false,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": false,
+          "hasProp": false,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": false,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": false,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "id"
+          ],
+          "htmlTagNames": [
+            "div",
+            "slot"
+          ],
+          "htmlParts": [],
+          "isUpdateable": false,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "content-container.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "header-text",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "HeaderText",
+          "elementRef": null,
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "HEADER-TEXT",
+              "styleStr": null,
+              "styleIdentifier": "headerTextStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/header-text/header-text.css",
+                  "relativePath": "header-text.css",
+                  "originalComponentPath": "header-text.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/header-text/header-text.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/header-text/header-text.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": false,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": false,
+          "hasProp": false,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": false,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "title"
+          ],
+          "htmlTagNames": [
+            "h1",
+            "div",
+            "span",
+            "slot"
+          ],
+          "htmlParts": [],
+          "isUpdateable": false,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "header-text.entry"
+    },
     {
       "cmps": [
         {
@@ -784,27 +1069,7 @@
           "elementRef": null,
           "encapsulation": "none",
           "shadowDelegatesFocus": null,
-          "properties": [
-            {
-              "name": "titleText",
-              "type": "string",
-              "attribute": "title-text",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "The text to display"
-              },
-              "internal": false
-            }
-          ],
+          "properties": [],
           "virtualProperties": [],
           "states": [],
           "methods": [],
@@ -858,14 +1123,14 @@
           "hasListenerTargetDocument": false,
           "hasListenerTargetBody": false,
           "hasListenerTargetParent": false,
-          "hasMember": true,
+          "hasMember": false,
           "hasMethod": false,
           "hasMode": false,
-          "hasAttribute": true,
-          "hasProp": true,
+          "hasAttribute": false,
+          "hasProp": false,
           "hasPropNumber": false,
           "hasPropBoolean": false,
-          "hasPropString": true,
+          "hasPropString": false,
           "hasPropMutable": false,
           "hasReflect": false,
           "hasRenderFn": true,
@@ -881,7 +1146,7 @@
           "hasVdomRef": false,
           "hasVdomRender": true,
           "hasVdomStyle": false,
-          "hasVdomText": true,
+          "hasVdomText": false,
           "hasWatchCallback": false,
           "isPlain": false,
           "htmlAttrNames": [
@@ -889,10 +1154,11 @@
           ],
           "htmlTagNames": [
             "div",
-            "p"
+            "p",
+            "slot"
           ],
           "htmlParts": [],
-          "isUpdateable": true,
+          "isUpdateable": false,
           "potentialCmpRefs": [],
           "directDependencies": [],
           "dependencies": [],
@@ -1012,23 +1278,31 @@
     }
   ],
   "componentGraph": {
+    "sc-content-container": [
+      "index-998450d5.js"
+    ],
+    "sc-header-text": [
+      "index-998450d5.js"
+    ],
     "sc-login-title-wrapper": [
-      "index-c52c5fca.js"
+      "index-998450d5.js"
     ],
     "sc-page-header": [
-      "index-c52c5fca.js"
+      "index-998450d5.js"
     ],
     "sc-product-tile": [
-      "index-c52c5fca.js"
+      "index-998450d5.js"
     ],
     "sc-text-title-bar": [
-      "index-c52c5fca.js"
+      "index-998450d5.js"
     ],
     "sc-tile-container": [
-      "index-c52c5fca.js"
+      "index-998450d5.js"
     ]
   },
   "sourceGraph": {
+    "./src/components/content-container/content-container.tsx": [],
+    "./src/components/header-text/header-text.tsx": [],
     "./src/components/login-title-wrapper/login-title-wrapper.tsx": [],
     "./src/components/page-header/page-header.tsx": [],
     "./src/components/product-tile/product-tile.tsx": [],

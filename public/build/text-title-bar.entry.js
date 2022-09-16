@@ -1,4 +1,4 @@
-import { r as registerInstance, h } from './index-c52c5fca.js';
+import { r as registerInstance, h } from './index-998450d5.js';
 
 const textTitleBarCss = ".tagTitle{font-size:22px;line-height:32px;font-weight:600;text-align:center;color:#0045A0;margin:0 auto;max-width:584px !important;margin-left:auto;margin-right:auto;padding:0 10px}.tagTitle>p{margin-top:15px}";
 
@@ -7,7 +7,7 @@ const TextTitleBar = class {
     registerInstance(this, hostRef);
   }
   render() {
-    return (h("div", { class: "tagTitle" }, h("p", null, this.titleText)));
+    return (h("div", { class: "tagTitle" }, h("p", null, h("slot", null))));
   }
 };
 TextTitleBar.style = textTitleBarCss;

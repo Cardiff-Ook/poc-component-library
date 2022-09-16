@@ -6,6 +6,10 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface ContentContainer {
+    }
+    interface HeaderText {
+    }
     interface LoginTitleWrapper {
     }
     interface PageHeader {
@@ -25,15 +29,23 @@ export namespace Components {
         "productImage": string;
     }
     interface TextTitleBar {
-        /**
-          * The text to display
-         */
-        "titleText": string;
     }
     interface TileContainer {
     }
 }
 declare global {
+    interface HTMLContentContainerElement extends Components.ContentContainer, HTMLStencilElement {
+    }
+    var HTMLContentContainerElement: {
+        prototype: HTMLContentContainerElement;
+        new (): HTMLContentContainerElement;
+    };
+    interface HTMLHeaderTextElement extends Components.HeaderText, HTMLStencilElement {
+    }
+    var HTMLHeaderTextElement: {
+        prototype: HTMLHeaderTextElement;
+        new (): HTMLHeaderTextElement;
+    };
     interface HTMLLoginTitleWrapperElement extends Components.LoginTitleWrapper, HTMLStencilElement {
     }
     var HTMLLoginTitleWrapperElement: {
@@ -65,6 +77,8 @@ declare global {
         new (): HTMLTileContainerElement;
     };
     interface HTMLElementTagNameMap {
+        "content-container": HTMLContentContainerElement;
+        "header-text": HTMLHeaderTextElement;
         "login-title-wrapper": HTMLLoginTitleWrapperElement;
         "page-header": HTMLPageHeaderElement;
         "product-tile": HTMLProductTileElement;
@@ -73,6 +87,10 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface ContentContainer {
+    }
+    interface HeaderText {
+    }
     interface LoginTitleWrapper {
     }
     interface PageHeader {
@@ -92,14 +110,12 @@ declare namespace LocalJSX {
         "productImage"?: string;
     }
     interface TextTitleBar {
-        /**
-          * The text to display
-         */
-        "titleText"?: string;
     }
     interface TileContainer {
     }
     interface IntrinsicElements {
+        "content-container": ContentContainer;
+        "header-text": HeaderText;
         "login-title-wrapper": LoginTitleWrapper;
         "page-header": PageHeader;
         "product-tile": ProductTile;
@@ -111,6 +127,8 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "content-container": LocalJSX.ContentContainer & JSXBase.HTMLAttributes<HTMLContentContainerElement>;
+            "header-text": LocalJSX.HeaderText & JSXBase.HTMLAttributes<HTMLHeaderTextElement>;
             "login-title-wrapper": LocalJSX.LoginTitleWrapper & JSXBase.HTMLAttributes<HTMLLoginTitleWrapperElement>;
             "page-header": LocalJSX.PageHeader & JSXBase.HTMLAttributes<HTMLPageHeaderElement>;
             "product-tile": LocalJSX.ProductTile & JSXBase.HTMLAttributes<HTMLProductTileElement>;

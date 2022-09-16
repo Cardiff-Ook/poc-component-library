@@ -1,4 +1,4 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, h } from '@stencil/core';
 
 @Component({
   tag: 'text-title-bar',
@@ -6,16 +6,10 @@ import { Component, Prop, h } from '@stencil/core';
   shadow: false,
 })
 export class TextTitleBar {
-
-  /**
-   * The text to display 
-   */
-   @Prop() titleText: string;
-
    render() {
      return (
        <div class="tagTitle">
-            <p>{this.titleText}</p>
+            <p><slot /></p>
         </div>
      );
    }

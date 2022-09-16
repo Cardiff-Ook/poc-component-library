@@ -1,6 +1,6 @@
-import { r as registerInstance, h } from './index-c52c5fca.js';
+import { r as registerInstance, h } from './index-998450d5.js';
 
-const tileContainerCss = ".tileContainer{display:flex;flex-flow:row wrap;gap:16px;justify-content:center;margin-left:auto;margin-right:auto;max-width:636px;padding:0 10px}";
+const tileContainerCss = ".tileContainer{display:flex;flex-flow:row wrap;gap:16px;justify-content:center;margin-left:auto;margin-right:auto;max-width:636px;padding:0}";
 
 const TileContainer = class {
   constructor(hostRef) {
