@@ -10,7 +10,9 @@ body.admiral {
     background-color: #EBF0E1;
     border: none;
 }
-
+.containerBlock {
+    display: block;
+}
 @import url("https://use.fontawesome.com/releases/v5.7.1/css/all.css");
 /*
  * The Typekit service used to deliver this font or fonts for use on websites
@@ -95,7 +97,6 @@ body.admiral {
 
 .tagDiv {
     z-index: 10;
-    position: absolute;
     width: 100%;
     display: flex;
     flex-direction: column;

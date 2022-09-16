@@ -12,7 +12,6 @@ header {
   height: 86px;
   display: flex;
   z-index: 6;
-  position: absolute;
   justify-content: center;
 }
 

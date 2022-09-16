@@ -6,4 +6,11 @@
   color: #0045A0;
   margin: 0 auto;
   max-width: 584px !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+.tagTitle > p {
+  margin-top: 15px;
 }
