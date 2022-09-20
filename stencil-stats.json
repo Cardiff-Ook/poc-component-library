@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-09-16T13:59:43",
+  "timestamp": "2022-09-20T08:55:04",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -193,8 +193,8 @@
   "components": [
     {
       "tag": "content-container",
-      "path": "./src/components/content-container/content-container.js",
-      "source": "./src/components/content-container/content-container.tsx",
+      "path": "./src/components/page-layout/content-container/content-container.js",
+      "source": "./src/components/page-layout/content-container/content-container.tsx",
       "elementRef": null,
       "componentClassName": "ContentContainer",
       "assetsDirs": [],
@@ -221,8 +221,8 @@
     },
     {
       "tag": "header-text",
-      "path": "./src/components/header-text/header-text.js",
-      "source": "./src/components/header-text/header-text.tsx",
+      "path": "./src/components/base-components/header-text/header-text.js",
+      "source": "./src/components/base-components/header-text/header-text.tsx",
       "elementRef": null,
       "componentClassName": "HeaderText",
       "assetsDirs": [],
@@ -249,8 +249,8 @@
     },
     {
       "tag": "login-form",
-      "path": "./src/components/login-form/login-form.js",
-      "source": "./src/components/login-form/login-form.tsx",
+      "path": "./src/components/forms/login-form/login-form.js",
+      "source": "./src/components/forms/login-form/login-form.tsx",
       "elementRef": "host",
       "componentClassName": "LoginForm",
       "assetsDirs": [],
@@ -324,8 +324,8 @@
     },
     {
       "tag": "login-title-wrapper",
-      "path": "./src/components/login-title-wrapper/login-title-wrapper.js",
-      "source": "./src/components/login-title-wrapper/login-title-wrapper.tsx",
+      "path": "./src/components/app-layout/login-title-wrapper/login-title-wrapper.js",
+      "source": "./src/components/app-layout/login-title-wrapper/login-title-wrapper.tsx",
       "elementRef": null,
       "componentClassName": "LoginTitleWrapper",
       "assetsDirs": [],
@@ -352,13 +352,13 @@
     },
     {
       "tag": "page-header",
-      "path": "./src/components/page-header/page-header.js",
-      "source": "./src/components/page-header/page-header.tsx",
+      "path": "./src/components/app-layout/page-header/page-header.js",
+      "source": "./src/components/app-layout/page-header/page-header.tsx",
       "elementRef": null,
       "componentClassName": "PageHeader",
       "assetsDirs": [
         {
-          "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-header/assets",
+          "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/page-header/assets",
           "cmpRelativePath": "./assets",
           "originalComponentPath": "./assets"
         }
@@ -406,8 +406,8 @@
     },
     {
       "tag": "product-tile",
-      "path": "./src/components/product-tile/product-tile.js",
-      "source": "./src/components/product-tile/product-tile.tsx",
+      "path": "./src/components/base-components/product-tile/product-tile.js",
+      "source": "./src/components/base-components/product-tile/product-tile.tsx",
       "elementRef": null,
       "componentClassName": "ProductTile",
       "assetsDirs": [],
@@ -473,8 +473,8 @@
     },
     {
       "tag": "text-title-bar",
-      "path": "./src/components/text-title-bar/text-title-bar.js",
-      "source": "./src/components/text-title-bar/text-title-bar.tsx",
+      "path": "./src/components/page-layout/text-title-bar/text-title-bar.js",
+      "source": "./src/components/page-layout/text-title-bar/text-title-bar.tsx",
       "elementRef": null,
       "componentClassName": "TextTitleBar",
       "assetsDirs": [],
@@ -501,8 +501,8 @@
     },
     {
       "tag": "tile-container",
-      "path": "./src/components/tile-container/tile-container.js",
-      "source": "./src/components/tile-container/tile-container.tsx",
+      "path": "./src/components/page-layout/tile-container/tile-container.js",
+      "source": "./src/components/page-layout/tile-container/tile-container.tsx",
       "elementRef": null,
       "componentClassName": "TileContainer",
       "assetsDirs": [],
@@ -554,7 +554,7 @@
               "styleIdentifier": "contentContainerStyle",
               "externalStyles": [
                 {
-                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/content-container/content-container.css",
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/content-container/content-container.css",
                   "relativePath": "content-container.css",
                   "originalComponentPath": "content-container.css"
                 }
@@ -570,8 +570,8 @@
             "tags": [],
             "text": ""
           },
-          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/content-container/content-container.js",
-          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/content-container/content-container.tsx",
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/content-container/content-container.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/content-container/content-container.tsx",
           "sourceMapPath": null,
           "hasAttributeChangedCallbackFn": false,
           "hasComponentWillLoadFn": false,
@@ -662,7 +662,7 @@
               "styleIdentifier": "headerTextStyle",
               "externalStyles": [
                 {
-                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/header-text/header-text.css",
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/header-text/header-text.css",
                   "relativePath": "header-text.css",
                   "originalComponentPath": "header-text.css"
                 }
@@ -678,8 +678,8 @@
             "tags": [],
             "text": ""
           },
-          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/header-text/header-text.js",
-          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/header-text/header-text.tsx",
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/header-text/header-text.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/header-text/header-text.tsx",
           "sourceMapPath": null,
           "hasAttributeChangedCallbackFn": false,
           "hasComponentWillLoadFn": false,
@@ -818,7 +818,7 @@
               "styleIdentifier": "loginFormStyle",
               "externalStyles": [
                 {
-                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/login-form/login-form.css",
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/forms/login-form/login-form.css",
                   "relativePath": "login-form.css",
                   "originalComponentPath": "login-form.css"
                 }
@@ -834,8 +834,8 @@
             "tags": [],
             "text": ""
           },
-          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/login-form/login-form.js",
-          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/login-form/login-form.tsx",
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/forms/login-form/login-form.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/forms/login-form/login-form.tsx",
           "sourceMapPath": null,
           "hasAttributeChangedCallbackFn": false,
           "hasComponentWillLoadFn": false,
@@ -940,7 +940,7 @@
               "styleIdentifier": "loginTitleWrapperStyle",
               "externalStyles": [
                 {
-                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/login-title-wrapper/login-title-wrapper.css",
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/login-title-wrapper/login-title-wrapper.css",
                   "relativePath": "login-title-wrapper.css",
                   "originalComponentPath": "login-title-wrapper.css"
                 }
@@ -956,8 +956,8 @@
             "tags": [],
             "text": ""
           },
-          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/login-title-wrapper/login-title-wrapper.js",
-          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/login-title-wrapper/login-title-wrapper.tsx",
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/login-title-wrapper/login-title-wrapper.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/login-title-wrapper/login-title-wrapper.tsx",
           "sourceMapPath": null,
           "hasAttributeChangedCallbackFn": false,
           "hasComponentWillLoadFn": false,
@@ -1069,7 +1069,7 @@
               "styleIdentifier": "pageHeaderStyle",
               "externalStyles": [
                 {
-                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-header/page-header.css",
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/page-header/page-header.css",
                   "relativePath": "page-header.css",
                   "originalComponentPath": "page-header.css"
                 }
@@ -1081,7 +1081,7 @@
           "internal": false,
           "assetsDirs": [
             {
-              "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-header/assets",
+              "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/page-header/assets",
               "cmpRelativePath": "./assets",
               "originalComponentPath": "./assets"
             }
@@ -1091,8 +1091,8 @@
             "tags": [],
             "text": ""
           },
-          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-header/page-header.js",
-          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-header/page-header.tsx",
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/page-header/page-header.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/page-header/page-header.tsx",
           "sourceMapPath": null,
           "hasAttributeChangedCallbackFn": false,
           "hasComponentWillLoadFn": true,
@@ -1228,7 +1228,7 @@
               "styleIdentifier": "productTileStyle",
               "externalStyles": [
                 {
-                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/product-tile/product-tile.css",
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/product-tile/product-tile.css",
                   "relativePath": "product-tile.css",
                   "originalComponentPath": "product-tile.css"
                 }
@@ -1244,8 +1244,8 @@
             "tags": [],
             "text": ""
           },
-          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/product-tile/product-tile.js",
-          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/product-tile/product-tile.tsx",
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/product-tile/product-tile.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/product-tile/product-tile.tsx",
           "sourceMapPath": null,
           "hasAttributeChangedCallbackFn": false,
           "hasComponentWillLoadFn": false,
@@ -1339,7 +1339,7 @@
               "styleIdentifier": "textTitleBarStyle",
               "externalStyles": [
                 {
-                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/text-title-bar/text-title-bar.css",
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/text-title-bar/text-title-bar.css",
                   "relativePath": "text-title-bar.css",
                   "originalComponentPath": "text-title-bar.css"
                 }
@@ -1355,8 +1355,8 @@
             "tags": [],
             "text": ""
           },
-          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/text-title-bar/text-title-bar.js",
-          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/text-title-bar/text-title-bar.tsx",
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/text-title-bar/text-title-bar.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/text-title-bar/text-title-bar.tsx",
           "sourceMapPath": null,
           "hasAttributeChangedCallbackFn": false,
           "hasComponentWillLoadFn": false,
@@ -1448,7 +1448,7 @@
               "styleIdentifier": "tileContainerStyle",
               "externalStyles": [
                 {
-                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/tile-container/tile-container.css",
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/tile-container/tile-container.css",
                   "relativePath": "tile-container.css",
                   "originalComponentPath": "tile-container.css"
                 }
@@ -1464,8 +1464,8 @@
             "tags": [],
             "text": ""
           },
-          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/tile-container/tile-container.js",
-          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/tile-container/tile-container.tsx",
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/tile-container/tile-container.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/tile-container/tile-container.tsx",
           "sourceMapPath": null,
           "hasAttributeChangedCallbackFn": false,
           "hasComponentWillLoadFn": false,
@@ -1559,14 +1559,14 @@
     ]
   },
   "sourceGraph": {
-    "./src/components/content-container/content-container.tsx": [],
-    "./src/components/header-text/header-text.tsx": [],
-    "./src/components/login-form/login-form.tsx": [],
-    "./src/components/login-title-wrapper/login-title-wrapper.tsx": [],
-    "./src/components/page-header/page-header.tsx": [],
-    "./src/components/product-tile/product-tile.tsx": [],
-    "./src/components/text-title-bar/text-title-bar.tsx": [],
-    "./src/components/tile-container/tile-container.tsx": [],
+    "./src/components/app-layout/login-title-wrapper/login-title-wrapper.tsx": [],
+    "./src/components/app-layout/page-header/page-header.tsx": [],
+    "./src/components/base-components/header-text/header-text.tsx": [],
+    "./src/components/base-components/product-tile/product-tile.tsx": [],
+    "./src/components/forms/login-form/login-form.tsx": [],
+    "./src/components/page-layout/content-container/content-container.tsx": [],
+    "./src/components/page-layout/text-title-bar/text-title-bar.tsx": [],
+    "./src/components/page-layout/tile-container/tile-container.tsx": [],
     "./src/index.ts": [],
     "./src/utils/utils.ts": []
   },
