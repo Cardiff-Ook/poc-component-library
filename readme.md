@@ -19,8 +19,8 @@ Stencil components are just Web Components, so they work in any major framework 
 To start building a new web component using Stencil, clone this repo to a new directory:
 
 ```bash
-git clone https://github.com/ionic-team/stencil-component-starter.git page-header
-cd page-header
+git clone https://github.com/ionic-team/stencil-component-starter.git login-header
+cd login-header
 git remote rm origin
 ```
 
@@ -61,15 +61,15 @@ The first step for all three of these strategies is to [publish to NPM](https://
 
 ### Script tag
 
-- Put a script tag similar to this `<script type='module' src='https://unpkg.com/page-header@0.0.1/dist/page-header.esm.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script type='module' src='https://unpkg.com/login-header@0.0.1/dist/login-header.esm.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
-- Run `npm install page-header --save`
-- Put a script tag similar to this `<script type='module' src='node_modules/page-header/dist/page-header.esm.js'></script>` in the head of your index.html
+- Run `npm install login-header --save`
+- Put a script tag similar to this `<script type='module' src='node_modules/login-header/dist/login-header.esm.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### In a stencil-starter app
-- Run `npm install page-header --save`
-- Add an import to the npm packages `import page-header;`
+- Run `npm install login-header --save`
+- Add an import to the npm packages `import login-header;`
 - Then you can use the element anywhere in your template, JSX, html etc

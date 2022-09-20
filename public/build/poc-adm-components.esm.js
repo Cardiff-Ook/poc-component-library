@@ -1,4 +1,4 @@
-import { B as BUILD, c as consoleDevInfo, p as plt, w as win, H, d as doc, N as NAMESPACE, a as promiseResolve, b as bootstrapLazy } from './index-fbd3ef49.js';
+import { B as BUILD, c as consoleDevInfo, p as plt, w as win, H, d as doc, N as NAMESPACE, a as promiseResolve, b as bootstrapLazy } from './index-99449dbf.js';
 import { g as globalScripts } from './app-globals-0f993ce5.js';
 
 /*
@@ -125,5 +125,5 @@ const patchCloneNodeFix = (HTMLElementPrototype) => {
 
 patchBrowser().then(options => {
   globalScripts();
-  return bootstrapLazy([["content-container",[[4,"content-container"]]],["header-text",[[1,"header-text"]]],["login-form",[[0,"login-form",{"forgotPasswordUrl":[1,"forgot-password-url"]},[[0,"keydown.enter","handleEnter"]]]]],["login-title-wrapper",[[4,"login-title-wrapper"]]],["page-header",[[0,"page-header",{"brand":[1]}]]],["product-tile",[[0,"product-tile",{"linkText":[1,"link-text"],"productImage":[1,"product-image"]}]]],["text-title-bar",[[4,"text-title-bar"]]],["tile-container",[[4,"tile-container"]]]], options);
+  return bootstrapLazy([["content-container",[[4,"content-container"]]],["header-text",[[1,"header-text"]]],["login-form",[[0,"login-form",{"forgotPasswordUrl":[1,"forgot-password-url"]},[[0,"keydown.enter","handleEnter"]]]]],["login-header",[[0,"login-header",{"brand":[1]}]]],["login-title-wrapper",[[4,"login-title-wrapper"]]],["product-tile",[[0,"product-tile",{"linkText":[1,"link-text"],"productImage":[1,"product-image"]}]]],["text-title-bar",[[4,"text-title-bar"]]],["tile-container",[[4,"tile-container"]]]], options);
 });

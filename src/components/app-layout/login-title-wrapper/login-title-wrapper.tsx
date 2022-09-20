@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component, Host, h } from '@stencil/core';
 
 @Component({
   tag: 'login-title-wrapper',
@@ -8,10 +8,12 @@ import { Component, h } from '@stencil/core';
 export class LoginTitleWrapper {
   render() {
     return (
-      <div id="loginTitleWrapper" class="tagDiv">
-          <div id="tagIcons"></div>
-          <slot></slot>
-      </div>
+      <Host class="containerBlock">
+        <div id="loginTitleWrapper" class="tagDiv">
+            <div id="tagIcons"></div>
+            <slot></slot>
+        </div>
+      </Host>
     );
   }
 

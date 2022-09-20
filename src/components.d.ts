@@ -16,13 +16,13 @@ export namespace Components {
          */
         "forgotPasswordUrl": string;
     }
-    interface LoginTitleWrapper {
-    }
-    interface PageHeader {
+    interface LoginHeader {
         /**
           * The brand
          */
         "brand": string;
+    }
+    interface LoginTitleWrapper {
     }
     interface ProductTile {
         /**
@@ -62,17 +62,17 @@ declare global {
         prototype: HTMLLoginFormElement;
         new (): HTMLLoginFormElement;
     };
+    interface HTMLLoginHeaderElement extends Components.LoginHeader, HTMLStencilElement {
+    }
+    var HTMLLoginHeaderElement: {
+        prototype: HTMLLoginHeaderElement;
+        new (): HTMLLoginHeaderElement;
+    };
     interface HTMLLoginTitleWrapperElement extends Components.LoginTitleWrapper, HTMLStencilElement {
     }
     var HTMLLoginTitleWrapperElement: {
         prototype: HTMLLoginTitleWrapperElement;
         new (): HTMLLoginTitleWrapperElement;
-    };
-    interface HTMLPageHeaderElement extends Components.PageHeader, HTMLStencilElement {
-    }
-    var HTMLPageHeaderElement: {
-        prototype: HTMLPageHeaderElement;
-        new (): HTMLPageHeaderElement;
     };
     interface HTMLProductTileElement extends Components.ProductTile, HTMLStencilElement {
     }
@@ -96,8 +96,8 @@ declare global {
         "content-container": HTMLContentContainerElement;
         "header-text": HTMLHeaderTextElement;
         "login-form": HTMLLoginFormElement;
+        "login-header": HTMLLoginHeaderElement;
         "login-title-wrapper": HTMLLoginTitleWrapperElement;
-        "page-header": HTMLPageHeaderElement;
         "product-tile": HTMLProductTileElement;
         "text-title-bar": HTMLTextTitleBarElement;
         "tile-container": HTMLTileContainerElement;
@@ -118,13 +118,13 @@ declare namespace LocalJSX {
          */
         "onLoginShouldOccur"?: (event: LoginFormCustomEvent<any>) => void;
     }
-    interface LoginTitleWrapper {
-    }
-    interface PageHeader {
+    interface LoginHeader {
         /**
           * The brand
          */
         "brand"?: string;
+    }
+    interface LoginTitleWrapper {
     }
     interface ProductTile {
         /**
@@ -144,8 +144,8 @@ declare namespace LocalJSX {
         "content-container": ContentContainer;
         "header-text": HeaderText;
         "login-form": LoginForm;
+        "login-header": LoginHeader;
         "login-title-wrapper": LoginTitleWrapper;
-        "page-header": PageHeader;
         "product-tile": ProductTile;
         "text-title-bar": TextTitleBar;
         "tile-container": TileContainer;
@@ -158,8 +158,8 @@ declare module "@stencil/core" {
             "content-container": LocalJSX.ContentContainer & JSXBase.HTMLAttributes<HTMLContentContainerElement>;
             "header-text": LocalJSX.HeaderText & JSXBase.HTMLAttributes<HTMLHeaderTextElement>;
             "login-form": LocalJSX.LoginForm & JSXBase.HTMLAttributes<HTMLLoginFormElement>;
+            "login-header": LocalJSX.LoginHeader & JSXBase.HTMLAttributes<HTMLLoginHeaderElement>;
             "login-title-wrapper": LocalJSX.LoginTitleWrapper & JSXBase.HTMLAttributes<HTMLLoginTitleWrapperElement>;
-            "page-header": LocalJSX.PageHeader & JSXBase.HTMLAttributes<HTMLPageHeaderElement>;
             "product-tile": LocalJSX.ProductTile & JSXBase.HTMLAttributes<HTMLProductTileElement>;
             "text-title-bar": LocalJSX.TextTitleBar & JSXBase.HTMLAttributes<HTMLTextTitleBarElement>;
             "tile-container": LocalJSX.TileContainer & JSXBase.HTMLAttributes<HTMLTileContainerElement>;
