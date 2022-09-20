@@ -29,6 +29,12 @@ export namespace Components {
     interface MainHeader {
         "brand": string;
     }
+    interface MultiBannerHeader {
+    }
+    interface MultiBannerTitle {
+    }
+    interface MultiCarBanner {
+    }
     interface PageHeaderBar {
         "name": string;
     }
@@ -44,6 +50,8 @@ export namespace Components {
           * The image to display
          */
         "productImage": string;
+    }
+    interface QuoteButton {
     }
     interface TextTitleBar {
     }
@@ -97,6 +105,24 @@ declare global {
         prototype: HTMLMainHeaderElement;
         new (): HTMLMainHeaderElement;
     };
+    interface HTMLMultiBannerHeaderElement extends Components.MultiBannerHeader, HTMLStencilElement {
+    }
+    var HTMLMultiBannerHeaderElement: {
+        prototype: HTMLMultiBannerHeaderElement;
+        new (): HTMLMultiBannerHeaderElement;
+    };
+    interface HTMLMultiBannerTitleElement extends Components.MultiBannerTitle, HTMLStencilElement {
+    }
+    var HTMLMultiBannerTitleElement: {
+        prototype: HTMLMultiBannerTitleElement;
+        new (): HTMLMultiBannerTitleElement;
+    };
+    interface HTMLMultiCarBannerElement extends Components.MultiCarBanner, HTMLStencilElement {
+    }
+    var HTMLMultiCarBannerElement: {
+        prototype: HTMLMultiCarBannerElement;
+        new (): HTMLMultiCarBannerElement;
+    };
     interface HTMLPageHeaderBarElement extends Components.PageHeaderBar, HTMLStencilElement {
     }
     var HTMLPageHeaderBarElement: {
@@ -114,6 +140,12 @@ declare global {
     var HTMLProductTileElement: {
         prototype: HTMLProductTileElement;
         new (): HTMLProductTileElement;
+    };
+    interface HTMLQuoteButtonElement extends Components.QuoteButton, HTMLStencilElement {
+    }
+    var HTMLQuoteButtonElement: {
+        prototype: HTMLQuoteButtonElement;
+        new (): HTMLQuoteButtonElement;
     };
     interface HTMLTextTitleBarElement extends Components.TextTitleBar, HTMLStencilElement {
     }
@@ -135,9 +167,13 @@ declare global {
         "login-header": HTMLLoginHeaderElement;
         "login-title-wrapper": HTMLLoginTitleWrapperElement;
         "main-header": HTMLMainHeaderElement;
+        "multi-banner-header": HTMLMultiBannerHeaderElement;
+        "multi-banner-title": HTMLMultiBannerTitleElement;
+        "multi-car-banner": HTMLMultiCarBannerElement;
         "page-header-bar": HTMLPageHeaderBarElement;
         "page-logo": HTMLPageLogoElement;
         "product-tile": HTMLProductTileElement;
+        "quote-button": HTMLQuoteButtonElement;
         "text-title-bar": HTMLTextTitleBarElement;
         "tile-container": HTMLTileContainerElement;
     }
@@ -170,6 +206,12 @@ declare namespace LocalJSX {
     interface MainHeader {
         "brand"?: string;
     }
+    interface MultiBannerHeader {
+    }
+    interface MultiBannerTitle {
+    }
+    interface MultiCarBanner {
+    }
     interface PageHeaderBar {
         "name"?: string;
     }
@@ -186,6 +228,8 @@ declare namespace LocalJSX {
          */
         "productImage"?: string;
     }
+    interface QuoteButton {
+    }
     interface TextTitleBar {
     }
     interface TileContainer {
@@ -198,9 +242,13 @@ declare namespace LocalJSX {
         "login-header": LoginHeader;
         "login-title-wrapper": LoginTitleWrapper;
         "main-header": MainHeader;
+        "multi-banner-header": MultiBannerHeader;
+        "multi-banner-title": MultiBannerTitle;
+        "multi-car-banner": MultiCarBanner;
         "page-header-bar": PageHeaderBar;
         "page-logo": PageLogo;
         "product-tile": ProductTile;
+        "quote-button": QuoteButton;
         "text-title-bar": TextTitleBar;
         "tile-container": TileContainer;
     }
@@ -216,9 +264,13 @@ declare module "@stencil/core" {
             "login-header": LocalJSX.LoginHeader & JSXBase.HTMLAttributes<HTMLLoginHeaderElement>;
             "login-title-wrapper": LocalJSX.LoginTitleWrapper & JSXBase.HTMLAttributes<HTMLLoginTitleWrapperElement>;
             "main-header": LocalJSX.MainHeader & JSXBase.HTMLAttributes<HTMLMainHeaderElement>;
+            "multi-banner-header": LocalJSX.MultiBannerHeader & JSXBase.HTMLAttributes<HTMLMultiBannerHeaderElement>;
+            "multi-banner-title": LocalJSX.MultiBannerTitle & JSXBase.HTMLAttributes<HTMLMultiBannerTitleElement>;
+            "multi-car-banner": LocalJSX.MultiCarBanner & JSXBase.HTMLAttributes<HTMLMultiCarBannerElement>;
             "page-header-bar": LocalJSX.PageHeaderBar & JSXBase.HTMLAttributes<HTMLPageHeaderBarElement>;
             "page-logo": LocalJSX.PageLogo & JSXBase.HTMLAttributes<HTMLPageLogoElement>;
             "product-tile": LocalJSX.ProductTile & JSXBase.HTMLAttributes<HTMLProductTileElement>;
+            "quote-button": LocalJSX.QuoteButton & JSXBase.HTMLAttributes<HTMLQuoteButtonElement>;
             "text-title-bar": LocalJSX.TextTitleBar & JSXBase.HTMLAttributes<HTMLTextTitleBarElement>;
             "tile-container": LocalJSX.TileContainer & JSXBase.HTMLAttributes<HTMLTileContainerElement>;
         }
