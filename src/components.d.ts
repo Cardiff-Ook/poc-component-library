@@ -29,6 +29,9 @@ export namespace Components {
     interface MainHeader {
         "brand": string;
     }
+    interface PageHeaderBar {
+        "name": string;
+    }
     interface PageLogo {
         "brand": string;
     }
@@ -94,6 +97,12 @@ declare global {
         prototype: HTMLMainHeaderElement;
         new (): HTMLMainHeaderElement;
     };
+    interface HTMLPageHeaderBarElement extends Components.PageHeaderBar, HTMLStencilElement {
+    }
+    var HTMLPageHeaderBarElement: {
+        prototype: HTMLPageHeaderBarElement;
+        new (): HTMLPageHeaderBarElement;
+    };
     interface HTMLPageLogoElement extends Components.PageLogo, HTMLStencilElement {
     }
     var HTMLPageLogoElement: {
@@ -126,6 +135,7 @@ declare global {
         "login-header": HTMLLoginHeaderElement;
         "login-title-wrapper": HTMLLoginTitleWrapperElement;
         "main-header": HTMLMainHeaderElement;
+        "page-header-bar": HTMLPageHeaderBarElement;
         "page-logo": HTMLPageLogoElement;
         "product-tile": HTMLProductTileElement;
         "text-title-bar": HTMLTextTitleBarElement;
@@ -160,6 +170,9 @@ declare namespace LocalJSX {
     interface MainHeader {
         "brand"?: string;
     }
+    interface PageHeaderBar {
+        "name"?: string;
+    }
     interface PageLogo {
         "brand"?: string;
     }
@@ -185,6 +198,7 @@ declare namespace LocalJSX {
         "login-header": LoginHeader;
         "login-title-wrapper": LoginTitleWrapper;
         "main-header": MainHeader;
+        "page-header-bar": PageHeaderBar;
         "page-logo": PageLogo;
         "product-tile": ProductTile;
         "text-title-bar": TextTitleBar;
@@ -202,6 +216,7 @@ declare module "@stencil/core" {
             "login-header": LocalJSX.LoginHeader & JSXBase.HTMLAttributes<HTMLLoginHeaderElement>;
             "login-title-wrapper": LocalJSX.LoginTitleWrapper & JSXBase.HTMLAttributes<HTMLLoginTitleWrapperElement>;
             "main-header": LocalJSX.MainHeader & JSXBase.HTMLAttributes<HTMLMainHeaderElement>;
+            "page-header-bar": LocalJSX.PageHeaderBar & JSXBase.HTMLAttributes<HTMLPageHeaderBarElement>;
             "page-logo": LocalJSX.PageLogo & JSXBase.HTMLAttributes<HTMLPageLogoElement>;
             "product-tile": LocalJSX.ProductTile & JSXBase.HTMLAttributes<HTMLProductTileElement>;
             "text-title-bar": LocalJSX.TextTitleBar & JSXBase.HTMLAttributes<HTMLTextTitleBarElement>;

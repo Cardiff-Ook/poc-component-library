@@ -14,7 +14,7 @@ export class PageLogo {
   
     return (
       <Host>
-        <a class="jut__ApplicationHeader__applicationLogoTitleLink active" href="#">
+        <a class="jut__ApplicationHeader__applicationLogoTitleLink active" href="../index.html">
           <span class="jut__LogoTitle__logoTitle">
             <img class="jut__LogoTitle__logo jut__ApplicationHeader__applicationLogo" alt="logo" src={imageSrc} />
           </span>

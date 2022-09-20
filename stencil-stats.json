@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-09-20T12:05:04",
+  "timestamp": "2022-09-20T13:00:45",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -7,13 +7,13 @@
   "app": {
     "namespace": "PocAdmComponents",
     "fsNamespace": "poc-adm-components",
-    "components": 11,
-    "entries": 11,
-    "bundles": 51,
+    "components": 12,
+    "entries": 12,
+    "bundles": 54,
     "outputs": [
       {
         "name": "dist-custom-elements",
-        "files": 12,
+        "files": 13,
         "generatedFiles": [
           "./dist/components/content-container.d.ts",
           "./dist/components/header-text.d.ts",
@@ -23,6 +23,7 @@
           "./dist/components/login-header.d.ts",
           "./dist/components/login-title-wrapper.d.ts",
           "./dist/components/main-header.d.ts",
+          "./dist/components/page-header-bar.d.ts",
           "./dist/components/page-logo.d.ts",
           "./dist/components/product-tile.d.ts",
           "./dist/components/text-title-bar.d.ts",
@@ -31,7 +32,7 @@
       },
       {
         "name": "dist-lazy",
-        "files": 36,
+        "files": 38,
         "generatedFiles": [
           "./dist/poc-adm-components/app-globals-0f993ce5.js",
           "./dist/poc-adm-components/content-container.entry.js",
@@ -45,6 +46,7 @@
           "./dist/poc-adm-components/login-header.entry.js",
           "./dist/poc-adm-components/login-title-wrapper.entry.js",
           "./dist/poc-adm-components/main-header.entry.js",
+          "./dist/poc-adm-components/page-header-bar.entry.js",
           "./dist/poc-adm-components/page-logo.entry.js",
           "./dist/poc-adm-components/poc-adm-components.esm.js",
           "./dist/poc-adm-components/product-tile.entry.js",
@@ -63,6 +65,7 @@
           "./public/build/login-header.entry.js",
           "./public/build/login-title-wrapper.entry.js",
           "./public/build/main-header.entry.js",
+          "./public/build/page-header-bar.entry.js",
           "./public/build/page-logo.entry.js",
           "./public/build/poc-adm-components.esm.js",
           "./public/build/product-tile.entry.js",
@@ -182,6 +185,18 @@
         "originalByteSize": 966
       },
       {
+        "key": "page-header-bar.entry",
+        "components": [
+          "page-header-bar"
+        ],
+        "bundleId": "page-header-bar",
+        "fileName": "page-header-bar.entry.js",
+        "imports": [
+          "index-99449dbf.js"
+        ],
+        "originalByteSize": 763
+      },
+      {
         "key": "page-logo.entry",
         "components": [
           "page-logo"
@@ -191,7 +206,7 @@
         "imports": [
           "index-99449dbf.js"
         ],
-        "originalByteSize": 632
+        "originalByteSize": 644
       },
       {
         "key": "product-tile.entry",
@@ -506,6 +521,54 @@
           "name": "brand",
           "type": "string",
           "attribute": "brand",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": null,
+      "states": []
+    },
+    {
+      "tag": "page-header-bar",
+      "path": "./src/components/page-layout/page-header-bar/page-header-bar.js",
+      "source": "./src/components/page-layout/page-header-bar/page-header-bar.tsx",
+      "elementRef": null,
+      "componentClassName": "PageHeaderBar",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "attribute": "name",
           "reflect": false,
           "mutable": false,
           "required": false,
@@ -1579,6 +1642,137 @@
     {
       "cmps": [
         {
+          "tagName": "page-header-bar",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "PageHeaderBar",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "name",
+              "type": "string",
+              "attribute": "name",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "PAGE-HEADER-BAR",
+              "styleStr": null,
+              "styleIdentifier": "pageHeaderBarStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/page-header-bar/page-header-bar.css",
+                  "relativePath": "page-header-bar.css",
+                  "originalComponentPath": "page-header-bar.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/page-header-bar/page-header-bar.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/page-header-bar/page-header-bar.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "id",
+            "class",
+            "data-cs-mask",
+            "name"
+          ],
+          "htmlTagNames": [
+            "div",
+            "slot"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "page-header-bar.entry"
+    },
+    {
+      "cmps": [
+        {
           "tagName": "page-logo",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -2098,6 +2292,9 @@
     "sc-main-header": [
       "index-99449dbf.js"
     ],
+    "sc-page-header-bar": [
+      "index-99449dbf.js"
+    ],
     "sc-page-logo": [
       "index-99449dbf.js"
     ],
@@ -2121,6 +2318,7 @@
     "./src/components/base-components/product-tile/product-tile.tsx": [],
     "./src/components/forms/login-form/login-form.tsx": [],
     "./src/components/page-layout/content-container/content-container.tsx": [],
+    "./src/components/page-layout/page-header-bar/page-header-bar.tsx": [],
     "./src/components/page-layout/text-title-bar/text-title-bar.tsx": [],
     "./src/components/page-layout/tile-container/tile-container.tsx": [],
     "./src/index.ts": [],
