@@ -10,6 +10,8 @@ export namespace Components {
     }
     interface HeaderText {
     }
+    interface LoginFooter {
+    }
     interface LoginForm {
         /**
           * Prop: forgotPasswordUrl: string Page to redirect to if user se;ects forgot password
@@ -23,6 +25,12 @@ export namespace Components {
         "brand": string;
     }
     interface LoginTitleWrapper {
+    }
+    interface MainHeader {
+        "brand": string;
+    }
+    interface PageLogo {
+        "brand": string;
     }
     interface ProductTile {
         /**
@@ -56,6 +64,12 @@ declare global {
         prototype: HTMLHeaderTextElement;
         new (): HTMLHeaderTextElement;
     };
+    interface HTMLLoginFooterElement extends Components.LoginFooter, HTMLStencilElement {
+    }
+    var HTMLLoginFooterElement: {
+        prototype: HTMLLoginFooterElement;
+        new (): HTMLLoginFooterElement;
+    };
     interface HTMLLoginFormElement extends Components.LoginForm, HTMLStencilElement {
     }
     var HTMLLoginFormElement: {
@@ -73,6 +87,18 @@ declare global {
     var HTMLLoginTitleWrapperElement: {
         prototype: HTMLLoginTitleWrapperElement;
         new (): HTMLLoginTitleWrapperElement;
+    };
+    interface HTMLMainHeaderElement extends Components.MainHeader, HTMLStencilElement {
+    }
+    var HTMLMainHeaderElement: {
+        prototype: HTMLMainHeaderElement;
+        new (): HTMLMainHeaderElement;
+    };
+    interface HTMLPageLogoElement extends Components.PageLogo, HTMLStencilElement {
+    }
+    var HTMLPageLogoElement: {
+        prototype: HTMLPageLogoElement;
+        new (): HTMLPageLogoElement;
     };
     interface HTMLProductTileElement extends Components.ProductTile, HTMLStencilElement {
     }
@@ -95,9 +121,12 @@ declare global {
     interface HTMLElementTagNameMap {
         "content-container": HTMLContentContainerElement;
         "header-text": HTMLHeaderTextElement;
+        "login-footer": HTMLLoginFooterElement;
         "login-form": HTMLLoginFormElement;
         "login-header": HTMLLoginHeaderElement;
         "login-title-wrapper": HTMLLoginTitleWrapperElement;
+        "main-header": HTMLMainHeaderElement;
+        "page-logo": HTMLPageLogoElement;
         "product-tile": HTMLProductTileElement;
         "text-title-bar": HTMLTextTitleBarElement;
         "tile-container": HTMLTileContainerElement;
@@ -107,6 +136,8 @@ declare namespace LocalJSX {
     interface ContentContainer {
     }
     interface HeaderText {
+    }
+    interface LoginFooter {
     }
     interface LoginForm {
         /**
@@ -126,6 +157,12 @@ declare namespace LocalJSX {
     }
     interface LoginTitleWrapper {
     }
+    interface MainHeader {
+        "brand"?: string;
+    }
+    interface PageLogo {
+        "brand"?: string;
+    }
     interface ProductTile {
         /**
           * The link for the product
@@ -143,9 +180,12 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "content-container": ContentContainer;
         "header-text": HeaderText;
+        "login-footer": LoginFooter;
         "login-form": LoginForm;
         "login-header": LoginHeader;
         "login-title-wrapper": LoginTitleWrapper;
+        "main-header": MainHeader;
+        "page-logo": PageLogo;
         "product-tile": ProductTile;
         "text-title-bar": TextTitleBar;
         "tile-container": TileContainer;
@@ -157,9 +197,12 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "content-container": LocalJSX.ContentContainer & JSXBase.HTMLAttributes<HTMLContentContainerElement>;
             "header-text": LocalJSX.HeaderText & JSXBase.HTMLAttributes<HTMLHeaderTextElement>;
+            "login-footer": LocalJSX.LoginFooter & JSXBase.HTMLAttributes<HTMLLoginFooterElement>;
             "login-form": LocalJSX.LoginForm & JSXBase.HTMLAttributes<HTMLLoginFormElement>;
             "login-header": LocalJSX.LoginHeader & JSXBase.HTMLAttributes<HTMLLoginHeaderElement>;
             "login-title-wrapper": LocalJSX.LoginTitleWrapper & JSXBase.HTMLAttributes<HTMLLoginTitleWrapperElement>;
+            "main-header": LocalJSX.MainHeader & JSXBase.HTMLAttributes<HTMLMainHeaderElement>;
+            "page-logo": LocalJSX.PageLogo & JSXBase.HTMLAttributes<HTMLPageLogoElement>;
             "product-tile": LocalJSX.ProductTile & JSXBase.HTMLAttributes<HTMLProductTileElement>;
             "text-title-bar": LocalJSX.TextTitleBar & JSXBase.HTMLAttributes<HTMLTextTitleBarElement>;
             "tile-container": LocalJSX.TileContainer & JSXBase.HTMLAttributes<HTMLTileContainerElement>;

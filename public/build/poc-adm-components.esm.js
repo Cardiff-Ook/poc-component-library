@@ -125,5 +125,5 @@ const patchCloneNodeFix = (HTMLElementPrototype) => {
 
 patchBrowser().then(options => {
   globalScripts();
-  return bootstrapLazy([["content-container",[[4,"content-container"]]],["header-text",[[1,"header-text"]]],["login-form",[[0,"login-form",{"forgotPasswordUrl":[1,"forgot-password-url"]},[[0,"keydown.enter","handleEnter"]]]]],["login-header",[[0,"login-header",{"brand":[1]}]]],["login-title-wrapper",[[4,"login-title-wrapper"]]],["product-tile",[[0,"product-tile",{"linkText":[1,"link-text"],"productImage":[1,"product-image"]}]]],["text-title-bar",[[4,"text-title-bar"]]],["tile-container",[[4,"tile-container"]]]], options);
+  return bootstrapLazy([["content-container",[[4,"content-container"]]],["header-text",[[1,"header-text"]]],["login-footer",[[1,"login-footer"]]],["login-form",[[0,"login-form",{"forgotPasswordUrl":[1,"forgot-password-url"]},[[0,"keydown.enter","handleEnter"]]]]],["login-header",[[0,"login-header",{"brand":[1]}]]],["login-title-wrapper",[[4,"login-title-wrapper"]]],["main-header",[[4,"main-header",{"brand":[1]}]]],["page-logo",[[0,"page-logo",{"brand":[1]}]]],["product-tile",[[0,"product-tile",{"linkText":[1,"link-text"],"productImage":[1,"product-image"]}]]],["text-title-bar",[[4,"text-title-bar"]]],["tile-container",[[4,"tile-container"]]]], options);
 });

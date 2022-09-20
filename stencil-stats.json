@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-09-20T09:43:41",
+  "timestamp": "2022-09-20T12:05:04",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -7,20 +7,23 @@
   "app": {
     "namespace": "PocAdmComponents",
     "fsNamespace": "poc-adm-components",
-    "components": 8,
-    "entries": 8,
-    "bundles": 42,
+    "components": 11,
+    "entries": 11,
+    "bundles": 51,
     "outputs": [
       {
         "name": "dist-custom-elements",
-        "files": 9,
+        "files": 12,
         "generatedFiles": [
           "./dist/components/content-container.d.ts",
           "./dist/components/header-text.d.ts",
           "./dist/components/index.d.ts",
+          "./dist/components/login-footer.d.ts",
           "./dist/components/login-form.d.ts",
           "./dist/components/login-header.d.ts",
           "./dist/components/login-title-wrapper.d.ts",
+          "./dist/components/main-header.d.ts",
+          "./dist/components/page-logo.d.ts",
           "./dist/components/product-tile.d.ts",
           "./dist/components/text-title-bar.d.ts",
           "./dist/components/tile-container.d.ts"
@@ -28,7 +31,7 @@
       },
       {
         "name": "dist-lazy",
-        "files": 30,
+        "files": 36,
         "generatedFiles": [
           "./dist/poc-adm-components/app-globals-0f993ce5.js",
           "./dist/poc-adm-components/content-container.entry.js",
@@ -37,9 +40,12 @@
           "./dist/poc-adm-components/header-text.entry.js",
           "./dist/poc-adm-components/index-99449dbf.js",
           "./dist/poc-adm-components/index.esm.js",
+          "./dist/poc-adm-components/login-footer.entry.js",
           "./dist/poc-adm-components/login-form.entry.js",
           "./dist/poc-adm-components/login-header.entry.js",
           "./dist/poc-adm-components/login-title-wrapper.entry.js",
+          "./dist/poc-adm-components/main-header.entry.js",
+          "./dist/poc-adm-components/page-logo.entry.js",
           "./dist/poc-adm-components/poc-adm-components.esm.js",
           "./dist/poc-adm-components/product-tile.entry.js",
           "./dist/poc-adm-components/shadow-css-4261c637.js",
@@ -52,9 +58,12 @@
           "./public/build/header-text.entry.js",
           "./public/build/index-99449dbf.js",
           "./public/build/index.esm.js",
+          "./public/build/login-footer.entry.js",
           "./public/build/login-form.entry.js",
           "./public/build/login-header.entry.js",
           "./public/build/login-title-wrapper.entry.js",
+          "./public/build/main-header.entry.js",
+          "./public/build/page-logo.entry.js",
           "./public/build/poc-adm-components.esm.js",
           "./public/build/product-tile.entry.js",
           "./public/build/shadow-css-4261c637.js",
@@ -113,6 +122,18 @@
         "originalByteSize": 678
       },
       {
+        "key": "login-footer.entry",
+        "components": [
+          "login-footer"
+        ],
+        "bundleId": "login-footer",
+        "fileName": "login-footer.entry.js",
+        "imports": [
+          "index-99449dbf.js"
+        ],
+        "originalByteSize": 501
+      },
+      {
         "key": "login-form.entry",
         "components": [
           "login-form"
@@ -147,6 +168,30 @@
           "index-99449dbf.js"
         ],
         "originalByteSize": 696
+      },
+      {
+        "key": "main-header.entry",
+        "components": [
+          "main-header"
+        ],
+        "bundleId": "main-header",
+        "fileName": "main-header.entry.js",
+        "imports": [
+          "index-99449dbf.js"
+        ],
+        "originalByteSize": 966
+      },
+      {
+        "key": "page-logo.entry",
+        "components": [
+          "page-logo"
+        ],
+        "bundleId": "page-logo",
+        "fileName": "page-logo.entry.js",
+        "imports": [
+          "index-99449dbf.js"
+        ],
+        "originalByteSize": 632
       },
       {
         "key": "product-tile.entry",
@@ -225,6 +270,34 @@
       "source": "./src/components/base-components/header-text/header-text.tsx",
       "elementRef": null,
       "componentClassName": "HeaderText",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "shadow",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [],
+      "shadowDelegatesFocus": false,
+      "states": []
+    },
+    {
+      "tag": "login-footer",
+      "path": "./src/components/app-layout/login-footer/login-footer.js",
+      "source": "./src/components/app-layout/login-footer/login-footer.tsx",
+      "elementRef": null,
+      "componentClassName": "LoginFooter",
       "assetsDirs": [],
       "dependencies": [],
       "dependents": [],
@@ -401,6 +474,102 @@
       "methods": [],
       "potentialCmpRefs": [],
       "properties": [],
+      "shadowDelegatesFocus": null,
+      "states": []
+    },
+    {
+      "tag": "main-header",
+      "path": "./src/components/app-layout/main-header/main-header.js",
+      "source": "./src/components/app-layout/main-header/main-header.tsx",
+      "elementRef": null,
+      "componentClassName": "MainHeader",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "brand",
+          "type": "string",
+          "attribute": "brand",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": null,
+      "states": []
+    },
+    {
+      "tag": "page-logo",
+      "path": "./src/components/base-components/page-logo/page-logo.js",
+      "source": "./src/components/base-components/page-logo/page-logo.tsx",
+      "elementRef": null,
+      "componentClassName": "PageLogo",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "brand",
+          "type": "string",
+          "attribute": "brand",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
       "shadowDelegatesFocus": null,
       "states": []
     },
@@ -748,6 +917,116 @@
         }
       ],
       "entryKey": "header-text.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "login-footer",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "LoginFooter",
+          "elementRef": null,
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "LOGIN-FOOTER",
+              "styleStr": null,
+              "styleIdentifier": "loginFooterStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/login-footer/login-footer.css",
+                  "relativePath": "login-footer.css",
+                  "originalComponentPath": "login-footer.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/login-footer/login-footer.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/login-footer/login-footer.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": false,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": false,
+          "hasProp": false,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": false,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "id",
+            "name"
+          ],
+          "htmlTagNames": [
+            "div",
+            "slot"
+          ],
+          "htmlParts": [],
+          "isUpdateable": false,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "login-footer.entry"
     },
     {
       "cmps": [
@@ -1168,6 +1447,270 @@
     {
       "cmps": [
         {
+          "tagName": "main-header",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "MainHeader",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "brand",
+              "type": "string",
+              "attribute": "brand",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "MAIN-HEADER",
+              "styleStr": null,
+              "styleIdentifier": "mainHeaderStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/main-header/main-header.css",
+                  "relativePath": "main-header.css",
+                  "originalComponentPath": "main-header.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/main-header/main-header.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/main-header/main-header.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": true,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": true,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "id",
+            "class",
+            "name"
+          ],
+          "htmlTagNames": [
+            "div",
+            "section",
+            "header",
+            "slot"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "main-header.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "page-logo",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "PageLogo",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "brand",
+              "type": "string",
+              "attribute": "brand",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "PAGE-LOGO",
+              "styleStr": null,
+              "styleIdentifier": "pageLogoStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/page-logo/page-logo.css",
+                  "relativePath": "page-logo.css",
+                  "originalComponentPath": "page-logo.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/page-logo/page-logo.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/page-logo/page-logo.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "href",
+            "alt",
+            "src"
+          ],
+          "htmlTagNames": [
+            "a",
+            "span",
+            "img"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "page-logo.entry"
+    },
+    {
+      "cmps": [
+        {
           "tagName": "product-tile",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -1540,6 +2083,9 @@
     "sc-header-text": [
       "index-99449dbf.js"
     ],
+    "sc-login-footer": [
+      "index-99449dbf.js"
+    ],
     "sc-login-form": [
       "index-99449dbf.js"
     ],
@@ -1547,6 +2093,12 @@
       "index-99449dbf.js"
     ],
     "sc-login-title-wrapper": [
+      "index-99449dbf.js"
+    ],
+    "sc-main-header": [
+      "index-99449dbf.js"
+    ],
+    "sc-page-logo": [
       "index-99449dbf.js"
     ],
     "sc-product-tile": [
@@ -1560,9 +2112,12 @@
     ]
   },
   "sourceGraph": {
+    "./src/components/app-layout/login-footer/login-footer.tsx": [],
     "./src/components/app-layout/login-header/login-header.tsx": [],
     "./src/components/app-layout/login-title-wrapper/login-title-wrapper.tsx": [],
+    "./src/components/app-layout/main-header/main-header.tsx": [],
     "./src/components/base-components/header-text/header-text.tsx": [],
+    "./src/components/base-components/page-logo/page-logo.tsx": [],
     "./src/components/base-components/product-tile/product-tile.tsx": [],
     "./src/components/forms/login-form/login-form.tsx": [],
     "./src/components/page-layout/content-container/content-container.tsx": [],

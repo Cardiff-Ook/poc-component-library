@@ -43,6 +43,7 @@ export const config: Config = {
       type: 'www',
       dir: 'public',
       copy: [
+        { src: 'demo', dest: 'demo' },
         { src: 'components/assets', dest: 'components/assets' },
         { src: 'components/webfonts', dest: 'components/webfonts' },
         { src: 'components/assets', dest: 'assets' },

@@ -14,24 +14,22 @@
     <div id="root">
       <div class="mainContainer">
         <login-header brand="admiral"></login-header>
-        <login-title-wrapper class="containerBlock" >
+        <login-title-wrapper>
           <text-title-bar title-text="For Car, Home and Van customers, login below to manage your cover"></text-title-bar>
         </login-title-wrapper>
-        <content-container class="containerBlock">
+        <content-container>
           <header-text>Let's Log you into MyAccount</header-text>
           <login-form></login-form>
         </content-container>
-        <div class="containerBlock">
-          <div id="loginFooterWrapper" class="containerBlock">
-            <text-title-bar>Login to Other Products</text-title-bar>
-            <tile-container>
-              <product-tile product-image="loans.svg" linkText="#"></product-tile>
-              <product-tile product-image="veygo.svg" linkText="#"></product-tile>
-              <product-tile product-image="travel.svg" linkText="#"></product-tile>
-              <product-tile product-image="pet.svg" linkText="#"></product-tile>
-            </tile-container>
-          </div>
-        </div>
+        <login-footer>
+          <text-title-bar slot="footer-title">Login to Other Products</text-title-bar>
+          <tile-container slot="products">
+            <product-tile product-image="loans.svg" linkText="#"></product-tile>
+            <product-tile product-image="veygo.svg" linkText="#"></product-tile>
+            <product-tile product-image="travel.svg" linkText="#"></product-tile>
+            <product-tile product-image="pet.svg" linkText="#"></product-tile>
+          </tile-container>
+        </login-footer>
       </div>
     </div>
   </body>
