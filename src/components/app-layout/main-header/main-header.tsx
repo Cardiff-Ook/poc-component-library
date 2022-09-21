@@ -11,7 +11,9 @@ export class MainHeader {
 
   componentWillLoad() {
     const body = document.getElementsByTagName('body')[0];
-    body.classList.add(`${this.brand} themeRoot digitalRoot`);
+    body.classList.add(`${this.brand}`);
+    body.classList.add('themeRoot');
+    body.classList.add('digitalRoot');
   }
   
   render() {

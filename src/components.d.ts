@@ -6,6 +6,7 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { BulletPointInterface } from "./components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points";
+import { ButtonInterface } from "./components/app-layout/nav-bar/nav-bar";
 export namespace Components {
     interface ContentContainer {
     }
@@ -38,6 +39,9 @@ export namespace Components {
     interface MultiBannerTitle {
     }
     interface MultiCarBanner {
+    }
+    interface NavBar {
+        "buttons": Array<ButtonInterface> | string;
     }
     interface PageHeaderBar {
         "name": string;
@@ -133,6 +137,12 @@ declare global {
         prototype: HTMLMultiCarBannerElement;
         new (): HTMLMultiCarBannerElement;
     };
+    interface HTMLNavBarElement extends Components.NavBar, HTMLStencilElement {
+    }
+    var HTMLNavBarElement: {
+        prototype: HTMLNavBarElement;
+        new (): HTMLNavBarElement;
+    };
     interface HTMLPageHeaderBarElement extends Components.PageHeaderBar, HTMLStencilElement {
     }
     var HTMLPageHeaderBarElement: {
@@ -181,6 +191,7 @@ declare global {
         "multi-banner-header": HTMLMultiBannerHeaderElement;
         "multi-banner-title": HTMLMultiBannerTitleElement;
         "multi-car-banner": HTMLMultiCarBannerElement;
+        "nav-bar": HTMLNavBarElement;
         "page-header-bar": HTMLPageHeaderBarElement;
         "page-logo": HTMLPageLogoElement;
         "product-tile": HTMLProductTileElement;
@@ -226,6 +237,9 @@ declare namespace LocalJSX {
     }
     interface MultiCarBanner {
     }
+    interface NavBar {
+        "buttons"?: Array<ButtonInterface> | string;
+    }
     interface PageHeaderBar {
         "name"?: string;
     }
@@ -260,6 +274,7 @@ declare namespace LocalJSX {
         "multi-banner-header": MultiBannerHeader;
         "multi-banner-title": MultiBannerTitle;
         "multi-car-banner": MultiCarBanner;
+        "nav-bar": NavBar;
         "page-header-bar": PageHeaderBar;
         "page-logo": PageLogo;
         "product-tile": ProductTile;
@@ -283,6 +298,7 @@ declare module "@stencil/core" {
             "multi-banner-header": LocalJSX.MultiBannerHeader & JSXBase.HTMLAttributes<HTMLMultiBannerHeaderElement>;
             "multi-banner-title": LocalJSX.MultiBannerTitle & JSXBase.HTMLAttributes<HTMLMultiBannerTitleElement>;
             "multi-car-banner": LocalJSX.MultiCarBanner & JSXBase.HTMLAttributes<HTMLMultiCarBannerElement>;
+            "nav-bar": LocalJSX.NavBar & JSXBase.HTMLAttributes<HTMLNavBarElement>;
             "page-header-bar": LocalJSX.PageHeaderBar & JSXBase.HTMLAttributes<HTMLPageHeaderBarElement>;
             "page-logo": LocalJSX.PageLogo & JSXBase.HTMLAttributes<HTMLPageLogoElement>;
             "product-tile": LocalJSX.ProductTile & JSXBase.HTMLAttributes<HTMLProductTileElement>;

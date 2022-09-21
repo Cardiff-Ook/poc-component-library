@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-09-21T08:41:28",
+  "timestamp": "2022-09-21T09:34:47",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -7,13 +7,13 @@
   "app": {
     "namespace": "PocAdmComponents",
     "fsNamespace": "poc-adm-components",
-    "components": 17,
-    "entries": 17,
-    "bundles": 69,
+    "components": 18,
+    "entries": 18,
+    "bundles": 72,
     "outputs": [
       {
         "name": "dist-custom-elements",
-        "files": 18,
+        "files": 19,
         "generatedFiles": [
           "./dist/components/content-container.d.ts",
           "./dist/components/header-text.d.ts",
@@ -27,6 +27,7 @@
           "./dist/components/multi-banner-header.d.ts",
           "./dist/components/multi-banner-title.d.ts",
           "./dist/components/multi-car-banner.d.ts",
+          "./dist/components/nav-bar.d.ts",
           "./dist/components/page-header-bar.d.ts",
           "./dist/components/page-logo.d.ts",
           "./dist/components/product-tile.d.ts",
@@ -37,7 +38,7 @@
       },
       {
         "name": "dist-lazy",
-        "files": 48,
+        "files": 50,
         "generatedFiles": [
           "./dist/poc-adm-components/app-globals-0f993ce5.js",
           "./dist/poc-adm-components/content-container.entry.js",
@@ -55,6 +56,7 @@
           "./dist/poc-adm-components/multi-banner-header.entry.js",
           "./dist/poc-adm-components/multi-banner-title.entry.js",
           "./dist/poc-adm-components/multi-car-banner.entry.js",
+          "./dist/poc-adm-components/nav-bar.entry.js",
           "./dist/poc-adm-components/page-header-bar.entry.js",
           "./dist/poc-adm-components/page-logo.entry.js",
           "./dist/poc-adm-components/poc-adm-components.esm.js",
@@ -79,6 +81,7 @@
           "./public/build/multi-banner-header.entry.js",
           "./public/build/multi-banner-title.entry.js",
           "./public/build/multi-car-banner.entry.js",
+          "./public/build/nav-bar.entry.js",
           "./public/build/page-header-bar.entry.js",
           "./public/build/page-logo.entry.js",
           "./public/build/poc-adm-components.esm.js",
@@ -197,7 +200,7 @@
         "imports": [
           "index-99449dbf.js"
         ],
-        "originalByteSize": 966
+        "originalByteSize": 1020
       },
       {
         "key": "multi-banner-bullet-points.entry",
@@ -245,7 +248,19 @@
         "imports": [
           "index-99449dbf.js"
         ],
-        "originalByteSize": 1081
+        "originalByteSize": 1062
+      },
+      {
+        "key": "nav-bar.entry",
+        "components": [
+          "nav-bar"
+        ],
+        "bundleId": "nav-bar",
+        "fileName": "nav-bar.entry.js",
+        "imports": [
+          "index-99449dbf.js"
+        ],
+        "originalByteSize": 1642
       },
       {
         "key": "page-header-bar.entry",
@@ -757,6 +772,61 @@
         "quote-button"
       ],
       "properties": [],
+      "shadowDelegatesFocus": null,
+      "states": []
+    },
+    {
+      "tag": "nav-bar",
+      "path": "./src/components/app-layout/nav-bar/nav-bar.js",
+      "source": "./src/components/app-layout/nav-bar/nav-bar.tsx",
+      "elementRef": null,
+      "componentClassName": "NavBar",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "buttons",
+          "type": "string",
+          "attribute": "buttons",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "Array<ButtonInterface> | string",
+            "resolved": "ButtonInterface[] | string",
+            "references": {
+              "Array": {
+                "location": "global"
+              },
+              "ButtonInterface": {
+                "location": "local"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
       "shadowDelegatesFocus": null,
       "states": []
     },
@@ -2343,7 +2413,6 @@
             "id",
             "class",
             "data-testid",
-            "src",
             "name"
           ],
           "htmlTagNames": [
@@ -2368,6 +2437,149 @@
         }
       ],
       "entryKey": "multi-car-banner.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "nav-bar",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "NavBar",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "buttons",
+              "type": "string",
+              "attribute": "buttons",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "Array<ButtonInterface> | string",
+                "resolved": "ButtonInterface[] | string",
+                "references": {
+                  "Array": {
+                    "location": "global"
+                  },
+                  "ButtonInterface": {
+                    "location": "local"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "NAV-BAR",
+              "styleStr": null,
+              "styleIdentifier": "navBarStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/nav-bar/nav-bar.css",
+                  "relativePath": "nav-bar.css",
+                  "originalComponentPath": "nav-bar.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/nav-bar/nav-bar.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/nav-bar/nav-bar.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": true,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": true,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "role",
+            "tabindex",
+            "aria-current",
+            "href"
+          ],
+          "htmlTagNames": [
+            "nav",
+            "ul",
+            "li",
+            "a",
+            "div",
+            "span"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "nav-bar.entry"
     },
     {
       "cmps": [
@@ -3150,6 +3362,9 @@
     "sc-multi-car-banner": [
       "index-99449dbf.js"
     ],
+    "sc-nav-bar": [
+      "index-99449dbf.js"
+    ],
     "sc-page-header-bar": [
       "index-99449dbf.js"
     ],
@@ -3175,6 +3390,7 @@
     "./src/components/app-layout/login-title-wrapper/login-title-wrapper.tsx": [],
     "./src/components/app-layout/main-header/main-header.tsx": [],
     "./src/components/app-layout/multi-car-banner/multi-car-banner.tsx": [],
+    "./src/components/app-layout/nav-bar/nav-bar.tsx": [],
     "./src/components/base-components/header-text/header-text.tsx": [],
     "./src/components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points.tsx": [],
     "./src/components/base-components/multi-banner/multi-banner-header/multi-banner-header.tsx": [],

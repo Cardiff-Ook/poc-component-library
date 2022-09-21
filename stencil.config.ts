@@ -47,6 +47,7 @@ export const config: Config = {
         { src: 'components/assets', dest: 'components/assets' },
         { src: 'components/webfonts', dest: 'components/webfonts' },
         { src: 'components/assets', dest: 'assets' },
+        { src: 'components/webfonts', dest: 'webfonts' },
       ],
       serviceWorker: null, // disable service workers
     },
