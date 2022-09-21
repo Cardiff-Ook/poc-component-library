@@ -19,7 +19,16 @@
             <span slot="message">HERE’S YOUR POLICY SUMMARY</span>
           </page-header-bar>
         </main-header>
-        <multi-car-banner></multi-car-banner>
+        <multi-car-banner>
+          <multi-banner-title slot="banner-title">Save when you add another car</multi-banner-title>
+          <multi-banner-header slot="banner-header">Get a no obligation quote today to see how much you could save.</multi-banner-header>
+          <multi-banner-bullet-points slot="bullet-points" bullet-points='
+          [
+            {"id": "1", "title": "No need to cancel your existing cover", "text": "You can schedule your car to join at a later date"}, 
+            {"id": "2", "title": "Get your discounts immediately", "text": "You only pay for the additional car when its cover starts"}, 
+            {"id": "3", "title": "Insure family cars", "text": "Even at different addresses"}
+          ]'></multi-banner-bullet-points>
+        </multi-car-banner>
       </div>
     </div>
   </body>

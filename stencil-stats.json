@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-09-20T14:02:04",
+  "timestamp": "2022-09-21T08:41:28",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -7,13 +7,13 @@
   "app": {
     "namespace": "PocAdmComponents",
     "fsNamespace": "poc-adm-components",
-    "components": 16,
-    "entries": 16,
-    "bundles": 66,
+    "components": 17,
+    "entries": 17,
+    "bundles": 69,
     "outputs": [
       {
         "name": "dist-custom-elements",
-        "files": 17,
+        "files": 18,
         "generatedFiles": [
           "./dist/components/content-container.d.ts",
           "./dist/components/header-text.d.ts",
@@ -23,6 +23,7 @@
           "./dist/components/login-header.d.ts",
           "./dist/components/login-title-wrapper.d.ts",
           "./dist/components/main-header.d.ts",
+          "./dist/components/multi-banner-bullet-points.d.ts",
           "./dist/components/multi-banner-header.d.ts",
           "./dist/components/multi-banner-title.d.ts",
           "./dist/components/multi-car-banner.d.ts",
@@ -36,7 +37,7 @@
       },
       {
         "name": "dist-lazy",
-        "files": 46,
+        "files": 48,
         "generatedFiles": [
           "./dist/poc-adm-components/app-globals-0f993ce5.js",
           "./dist/poc-adm-components/content-container.entry.js",
@@ -50,6 +51,7 @@
           "./dist/poc-adm-components/login-header.entry.js",
           "./dist/poc-adm-components/login-title-wrapper.entry.js",
           "./dist/poc-adm-components/main-header.entry.js",
+          "./dist/poc-adm-components/multi-banner-bullet-points.entry.js",
           "./dist/poc-adm-components/multi-banner-header.entry.js",
           "./dist/poc-adm-components/multi-banner-title.entry.js",
           "./dist/poc-adm-components/multi-car-banner.entry.js",
@@ -73,6 +75,7 @@
           "./public/build/login-header.entry.js",
           "./public/build/login-title-wrapper.entry.js",
           "./public/build/main-header.entry.js",
+          "./public/build/multi-banner-bullet-points.entry.js",
           "./public/build/multi-banner-header.entry.js",
           "./public/build/multi-banner-title.entry.js",
           "./public/build/multi-car-banner.entry.js",
@@ -197,6 +200,42 @@
         "originalByteSize": 966
       },
       {
+        "key": "multi-banner-bullet-points.entry",
+        "components": [
+          "multi-banner-bullet-points"
+        ],
+        "bundleId": "multi-banner-bullet-points",
+        "fileName": "multi-banner-bullet-points.entry.js",
+        "imports": [
+          "index-99449dbf.js"
+        ],
+        "originalByteSize": 1045
+      },
+      {
+        "key": "multi-banner-header.entry",
+        "components": [
+          "multi-banner-header"
+        ],
+        "bundleId": "multi-banner-header",
+        "fileName": "multi-banner-header.entry.js",
+        "imports": [
+          "index-99449dbf.js"
+        ],
+        "originalByteSize": 483
+      },
+      {
+        "key": "multi-banner-title.entry",
+        "components": [
+          "multi-banner-title"
+        ],
+        "bundleId": "multi-banner-title",
+        "fileName": "multi-banner-title.entry.js",
+        "imports": [
+          "index-99449dbf.js"
+        ],
+        "originalByteSize": 492
+      },
+      {
         "key": "multi-car-banner.entry",
         "components": [
           "multi-car-banner"
@@ -206,7 +245,7 @@
         "imports": [
           "index-99449dbf.js"
         ],
-        "originalByteSize": 2264
+        "originalByteSize": 1081
       },
       {
         "key": "page-header-bar.entry",
@@ -267,30 +306,6 @@
           "index-99449dbf.js"
         ],
         "originalByteSize": 504
-      },
-      {
-        "key": "multi-banner-header.entry",
-        "components": [
-          "multi-banner-header"
-        ],
-        "bundleId": "multi-banner-header",
-        "fileName": "multi-banner-header.entry.js",
-        "imports": [
-          "index-99449dbf.js"
-        ],
-        "originalByteSize": 483
-      },
-      {
-        "key": "multi-banner-title.entry",
-        "components": [
-          "multi-banner-title"
-        ],
-        "bundleId": "multi-banner-title",
-        "fileName": "multi-banner-title.entry.js",
-        "imports": [
-          "index-99449dbf.js"
-        ],
-        "originalByteSize": 492
       },
       {
         "key": "quote-button.entry",
@@ -601,6 +616,61 @@
       "states": []
     },
     {
+      "tag": "multi-banner-bullet-points",
+      "path": "./src/components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points.js",
+      "source": "./src/components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points.tsx",
+      "elementRef": null,
+      "componentClassName": "MultiBannerBulletPoints",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "bulletPoints",
+          "type": "string",
+          "attribute": "bullet-points",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "Array<BulletPointInterface> | string",
+            "resolved": "BulletPointInterface[] | string",
+            "references": {
+              "Array": {
+                "location": "global"
+              },
+              "BulletPointInterface": {
+                "location": "local"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": null,
+      "states": []
+    },
+    {
       "tag": "multi-banner-header",
       "path": "./src/components/base-components/multi-banner/multi-banner-header/multi-banner-header.js",
       "source": "./src/components/base-components/multi-banner/multi-banner-header/multi-banner-header.tsx",
@@ -608,13 +678,9 @@
       "componentClassName": "MultiBannerHeader",
       "assetsDirs": [],
       "dependencies": [],
-      "dependents": [
-        "multi-car-banner"
-      ],
+      "dependents": [],
       "directDependencies": [],
-      "directDependents": [
-        "multi-car-banner"
-      ],
+      "directDependents": [],
       "docs": {
         "tags": [],
         "text": ""
@@ -640,13 +706,9 @@
       "componentClassName": "MultiBannerTitle",
       "assetsDirs": [],
       "dependencies": [],
-      "dependents": [
-        "multi-car-banner"
-      ],
+      "dependents": [],
       "directDependencies": [],
-      "directDependents": [
-        "multi-car-banner"
-      ],
+      "directDependents": [],
       "docs": {
         "tags": [],
         "text": ""
@@ -672,14 +734,10 @@
       "componentClassName": "MultiCarBanner",
       "assetsDirs": [],
       "dependencies": [
-        "multi-banner-header",
-        "multi-banner-title",
         "quote-button"
       ],
       "dependents": [],
       "directDependencies": [
-        "multi-banner-title",
-        "multi-banner-header",
         "quote-button"
       ],
       "directDependents": [],
@@ -696,8 +754,6 @@
       "listeners": [],
       "methods": [],
       "potentialCmpRefs": [
-        "multi-banner-title",
-        "multi-banner-header",
         "quote-button"
       ],
       "properties": [],
@@ -1838,6 +1894,364 @@
     {
       "cmps": [
         {
+          "tagName": "multi-banner-bullet-points",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "MultiBannerBulletPoints",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "bulletPoints",
+              "type": "string",
+              "attribute": "bullet-points",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "Array<BulletPointInterface> | string",
+                "resolved": "BulletPointInterface[] | string",
+                "references": {
+                  "Array": {
+                    "location": "global"
+                  },
+                  "BulletPointInterface": {
+                    "location": "local"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "MULTI-BANNER-BULLET-POINTS",
+              "styleStr": null,
+              "styleIdentifier": "multiBannerBulletPointsStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points.css",
+                  "relativePath": "multi-banner-bullet-points.css",
+                  "originalComponentPath": "multi-banner-bullet-points.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": true,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": true,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "id",
+            "class"
+          ],
+          "htmlTagNames": [
+            "div",
+            "i",
+            "span",
+            "strong"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "multi-banner-bullet-points.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "multi-banner-header",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "MultiBannerHeader",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "MULTI-BANNER-HEADER",
+              "styleStr": null,
+              "styleIdentifier": "multiBannerHeaderStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/multi-banner/multi-banner-header/multi-banner-header.css",
+                  "relativePath": "multi-banner-header.css",
+                  "originalComponentPath": "multi-banner-header.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/multi-banner/multi-banner-header/multi-banner-header.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/multi-banner/multi-banner-header/multi-banner-header.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": false,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": false,
+          "hasProp": false,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": false,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "id"
+          ],
+          "htmlTagNames": [
+            "div",
+            "span",
+            "slot"
+          ],
+          "htmlParts": [],
+          "isUpdateable": false,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "multi-banner-header.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "multi-banner-title",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "MultiBannerTitle",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "MULTI-BANNER-TITLE",
+              "styleStr": null,
+              "styleIdentifier": "multiBannerTitleStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/multi-banner/muti-banner-title/multi-banner-title.css",
+                  "relativePath": "multi-banner-title.css",
+                  "originalComponentPath": "multi-banner-title.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/multi-banner/muti-banner-title/multi-banner-title.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/multi-banner/muti-banner-title/multi-banner-title.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": false,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": false,
+          "hasProp": false,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": false,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "id",
+            "class"
+          ],
+          "htmlTagNames": [
+            "div",
+            "span",
+            "slot"
+          ],
+          "htmlParts": [],
+          "isUpdateable": false,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "multi-banner-title.entry"
+    },
+    {
+      "cmps": [
+        {
           "tagName": "multi-car-banner",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -1922,40 +2336,31 @@
           "hasVdomRef": false,
           "hasVdomRender": true,
           "hasVdomStyle": false,
-          "hasVdomText": true,
+          "hasVdomText": false,
           "hasWatchCallback": false,
           "isPlain": false,
           "htmlAttrNames": [
             "id",
             "class",
             "data-testid",
-            "src"
+            "src",
+            "name"
           ],
           "htmlTagNames": [
             "div",
             "img",
-            "multi-banner-title",
-            "multi-banner-header",
-            "i",
-            "span",
-            "strong",
+            "slot",
             "quote-button"
           ],
           "htmlParts": [],
           "isUpdateable": false,
           "potentialCmpRefs": [
-            "multi-banner-title",
-            "multi-banner-header",
             "quote-button"
           ],
           "directDependencies": [
-            "multi-banner-title",
-            "multi-banner-header",
             "quote-button"
           ],
           "dependencies": [
-            "multi-banner-header",
-            "multi-banner-title",
             "quote-button"
           ],
           "dependents": [],
@@ -2597,234 +3002,6 @@
     {
       "cmps": [
         {
-          "tagName": "multi-banner-header",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "MultiBannerHeader",
-          "elementRef": null,
-          "encapsulation": "none",
-          "shadowDelegatesFocus": null,
-          "properties": [],
-          "virtualProperties": [],
-          "states": [],
-          "methods": [],
-          "listeners": [],
-          "events": [],
-          "watchers": [],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "MULTI-BANNER-HEADER",
-              "styleStr": null,
-              "styleIdentifier": "multiBannerHeaderStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/multi-banner/multi-banner-header/multi-banner-header.css",
-                  "relativePath": "multi-banner-header.css",
-                  "originalComponentPath": "multi-banner-header.css"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/multi-banner/multi-banner-header/multi-banner-header.js",
-          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/multi-banner/multi-banner-header/multi-banner-header.tsx",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
-          "hasComponentDidLoadFn": false,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": false,
-          "hasDisconnectedCallbackFn": false,
-          "hasElement": false,
-          "hasEvent": false,
-          "hasLifecycle": false,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": false,
-          "hasMethod": false,
-          "hasMode": false,
-          "hasAttribute": false,
-          "hasProp": false,
-          "hasPropNumber": false,
-          "hasPropBoolean": false,
-          "hasPropString": false,
-          "hasPropMutable": false,
-          "hasReflect": false,
-          "hasRenderFn": true,
-          "hasState": false,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": true,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
-          "hasVdomPropOrAttr": true,
-          "hasVdomRef": false,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": false,
-          "hasWatchCallback": false,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "class",
-            "id"
-          ],
-          "htmlTagNames": [
-            "div",
-            "span",
-            "slot"
-          ],
-          "htmlParts": [],
-          "isUpdateable": false,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
-          "dependents": [
-            "multi-car-banner"
-          ],
-          "directDependents": [
-            "multi-car-banner"
-          ]
-        }
-      ],
-      "entryKey": "multi-banner-header.entry"
-    },
-    {
-      "cmps": [
-        {
-          "tagName": "multi-banner-title",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "MultiBannerTitle",
-          "elementRef": null,
-          "encapsulation": "none",
-          "shadowDelegatesFocus": null,
-          "properties": [],
-          "virtualProperties": [],
-          "states": [],
-          "methods": [],
-          "listeners": [],
-          "events": [],
-          "watchers": [],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "MULTI-BANNER-TITLE",
-              "styleStr": null,
-              "styleIdentifier": "multiBannerTitleStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/multi-banner/muti-banner-title/multi-banner-title.css",
-                  "relativePath": "multi-banner-title.css",
-                  "originalComponentPath": "multi-banner-title.css"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/multi-banner/muti-banner-title/multi-banner-title.js",
-          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/multi-banner/muti-banner-title/multi-banner-title.tsx",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
-          "hasComponentDidLoadFn": false,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": false,
-          "hasDisconnectedCallbackFn": false,
-          "hasElement": false,
-          "hasEvent": false,
-          "hasLifecycle": false,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": false,
-          "hasMethod": false,
-          "hasMode": false,
-          "hasAttribute": false,
-          "hasProp": false,
-          "hasPropNumber": false,
-          "hasPropBoolean": false,
-          "hasPropString": false,
-          "hasPropMutable": false,
-          "hasReflect": false,
-          "hasRenderFn": true,
-          "hasState": false,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": true,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
-          "hasVdomPropOrAttr": true,
-          "hasVdomRef": false,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": false,
-          "hasWatchCallback": false,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "id",
-            "class"
-          ],
-          "htmlTagNames": [
-            "div",
-            "span",
-            "slot"
-          ],
-          "htmlParts": [],
-          "isUpdateable": false,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
-          "dependents": [
-            "multi-car-banner"
-          ],
-          "directDependents": [
-            "multi-car-banner"
-          ]
-        }
-      ],
-      "entryKey": "multi-banner-title.entry"
-    },
-    {
-      "cmps": [
-        {
           "tagName": "quote-button",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -2961,6 +3138,9 @@
     "sc-main-header": [
       "index-99449dbf.js"
     ],
+    "sc-multi-banner-bullet-points": [
+      "index-99449dbf.js"
+    ],
     "sc-multi-banner-header": [
       "index-99449dbf.js"
     ],
@@ -2991,92 +3171,23 @@
   },
   "sourceGraph": {
     "./src/components/app-layout/login-footer/login-footer.tsx": [],
-    "./src/components/app-layout/login-footer/test/login-footer.e2e.ts": [],
-    "./src/components/app-layout/login-footer/test/login-footer.spec.tsx": [
-      "./src/components/app-layout/login-footer/login-footer"
-    ],
-    "./src/components/app-layout/login-header/login-header.e2e.ts": [],
-    "./src/components/app-layout/login-header/login-header.spec.ts": [
-      "./src/components/app-layout/login-header/login-header"
-    ],
     "./src/components/app-layout/login-header/login-header.tsx": [],
     "./src/components/app-layout/login-title-wrapper/login-title-wrapper.tsx": [],
-    "./src/components/app-layout/login-title-wrapper/test/login-title-wrapper.e2e.ts": [],
-    "./src/components/app-layout/login-title-wrapper/test/login-title-wrapper.spec.tsx": [
-      "./src/components/app-layout/login-title-wrapper/login-title-wrapper"
-    ],
     "./src/components/app-layout/main-header/main-header.tsx": [],
-    "./src/components/app-layout/main-header/test/main-header.e2e.ts": [],
-    "./src/components/app-layout/main-header/test/main-header.spec.tsx": [
-      "./src/components/app-layout/main-header/main-header"
-    ],
     "./src/components/app-layout/multi-car-banner/multi-car-banner.tsx": [],
-    "./src/components/app-layout/multi-car-banner/test/multi-car-banner.e2e.ts": [],
-    "./src/components/app-layout/multi-car-banner/test/multi-car-banner.spec.tsx": [
-      "./src/components/app-layout/multi-car-banner/multi-car-banner"
-    ],
     "./src/components/base-components/header-text/header-text.tsx": [],
-    "./src/components/base-components/header-text/test/header-text.e2e.ts": [],
-    "./src/components/base-components/header-text/test/header-text.spec.tsx": [
-      "./src/components/base-components/header-text/header-text"
-    ],
+    "./src/components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points.tsx": [],
     "./src/components/base-components/multi-banner/multi-banner-header/multi-banner-header.tsx": [],
-    "./src/components/base-components/multi-banner/multi-banner-header/test/multi-banner-header.e2e.ts": [],
-    "./src/components/base-components/multi-banner/multi-banner-header/test/multi-banner-header.spec.tsx": [
-      "./src/components/base-components/multi-banner/multi-banner-header/multi-banner-header"
-    ],
-    "./src/components/base-components/multi-banner/multi-banner-header/test/muti-banner-header.spec.tsx": [
-      "./src/components/base-components/multi-banner/multi-banner-header/multi-banner-header"
-    ],
     "./src/components/base-components/multi-banner/muti-banner-title/multi-banner-title.tsx": [],
-    "./src/components/base-components/multi-banner/muti-banner-title/test/multi-banner-title.e2e.ts": [],
-    "./src/components/base-components/multi-banner/muti-banner-title/test/multi-banner-title.spec.tsx": [
-      "./src/components/base-components/multi-banner/muti-banner-title/multi-banner-title"
-    ],
     "./src/components/base-components/page-logo/page-logo.tsx": [],
-    "./src/components/base-components/page-logo/test/page-logo.e2e.ts": [],
-    "./src/components/base-components/page-logo/test/page-logo.spec.tsx": [
-      "./src/components/base-components/page-logo/page-logo"
-    ],
     "./src/components/base-components/product-tile/product-tile.tsx": [],
-    "./src/components/base-components/product-tile/test/product-tile.e2e.ts": [],
-    "./src/components/base-components/product-tile/test/product-tile.spec.tsx": [
-      "./src/components/base-components/product-tile/product-tile"
-    ],
     "./src/components/base-components/quote-button/quote-button.tsx": [],
-    "./src/components/base-components/quote-button/test/quote-button.e2e.ts": [],
-    "./src/components/base-components/quote-button/test/quote-button.spec.tsx": [
-      "./src/components/base-components/quote-button/quote-button"
-    ],
     "./src/components/forms/login-form/login-form.tsx": [],
-    "./src/components/forms/login-form/test/login-form.e2e.ts": [],
-    "./src/components/forms/login-form/test/login-form.spec.tsx": [
-      "./src/components/forms/login-form/login-form"
-    ],
     "./src/components/page-layout/content-container/content-container.tsx": [],
-    "./src/components/page-layout/content-container/test/content-container.e2e.ts": [],
-    "./src/components/page-layout/content-container/test/content-container.spec.tsx": [
-      "./src/components/page-layout/content-container/content-container"
-    ],
     "./src/components/page-layout/page-header-bar/page-header-bar.tsx": [],
-    "./src/components/page-layout/page-header-bar/test/page-header-bar.e2e.ts": [],
-    "./src/components/page-layout/page-header-bar/test/page-header-bar.spec.tsx": [
-      "./src/components/page-layout/page-header-bar/page-header-bar"
-    ],
-    "./src/components/page-layout/text-title-bar/test/text-title-bar.e2e.ts": [],
-    "./src/components/page-layout/text-title-bar/test/text-title-bar.spec.tsx": [
-      "./src/components/page-layout/text-title-bar/text-title-bar"
-    ],
     "./src/components/page-layout/text-title-bar/text-title-bar.tsx": [],
-    "./src/components/page-layout/tile-container/test/tile-container.e2e.ts": [],
-    "./src/components/page-layout/tile-container/test/tile-container.spec.tsx": [
-      "./src/components/page-layout/tile-container/tile-container"
-    ],
     "./src/components/page-layout/tile-container/tile-container.tsx": [],
     "./src/index.ts": [],
-    "./src/utils/utils.spec.ts": [
-      "./src/utils/utils"
-    ],
     "./src/utils/utils.ts": []
   },
   "collections": []

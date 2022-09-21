@@ -5,6 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { BulletPointInterface } from "./components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points";
 export namespace Components {
     interface ContentContainer {
     }
@@ -28,6 +29,9 @@ export namespace Components {
     }
     interface MainHeader {
         "brand": string;
+    }
+    interface MultiBannerBulletPoints {
+        "bulletPoints": Array<BulletPointInterface> | string;
     }
     interface MultiBannerHeader {
     }
@@ -105,6 +109,12 @@ declare global {
         prototype: HTMLMainHeaderElement;
         new (): HTMLMainHeaderElement;
     };
+    interface HTMLMultiBannerBulletPointsElement extends Components.MultiBannerBulletPoints, HTMLStencilElement {
+    }
+    var HTMLMultiBannerBulletPointsElement: {
+        prototype: HTMLMultiBannerBulletPointsElement;
+        new (): HTMLMultiBannerBulletPointsElement;
+    };
     interface HTMLMultiBannerHeaderElement extends Components.MultiBannerHeader, HTMLStencilElement {
     }
     var HTMLMultiBannerHeaderElement: {
@@ -167,6 +177,7 @@ declare global {
         "login-header": HTMLLoginHeaderElement;
         "login-title-wrapper": HTMLLoginTitleWrapperElement;
         "main-header": HTMLMainHeaderElement;
+        "multi-banner-bullet-points": HTMLMultiBannerBulletPointsElement;
         "multi-banner-header": HTMLMultiBannerHeaderElement;
         "multi-banner-title": HTMLMultiBannerTitleElement;
         "multi-car-banner": HTMLMultiCarBannerElement;
@@ -206,6 +217,9 @@ declare namespace LocalJSX {
     interface MainHeader {
         "brand"?: string;
     }
+    interface MultiBannerBulletPoints {
+        "bulletPoints"?: Array<BulletPointInterface> | string;
+    }
     interface MultiBannerHeader {
     }
     interface MultiBannerTitle {
@@ -242,6 +256,7 @@ declare namespace LocalJSX {
         "login-header": LoginHeader;
         "login-title-wrapper": LoginTitleWrapper;
         "main-header": MainHeader;
+        "multi-banner-bullet-points": MultiBannerBulletPoints;
         "multi-banner-header": MultiBannerHeader;
         "multi-banner-title": MultiBannerTitle;
         "multi-car-banner": MultiCarBanner;
@@ -264,6 +279,7 @@ declare module "@stencil/core" {
             "login-header": LocalJSX.LoginHeader & JSXBase.HTMLAttributes<HTMLLoginHeaderElement>;
             "login-title-wrapper": LocalJSX.LoginTitleWrapper & JSXBase.HTMLAttributes<HTMLLoginTitleWrapperElement>;
             "main-header": LocalJSX.MainHeader & JSXBase.HTMLAttributes<HTMLMainHeaderElement>;
+            "multi-banner-bullet-points": LocalJSX.MultiBannerBulletPoints & JSXBase.HTMLAttributes<HTMLMultiBannerBulletPointsElement>;
             "multi-banner-header": LocalJSX.MultiBannerHeader & JSXBase.HTMLAttributes<HTMLMultiBannerHeaderElement>;
             "multi-banner-title": LocalJSX.MultiBannerTitle & JSXBase.HTMLAttributes<HTMLMultiBannerTitleElement>;
             "multi-car-banner": LocalJSX.MultiCarBanner & JSXBase.HTMLAttributes<HTMLMultiCarBannerElement>;
