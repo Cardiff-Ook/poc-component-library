@@ -1,4 +1,4 @@
-import { r as registerInstance, h } from './index-99449dbf.js';
+import { r as registerInstance, h } from './index-ca799859.js';
 
 const mainPageContentsCss = ":host{display:block}";
 
@@ -7,7 +7,7 @@ const MainPageContents = class {
     registerInstance(this, hostRef);
   }
   render() {
-    return (h("main", { class: "jut__Main__main admMain" }, h("div", { class: "jut__Container__container jut__Main__container" }, h("div", { id: "pageContainer", class: "page MyPoliciesPage_claimHomePage__3e-L3" }, h("div", { id: "policyContainer" }, h("div", { id: "myAccountContainer", class: "MyPoliciesPage_myAccountContainer__1sTDe" }), h("div", null), h("slot", { name: "page-title" }))))));
+    return (h("main", { class: "jut__Main__main admMain" }, h("div", { class: "jut__Container__container jut__Main__container" }, h("div", { id: "pageContainer", class: "page MyPoliciesPage_claimHomePage__3e-L3" }, h("slot", { name: "page-contents" })))));
   }
 };
 MainPageContents.style = mainPageContentsCss;

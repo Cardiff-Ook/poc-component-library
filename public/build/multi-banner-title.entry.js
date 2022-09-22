@@ -1,4 +1,4 @@
-import { r as registerInstance, h } from './index-99449dbf.js';
+import { r as registerInstance, h } from './index-ca799859.js';
 
 const multiBannerTitleCss = ":host{display:block}";
 

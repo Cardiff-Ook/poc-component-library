@@ -7,6 +7,8 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { BulletPointInterface } from "./components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points";
 import { ButtonInterface } from "./components/app-layout/nav-bar/nav-bar";
+import { PolicyDetailsInterface } from "./components/base-components/policy-details/policy-details";
+import { PolicyDetailsInterface as PolicyDetailsInterface1 } from "./components/base-components/policy-details/policy-details";
 export namespace Components {
     interface ContentContainer {
     }
@@ -50,6 +52,14 @@ export namespace Components {
     }
     interface PageLogo {
         "brand": string;
+    }
+    interface PoliciesContainer {
+    }
+    interface PolicyDetails {
+        "policies": Array<PolicyDetailsInterface> | string;
+    }
+    interface PolicyTile {
+        "policydetails": PolicyDetailsInterface1;
     }
     interface ProductTile {
         /**
@@ -166,6 +176,24 @@ declare global {
         prototype: HTMLPageLogoElement;
         new (): HTMLPageLogoElement;
     };
+    interface HTMLPoliciesContainerElement extends Components.PoliciesContainer, HTMLStencilElement {
+    }
+    var HTMLPoliciesContainerElement: {
+        prototype: HTMLPoliciesContainerElement;
+        new (): HTMLPoliciesContainerElement;
+    };
+    interface HTMLPolicyDetailsElement extends Components.PolicyDetails, HTMLStencilElement {
+    }
+    var HTMLPolicyDetailsElement: {
+        prototype: HTMLPolicyDetailsElement;
+        new (): HTMLPolicyDetailsElement;
+    };
+    interface HTMLPolicyTileElement extends Components.PolicyTile, HTMLStencilElement {
+    }
+    var HTMLPolicyTileElement: {
+        prototype: HTMLPolicyTileElement;
+        new (): HTMLPolicyTileElement;
+    };
     interface HTMLProductTileElement extends Components.ProductTile, HTMLStencilElement {
     }
     var HTMLProductTileElement: {
@@ -212,6 +240,9 @@ declare global {
         "nav-bar": HTMLNavBarElement;
         "page-header-bar": HTMLPageHeaderBarElement;
         "page-logo": HTMLPageLogoElement;
+        "policies-container": HTMLPoliciesContainerElement;
+        "policy-details": HTMLPolicyDetailsElement;
+        "policy-tile": HTMLPolicyTileElement;
         "product-tile": HTMLProductTileElement;
         "quote-button": HTMLQuoteButtonElement;
         "sub-section-title": HTMLSubSectionTitleElement;
@@ -267,6 +298,14 @@ declare namespace LocalJSX {
     interface PageLogo {
         "brand"?: string;
     }
+    interface PoliciesContainer {
+    }
+    interface PolicyDetails {
+        "policies"?: Array<PolicyDetailsInterface> | string;
+    }
+    interface PolicyTile {
+        "policydetails"?: PolicyDetailsInterface1;
+    }
     interface ProductTile {
         /**
           * The link for the product
@@ -302,6 +341,9 @@ declare namespace LocalJSX {
         "nav-bar": NavBar;
         "page-header-bar": PageHeaderBar;
         "page-logo": PageLogo;
+        "policies-container": PoliciesContainer;
+        "policy-details": PolicyDetails;
+        "policy-tile": PolicyTile;
         "product-tile": ProductTile;
         "quote-button": QuoteButton;
         "sub-section-title": SubSectionTitle;
@@ -328,6 +370,9 @@ declare module "@stencil/core" {
             "nav-bar": LocalJSX.NavBar & JSXBase.HTMLAttributes<HTMLNavBarElement>;
             "page-header-bar": LocalJSX.PageHeaderBar & JSXBase.HTMLAttributes<HTMLPageHeaderBarElement>;
             "page-logo": LocalJSX.PageLogo & JSXBase.HTMLAttributes<HTMLPageLogoElement>;
+            "policies-container": LocalJSX.PoliciesContainer & JSXBase.HTMLAttributes<HTMLPoliciesContainerElement>;
+            "policy-details": LocalJSX.PolicyDetails & JSXBase.HTMLAttributes<HTMLPolicyDetailsElement>;
+            "policy-tile": LocalJSX.PolicyTile & JSXBase.HTMLAttributes<HTMLPolicyTileElement>;
             "product-tile": LocalJSX.ProductTile & JSXBase.HTMLAttributes<HTMLProductTileElement>;
             "quote-button": LocalJSX.QuoteButton & JSXBase.HTMLAttributes<HTMLQuoteButtonElement>;
             "sub-section-title": LocalJSX.SubSectionTitle & JSXBase.HTMLAttributes<HTMLSubSectionTitleElement>;

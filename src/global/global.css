@@ -7221,35 +7221,35 @@ body.themeRoot .adm-page-title__screen-title {
     font-family: Material Icons;
     font-style: normal;
     font-weight: 400;
-    src: url(../assets/MaterialIcons-Regular.0509ab09.woff2) format("woff2")
+    src: url(../webfonts/MaterialIcons-Regular.0509ab09.woff2) format("woff2")
 }
 
 @font-face {
     font-family: Material Icons Round;
     font-style: normal;
     font-weight: 400;
-    src: url(../assets/MaterialIcons-Round.0df2e99b.woff2) format("woff2")
+    src: url(../webfonts/MaterialIcons-Round.0df2e99b.woff2) format("woff2")
 }
 
 @font-face {
     font-family: Material Icons Outlined;
     font-style: normal;
     font-weight: 400;
-    src: url(../assets/MaterialIcons-Outlined.76845a96.woff2) format("woff2")
+    src: url(../webfonts/MaterialIcons-Outlined.76845a96.woff2) format("woff2")
 }
 
 @font-face {
     font-family: Material Icons Sharp;
     font-style: normal;
     font-weight: 400;
-    src: url(../assets/MaterialIcons-Sharp.36add1bf.woff2) format("woff2")
+    src: url(../webfonts/MaterialIcons-Sharp.36add1bf.woff2) format("woff2")
 }
 
 @font-face {
     font-family: Material Icons Two Tone;
     font-style: normal;
     font-weight: 400;
-    src: url(../assets/MaterialIcons-TwoTone.51fb689a.woff2) format("woff2")
+    src: url(../webfonts/MaterialIcons-TwoTone.51fb689a.woff2) format("woff2")
 }
 
 .mi-10k:before {

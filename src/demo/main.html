@@ -43,7 +43,15 @@
           </multi-banner-bullet-points>
         </multi-car-banner>
         <main-page-contents>
-          <sub-section-title pagetitle="Your Policy" slot="page-title"></sub-section-title>
+          <policies-container slot="page-contents">
+            <sub-section-title pagetitle="Your Policy" slot="page-title"></sub-section-title>
+            <policy-details slot="policy-details" policies='
+              [
+                {"policytype": "multicover", "id": "P7642398746", "selected": true}, 
+                {"policytype": "car", "id": "P34435554", "selected": false}
+              ]'>
+            </policy-details>
+          </policies-container>
         </main-page-contents>
       </div>
     </div>

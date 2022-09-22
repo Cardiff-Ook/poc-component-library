@@ -12,11 +12,7 @@ export class MainPageContents {
         <main class="jut__Main__main admMain">
           <div class="jut__Container__container jut__Main__container">
             <div id="pageContainer" class="page MyPoliciesPage_claimHomePage__3e-L3">
-                <div id="policyContainer">
-                  <div id="myAccountContainer" class="MyPoliciesPage_myAccountContainer__1sTDe"></div>
-                  <div></div>
-                  <slot name="page-title"></slot>
-                </div>
+              <slot name="page-contents" />
             </div>
           </div>
         </main>

@@ -1,4 +1,4 @@
-import { r as registerInstance, h } from './index-99449dbf.js';
+import { r as registerInstance, h } from './index-ca799859.js';
 
 const navBarCss = ":host{display:block}.inlineOverride{display:inline-flex;align-items:center;justify-content:center}";
 
