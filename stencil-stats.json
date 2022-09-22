@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-09-21T09:34:47",
+  "timestamp": "2022-09-22T08:23:53",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -7,13 +7,13 @@
   "app": {
     "namespace": "PocAdmComponents",
     "fsNamespace": "poc-adm-components",
-    "components": 18,
-    "entries": 18,
-    "bundles": 72,
+    "components": 20,
+    "entries": 20,
+    "bundles": 78,
     "outputs": [
       {
         "name": "dist-custom-elements",
-        "files": 19,
+        "files": 21,
         "generatedFiles": [
           "./dist/components/content-container.d.ts",
           "./dist/components/header-text.d.ts",
@@ -23,6 +23,7 @@
           "./dist/components/login-header.d.ts",
           "./dist/components/login-title-wrapper.d.ts",
           "./dist/components/main-header.d.ts",
+          "./dist/components/main-page-contents.d.ts",
           "./dist/components/multi-banner-bullet-points.d.ts",
           "./dist/components/multi-banner-header.d.ts",
           "./dist/components/multi-banner-title.d.ts",
@@ -32,13 +33,14 @@
           "./dist/components/page-logo.d.ts",
           "./dist/components/product-tile.d.ts",
           "./dist/components/quote-button.d.ts",
+          "./dist/components/sub-section-title.d.ts",
           "./dist/components/text-title-bar.d.ts",
           "./dist/components/tile-container.d.ts"
         ]
       },
       {
         "name": "dist-lazy",
-        "files": 50,
+        "files": 54,
         "generatedFiles": [
           "./dist/poc-adm-components/app-globals-0f993ce5.js",
           "./dist/poc-adm-components/content-container.entry.js",
@@ -52,6 +54,7 @@
           "./dist/poc-adm-components/login-header.entry.js",
           "./dist/poc-adm-components/login-title-wrapper.entry.js",
           "./dist/poc-adm-components/main-header.entry.js",
+          "./dist/poc-adm-components/main-page-contents.entry.js",
           "./dist/poc-adm-components/multi-banner-bullet-points.entry.js",
           "./dist/poc-adm-components/multi-banner-header.entry.js",
           "./dist/poc-adm-components/multi-banner-title.entry.js",
@@ -63,6 +66,7 @@
           "./dist/poc-adm-components/product-tile.entry.js",
           "./dist/poc-adm-components/quote-button.entry.js",
           "./dist/poc-adm-components/shadow-css-4261c637.js",
+          "./dist/poc-adm-components/sub-section-title.entry.js",
           "./dist/poc-adm-components/text-title-bar.entry.js",
           "./dist/poc-adm-components/tile-container.entry.js",
           "./public/build/app-globals-0f993ce5.js",
@@ -77,6 +81,7 @@
           "./public/build/login-header.entry.js",
           "./public/build/login-title-wrapper.entry.js",
           "./public/build/main-header.entry.js",
+          "./public/build/main-page-contents.entry.js",
           "./public/build/multi-banner-bullet-points.entry.js",
           "./public/build/multi-banner-header.entry.js",
           "./public/build/multi-banner-title.entry.js",
@@ -88,6 +93,7 @@
           "./public/build/product-tile.entry.js",
           "./public/build/quote-button.entry.js",
           "./public/build/shadow-css-4261c637.js",
+          "./public/build/sub-section-title.entry.js",
           "./public/build/text-title-bar.entry.js",
           "./public/build/tile-container.entry.js"
         ]
@@ -203,6 +209,18 @@
         "originalByteSize": 1020
       },
       {
+        "key": "main-page-contents.entry",
+        "components": [
+          "main-page-contents"
+        ],
+        "bundleId": "main-page-contents",
+        "fileName": "main-page-contents.entry.js",
+        "imports": [
+          "index-99449dbf.js"
+        ],
+        "originalByteSize": 733
+      },
+      {
         "key": "multi-banner-bullet-points.entry",
         "components": [
           "multi-banner-bullet-points"
@@ -297,6 +315,18 @@
           "index-99449dbf.js"
         ],
         "originalByteSize": 743
+      },
+      {
+        "key": "sub-section-title.entry",
+        "components": [
+          "sub-section-title"
+        ],
+        "bundleId": "sub-section-title",
+        "fileName": "sub-section-title.entry.js",
+        "imports": [
+          "index-99449dbf.js"
+        ],
+        "originalByteSize": 413
       },
       {
         "key": "text-title-bar.entry",
@@ -627,6 +657,34 @@
           "internal": false
         }
       ],
+      "shadowDelegatesFocus": null,
+      "states": []
+    },
+    {
+      "tag": "main-page-contents",
+      "path": "./src/components/app-layout/main-page-contents/main-page-contents.js",
+      "source": "./src/components/app-layout/main-page-contents/main-page-contents.tsx",
+      "elementRef": null,
+      "componentClassName": "MainPageContents",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [],
       "shadowDelegatesFocus": null,
       "states": []
     },
@@ -1022,6 +1080,54 @@
       "methods": [],
       "potentialCmpRefs": [],
       "properties": [],
+      "shadowDelegatesFocus": null,
+      "states": []
+    },
+    {
+      "tag": "sub-section-title",
+      "path": "./src/components/base-components/sub-section-title/sub-section-title.js",
+      "source": "./src/components/base-components/sub-section-title/sub-section-title.tsx",
+      "elementRef": null,
+      "componentClassName": "SubSectionTitle",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "pagetitle",
+          "type": "string",
+          "attribute": "pagetitle",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
       "shadowDelegatesFocus": null,
       "states": []
     },
@@ -1960,6 +2066,117 @@
         }
       ],
       "entryKey": "main-header.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "main-page-contents",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "MainPageContents",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "MAIN-PAGE-CONTENTS",
+              "styleStr": null,
+              "styleIdentifier": "mainPageContentsStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/main-page-contents/main-page-contents.css",
+                  "relativePath": "main-page-contents.css",
+                  "originalComponentPath": "main-page-contents.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/main-page-contents/main-page-contents.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/main-page-contents/main-page-contents.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": false,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": false,
+          "hasProp": false,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": false,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "id",
+            "name"
+          ],
+          "htmlTagNames": [
+            "main",
+            "div",
+            "slot"
+          ],
+          "htmlParts": [],
+          "isUpdateable": false,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "main-page-contents.entry"
     },
     {
       "cmps": [
@@ -2997,6 +3214,134 @@
     {
       "cmps": [
         {
+          "tagName": "sub-section-title",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "SubSectionTitle",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "pagetitle",
+              "type": "string",
+              "attribute": "pagetitle",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "SUB-SECTION-TITLE",
+              "styleStr": null,
+              "styleIdentifier": "subSectionTitleStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/sub-section-title/sub-section-title.css",
+                  "relativePath": "sub-section-title.css",
+                  "originalComponentPath": "sub-section-title.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/sub-section-title/sub-section-title.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/sub-section-title/sub-section-title.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "id",
+            "class"
+          ],
+          "htmlTagNames": [
+            "h4"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "sub-section-title.entry"
+    },
+    {
+      "cmps": [
+        {
           "tagName": "text-title-bar",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -3350,6 +3695,9 @@
     "sc-main-header": [
       "index-99449dbf.js"
     ],
+    "sc-main-page-contents": [
+      "index-99449dbf.js"
+    ],
     "sc-multi-banner-bullet-points": [
       "index-99449dbf.js"
     ],
@@ -3377,6 +3725,9 @@
     "sc-quote-button": [
       "index-99449dbf.js"
     ],
+    "sc-sub-section-title": [
+      "index-99449dbf.js"
+    ],
     "sc-text-title-bar": [
       "index-99449dbf.js"
     ],
@@ -3389,6 +3740,7 @@
     "./src/components/app-layout/login-header/login-header.tsx": [],
     "./src/components/app-layout/login-title-wrapper/login-title-wrapper.tsx": [],
     "./src/components/app-layout/main-header/main-header.tsx": [],
+    "./src/components/app-layout/main-page-contents/main-page-contents.tsx": [],
     "./src/components/app-layout/multi-car-banner/multi-car-banner.tsx": [],
     "./src/components/app-layout/nav-bar/nav-bar.tsx": [],
     "./src/components/base-components/header-text/header-text.tsx": [],
@@ -3398,6 +3750,7 @@
     "./src/components/base-components/page-logo/page-logo.tsx": [],
     "./src/components/base-components/product-tile/product-tile.tsx": [],
     "./src/components/base-components/quote-button/quote-button.tsx": [],
+    "./src/components/base-components/sub-section-title/sub-section-title.tsx": [],
     "./src/components/forms/login-form/login-form.tsx": [],
     "./src/components/page-layout/content-container/content-container.tsx": [],
     "./src/components/page-layout/page-header-bar/page-header-bar.tsx": [],

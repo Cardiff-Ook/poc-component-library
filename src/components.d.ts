@@ -31,6 +31,8 @@ export namespace Components {
     interface MainHeader {
         "brand": string;
     }
+    interface MainPageContents {
+    }
     interface MultiBannerBulletPoints {
         "bulletPoints": Array<BulletPointInterface> | string;
     }
@@ -60,6 +62,9 @@ export namespace Components {
         "productImage": string;
     }
     interface QuoteButton {
+    }
+    interface SubSectionTitle {
+        "pagetitle": string;
     }
     interface TextTitleBar {
     }
@@ -112,6 +117,12 @@ declare global {
     var HTMLMainHeaderElement: {
         prototype: HTMLMainHeaderElement;
         new (): HTMLMainHeaderElement;
+    };
+    interface HTMLMainPageContentsElement extends Components.MainPageContents, HTMLStencilElement {
+    }
+    var HTMLMainPageContentsElement: {
+        prototype: HTMLMainPageContentsElement;
+        new (): HTMLMainPageContentsElement;
     };
     interface HTMLMultiBannerBulletPointsElement extends Components.MultiBannerBulletPoints, HTMLStencilElement {
     }
@@ -167,6 +178,12 @@ declare global {
         prototype: HTMLQuoteButtonElement;
         new (): HTMLQuoteButtonElement;
     };
+    interface HTMLSubSectionTitleElement extends Components.SubSectionTitle, HTMLStencilElement {
+    }
+    var HTMLSubSectionTitleElement: {
+        prototype: HTMLSubSectionTitleElement;
+        new (): HTMLSubSectionTitleElement;
+    };
     interface HTMLTextTitleBarElement extends Components.TextTitleBar, HTMLStencilElement {
     }
     var HTMLTextTitleBarElement: {
@@ -187,6 +204,7 @@ declare global {
         "login-header": HTMLLoginHeaderElement;
         "login-title-wrapper": HTMLLoginTitleWrapperElement;
         "main-header": HTMLMainHeaderElement;
+        "main-page-contents": HTMLMainPageContentsElement;
         "multi-banner-bullet-points": HTMLMultiBannerBulletPointsElement;
         "multi-banner-header": HTMLMultiBannerHeaderElement;
         "multi-banner-title": HTMLMultiBannerTitleElement;
@@ -196,6 +214,7 @@ declare global {
         "page-logo": HTMLPageLogoElement;
         "product-tile": HTMLProductTileElement;
         "quote-button": HTMLQuoteButtonElement;
+        "sub-section-title": HTMLSubSectionTitleElement;
         "text-title-bar": HTMLTextTitleBarElement;
         "tile-container": HTMLTileContainerElement;
     }
@@ -228,6 +247,8 @@ declare namespace LocalJSX {
     interface MainHeader {
         "brand"?: string;
     }
+    interface MainPageContents {
+    }
     interface MultiBannerBulletPoints {
         "bulletPoints"?: Array<BulletPointInterface> | string;
     }
@@ -258,6 +279,9 @@ declare namespace LocalJSX {
     }
     interface QuoteButton {
     }
+    interface SubSectionTitle {
+        "pagetitle"?: string;
+    }
     interface TextTitleBar {
     }
     interface TileContainer {
@@ -270,6 +294,7 @@ declare namespace LocalJSX {
         "login-header": LoginHeader;
         "login-title-wrapper": LoginTitleWrapper;
         "main-header": MainHeader;
+        "main-page-contents": MainPageContents;
         "multi-banner-bullet-points": MultiBannerBulletPoints;
         "multi-banner-header": MultiBannerHeader;
         "multi-banner-title": MultiBannerTitle;
@@ -279,6 +304,7 @@ declare namespace LocalJSX {
         "page-logo": PageLogo;
         "product-tile": ProductTile;
         "quote-button": QuoteButton;
+        "sub-section-title": SubSectionTitle;
         "text-title-bar": TextTitleBar;
         "tile-container": TileContainer;
     }
@@ -294,6 +320,7 @@ declare module "@stencil/core" {
             "login-header": LocalJSX.LoginHeader & JSXBase.HTMLAttributes<HTMLLoginHeaderElement>;
             "login-title-wrapper": LocalJSX.LoginTitleWrapper & JSXBase.HTMLAttributes<HTMLLoginTitleWrapperElement>;
             "main-header": LocalJSX.MainHeader & JSXBase.HTMLAttributes<HTMLMainHeaderElement>;
+            "main-page-contents": LocalJSX.MainPageContents & JSXBase.HTMLAttributes<HTMLMainPageContentsElement>;
             "multi-banner-bullet-points": LocalJSX.MultiBannerBulletPoints & JSXBase.HTMLAttributes<HTMLMultiBannerBulletPointsElement>;
             "multi-banner-header": LocalJSX.MultiBannerHeader & JSXBase.HTMLAttributes<HTMLMultiBannerHeaderElement>;
             "multi-banner-title": LocalJSX.MultiBannerTitle & JSXBase.HTMLAttributes<HTMLMultiBannerTitleElement>;
@@ -303,6 +330,7 @@ declare module "@stencil/core" {
             "page-logo": LocalJSX.PageLogo & JSXBase.HTMLAttributes<HTMLPageLogoElement>;
             "product-tile": LocalJSX.ProductTile & JSXBase.HTMLAttributes<HTMLProductTileElement>;
             "quote-button": LocalJSX.QuoteButton & JSXBase.HTMLAttributes<HTMLQuoteButtonElement>;
+            "sub-section-title": LocalJSX.SubSectionTitle & JSXBase.HTMLAttributes<HTMLSubSectionTitleElement>;
             "text-title-bar": LocalJSX.TextTitleBar & JSXBase.HTMLAttributes<HTMLTextTitleBarElement>;
             "tile-container": LocalJSX.TileContainer & JSXBase.HTMLAttributes<HTMLTileContainerElement>;
         }
