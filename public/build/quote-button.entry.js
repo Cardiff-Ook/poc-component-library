@@ -1,4 +1,4 @@
-import { r as registerInstance, h } from './index-ca799859.js';
+import { r as registerInstance, h } from './index-c0c4017c.js';
 
 const quoteButtonCss = ":host{display:block}";
 
@@ -10,7 +10,7 @@ const QuoteButton = class {
     console.log(event.type);
   }
   render() {
-    return (h("div", { id: "getaQuoteButtonContainer", class: "getaQuoteButtonContainer" }, h("button", { type: "button", onClick: (event) => this.handleClick(event), class: "digitalButton__button jut__Button__button digitalButton__secondary jut__Button__secondary getAQuoteButtonClass", id: "multiBannerCarGetAQuoteButton" }, h("span", null, "Get a Quote"))));
+    return (h("div", { id: "getaQuoteButtonContainer", class: "getaQuoteButtonContainer" }, h("button", { type: "button", onClick: (event) => this.handleClick(event), class: "digitalButton__button jut__Button__button digitalButton__secondary jut__Button__secondary getAQuoteButtonClass", id: "multiBannerCarGetAQuoteButton" }, h("span", null, h("slot", null)))));
   }
 };
 QuoteButton.style = quoteButtonCss;

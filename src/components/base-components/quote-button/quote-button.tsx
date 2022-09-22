@@ -15,7 +15,7 @@ export class QuoteButton {
     return (
       <div id="getaQuoteButtonContainer" class="getaQuoteButtonContainer">
         <button type="button" onClick={ (event: UIEvent) => this.handleClick(event)} class="digitalButton__button jut__Button__button digitalButton__secondary jut__Button__secondary getAQuoteButtonClass" id="multiBannerCarGetAQuoteButton">
-            <span>Get a Quote</span>
+            <span><slot /></span>
         </button>
       </div>
     );

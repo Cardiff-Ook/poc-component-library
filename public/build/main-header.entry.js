@@ -1,4 +1,4 @@
-import { r as registerInstance, h, e as Host } from './index-ca799859.js';
+import { r as registerInstance, h, e as Host } from './index-c0c4017c.js';
 
 const mainHeaderCss = ":host{display:block}";
 

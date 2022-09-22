@@ -48,8 +48,8 @@ export class PolicyDetails {
           <div id="policyCoverContainerIterables">
 
               {
-                this._arrayData.map((policy:any={}) =>
-                <policy-tile policydetails={policy}></policy-tile>
+                this._arrayData.map((policy:any={}, index) =>
+                <policy-tile policydetails={policy} policyindex={index}></policy-tile>
             )}
           </div>
         </div>

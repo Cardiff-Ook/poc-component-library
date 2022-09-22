@@ -18,7 +18,7 @@ export class MultiCarBanner {
               <slot name="banner-header"></slot>
               <slot name="bullet-points"></slot>
             </div>
-            <quote-button></quote-button>
+            <quote-button>Get A Quote</quote-button>
           </div>
         </div>
       </div>

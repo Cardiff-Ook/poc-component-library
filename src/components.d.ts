@@ -7,10 +7,12 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { BulletPointInterface } from "./components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points";
 import { ButtonInterface } from "./components/app-layout/nav-bar/nav-bar";
-import { PolicyDetailsInterface } from "./components/base-components/policy-details/policy-details";
-import { PolicyDetailsInterface as PolicyDetailsInterface1 } from "./components/base-components/policy-details/policy-details";
+import { PolicyDetailsInterface } from "./components/policy-details/policy-details/policy-details";
+import { PolicyDetailsInterface as PolicyDetailsInterface1 } from "./components/policy-details/policy-details/policy-details";
 export namespace Components {
     interface ContentContainer {
+    }
+    interface CoverDetailsContainer {
     }
     interface HeaderText {
     }
@@ -58,8 +60,13 @@ export namespace Components {
     interface PolicyDetails {
         "policies": Array<PolicyDetailsInterface> | string;
     }
+    interface PolicySubsectionHeader {
+    }
+    interface PolicyTermContainer {
+    }
     interface PolicyTile {
         "policydetails": PolicyDetailsInterface1;
+        "policyindex": number;
     }
     interface ProductTile {
         /**
@@ -91,6 +98,12 @@ declare global {
     var HTMLContentContainerElement: {
         prototype: HTMLContentContainerElement;
         new (): HTMLContentContainerElement;
+    };
+    interface HTMLCoverDetailsContainerElement extends Components.CoverDetailsContainer, HTMLStencilElement {
+    }
+    var HTMLCoverDetailsContainerElement: {
+        prototype: HTMLCoverDetailsContainerElement;
+        new (): HTMLCoverDetailsContainerElement;
     };
     interface HTMLHeaderTextElement extends Components.HeaderText, HTMLStencilElement {
     }
@@ -188,6 +201,18 @@ declare global {
         prototype: HTMLPolicyDetailsElement;
         new (): HTMLPolicyDetailsElement;
     };
+    interface HTMLPolicySubsectionHeaderElement extends Components.PolicySubsectionHeader, HTMLStencilElement {
+    }
+    var HTMLPolicySubsectionHeaderElement: {
+        prototype: HTMLPolicySubsectionHeaderElement;
+        new (): HTMLPolicySubsectionHeaderElement;
+    };
+    interface HTMLPolicyTermContainerElement extends Components.PolicyTermContainer, HTMLStencilElement {
+    }
+    var HTMLPolicyTermContainerElement: {
+        prototype: HTMLPolicyTermContainerElement;
+        new (): HTMLPolicyTermContainerElement;
+    };
     interface HTMLPolicyTileElement extends Components.PolicyTile, HTMLStencilElement {
     }
     var HTMLPolicyTileElement: {
@@ -226,6 +251,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "content-container": HTMLContentContainerElement;
+        "cover-details-container": HTMLCoverDetailsContainerElement;
         "header-text": HTMLHeaderTextElement;
         "login-footer": HTMLLoginFooterElement;
         "login-form": HTMLLoginFormElement;
@@ -242,6 +268,8 @@ declare global {
         "page-logo": HTMLPageLogoElement;
         "policies-container": HTMLPoliciesContainerElement;
         "policy-details": HTMLPolicyDetailsElement;
+        "policy-subsection-header": HTMLPolicySubsectionHeaderElement;
+        "policy-term-container": HTMLPolicyTermContainerElement;
         "policy-tile": HTMLPolicyTileElement;
         "product-tile": HTMLProductTileElement;
         "quote-button": HTMLQuoteButtonElement;
@@ -252,6 +280,8 @@ declare global {
 }
 declare namespace LocalJSX {
     interface ContentContainer {
+    }
+    interface CoverDetailsContainer {
     }
     interface HeaderText {
     }
@@ -303,8 +333,13 @@ declare namespace LocalJSX {
     interface PolicyDetails {
         "policies"?: Array<PolicyDetailsInterface> | string;
     }
+    interface PolicySubsectionHeader {
+    }
+    interface PolicyTermContainer {
+    }
     interface PolicyTile {
         "policydetails"?: PolicyDetailsInterface1;
+        "policyindex"?: number;
     }
     interface ProductTile {
         /**
@@ -327,6 +362,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "content-container": ContentContainer;
+        "cover-details-container": CoverDetailsContainer;
         "header-text": HeaderText;
         "login-footer": LoginFooter;
         "login-form": LoginForm;
@@ -343,6 +379,8 @@ declare namespace LocalJSX {
         "page-logo": PageLogo;
         "policies-container": PoliciesContainer;
         "policy-details": PolicyDetails;
+        "policy-subsection-header": PolicySubsectionHeader;
+        "policy-term-container": PolicyTermContainer;
         "policy-tile": PolicyTile;
         "product-tile": ProductTile;
         "quote-button": QuoteButton;
@@ -356,6 +394,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "content-container": LocalJSX.ContentContainer & JSXBase.HTMLAttributes<HTMLContentContainerElement>;
+            "cover-details-container": LocalJSX.CoverDetailsContainer & JSXBase.HTMLAttributes<HTMLCoverDetailsContainerElement>;
             "header-text": LocalJSX.HeaderText & JSXBase.HTMLAttributes<HTMLHeaderTextElement>;
             "login-footer": LocalJSX.LoginFooter & JSXBase.HTMLAttributes<HTMLLoginFooterElement>;
             "login-form": LocalJSX.LoginForm & JSXBase.HTMLAttributes<HTMLLoginFormElement>;
@@ -372,6 +411,8 @@ declare module "@stencil/core" {
             "page-logo": LocalJSX.PageLogo & JSXBase.HTMLAttributes<HTMLPageLogoElement>;
             "policies-container": LocalJSX.PoliciesContainer & JSXBase.HTMLAttributes<HTMLPoliciesContainerElement>;
             "policy-details": LocalJSX.PolicyDetails & JSXBase.HTMLAttributes<HTMLPolicyDetailsElement>;
+            "policy-subsection-header": LocalJSX.PolicySubsectionHeader & JSXBase.HTMLAttributes<HTMLPolicySubsectionHeaderElement>;
+            "policy-term-container": LocalJSX.PolicyTermContainer & JSXBase.HTMLAttributes<HTMLPolicyTermContainerElement>;
             "policy-tile": LocalJSX.PolicyTile & JSXBase.HTMLAttributes<HTMLPolicyTileElement>;
             "product-tile": LocalJSX.ProductTile & JSXBase.HTMLAttributes<HTMLProductTileElement>;
             "quote-button": LocalJSX.QuoteButton & JSXBase.HTMLAttributes<HTMLQuoteButtonElement>;
