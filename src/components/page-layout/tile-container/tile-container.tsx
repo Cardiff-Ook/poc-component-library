@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'tile-container',
@@ -6,10 +6,17 @@ import { Component, h } from '@stencil/core';
   shadow: false,
 })
 export class TileContainer {
+  @Prop() type: string;
+  private _containerStyle: string;
+
+  componentWillLoad() {
+    this._containerStyle = `tileContainer ${this.type}`
+  }
 
   render() {
+
     return (
-      <div class="tileContainer">
+      <div class={this._containerStyle}>
         <slot></slot>
       </div>
     );

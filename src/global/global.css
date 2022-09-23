@@ -4798,6 +4798,10 @@ body.themeRoot .adm-page-title__screen-title {
     content: "\f53d"
 }
 
+.fa-money-check-pen:before {
+    content: "\f872"
+}
+
 .fa-monument:before {
     content: "\f5a6"
 }

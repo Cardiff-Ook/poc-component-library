@@ -1,4 +1,4 @@
-# tile-container
+# policy-term-container
 
 
 
@@ -14,8 +14,8 @@
 ### Graph
 ```mermaid
 graph TD;
-  policy-tile --> tile-container
-  style tile-container fill:#f9f,stroke:#333,stroke-width:4px
+  policy-tile --> policy-term-container
+  style policy-term-container fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

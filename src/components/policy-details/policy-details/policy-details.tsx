@@ -26,13 +26,11 @@ export class PolicyDetails {
     else {
       this._arrayData = newValue;
     }
-    console.log(this._arrayData);
     if (this._arrayData !== undefined && this._arrayData.length > 0) {
       this._arrayData.forEach(obj => (
         obj.imageSrc =  `/assets/claim-cover-${obj.policytype}.svg`
       ));
     }
-    console.log(this._arrayData);
   }
 
   componentWillLoad() {
@@ -40,7 +38,6 @@ export class PolicyDetails {
   }
 
   render() {
-    console.log(this._arrayData);
     if (this._arrayData !== undefined && this._arrayData.length > 0) {
       return (
         

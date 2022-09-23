@@ -54,8 +54,19 @@ export class PolicyTile {
               <div class="renewalBannerContainer" id="renewalBannerContainer"></div>
             </div>
             <policy-subsection-header>Manage and View Your Policy</policy-subsection-header>
+            <tile-container type="options">
+              <policy-management-tile product-image="file-invoice" link-text="#" title-text="Policy Summary">See your cover details, Renewal Data etc.</policy-management-tile>
+              <policy-management-tile product-image="file" link-text="#" title-text="Documents">View or Download your documents</policy-management-tile>
+              <policy-management-tile product-image="edit" link-text="#" title-text="Make A Change">To drivers, addresses, vehicles</policy-management-tile>
+              <policy-management-tile product-image="plus" link-text="#" title-text="Add to Policy">Add a Car, Home or Van to your policy</policy-management-tile>
+              <policy-management-tile product-image="credit-card" link-text="#" title-text="Payments">View or edit payment details</policy-management-tile>
+              <policy-management-tile product-image="money-check" link-text="#" title-text="Claims">Make a claim or see existing claims</policy-management-tile>
+            </tile-container>
             <policy-term-container></policy-term-container>
-            <cover-details-container></cover-details-container>
+            <cover-details-container coverdetails='
+              [
+                {"policytype": "car", "id": "P34435554", "selected": true}
+              ]'></cover-details-container>
           </div> 
         </div>
       </div>
