@@ -47,7 +47,21 @@
             <sub-section-title pagetitle="Your Policy" slot="page-title"></sub-section-title>
             <policy-details slot="policy-details" policies='
               [
-                {"policytype": "car", "id": "P34435554", "selected": true }
+                {
+                  "policytype": "car", 
+                  "id": "P34435554", 
+                  "selected": true,
+                  "coverList": [
+                    {
+                      "vehicleData": 
+                      {
+                        "vehicleType": "Car",
+                        "vehicleMake": "Fiat 500",
+                        "vehicleReg": "G15 FGY" 
+                      }
+                    }
+                  ]
+                }
               ]'>
             </policy-details>
           </policies-container>

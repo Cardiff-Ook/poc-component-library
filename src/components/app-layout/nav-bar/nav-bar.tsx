@@ -26,7 +26,6 @@ export class NavBar {
   }
 
   componentWillLoad() {
-    console.log(this.buttons);
     this.arrayDataWatcher(this.buttons);
   }
   isActive(val: boolean): string {

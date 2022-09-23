@@ -1,11 +1,5 @@
 import { Component, h, Prop, Watch } from '@stencil/core';
-
-export interface PolicyDetailsInterface {
-  id: string;
-  policytype: string;
-  imageSrc?: string;
-  selected: boolean;
-}
+import { PolicyDataInterface } from '../../../../interfaces/policyDataInterface';
 
 @Component({
   tag: 'policy-details',
@@ -15,8 +9,8 @@ export interface PolicyDetailsInterface {
 
 export class PolicyDetails {
 
-  @Prop() policies: Array<PolicyDetailsInterface> | string;
-  private _arrayData: Array<PolicyDetailsInterface>;
+  @Prop() policies: Array<PolicyDataInterface> | string;
+  private _arrayData: Array<PolicyDataInterface>;
 
 @Watch('policies')
   arrayDataWatcher(newValue: any[] | string) {

@@ -1,4 +1,4 @@
-import { r as registerInstance, h } from './index-0240b1cc.js';
+import { r as registerInstance, h } from './index-e3478a0e.js';
 
 const policyDetailsCss = ":host{display:block}#policyContainer{grid-template-columns:3fr 2fr}#policyListComponent{grid-template-columns:3fr 2fr}#policyDetails{grid-template-columns:28px auto}#policyType{text-transform:capitalize}#selectedSpan{display:inline-flex;align-items:center;justify-content:center}#renewalBannerContainer{grid-column:1 / -1}";
 

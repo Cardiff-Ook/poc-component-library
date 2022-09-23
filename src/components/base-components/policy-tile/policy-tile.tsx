@@ -1,5 +1,5 @@
 import { Component, Prop, h } from '@stencil/core';
-import { PolicyDetailsInterface } from '../../policy-details/policy-details/policy-details'
+import { PolicyDataInterface } from '../../../interfaces/policyDataInterface';
 
 @Component({
   tag: 'policy-tile',
@@ -11,7 +11,7 @@ import { PolicyDetailsInterface } from '../../policy-details/policy-details/poli
 
 export class PolicyTile {
 
-  @Prop() policydetails: PolicyDetailsInterface;
+  @Prop() policydetails: PolicyDataInterface;
   @Prop() policyindex: number;
   private _policyIndex: string;
 
@@ -63,10 +63,7 @@ export class PolicyTile {
               <policy-management-tile product-image="money-check" link-text="#" title-text="Claims">Make a claim or see existing claims</policy-management-tile>
             </tile-container>
             <policy-term-container></policy-term-container>
-            <cover-details-container coverdetails='
-              [
-                {"policytype": "car", "id": "P34435554", "selected": true}
-              ]'></cover-details-container>
+            <cover-details-container coverdetails={[this.policydetails]}></cover-details-container>
           </div> 
         </div>
       </div>

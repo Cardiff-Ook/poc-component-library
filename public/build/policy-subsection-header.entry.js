@@ -1,4 +1,4 @@
-import { r as registerInstance, h } from './index-0240b1cc.js';
+import { r as registerInstance, h } from './index-e3478a0e.js';
 
 const policySubsectionHeaderCss = ":host{display:block}.nobg{background-color:var(--gw-grey-light-63-color) !important}h1{width:512px}.subsectionText{margin-top:0;text-align:left;margin-bottom:24px;color:#4A4643!important;font-size:20px;font-style:normal;font-family:jaf-facitweb, Helvetica, Arial;font-weight:800;line-height:24px;word-wrap:break-word}";
 

@@ -1,4 +1,4 @@
-import { r as registerInstance, h } from './index-0240b1cc.js';
+import { r as registerInstance, h } from './index-e3478a0e.js';
 
 const navBarCss = ":host{display:block}.inlineOverride{display:inline-flex;align-items:center;justify-content:center}";
 
@@ -15,7 +15,6 @@ const NavBar = class {
     }
   }
   componentWillLoad() {
-    console.log(this.buttons);
     this.arrayDataWatcher(this.buttons);
   }
   isActive(val) {

@@ -26,9 +26,10 @@ graph TD;
   policy-details --> sub-section-title
   policy-tile --> policy-subsection-header
   policy-tile --> tile-container
-  policy-tile --> product-tile
+  policy-tile --> policy-management-tile
   policy-tile --> policy-term-container
   policy-tile --> cover-details-container
+  cover-details-container --> cover-details-tile
   cover-details-container --> sub-section-title
   style policy-details fill:#f9f,stroke:#333,stroke-width:4px
 ```

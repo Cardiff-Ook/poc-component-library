@@ -5,16 +5,18 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { CoverDetailsInterface } from "./components/base-components/cover-details-container/cover-details-container";
+import { PolicyDataInterface } from "./interfaces/policyDataInterface";
 import { BulletPointInterface } from "./components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points";
 import { ButtonInterface } from "./components/app-layout/nav-bar/nav-bar";
-import { PolicyDetailsInterface } from "./components/policy-details/policy-details/policy-details";
-import { PolicyDetailsInterface as PolicyDetailsInterface1 } from "./components/policy-details/policy-details/policy-details";
 export namespace Components {
     interface ContentContainer {
     }
     interface CoverDetailsContainer {
-        "coverdetails": Array<CoverDetailsInterface> | string;
+        "coverdetails": Array<PolicyDataInterface> | string;
+    }
+    interface CoverDetailsTile {
+        "coverdetails": PolicyDataInterface | string;
+        "coverindex": number;
     }
     interface HeaderText {
     }
@@ -60,7 +62,7 @@ export namespace Components {
     interface PoliciesContainer {
     }
     interface PolicyDetails {
-        "policies": Array<PolicyDetailsInterface> | string;
+        "policies": Array<PolicyDataInterface> | string;
     }
     interface PolicyManagementTile {
         /**
@@ -81,7 +83,7 @@ export namespace Components {
     interface PolicyTermContainer {
     }
     interface PolicyTile {
-        "policydetails": PolicyDetailsInterface1;
+        "policydetails": PolicyDataInterface;
         "policyindex": number;
     }
     interface ProductTile {
@@ -121,6 +123,12 @@ declare global {
     var HTMLCoverDetailsContainerElement: {
         prototype: HTMLCoverDetailsContainerElement;
         new (): HTMLCoverDetailsContainerElement;
+    };
+    interface HTMLCoverDetailsTileElement extends Components.CoverDetailsTile, HTMLStencilElement {
+    }
+    var HTMLCoverDetailsTileElement: {
+        prototype: HTMLCoverDetailsTileElement;
+        new (): HTMLCoverDetailsTileElement;
     };
     interface HTMLHeaderTextElement extends Components.HeaderText, HTMLStencilElement {
     }
@@ -275,6 +283,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "content-container": HTMLContentContainerElement;
         "cover-details-container": HTMLCoverDetailsContainerElement;
+        "cover-details-tile": HTMLCoverDetailsTileElement;
         "header-text": HTMLHeaderTextElement;
         "login-footer": HTMLLoginFooterElement;
         "login-form": HTMLLoginFormElement;
@@ -306,7 +315,11 @@ declare namespace LocalJSX {
     interface ContentContainer {
     }
     interface CoverDetailsContainer {
-        "coverdetails"?: Array<CoverDetailsInterface> | string;
+        "coverdetails"?: Array<PolicyDataInterface> | string;
+    }
+    interface CoverDetailsTile {
+        "coverdetails"?: PolicyDataInterface | string;
+        "coverindex"?: number;
     }
     interface HeaderText {
     }
@@ -356,7 +369,7 @@ declare namespace LocalJSX {
     interface PoliciesContainer {
     }
     interface PolicyDetails {
-        "policies"?: Array<PolicyDetailsInterface> | string;
+        "policies"?: Array<PolicyDataInterface> | string;
     }
     interface PolicyManagementTile {
         /**
@@ -377,7 +390,7 @@ declare namespace LocalJSX {
     interface PolicyTermContainer {
     }
     interface PolicyTile {
-        "policydetails"?: PolicyDetailsInterface1;
+        "policydetails"?: PolicyDataInterface;
         "policyindex"?: number;
     }
     interface ProductTile {
@@ -403,6 +416,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "content-container": ContentContainer;
         "cover-details-container": CoverDetailsContainer;
+        "cover-details-tile": CoverDetailsTile;
         "header-text": HeaderText;
         "login-footer": LoginFooter;
         "login-form": LoginForm;
@@ -436,6 +450,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "content-container": LocalJSX.ContentContainer & JSXBase.HTMLAttributes<HTMLContentContainerElement>;
             "cover-details-container": LocalJSX.CoverDetailsContainer & JSXBase.HTMLAttributes<HTMLCoverDetailsContainerElement>;
+            "cover-details-tile": LocalJSX.CoverDetailsTile & JSXBase.HTMLAttributes<HTMLCoverDetailsTileElement>;
             "header-text": LocalJSX.HeaderText & JSXBase.HTMLAttributes<HTMLHeaderTextElement>;
             "login-footer": LocalJSX.LoginFooter & JSXBase.HTMLAttributes<HTMLLoginFooterElement>;
             "login-form": LocalJSX.LoginForm & JSXBase.HTMLAttributes<HTMLLoginFormElement>;

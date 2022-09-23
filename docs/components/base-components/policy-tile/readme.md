@@ -23,18 +23,19 @@
 
 - [policy-subsection-header](../../policy-details/policy-subsection-header)
 - [tile-container](../../page-layout/tile-container)
-- [product-tile](../product-tile)
+- [policy-management-tile](../policy-management-tile)
 - [policy-term-container](../../page-layout/policy-term-container)
-- [cover-details-container](../cover-details-container)
+- [cover-details-container](../../page-layout/cover-details-container)
 
 ### Graph
 ```mermaid
 graph TD;
   policy-tile --> policy-subsection-header
   policy-tile --> tile-container
-  policy-tile --> product-tile
+  policy-tile --> policy-management-tile
   policy-tile --> policy-term-container
   policy-tile --> cover-details-container
+  cover-details-container --> cover-details-tile
   cover-details-container --> sub-section-title
   policy-details --> policy-tile
   style policy-tile fill:#f9f,stroke:#333,stroke-width:4px

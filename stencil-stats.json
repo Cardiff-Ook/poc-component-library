@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-09-23T11:05:28",
+  "timestamp": "2022-09-23T12:30:59",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -7,16 +7,17 @@
   "app": {
     "namespace": "PocAdmComponents",
     "fsNamespace": "poc-adm-components",
-    "components": 27,
-    "entries": 27,
-    "bundles": 103,
+    "components": 28,
+    "entries": 28,
+    "bundles": 104,
     "outputs": [
       {
         "name": "dist-custom-elements",
-        "files": 28,
+        "files": 29,
         "generatedFiles": [
           "./dist/components/content-container.d.ts",
           "./dist/components/cover-details-container.d.ts",
+          "./dist/components/cover-details-tile.d.ts",
           "./dist/components/header-text.d.ts",
           "./dist/components/index.d.ts",
           "./dist/components/login-footer.d.ts",
@@ -52,11 +53,11 @@
           "./dist/poc-adm-components/app-globals-0f993ce5.js",
           "./dist/poc-adm-components/content-container.entry.js",
           "./dist/poc-adm-components/cover-details-container.entry.js",
+          "./dist/poc-adm-components/cover-details-tile.entry.js",
           "./dist/poc-adm-components/css-shim-5064654c.js",
           "./dist/poc-adm-components/dom-104fb833.js",
           "./dist/poc-adm-components/header-text.entry.js",
           "./dist/poc-adm-components/index-0240b1cc.js",
-          "./dist/poc-adm-components/index-c0c4017c.js",
           "./dist/poc-adm-components/index-e3478a0e.js",
           "./dist/poc-adm-components/index.esm.js",
           "./dist/poc-adm-components/login-footer.entry.js",
@@ -88,11 +89,11 @@
           "./public/build/app-globals-0f993ce5.js",
           "./public/build/content-container.entry.js",
           "./public/build/cover-details-container.entry.js",
+          "./public/build/cover-details-tile.entry.js",
           "./public/build/css-shim-5064654c.js",
           "./public/build/dom-104fb833.js",
           "./public/build/header-text.entry.js",
           "./public/build/index-0240b1cc.js",
-          "./public/build/index-c0c4017c.js",
           "./public/build/index-e3478a0e.js",
           "./public/build/index.esm.js",
           "./public/build/login-footer.entry.js",
@@ -157,7 +158,7 @@
         "bundleId": "content-container",
         "fileName": "content-container.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 853
       },
@@ -169,7 +170,7 @@
         "bundleId": "header-text",
         "fileName": "header-text.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 678
       },
@@ -181,7 +182,7 @@
         "bundleId": "login-footer",
         "fileName": "login-footer.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 501
       },
@@ -193,7 +194,7 @@
         "bundleId": "login-form",
         "fileName": "login-form.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 3748
       },
@@ -205,7 +206,7 @@
         "bundleId": "login-header",
         "fileName": "login-header.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 1257
       },
@@ -217,7 +218,7 @@
         "bundleId": "login-title-wrapper",
         "fileName": "login-title-wrapper.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 696
       },
@@ -229,7 +230,7 @@
         "bundleId": "main-header",
         "fileName": "main-header.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 1020
       },
@@ -241,7 +242,7 @@
         "bundleId": "main-page-contents",
         "fileName": "main-page-contents.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 592
       },
@@ -253,7 +254,7 @@
         "bundleId": "multi-banner-bullet-points",
         "fileName": "multi-banner-bullet-points.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 1045
       },
@@ -265,7 +266,7 @@
         "bundleId": "multi-banner-header",
         "fileName": "multi-banner-header.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 483
       },
@@ -277,7 +278,7 @@
         "bundleId": "multi-banner-title",
         "fileName": "multi-banner-title.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 492
       },
@@ -289,7 +290,7 @@
         "bundleId": "multi-car-banner",
         "fileName": "multi-car-banner.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 1077
       },
@@ -301,9 +302,9 @@
         "bundleId": "nav-bar",
         "fileName": "nav-bar.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
-        "originalByteSize": 1642
+        "originalByteSize": 1611
       },
       {
         "key": "page-header-bar.entry",
@@ -313,7 +314,7 @@
         "bundleId": "page-header-bar",
         "fileName": "page-header-bar.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 763
       },
@@ -325,7 +326,7 @@
         "bundleId": "page-logo",
         "fileName": "page-logo.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 644
       },
@@ -337,7 +338,7 @@
         "bundleId": "policies-container",
         "fileName": "policies-container.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 571
       },
@@ -349,7 +350,7 @@
         "bundleId": "policy-details",
         "fileName": "policy-details.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 1676
       },
@@ -361,7 +362,7 @@
         "bundleId": "product-tile",
         "fileName": "product-tile.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 743
       },
@@ -373,7 +374,7 @@
         "bundleId": "text-title-bar",
         "fileName": "text-title-bar.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 577
       },
@@ -385,9 +386,9 @@
         "bundleId": "policy-tile",
         "fileName": "policy-tile.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
-        "originalByteSize": 3815
+        "originalByteSize": 3723
       },
       {
         "key": "quote-button.entry",
@@ -397,7 +398,7 @@
         "bundleId": "quote-button",
         "fileName": "quote-button.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 724
       },
@@ -409,9 +410,9 @@
         "bundleId": "cover-details-container",
         "fileName": "cover-details-container.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
-        "originalByteSize": 3371
+        "originalByteSize": 1734
       },
       {
         "key": "policy-management-tile.entry",
@@ -421,7 +422,7 @@
         "bundleId": "policy-management-tile",
         "fileName": "policy-management-tile.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 1220
       },
@@ -433,7 +434,7 @@
         "bundleId": "policy-subsection-header",
         "fileName": "policy-subsection-header.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 1202
       },
@@ -445,7 +446,7 @@
         "bundleId": "policy-term-container",
         "fileName": "policy-term-container.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 1499
       },
@@ -457,9 +458,21 @@
         "bundleId": "tile-container",
         "fileName": "tile-container.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 645
+      },
+      {
+        "key": "cover-details-tile.entry",
+        "components": [
+          "cover-details-tile"
+        ],
+        "bundleId": "cover-details-tile",
+        "fileName": "cover-details-tile.entry.js",
+        "imports": [
+          "index-e3478a0e.js"
+        ],
+        "originalByteSize": 2968
       },
       {
         "key": "sub-section-title.entry",
@@ -469,7 +482,7 @@
         "bundleId": "sub-section-title",
         "fileName": "sub-section-title.entry.js",
         "imports": [
-          "index-0240b1cc.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 413
       }
@@ -510,12 +523,13 @@
     },
     {
       "tag": "cover-details-container",
-      "path": "./src/components/base-components/cover-details-container/cover-details-container.js",
-      "source": "./src/components/base-components/cover-details-container/cover-details-container.tsx",
+      "path": "./src/components/page-layout/cover-details-container/cover-details-container.js",
+      "source": "./src/components/page-layout/cover-details-container/cover-details-container.tsx",
       "elementRef": "element",
       "componentClassName": "CoverDetailsContainer",
       "assetsDirs": [],
       "dependencies": [
+        "cover-details-tile",
         "sub-section-title"
       ],
       "dependents": [
@@ -523,6 +537,7 @@
         "policy-tile"
       ],
       "directDependencies": [
+        "cover-details-tile",
         "sub-section-title"
       ],
       "directDependents": [
@@ -541,6 +556,7 @@
       "listeners": [],
       "methods": [],
       "potentialCmpRefs": [
+        "cover-details-tile",
         "sub-section-title"
       ],
       "properties": [
@@ -553,16 +569,99 @@
           "required": false,
           "optional": false,
           "complexType": {
-            "original": "Array<CoverDetailsInterface> | string",
-            "resolved": "CoverDetailsInterface[] | string",
+            "original": "Array<PolicyDataInterface> | string",
+            "resolved": "PolicyDataInterface[] | string",
             "references": {
               "Array": {
                 "location": "global"
               },
-              "CoverDetailsInterface": {
-                "location": "local"
+              "PolicyDataInterface": {
+                "location": "import",
+                "path": "../../../interfaces/policyDataInterface"
               }
             }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": null,
+      "states": [
+        {
+          "name": "collapsed"
+        }
+      ]
+    },
+    {
+      "tag": "cover-details-tile",
+      "path": "./src/components/base-components/cover-details-tile/cover-details-tile.js",
+      "source": "./src/components/base-components/cover-details-tile/cover-details-tile.tsx",
+      "elementRef": "element",
+      "componentClassName": "CoverDetailsTile",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [
+        "cover-details-container",
+        "policy-details",
+        "policy-tile"
+      ],
+      "directDependencies": [],
+      "directDependents": [
+        "cover-details-container"
+      ],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "coverdetails",
+          "type": "string",
+          "attribute": "coverdetails",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "PolicyDataInterface | string",
+            "resolved": "PolicyDataInterface | string",
+            "references": {
+              "PolicyDataInterface": {
+                "location": "import",
+                "path": "../../../interfaces/policyDataInterface"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "coverindex",
+          "type": "number",
+          "attribute": "coverindex",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "number",
+            "resolved": "number",
+            "references": {}
           },
           "docs": {
             "tags": [],
@@ -1193,13 +1292,14 @@
     },
     {
       "tag": "policy-details",
-      "path": "./src/components/policy-details/policy-details/policy-details.js",
-      "source": "./src/components/policy-details/policy-details/policy-details.tsx",
+      "path": "./src/components/page-layout/policy-details/policy-details/policy-details.js",
+      "source": "./src/components/page-layout/policy-details/policy-details/policy-details.tsx",
       "elementRef": null,
       "componentClassName": "PolicyDetails",
       "assetsDirs": [],
       "dependencies": [
         "cover-details-container",
+        "cover-details-tile",
         "policy-management-tile",
         "policy-subsection-header",
         "policy-term-container",
@@ -1239,14 +1339,15 @@
           "required": false,
           "optional": false,
           "complexType": {
-            "original": "Array<PolicyDetailsInterface> | string",
-            "resolved": "PolicyDetailsInterface[] | string",
+            "original": "Array<PolicyDataInterface> | string",
+            "resolved": "PolicyDataInterface[] | string",
             "references": {
               "Array": {
                 "location": "global"
               },
-              "PolicyDetailsInterface": {
-                "location": "local"
+              "PolicyDataInterface": {
+                "location": "import",
+                "path": "../../../../interfaces/policyDataInterface"
               }
             }
           },
@@ -1353,8 +1454,8 @@
     },
     {
       "tag": "policy-subsection-header",
-      "path": "./src/components/policy-details/policy-subsection-header/policy-subsection-header.js",
-      "source": "./src/components/policy-details/policy-subsection-header/policy-subsection-header.tsx",
+      "path": "./src/components/page-layout/policy-details/policy-subsection-header/policy-subsection-header.js",
+      "source": "./src/components/page-layout/policy-details/policy-subsection-header/policy-subsection-header.tsx",
       "elementRef": null,
       "componentClassName": "PolicySubsectionHeader",
       "assetsDirs": [],
@@ -1426,6 +1527,7 @@
       "assetsDirs": [],
       "dependencies": [
         "cover-details-container",
+        "cover-details-tile",
         "policy-management-tile",
         "policy-subsection-header",
         "policy-term-container",
@@ -1473,12 +1575,12 @@
           "required": false,
           "optional": false,
           "complexType": {
-            "original": "PolicyDetailsInterface",
-            "resolved": "PolicyDetailsInterface",
+            "original": "PolicyDataInterface",
+            "resolved": "PolicyDataInterface",
             "references": {
-              "PolicyDetailsInterface": {
+              "PolicyDataInterface": {
                 "location": "import",
-                "path": "../../policy-details/policy-details/policy-details"
+                "path": "../../../interfaces/policyDataInterface"
               }
             }
           },
@@ -3750,14 +3852,15 @@
               "required": false,
               "optional": false,
               "complexType": {
-                "original": "Array<PolicyDetailsInterface> | string",
-                "resolved": "PolicyDetailsInterface[] | string",
+                "original": "Array<PolicyDataInterface> | string",
+                "resolved": "PolicyDataInterface[] | string",
                 "references": {
                   "Array": {
                     "location": "global"
                   },
-                  "PolicyDetailsInterface": {
-                    "location": "local"
+                  "PolicyDataInterface": {
+                    "location": "import",
+                    "path": "../../../../interfaces/policyDataInterface"
                   }
                 }
               },
@@ -3787,7 +3890,7 @@
               "styleIdentifier": "policyDetailsStyle",
               "externalStyles": [
                 {
-                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/policy-details/policy-details/policy-details.css",
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policy-details/policy-details/policy-details.css",
                   "relativePath": "policy-details.css",
                   "originalComponentPath": "policy-details.css"
                 }
@@ -3803,8 +3906,8 @@
             "tags": [],
             "text": ""
           },
-          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/policy-details/policy-details/policy-details.js",
-          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/policy-details/policy-details/policy-details.tsx",
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policy-details/policy-details/policy-details.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policy-details/policy-details/policy-details.tsx",
           "sourceMapPath": null,
           "hasAttributeChangedCallbackFn": false,
           "hasComponentWillLoadFn": true,
@@ -3876,6 +3979,7 @@
           ],
           "dependencies": [
             "cover-details-container",
+            "cover-details-tile",
             "policy-management-tile",
             "policy-subsection-header",
             "policy-term-container",
@@ -4167,12 +4271,12 @@
               "required": false,
               "optional": false,
               "complexType": {
-                "original": "PolicyDetailsInterface",
-                "resolved": "PolicyDetailsInterface",
+                "original": "PolicyDataInterface",
+                "resolved": "PolicyDataInterface",
                 "references": {
-                  "PolicyDetailsInterface": {
+                  "PolicyDataInterface": {
                     "location": "import",
-                    "path": "../../policy-details/policy-details/policy-details"
+                    "path": "../../../interfaces/policyDataInterface"
                   }
                 }
               },
@@ -4324,6 +4428,7 @@
           ],
           "dependencies": [
             "cover-details-container",
+            "cover-details-tile",
             "policy-management-tile",
             "policy-subsection-header",
             "policy-term-container",
@@ -4477,14 +4582,15 @@
               "required": false,
               "optional": false,
               "complexType": {
-                "original": "Array<CoverDetailsInterface> | string",
-                "resolved": "CoverDetailsInterface[] | string",
+                "original": "Array<PolicyDataInterface> | string",
+                "resolved": "PolicyDataInterface[] | string",
                 "references": {
                   "Array": {
                     "location": "global"
                   },
-                  "CoverDetailsInterface": {
-                    "location": "local"
+                  "PolicyDataInterface": {
+                    "location": "import",
+                    "path": "../../../interfaces/policyDataInterface"
                   }
                 }
               },
@@ -4518,7 +4624,7 @@
               "styleIdentifier": "coverDetailsContainerStyle",
               "externalStyles": [
                 {
-                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/cover-details-container/cover-details-container.css",
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/cover-details-container/cover-details-container.css",
                   "relativePath": "cover-details-container.css",
                   "originalComponentPath": "cover-details-container.css"
                 }
@@ -4534,12 +4640,12 @@
             "tags": [],
             "text": ""
           },
-          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/cover-details-container/cover-details-container.js",
-          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/cover-details-container/cover-details-container.tsx",
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/cover-details-container/cover-details-container.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/cover-details-container/cover-details-container.tsx",
           "sourceMapPath": null,
           "hasAttributeChangedCallbackFn": false,
           "hasComponentWillLoadFn": true,
-          "hasComponentDidLoadFn": true,
+          "hasComponentDidLoadFn": false,
           "hasComponentShouldUpdateFn": false,
           "hasComponentWillUpdateFn": false,
           "hasComponentDidUpdateFn": false,
@@ -4575,7 +4681,7 @@
           "hasVdomClass": true,
           "hasVdomFunctional": false,
           "hasVdomKey": false,
-          "hasVdomListener": true,
+          "hasVdomListener": false,
           "hasVdomPropOrAttr": true,
           "hasVdomRef": false,
           "hasVdomRender": true,
@@ -4586,31 +4692,27 @@
           "htmlAttrNames": [
             "id",
             "class",
-            "src",
-            "data-cs-mask",
-            "type",
-            "data-testid",
-            "onClick",
-            "hidden",
+            "coverdetails",
+            "coverindex",
             "pagetitle"
           ],
           "htmlTagNames": [
             "div",
-            "img",
-            "span",
-            "button",
-            "slot",
+            "cover-details-tile",
             "sub-section-title"
           ],
           "htmlParts": [],
           "isUpdateable": true,
           "potentialCmpRefs": [
+            "cover-details-tile",
             "sub-section-title"
           ],
           "directDependencies": [
+            "cover-details-tile",
             "sub-section-title"
           ],
           "dependencies": [
+            "cover-details-tile",
             "sub-section-title"
           ],
           "dependents": [
@@ -4825,7 +4927,7 @@
               "styleIdentifier": "policySubsectionHeaderStyle",
               "externalStyles": [
                 {
-                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/policy-details/policy-subsection-header/policy-subsection-header.css",
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policy-details/policy-subsection-header/policy-subsection-header.css",
                   "relativePath": "policy-subsection-header.css",
                   "originalComponentPath": "policy-subsection-header.css"
                 }
@@ -4841,8 +4943,8 @@
             "tags": [],
             "text": ""
           },
-          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/policy-details/policy-subsection-header/policy-subsection-header.js",
-          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/policy-details/policy-subsection-header/policy-subsection-header.tsx",
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policy-details/policy-subsection-header/policy-subsection-header.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policy-details/policy-subsection-header/policy-subsection-header.tsx",
           "sourceMapPath": null,
           "hasAttributeChangedCallbackFn": false,
           "hasComponentWillLoadFn": false,
@@ -5170,6 +5272,183 @@
     {
       "cmps": [
         {
+          "tagName": "cover-details-tile",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "CoverDetailsTile",
+          "elementRef": "element",
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "coverdetails",
+              "type": "string",
+              "attribute": "coverdetails",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "PolicyDataInterface | string",
+                "resolved": "PolicyDataInterface | string",
+                "references": {
+                  "PolicyDataInterface": {
+                    "location": "import",
+                    "path": "../../../interfaces/policyDataInterface"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "coverindex",
+              "type": "number",
+              "attribute": "coverindex",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "number",
+                "resolved": "number",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "collapsed"
+            }
+          ],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [
+            {
+              "propName": "coverdetails",
+              "methodName": "arrayDataWatcher"
+            }
+          ],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "COVER-DETAILS-TILE",
+              "styleStr": null,
+              "styleIdentifier": "coverDetailsTileStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/cover-details-tile/cover-details-tile.css",
+                  "relativePath": "cover-details-tile.css",
+                  "originalComponentPath": "cover-details-tile.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/cover-details-tile/cover-details-tile.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/cover-details-tile/cover-details-tile.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": true,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": true,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": true,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": true,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": true,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "id",
+            "class",
+            "src",
+            "data-cs-mask",
+            "type",
+            "data-testid",
+            "onClick",
+            "hidden"
+          ],
+          "htmlTagNames": [
+            "div",
+            "img",
+            "span",
+            "button",
+            "slot"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [
+            "cover-details-container",
+            "policy-details",
+            "policy-tile"
+          ],
+          "directDependents": [
+            "cover-details-container"
+          ]
+        }
+      ],
+      "entryKey": "cover-details-tile.entry"
+    },
+    {
+      "cmps": [
+        {
           "tagName": "sub-section-title",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -5305,116 +5584,238 @@
   ],
   "componentGraph": {
     "sc-content-container": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-cover-details-container": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
+    ],
+    "sc-cover-details-tile": [
+      "index-e3478a0e.js"
     ],
     "sc-header-text": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-login-footer": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-login-form": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-login-header": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-login-title-wrapper": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-main-header": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-main-page-contents": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-multi-banner-bullet-points": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-multi-banner-header": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-multi-banner-title": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-multi-car-banner": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-nav-bar": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-page-header-bar": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-page-logo": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-policies-container": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-policy-details": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-policy-management-tile": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-policy-subsection-header": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-policy-term-container": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-policy-tile": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-product-tile": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-quote-button": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-sub-section-title": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-text-title-bar": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ],
     "sc-tile-container": [
-      "index-0240b1cc.js"
+      "index-e3478a0e.js"
     ]
   },
   "sourceGraph": {
     "./src/components/app-layout/login-footer/login-footer.tsx": [],
+    "./src/components/app-layout/login-footer/test/login-footer.e2e.ts": [],
+    "./src/components/app-layout/login-footer/test/login-footer.spec.tsx": [
+      "./src/components/app-layout/login-footer/login-footer"
+    ],
+    "./src/components/app-layout/login-header/login-header.e2e.ts": [],
+    "./src/components/app-layout/login-header/login-header.spec.ts": [
+      "./src/components/app-layout/login-header/login-header"
+    ],
     "./src/components/app-layout/login-header/login-header.tsx": [],
     "./src/components/app-layout/login-title-wrapper/login-title-wrapper.tsx": [],
+    "./src/components/app-layout/login-title-wrapper/test/login-title-wrapper.e2e.ts": [],
+    "./src/components/app-layout/login-title-wrapper/test/login-title-wrapper.spec.tsx": [
+      "./src/components/app-layout/login-title-wrapper/login-title-wrapper"
+    ],
     "./src/components/app-layout/main-header/main-header.tsx": [],
+    "./src/components/app-layout/main-header/test/main-header.e2e.ts": [],
+    "./src/components/app-layout/main-header/test/main-header.spec.tsx": [
+      "./src/components/app-layout/main-header/main-header"
+    ],
     "./src/components/app-layout/main-page-contents/main-page-contents.tsx": [],
+    "./src/components/app-layout/main-page-contents/test/main-page-contents.e2e.ts": [],
+    "./src/components/app-layout/main-page-contents/test/main-page-contents.spec.tsx": [
+      "./src/components/app-layout/main-page-contents/main-page-contents"
+    ],
     "./src/components/app-layout/multi-car-banner/multi-car-banner.tsx": [],
+    "./src/components/app-layout/multi-car-banner/test/multi-car-banner.e2e.ts": [],
+    "./src/components/app-layout/multi-car-banner/test/multi-car-banner.spec.tsx": [
+      "./src/components/app-layout/multi-car-banner/multi-car-banner"
+    ],
     "./src/components/app-layout/nav-bar/nav-bar.tsx": [],
-    "./src/components/base-components/cover-details-container/cover-details-container.tsx": [],
+    "./src/components/app-layout/nav-bar/test/nav-bar.e2e.ts": [],
+    "./src/components/app-layout/nav-bar/test/nav-bar.spec.tsx": [
+      "./src/components/app-layout/nav-bar/nav-bar"
+    ],
+    "./src/components/base-components/cover-details-tile/cover-details-tile.tsx": [],
+    "./src/components/base-components/cover-details-tile/test/cover-details-tile.e2e.ts": [],
+    "./src/components/base-components/cover-details-tile/test/cover-details-tile.spec.tsx": [
+      "./src/components/base-components/cover-details-tile/cover-details-tile"
+    ],
     "./src/components/base-components/header-text/header-text.tsx": [],
+    "./src/components/base-components/header-text/test/header-text.e2e.ts": [],
+    "./src/components/base-components/header-text/test/header-text.spec.tsx": [
+      "./src/components/base-components/header-text/header-text"
+    ],
     "./src/components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points.tsx": [],
+    "./src/components/base-components/multi-banner/multi-banner-bullet-points/test/multi-banner-bullet-points.e2e.ts": [],
+    "./src/components/base-components/multi-banner/multi-banner-bullet-points/test/multi-banner-bullet-points.spec.tsx": [
+      "./src/components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points"
+    ],
     "./src/components/base-components/multi-banner/multi-banner-header/multi-banner-header.tsx": [],
+    "./src/components/base-components/multi-banner/multi-banner-header/test/multi-banner-header.e2e.ts": [],
+    "./src/components/base-components/multi-banner/multi-banner-header/test/multi-banner-header.spec.tsx": [
+      "./src/components/base-components/multi-banner/multi-banner-header/multi-banner-header"
+    ],
     "./src/components/base-components/multi-banner/muti-banner-title/multi-banner-title.tsx": [],
+    "./src/components/base-components/multi-banner/muti-banner-title/test/multi-banner-title.e2e.ts": [],
+    "./src/components/base-components/multi-banner/muti-banner-title/test/multi-banner-title.spec.tsx": [
+      "./src/components/base-components/multi-banner/muti-banner-title/multi-banner-title"
+    ],
     "./src/components/base-components/page-logo/page-logo.tsx": [],
+    "./src/components/base-components/page-logo/test/page-logo.e2e.ts": [],
+    "./src/components/base-components/page-logo/test/page-logo.spec.tsx": [
+      "./src/components/base-components/page-logo/page-logo"
+    ],
     "./src/components/base-components/policy-management-tile/policy-management-tile.tsx": [],
+    "./src/components/base-components/policy-management-tile/test/policy-management-tile.e2e.ts": [],
+    "./src/components/base-components/policy-management-tile/test/policy-management-tile.spec.tsx": [
+      "./src/components/base-components/policy-management-tile/policy-management-tile"
+    ],
     "./src/components/base-components/policy-tile/policy-tile.tsx": [],
+    "./src/components/base-components/policy-tile/test/policy-tile.e2e.ts": [],
+    "./src/components/base-components/policy-tile/test/policy-tile.spec.tsx": [
+      "./src/components/base-components/policy-tile/policy-tile"
+    ],
     "./src/components/base-components/product-tile/product-tile.tsx": [],
+    "./src/components/base-components/product-tile/test/product-tile.e2e.ts": [],
+    "./src/components/base-components/product-tile/test/product-tile.spec.tsx": [
+      "./src/components/base-components/product-tile/product-tile"
+    ],
     "./src/components/base-components/quote-button/quote-button.tsx": [],
+    "./src/components/base-components/quote-button/test/quote-button.e2e.ts": [],
+    "./src/components/base-components/quote-button/test/quote-button.spec.tsx": [
+      "./src/components/base-components/quote-button/quote-button"
+    ],
     "./src/components/base-components/sub-section-title/sub-section-title.tsx": [],
+    "./src/components/base-components/sub-section-title/test/sub-section-title.e2e.ts": [],
+    "./src/components/base-components/sub-section-title/test/sub-section-title.spec.tsx": [
+      "./src/components/base-components/sub-section-title/sub-section-title"
+    ],
     "./src/components/forms/login-form/login-form.tsx": [],
+    "./src/components/forms/login-form/test/login-form.e2e.ts": [],
+    "./src/components/forms/login-form/test/login-form.spec.tsx": [
+      "./src/components/forms/login-form/login-form"
+    ],
     "./src/components/page-layout/content-container/content-container.tsx": [],
+    "./src/components/page-layout/content-container/test/content-container.e2e.ts": [],
+    "./src/components/page-layout/content-container/test/content-container.spec.tsx": [
+      "./src/components/page-layout/content-container/content-container"
+    ],
+    "./src/components/page-layout/cover-details-container/cover-details-container.tsx": [],
+    "./src/components/page-layout/cover-details-container/test/cover-details-container.e2e.ts": [],
+    "./src/components/page-layout/cover-details-container/test/cover-details-container.spec.tsx": [
+      "./src/components/page-layout/cover-details-container/cover-details-container"
+    ],
     "./src/components/page-layout/page-header-bar/page-header-bar.tsx": [],
+    "./src/components/page-layout/page-header-bar/test/page-header-bar.e2e.ts": [],
+    "./src/components/page-layout/page-header-bar/test/page-header-bar.spec.tsx": [
+      "./src/components/page-layout/page-header-bar/page-header-bar"
+    ],
     "./src/components/page-layout/policies-container/policies-container.tsx": [],
+    "./src/components/page-layout/policies-container/test/policies-container.e2e.ts": [],
+    "./src/components/page-layout/policies-container/test/policies-container.spec.tsx": [
+      "./src/components/page-layout/policies-container/policies-container"
+    ],
+    "./src/components/page-layout/policy-details/policy-details/policy-details.tsx": [],
+    "./src/components/page-layout/policy-details/policy-details/test/policy-details.e2e.ts": [],
+    "./src/components/page-layout/policy-details/policy-details/test/policy-details.spec.tsx": [
+      "./src/components/page-layout/policy-details/policy-details/policy-details"
+    ],
+    "./src/components/page-layout/policy-details/policy-subsection-header/policy-subsection-header.tsx": [],
+    "./src/components/page-layout/policy-details/policy-subsection-header/test/policy-subsection-header.e2e.ts": [],
+    "./src/components/page-layout/policy-details/policy-subsection-header/test/policy-subsection-header.spec.tsx": [
+      "./src/components/page-layout/policy-details/policy-subsection-header/policy-subsection-header"
+    ],
     "./src/components/page-layout/policy-term-container/policy-term-container.tsx": [],
+    "./src/components/page-layout/policy-term-container/test/policy-term-container.e2e.ts": [],
+    "./src/components/page-layout/policy-term-container/test/policy-term-container.spec.tsx": [
+      "./src/components/page-layout/policy-term-container/policy-term-container"
+    ],
+    "./src/components/page-layout/text-title-bar/test/text-title-bar.e2e.ts": [],
+    "./src/components/page-layout/text-title-bar/test/text-title-bar.spec.tsx": [
+      "./src/components/page-layout/text-title-bar/text-title-bar"
+    ],
     "./src/components/page-layout/text-title-bar/text-title-bar.tsx": [],
+    "./src/components/page-layout/tile-container/test/tile-container.e2e.ts": [],
+    "./src/components/page-layout/tile-container/test/tile-container.spec.tsx": [
+      "./src/components/page-layout/tile-container/tile-container"
+    ],
     "./src/components/page-layout/tile-container/tile-container.tsx": [],
-    "./src/components/policy-details/policy-details/policy-details.tsx": [],
-    "./src/components/policy-details/policy-subsection-header/policy-subsection-header.tsx": [],
     "./src/index.ts": [],
+    "./src/interfaces/policyDataInterface.ts": [],
+    "./src/interfaces/propertyDataInterface.ts": [],
+    "./src/interfaces/vehicleDataInterface.ts": [],
+    "./src/utils/utils.spec.ts": [
+      "./src/utils/utils"
+    ],
     "./src/utils/utils.ts": []
   },
   "collections": []

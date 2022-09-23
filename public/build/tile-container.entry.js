@@ -1,4 +1,4 @@
-import { r as registerInstance, h } from './index-0240b1cc.js';
+import { r as registerInstance, h } from './index-e3478a0e.js';
 
 const tileContainerCss = ".tileContainer{display:flex;flex-flow:row wrap;gap:16px;justify-content:center;margin-left:auto;margin-right:auto;max-width:636px;padding:0}.products{max-width:636px}.options{max-width:656px}";
 

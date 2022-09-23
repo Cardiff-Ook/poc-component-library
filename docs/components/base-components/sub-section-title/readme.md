@@ -16,7 +16,7 @@
 
 ### Used by
 
- - [cover-details-container](../cover-details-container)
+ - [cover-details-container](../../page-layout/cover-details-container)
  - [policy-details](../../policy-details/policy-details)
 
 ### Graph
