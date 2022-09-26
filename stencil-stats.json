@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-09-26T11:53:38",
+  "timestamp": "2022-09-26T13:05:13",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -473,7 +473,7 @@
         "imports": [
           "index-e3478a0e.js"
         ],
-        "originalByteSize": 3818
+        "originalByteSize": 3962
       },
       {
         "key": "sub-section-title.entry",
@@ -497,7 +497,7 @@
         "imports": [
           "index-e3478a0e.js"
         ],
-        "originalByteSize": 3512
+        "originalByteSize": 10031
       }
     ],
     "esm": [],
@@ -5838,13 +5838,18 @@
             "class",
             "data-read-only",
             "role",
-            "aria-hidden"
+            "aria-hidden",
+            "type",
+            "aria-label",
+            "tabindex"
           ],
           "htmlTagNames": [
             "div",
             "h3",
             "label",
-            "span"
+            "span",
+            "button",
+            "i"
           ],
           "htmlParts": [],
           "isUpdateable": true,

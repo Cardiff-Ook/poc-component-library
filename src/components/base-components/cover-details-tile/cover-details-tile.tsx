@@ -70,7 +70,7 @@ export class CoverDetailsTile {
                     </div>
                   </div>
                   <div id="coverDetailDiv" class="CoverList_coverDetailDiv__2a8_A">
-                    <span id="coverDetail" class="CoverList_coverDetailText__1uT1F" data-cs-mask="">{this._coverDetails.coverList[0].vehicleData.vehicleMake}</span>
+                    <span id="coverDetail" class="CoverList_coverDetailText__1uT1F" data-cs-mask="">{this._coverDetails.coverList[0].vehicleData.vehicleMake} {this._coverDetails.coverList[0].vehicleData.vehicleModel}</span>
                   </div>
                   <div id="coverRegPostCodeDiv" class="CoverList_coverRegPostCodeDiv__1RZPc">
                     <span id="coverRegPostCode" class="CoverList_coverRegPostCodeText__LkqLE" data-cs-mask="">Reg No: {this._coverDetails.coverList[0].vehicleData.vehicleReg}</span>
@@ -92,6 +92,7 @@ export class CoverDetailsTile {
           </div>
           <div id="riskCoverDetailsContainer" class="RiskCoverDetails_riskCoverDetailsContainer__2_wY7 RiskCoverDetails_sectionContainer___g21v">
             <details-container detailstype="policy" coverdetails={this.coverdetails}></details-container>
+            <details-container detailstype="car" coverdetails={this.coverdetails}></details-container>
           </div>
         </div>
       </div>
