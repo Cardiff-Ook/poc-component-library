@@ -9,6 +9,8 @@ interface coverList {
 export interface PolicyDataInterface {
   id: string;
   policytype: string;
+  startDate: string;
+  endDate: string;
   coverList: Array<coverList>;
   imageSrc?: string;
   selected?: boolean;

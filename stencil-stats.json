@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-09-23T12:30:59",
+  "timestamp": "2022-09-26T11:53:38",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -7,17 +7,18 @@
   "app": {
     "namespace": "PocAdmComponents",
     "fsNamespace": "poc-adm-components",
-    "components": 28,
-    "entries": 28,
-    "bundles": 104,
+    "components": 29,
+    "entries": 29,
+    "bundles": 105,
     "outputs": [
       {
         "name": "dist-custom-elements",
-        "files": 29,
+        "files": 30,
         "generatedFiles": [
           "./dist/components/content-container.d.ts",
           "./dist/components/cover-details-container.d.ts",
           "./dist/components/cover-details-tile.d.ts",
+          "./dist/components/details-container.d.ts",
           "./dist/components/header-text.d.ts",
           "./dist/components/index.d.ts",
           "./dist/components/login-footer.d.ts",
@@ -55,9 +56,9 @@
           "./dist/poc-adm-components/cover-details-container.entry.js",
           "./dist/poc-adm-components/cover-details-tile.entry.js",
           "./dist/poc-adm-components/css-shim-5064654c.js",
+          "./dist/poc-adm-components/details-container.entry.js",
           "./dist/poc-adm-components/dom-104fb833.js",
           "./dist/poc-adm-components/header-text.entry.js",
-          "./dist/poc-adm-components/index-0240b1cc.js",
           "./dist/poc-adm-components/index-e3478a0e.js",
           "./dist/poc-adm-components/index.esm.js",
           "./dist/poc-adm-components/login-footer.entry.js",
@@ -91,9 +92,9 @@
           "./public/build/cover-details-container.entry.js",
           "./public/build/cover-details-tile.entry.js",
           "./public/build/css-shim-5064654c.js",
+          "./public/build/details-container.entry.js",
           "./public/build/dom-104fb833.js",
           "./public/build/header-text.entry.js",
-          "./public/build/index-0240b1cc.js",
           "./public/build/index-e3478a0e.js",
           "./public/build/index.esm.js",
           "./public/build/login-footer.entry.js",
@@ -472,7 +473,7 @@
         "imports": [
           "index-e3478a0e.js"
         ],
-        "originalByteSize": 2968
+        "originalByteSize": 3818
       },
       {
         "key": "sub-section-title.entry",
@@ -485,6 +486,18 @@
           "index-e3478a0e.js"
         ],
         "originalByteSize": 413
+      },
+      {
+        "key": "details-container.entry",
+        "components": [
+          "details-container"
+        ],
+        "bundleId": "details-container",
+        "fileName": "details-container.entry.js",
+        "imports": [
+          "index-e3478a0e.js"
+        ],
+        "originalByteSize": 3512
       }
     ],
     "esm": [],
@@ -530,6 +543,7 @@
       "assetsDirs": [],
       "dependencies": [
         "cover-details-tile",
+        "details-container",
         "sub-section-title"
       ],
       "dependents": [
@@ -602,13 +616,17 @@
       "elementRef": "element",
       "componentClassName": "CoverDetailsTile",
       "assetsDirs": [],
-      "dependencies": [],
+      "dependencies": [
+        "details-container"
+      ],
       "dependents": [
         "cover-details-container",
         "policy-details",
         "policy-tile"
       ],
-      "directDependencies": [],
+      "directDependencies": [
+        "details-container"
+      ],
       "directDependents": [
         "cover-details-container"
       ],
@@ -624,7 +642,9 @@
       "legacyContext": [],
       "listeners": [],
       "methods": [],
-      "potentialCmpRefs": [],
+      "potentialCmpRefs": [
+        "details-container"
+      ],
       "properties": [
         {
           "name": "coverdetails",
@@ -676,6 +696,85 @@
           "name": "collapsed"
         }
       ]
+    },
+    {
+      "tag": "details-container",
+      "path": "./src/components/base-components/details-container/details-container.js",
+      "source": "./src/components/base-components/details-container/details-container.tsx",
+      "elementRef": null,
+      "componentClassName": "DetailsContainer",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [
+        "cover-details-container",
+        "cover-details-tile",
+        "policy-details",
+        "policy-tile"
+      ],
+      "directDependencies": [],
+      "directDependents": [
+        "cover-details-tile"
+      ],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "detailstype",
+          "type": "string",
+          "attribute": "detailstype",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "coverdetails",
+          "type": "string",
+          "attribute": "coverdetails",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "PolicyDataInterface | string",
+            "resolved": "PolicyDataInterface | string",
+            "references": {
+              "PolicyDataInterface": {
+                "location": "import",
+                "path": "../../../interfaces/policyDataInterface"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": null,
+      "states": []
     },
     {
       "tag": "header-text",
@@ -1300,6 +1399,7 @@
       "dependencies": [
         "cover-details-container",
         "cover-details-tile",
+        "details-container",
         "policy-management-tile",
         "policy-subsection-header",
         "policy-term-container",
@@ -1528,6 +1628,7 @@
       "dependencies": [
         "cover-details-container",
         "cover-details-tile",
+        "details-container",
         "policy-management-tile",
         "policy-subsection-header",
         "policy-term-container",
@@ -3980,6 +4081,7 @@
           "dependencies": [
             "cover-details-container",
             "cover-details-tile",
+            "details-container",
             "policy-management-tile",
             "policy-subsection-header",
             "policy-term-container",
@@ -4429,6 +4531,7 @@
           "dependencies": [
             "cover-details-container",
             "cover-details-tile",
+            "details-container",
             "policy-management-tile",
             "policy-subsection-header",
             "policy-term-container",
@@ -4713,6 +4816,7 @@
           ],
           "dependencies": [
             "cover-details-tile",
+            "details-container",
             "sub-section-title"
           ],
           "dependents": [
@@ -5420,20 +5524,29 @@
             "type",
             "data-testid",
             "onClick",
-            "hidden"
+            "hidden",
+            "detailstype",
+            "coverdetails"
           ],
           "htmlTagNames": [
             "div",
             "img",
             "span",
             "button",
-            "slot"
+            "h3",
+            "details-container"
           ],
           "htmlParts": [],
           "isUpdateable": true,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
+          "potentialCmpRefs": [
+            "details-container"
+          ],
+          "directDependencies": [
+            "details-container"
+          ],
+          "dependencies": [
+            "details-container"
+          ],
           "dependents": [
             "cover-details-container",
             "policy-details",
@@ -5580,6 +5693,176 @@
         }
       ],
       "entryKey": "sub-section-title.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "details-container",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "DetailsContainer",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "detailstype",
+              "type": "string",
+              "attribute": "detailstype",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "coverdetails",
+              "type": "string",
+              "attribute": "coverdetails",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "PolicyDataInterface | string",
+                "resolved": "PolicyDataInterface | string",
+                "references": {
+                  "PolicyDataInterface": {
+                    "location": "import",
+                    "path": "../../../interfaces/policyDataInterface"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [
+            {
+              "propName": "coverdetails",
+              "methodName": "arrayDataWatcher"
+            }
+          ],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "DETAILS-CONTAINER",
+              "styleStr": null,
+              "styleIdentifier": "detailsContainerStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/details-container/details-container.css",
+                  "relativePath": "details-container.css",
+                  "originalComponentPath": "details-container.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/details-container/details-container.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/details-container/details-container.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": true,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": true,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": true,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "id",
+            "class",
+            "data-read-only",
+            "role",
+            "aria-hidden"
+          ],
+          "htmlTagNames": [
+            "div",
+            "h3",
+            "label",
+            "span"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [
+            "cover-details-container",
+            "cover-details-tile",
+            "policy-details",
+            "policy-tile"
+          ],
+          "directDependents": [
+            "cover-details-tile"
+          ]
+        }
+      ],
+      "entryKey": "details-container.entry"
     }
   ],
   "componentGraph": {
@@ -5590,6 +5873,9 @@
       "index-e3478a0e.js"
     ],
     "sc-cover-details-tile": [
+      "index-e3478a0e.js"
+    ],
+    "sc-details-container": [
       "index-e3478a0e.js"
     ],
     "sc-header-text": [
@@ -5670,152 +5956,38 @@
   },
   "sourceGraph": {
     "./src/components/app-layout/login-footer/login-footer.tsx": [],
-    "./src/components/app-layout/login-footer/test/login-footer.e2e.ts": [],
-    "./src/components/app-layout/login-footer/test/login-footer.spec.tsx": [
-      "./src/components/app-layout/login-footer/login-footer"
-    ],
-    "./src/components/app-layout/login-header/login-header.e2e.ts": [],
-    "./src/components/app-layout/login-header/login-header.spec.ts": [
-      "./src/components/app-layout/login-header/login-header"
-    ],
     "./src/components/app-layout/login-header/login-header.tsx": [],
     "./src/components/app-layout/login-title-wrapper/login-title-wrapper.tsx": [],
-    "./src/components/app-layout/login-title-wrapper/test/login-title-wrapper.e2e.ts": [],
-    "./src/components/app-layout/login-title-wrapper/test/login-title-wrapper.spec.tsx": [
-      "./src/components/app-layout/login-title-wrapper/login-title-wrapper"
-    ],
     "./src/components/app-layout/main-header/main-header.tsx": [],
-    "./src/components/app-layout/main-header/test/main-header.e2e.ts": [],
-    "./src/components/app-layout/main-header/test/main-header.spec.tsx": [
-      "./src/components/app-layout/main-header/main-header"
-    ],
     "./src/components/app-layout/main-page-contents/main-page-contents.tsx": [],
-    "./src/components/app-layout/main-page-contents/test/main-page-contents.e2e.ts": [],
-    "./src/components/app-layout/main-page-contents/test/main-page-contents.spec.tsx": [
-      "./src/components/app-layout/main-page-contents/main-page-contents"
-    ],
     "./src/components/app-layout/multi-car-banner/multi-car-banner.tsx": [],
-    "./src/components/app-layout/multi-car-banner/test/multi-car-banner.e2e.ts": [],
-    "./src/components/app-layout/multi-car-banner/test/multi-car-banner.spec.tsx": [
-      "./src/components/app-layout/multi-car-banner/multi-car-banner"
-    ],
     "./src/components/app-layout/nav-bar/nav-bar.tsx": [],
-    "./src/components/app-layout/nav-bar/test/nav-bar.e2e.ts": [],
-    "./src/components/app-layout/nav-bar/test/nav-bar.spec.tsx": [
-      "./src/components/app-layout/nav-bar/nav-bar"
-    ],
     "./src/components/base-components/cover-details-tile/cover-details-tile.tsx": [],
-    "./src/components/base-components/cover-details-tile/test/cover-details-tile.e2e.ts": [],
-    "./src/components/base-components/cover-details-tile/test/cover-details-tile.spec.tsx": [
-      "./src/components/base-components/cover-details-tile/cover-details-tile"
-    ],
+    "./src/components/base-components/details-container/details-container.tsx": [],
     "./src/components/base-components/header-text/header-text.tsx": [],
-    "./src/components/base-components/header-text/test/header-text.e2e.ts": [],
-    "./src/components/base-components/header-text/test/header-text.spec.tsx": [
-      "./src/components/base-components/header-text/header-text"
-    ],
     "./src/components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points.tsx": [],
-    "./src/components/base-components/multi-banner/multi-banner-bullet-points/test/multi-banner-bullet-points.e2e.ts": [],
-    "./src/components/base-components/multi-banner/multi-banner-bullet-points/test/multi-banner-bullet-points.spec.tsx": [
-      "./src/components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points"
-    ],
     "./src/components/base-components/multi-banner/multi-banner-header/multi-banner-header.tsx": [],
-    "./src/components/base-components/multi-banner/multi-banner-header/test/multi-banner-header.e2e.ts": [],
-    "./src/components/base-components/multi-banner/multi-banner-header/test/multi-banner-header.spec.tsx": [
-      "./src/components/base-components/multi-banner/multi-banner-header/multi-banner-header"
-    ],
     "./src/components/base-components/multi-banner/muti-banner-title/multi-banner-title.tsx": [],
-    "./src/components/base-components/multi-banner/muti-banner-title/test/multi-banner-title.e2e.ts": [],
-    "./src/components/base-components/multi-banner/muti-banner-title/test/multi-banner-title.spec.tsx": [
-      "./src/components/base-components/multi-banner/muti-banner-title/multi-banner-title"
-    ],
     "./src/components/base-components/page-logo/page-logo.tsx": [],
-    "./src/components/base-components/page-logo/test/page-logo.e2e.ts": [],
-    "./src/components/base-components/page-logo/test/page-logo.spec.tsx": [
-      "./src/components/base-components/page-logo/page-logo"
-    ],
     "./src/components/base-components/policy-management-tile/policy-management-tile.tsx": [],
-    "./src/components/base-components/policy-management-tile/test/policy-management-tile.e2e.ts": [],
-    "./src/components/base-components/policy-management-tile/test/policy-management-tile.spec.tsx": [
-      "./src/components/base-components/policy-management-tile/policy-management-tile"
-    ],
     "./src/components/base-components/policy-tile/policy-tile.tsx": [],
-    "./src/components/base-components/policy-tile/test/policy-tile.e2e.ts": [],
-    "./src/components/base-components/policy-tile/test/policy-tile.spec.tsx": [
-      "./src/components/base-components/policy-tile/policy-tile"
-    ],
     "./src/components/base-components/product-tile/product-tile.tsx": [],
-    "./src/components/base-components/product-tile/test/product-tile.e2e.ts": [],
-    "./src/components/base-components/product-tile/test/product-tile.spec.tsx": [
-      "./src/components/base-components/product-tile/product-tile"
-    ],
     "./src/components/base-components/quote-button/quote-button.tsx": [],
-    "./src/components/base-components/quote-button/test/quote-button.e2e.ts": [],
-    "./src/components/base-components/quote-button/test/quote-button.spec.tsx": [
-      "./src/components/base-components/quote-button/quote-button"
-    ],
     "./src/components/base-components/sub-section-title/sub-section-title.tsx": [],
-    "./src/components/base-components/sub-section-title/test/sub-section-title.e2e.ts": [],
-    "./src/components/base-components/sub-section-title/test/sub-section-title.spec.tsx": [
-      "./src/components/base-components/sub-section-title/sub-section-title"
-    ],
     "./src/components/forms/login-form/login-form.tsx": [],
-    "./src/components/forms/login-form/test/login-form.e2e.ts": [],
-    "./src/components/forms/login-form/test/login-form.spec.tsx": [
-      "./src/components/forms/login-form/login-form"
-    ],
     "./src/components/page-layout/content-container/content-container.tsx": [],
-    "./src/components/page-layout/content-container/test/content-container.e2e.ts": [],
-    "./src/components/page-layout/content-container/test/content-container.spec.tsx": [
-      "./src/components/page-layout/content-container/content-container"
-    ],
     "./src/components/page-layout/cover-details-container/cover-details-container.tsx": [],
-    "./src/components/page-layout/cover-details-container/test/cover-details-container.e2e.ts": [],
-    "./src/components/page-layout/cover-details-container/test/cover-details-container.spec.tsx": [
-      "./src/components/page-layout/cover-details-container/cover-details-container"
-    ],
     "./src/components/page-layout/page-header-bar/page-header-bar.tsx": [],
-    "./src/components/page-layout/page-header-bar/test/page-header-bar.e2e.ts": [],
-    "./src/components/page-layout/page-header-bar/test/page-header-bar.spec.tsx": [
-      "./src/components/page-layout/page-header-bar/page-header-bar"
-    ],
     "./src/components/page-layout/policies-container/policies-container.tsx": [],
-    "./src/components/page-layout/policies-container/test/policies-container.e2e.ts": [],
-    "./src/components/page-layout/policies-container/test/policies-container.spec.tsx": [
-      "./src/components/page-layout/policies-container/policies-container"
-    ],
     "./src/components/page-layout/policy-details/policy-details/policy-details.tsx": [],
-    "./src/components/page-layout/policy-details/policy-details/test/policy-details.e2e.ts": [],
-    "./src/components/page-layout/policy-details/policy-details/test/policy-details.spec.tsx": [
-      "./src/components/page-layout/policy-details/policy-details/policy-details"
-    ],
     "./src/components/page-layout/policy-details/policy-subsection-header/policy-subsection-header.tsx": [],
-    "./src/components/page-layout/policy-details/policy-subsection-header/test/policy-subsection-header.e2e.ts": [],
-    "./src/components/page-layout/policy-details/policy-subsection-header/test/policy-subsection-header.spec.tsx": [
-      "./src/components/page-layout/policy-details/policy-subsection-header/policy-subsection-header"
-    ],
     "./src/components/page-layout/policy-term-container/policy-term-container.tsx": [],
-    "./src/components/page-layout/policy-term-container/test/policy-term-container.e2e.ts": [],
-    "./src/components/page-layout/policy-term-container/test/policy-term-container.spec.tsx": [
-      "./src/components/page-layout/policy-term-container/policy-term-container"
-    ],
-    "./src/components/page-layout/text-title-bar/test/text-title-bar.e2e.ts": [],
-    "./src/components/page-layout/text-title-bar/test/text-title-bar.spec.tsx": [
-      "./src/components/page-layout/text-title-bar/text-title-bar"
-    ],
     "./src/components/page-layout/text-title-bar/text-title-bar.tsx": [],
-    "./src/components/page-layout/tile-container/test/tile-container.e2e.ts": [],
-    "./src/components/page-layout/tile-container/test/tile-container.spec.tsx": [
-      "./src/components/page-layout/tile-container/tile-container"
-    ],
     "./src/components/page-layout/tile-container/tile-container.tsx": [],
     "./src/index.ts": [],
     "./src/interfaces/policyDataInterface.ts": [],
     "./src/interfaces/propertyDataInterface.ts": [],
     "./src/interfaces/vehicleDataInterface.ts": [],
-    "./src/utils/utils.spec.ts": [
-      "./src/utils/utils"
-    ],
     "./src/utils/utils.ts": []
   },
   "collections": []

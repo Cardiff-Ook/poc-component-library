@@ -18,6 +18,10 @@ export namespace Components {
         "coverdetails": PolicyDataInterface | string;
         "coverindex": number;
     }
+    interface DetailsContainer {
+        "coverdetails": PolicyDataInterface | string;
+        "detailstype": string;
+    }
     interface HeaderText {
     }
     interface LoginFooter {
@@ -129,6 +133,12 @@ declare global {
     var HTMLCoverDetailsTileElement: {
         prototype: HTMLCoverDetailsTileElement;
         new (): HTMLCoverDetailsTileElement;
+    };
+    interface HTMLDetailsContainerElement extends Components.DetailsContainer, HTMLStencilElement {
+    }
+    var HTMLDetailsContainerElement: {
+        prototype: HTMLDetailsContainerElement;
+        new (): HTMLDetailsContainerElement;
     };
     interface HTMLHeaderTextElement extends Components.HeaderText, HTMLStencilElement {
     }
@@ -284,6 +294,7 @@ declare global {
         "content-container": HTMLContentContainerElement;
         "cover-details-container": HTMLCoverDetailsContainerElement;
         "cover-details-tile": HTMLCoverDetailsTileElement;
+        "details-container": HTMLDetailsContainerElement;
         "header-text": HTMLHeaderTextElement;
         "login-footer": HTMLLoginFooterElement;
         "login-form": HTMLLoginFormElement;
@@ -320,6 +331,10 @@ declare namespace LocalJSX {
     interface CoverDetailsTile {
         "coverdetails"?: PolicyDataInterface | string;
         "coverindex"?: number;
+    }
+    interface DetailsContainer {
+        "coverdetails"?: PolicyDataInterface | string;
+        "detailstype"?: string;
     }
     interface HeaderText {
     }
@@ -417,6 +432,7 @@ declare namespace LocalJSX {
         "content-container": ContentContainer;
         "cover-details-container": CoverDetailsContainer;
         "cover-details-tile": CoverDetailsTile;
+        "details-container": DetailsContainer;
         "header-text": HeaderText;
         "login-footer": LoginFooter;
         "login-form": LoginForm;
@@ -451,6 +467,7 @@ declare module "@stencil/core" {
             "content-container": LocalJSX.ContentContainer & JSXBase.HTMLAttributes<HTMLContentContainerElement>;
             "cover-details-container": LocalJSX.CoverDetailsContainer & JSXBase.HTMLAttributes<HTMLCoverDetailsContainerElement>;
             "cover-details-tile": LocalJSX.CoverDetailsTile & JSXBase.HTMLAttributes<HTMLCoverDetailsTileElement>;
+            "details-container": LocalJSX.DetailsContainer & JSXBase.HTMLAttributes<HTMLDetailsContainerElement>;
             "header-text": LocalJSX.HeaderText & JSXBase.HTMLAttributes<HTMLHeaderTextElement>;
             "login-footer": LocalJSX.LoginFooter & JSXBase.HTMLAttributes<HTMLLoginFooterElement>;
             "login-form": LocalJSX.LoginForm & JSXBase.HTMLAttributes<HTMLLoginFormElement>;

@@ -34,7 +34,15 @@ export class CoverDetailsTile {
     this.collapsed = !this.collapsed;
 
     if (!!btn[0])
-      btn[0].textContent = (this.collapsed) ? "View Summary" : "Hide Summary";
+      if (this.collapsed) {
+        btn[0].innerHTML = '<span id="selectedSpan"><span>View Summary</span></span>';
+        btn[0].classList.remove("SelectButton_selectButton__2EnMv");
+        btn[0].classList.remove("jut__Button__materialIcon");
+       } else {
+        btn[0].innerHTML = '<span id="selectedSpan"><span>Selected</span><i class="mir mi-done jut__Button__icon jut__Button__rightIcon"></i></span>';
+        btn[0].classList.add("SelectButton_selectButton__2EnMv");
+        btn[0].classList.add("jut__Button__materialIcon");
+       }
   }
 
   componentWillLoad() {
@@ -74,12 +82,17 @@ export class CoverDetailsTile {
                 <span id="selectedSpan">
                   <span>View Summary</span>
                 </span>
+                
               </button>
           </div>
-          <div id="content" hidden={this.collapsed}>
-            Your Cover Details
-                <slot />
-            </div>
+        </div>
+        <div id="content" hidden={this.collapsed}>
+          <div id="riskTitleContainer" class="RiskCoverDetails_riskTitleContainer__2FfQl">
+            <h3 id="riskTitle" class="RiskCoverDetails_title__30skA">Your Cover Details</h3>
+          </div>
+          <div id="riskCoverDetailsContainer" class="RiskCoverDetails_riskCoverDetailsContainer__2_wY7 RiskCoverDetails_sectionContainer___g21v">
+            <details-container detailstype="policy" coverdetails={this.coverdetails}></details-container>
+          </div>
         </div>
       </div>
     );
