@@ -1,4 +1,4 @@
-# cover-details-tile
+# details-container
 
 
 
@@ -10,25 +10,20 @@
 | Property       | Attribute      | Description | Type                            | Default     |
 | -------------- | -------------- | ----------- | ------------------------------- | ----------- |
 | `coverdetails` | `coverdetails` |             | `PolicyDataInterface \| string` | `undefined` |
-| `coverindex`   | `coverindex`   |             | `number`                        | `undefined` |
+| `detailstype`  | `detailstype`  |             | `string`                        | `undefined` |
 
 
 ## Dependencies
 
 ### Used by
 
- - [cover-details-container](../../page-layout/cover-details-container)
-
-### Depends on
-
-- [details-container](../details-container)
+ - [cover-details-tile](../cover-details-tile)
 
 ### Graph
 ```mermaid
 graph TD;
   cover-details-tile --> details-container
-  cover-details-container --> cover-details-tile
-  style cover-details-tile fill:#f9f,stroke:#333,stroke-width:4px
+  style details-container fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

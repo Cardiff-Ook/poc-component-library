@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property       | Attribute      | Description | Type                                | Default     |
-| -------------- | -------------- | ----------- | ----------------------------------- | ----------- |
-| `coverdetails` | `coverdetails` |             | `CoverDetailsInterface[] \| string` | `undefined` |
+| Property       | Attribute      | Description | Type                              | Default     |
+| -------------- | -------------- | ----------- | --------------------------------- | ----------- |
+| `coverdetails` | `coverdetails` |             | `PolicyDataInterface[] \| string` | `undefined` |
 
 
 ## Dependencies
@@ -28,6 +28,7 @@
 graph TD;
   cover-details-container --> cover-details-tile
   cover-details-container --> sub-section-title
+  cover-details-tile --> details-container
   policy-tile --> cover-details-container
   style cover-details-container fill:#f9f,stroke:#333,stroke-width:4px
 ```

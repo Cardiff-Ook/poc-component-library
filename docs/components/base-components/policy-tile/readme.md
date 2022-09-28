@@ -7,21 +7,21 @@
 
 ## Properties
 
-| Property        | Attribute     | Description | Type                     | Default     |
-| --------------- | ------------- | ----------- | ------------------------ | ----------- |
-| `policydetails` | --            |             | `PolicyDetailsInterface` | `undefined` |
-| `policyindex`   | `policyindex` |             | `number`                 | `undefined` |
+| Property        | Attribute     | Description | Type                  | Default     |
+| --------------- | ------------- | ----------- | --------------------- | ----------- |
+| `policydetails` | --            |             | `PolicyDataInterface` | `undefined` |
+| `policyindex`   | `policyindex` |             | `number`              | `undefined` |
 
 
 ## Dependencies
 
 ### Used by
 
- - [policy-details](../../policy-details/policy-details)
+ - [policy-details](../../page-layout/policy-details/policy-details)
 
 ### Depends on
 
-- [policy-subsection-header](../../policy-details/policy-subsection-header)
+- [policy-subsection-header](../../page-layout/policy-details/policy-subsection-header)
 - [tile-container](../../page-layout/tile-container)
 - [policy-management-tile](../policy-management-tile)
 - [policy-term-container](../../page-layout/policy-term-container)
@@ -37,6 +37,7 @@ graph TD;
   policy-tile --> cover-details-container
   cover-details-container --> cover-details-tile
   cover-details-container --> sub-section-title
+  cover-details-tile --> details-container
   policy-details --> policy-tile
   style policy-tile fill:#f9f,stroke:#333,stroke-width:4px
 ```
