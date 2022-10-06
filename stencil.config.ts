@@ -22,7 +22,17 @@ export const config: Config = {
           src: 'components/webfonts/*',
           dest: 'dist/components/webfonts',
           warn: true,
-        }
+        },
+        {
+          src: 'components/webfonts/*',
+          dest: 'dist/webfonts',
+          warn: true,
+        },
+        {
+          src: '**/*.{jpg,png,svg}',
+          dest: 'dist/assets',
+          warn: true,
+        },
       ]
     },
     {

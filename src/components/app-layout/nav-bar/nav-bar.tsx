@@ -35,6 +35,10 @@ export class NavBar {
 
   }
 
+  menuToggle(e) {
+    console.log(e)
+  }
+
   render() {
     return (
       <nav class="jut__ApplicationHeader__subApplicationHeader">
@@ -42,7 +46,7 @@ export class NavBar {
           {
             this._arrayData.map((item:any={})=>
               <li class="jut__NavigationContent__topNavigationItem" role="none">
-                <a aria-current="page" class={this.isActive(item.isActive)} tabindex="0" role="menuitem" href={item.link}>
+                <a aria-current="page" class={this.isActive(item.isActive)} tabindex="0" role="menuitem"  onClick={(e) => this.menuToggle(e)}>
                   <div class="jut__NavBarItem__titleWrapper inlineOverride" >
                     <span class="jut__NavBarItem__title">{item.name}</span>
                   </div>

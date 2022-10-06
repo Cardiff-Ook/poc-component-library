@@ -1,3 +1,7 @@
+
+@import url("https://use.fontawesome.com/releases/v5.7.1/css/all.css");
+@import url("https://p.typekit.net/p.css?s=1&k=pan6bun&ht=tk&f=6037.6039.6041.6043.6045&a=607775&app=typekit&e=css"); 
+
 :root {
     --color: #ff792a!important;
     --size: 100px;
@@ -18,7 +22,6 @@ body.admiral {
 .containerBlock {
     display: block;
 }
-@import url("https://use.fontawesome.com/releases/v5.7.1/css/all.css");
 /*
  * The Typekit service used to deliver this font or fonts for use on websites
  * is provided by Adobe and is subject to these Terms of Use
@@ -35,7 +38,7 @@ body.admiral {
  * © 2009-2022 Adobe Systems Incorporated. All Rights Reserved.
  */
 /*{"last_published":"2018-08-20 14:15:56 UTC"}*/
-@import url("https://p.typekit.net/p.css?s=1&k=pan6bun&ht=tk&f=6037.6039.6041.6043.6045&a=607775&app=typekit&e=css"); @font-face {
+@font-face {
     font-family: "jaf-facitweb";
     src: url("https://use.typekit.net/af/9b5d75/0000000000000000000132a5/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/9b5d75/0000000000000000000132a5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/9b5d75/0000000000000000000132a5/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
     font-display: auto;
@@ -717,7 +720,6 @@ body.themeRoot .jut__DropdownMenu__menu .jut__DropdownMenu__link:last-child:afte
 }
 
 :root {
-    --gw-header-image: url(../assets/logo.f1327ac7.svg);
     --adm-img-width: 202px;
     --adm-img-height: 63px;
     --adm-img-margin-bottom: 2rem;
@@ -1244,74 +1246,11 @@ body.themeRoot .adm-page-title__screen-title {
 }
 
 @font-face {
-    font-family: Ford Antenna;
-    src: url(../assets/FordAntennaWGL-Regular.d63948e1.otf);
-    font-style: normal;
-    font-weight: 400
-}
-
-@font-face {
-    font-family: Ford Antenna Condensed;
-    src: url(../assets/FordAntennaCondWGL-Reg.188609b9.otf);
-    font-style: normal;
-    font-weight: 400
-}
-
-@font-face {
-    font-family: Ford Antenna Condensed Medium;
-    src: url(../assets/FordAntennaCondWGL-Med.39b46c08.otf);
-    font-style: normal;
-    font-weight: 400
-}
-
-@font-face {
-    font-family: Ford Antenna Light;
-    src: url(../assets/FordAntennaWGL-Light.643a8ce8.otf);
-    font-style: normal;
-    font-weight: 400
-}
-
-@font-face {
-    font-family: Ford Antenna Semi Bold;
-    src: url(../assets/FordAntennaWGL-Semibold.1fbd6aad.otf);
-    font-style: normal;
-    font-weight: 400
-}
-
-@font-face {
-    font-family: Ford Antenna Condensed Bold;
-    src: url(../assets/FordAntennaCondWGL-Bold.20d636d9.otf);
-    font-style: normal;
-    font-weight: 400
-}
-
-@font-face {
-    font-family: New Transport AA WEB;
-    src: url(../assets/NewTransportAAWEB-Regular.24bdf369.ttf) format("truetype");
-    font-style: normal;
-    font-weight: 400
-}
-
-@font-face {
     font-family: Source Sans Variable;
     font-weight: 200 900;
     font-style: normal;
     font-stretch: normal;
-    src: url(../assets/SourceSansVariable-Roman.ttf.13ac647c.woff2) format("woff2"),url(../assets/SourceSansVariable-Roman.ttf.99bed22e.woff) format("woff"),url(../assets/SourceSansVariable-Roman.5cfa8f1e.ttf) format("truetype")
-}
-
-@font-face {
-    font-family: Source Sans Variable;
-    font-weight: 200 900;
-    font-style: italic;
-    font-stretch: normal;
-    src: url(../assets/SourceSansVariable-Italic.ttf.886af18a.woff2) format("woff2"),url(../assets/SourceSansVariable-Italic.ttf.d3164764.woff) format("woff"),url(../assets/SourceSansVariable-Italic.b80ffe2c.ttf) format("truetype")
-}
-
-@font-face {
-    font-family: Source Sans Pro;
-    font-weight: 400;
-    src: url(../assets/SourceSansPro-Regular.569a0330.eot) format("embedded-opentype"),url(../assets/SourceSansPro-Regular.7bd8999e.woff) format("woff"),url(../assets/SourceSansPro-Regular.2a81a283.otf) format("opentype"),url(../assets/SourceSansPro-Regular.58436caa.ttf) format("truetype")
+    src: url(../webfonts/SourceSansVariable-Roman.ttf.13ac647c.woff2) format("woff2")
 }
 
 /*!
@@ -7095,25 +7034,11 @@ body.themeRoot .adm-page-title__screen-title {
     font-style: normal;
     font-weight: 900;
     font-display: auto;
-    src: url(../webfonts/fa-solid-900.a547e21e.eot);
-    src: url(../webfonts/fa-solid-900.a547e21e.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-solid-900.2cd2be17.woff2) format("woff2"),url(../webfonts/fa-solid-900.657a4694.woff) format("woff"),url(../webfonts/fa-solid-900.5ee32f5c.ttf) format("truetype"),url(../webfonts/fa-solid-900.fdc155d5.svg#fontawesome) format("svg")
+    src: url(../webfonts/fa-solid-900.2cd2be17.woff2) format("woff2");
 }
 
 .fa,.fas {
     font-weight: 900
-}
-
-/*!
- * Font Awesome Free 5.10.1 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */
-@font-face {
-    font-family: Font Awesome\ 5 Free;
-    font-style: normal;
-    font-weight: 400;
-    font-display: auto;
-    src: url(../webfonts/fa-regular-400.a03df7ab.eot);
-    src: url(../webfonts/fa-regular-400.a03df7ab.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-regular-400.bd52a727.woff2) format("woff2"),url(../webfonts/fa-regular-400.7ab2cb05.woff) format("woff"),url(../webfonts/fa-regular-400.2cd8d991.ttf) format("truetype"),url(../webfonts/fa-regular-400.2fad4ee0.svg#fontawesome) format("svg")
 }
 
 .fa,.far,.fas {
@@ -7124,22 +7049,6 @@ body.themeRoot .adm-page-title__screen-title {
     font-weight: 400
 }
 
-/*!
- * Font Awesome Free 5.10.1 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */
-@font-face {
-    font-family: Font Awesome\ 5 Brands;
-    font-style: normal;
-    font-weight: 400;
-    font-display: auto;
-    src: url(../webfonts/fa-brands-400.3165b14b.eot);
-    src: url(../webfonts/fa-brands-400.3165b14b.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-brands-400.f861a57c.woff2) format("woff2"),url(../webfonts/fa-brands-400.457cb96b.woff) format("woff"),url(../webfonts/fa-brands-400.f2e186cf.ttf) format("truetype"),url(../webfonts/fa-brands-400.f249e44d.svg#fontawesome) format("svg")
-}
-
-.fab {
-    font-family: Font Awesome\ 5 Brands
-}
 
 /*!
  * Material Design Icons by Google - https://github.com/google/material-design-icons
@@ -7221,39 +7130,12 @@ body.themeRoot .adm-page-title__screen-title {
     font-feature-settings: "liga"
 }
 
-@font-face {
-    font-family: Material Icons;
-    font-style: normal;
-    font-weight: 400;
-    src: url(../webfonts/MaterialIcons-Regular.0509ab09.woff2) format("woff2")
-}
 
 @font-face {
     font-family: Material Icons Round;
     font-style: normal;
     font-weight: 400;
     src: url(../webfonts/MaterialIcons-Round.0df2e99b.woff2) format("woff2")
-}
-
-@font-face {
-    font-family: Material Icons Outlined;
-    font-style: normal;
-    font-weight: 400;
-    src: url(../webfonts/MaterialIcons-Outlined.76845a96.woff2) format("woff2")
-}
-
-@font-face {
-    font-family: Material Icons Sharp;
-    font-style: normal;
-    font-weight: 400;
-    src: url(../webfonts/MaterialIcons-Sharp.36add1bf.woff2) format("woff2")
-}
-
-@font-face {
-    font-family: Material Icons Two Tone;
-    font-style: normal;
-    font-weight: 400;
-    src: url(../webfonts/MaterialIcons-TwoTone.51fb689a.woff2) format("woff2")
 }
 
 .mi-10k:before {
@@ -25620,7 +25502,6 @@ ul.jut__NavigationContent__navigationContent {
 }
 
 .adm-branding-admiral {
-    --gw-header-image: url(../assets/logo.f1327ac7.svg);
     --adm-img-margin-bottom: 14px;
     --adm-logo-title-margin-bottom: -17px;
     --adm-img-width: 142px;
@@ -26266,7 +26147,6 @@ ul.jut__NavigationContent__navigationContent {
 
 .adm-branding-bell {
     --font-weight-light: 400;
-    --gw-header-image: url(../assets/logo.b8f968ac.svg);
     --gw-app-header-img-width: 115px;
     --gw-app-header-img-height: 50px;
     --adm-select-drop-down-padding-left: -10px;
@@ -26665,7 +26545,6 @@ ul.jut__NavigationContent__navigationContent {
 }
 
 .adm-branding-diamond {
-    --gw-header-image: url(../assets/logo.cb239fa8.svg);
     --adm-img-width: 178px;
     --gw-app-header-img-width: 142px;
     --gw-app-header-img-height: 50px;
@@ -27130,7 +27009,6 @@ ul.jut__NavigationContent__navigationContent {
 }
 
 .adm-branding-elephant {
-    --gw-header-image: url(../assets/logo.61d94aee.svg);
     --gw-app-header-img-width: 70px;
     --gw-app-header-img-height: 50px;
     --adm-select-drop-down-padding-left: -10px;
@@ -27569,7 +27447,6 @@ ul.jut__NavigationContent__navigationContent {
 }
 
 .adm-branding-gladiator {
-    --gw-header-image: url(../assets/logo.426906c0.svg);
     --adm-img-width: 193px;
     --adm-spacing-small-width: 1px;
     --adm-select-drop-down-padding-left: -10px;
@@ -27936,7 +27813,6 @@ ul.jut__NavigationContent__navigationContent {
 }
 
 .adm-branding-aainsure {
-    --gw-header-image: url(../assets/logo.79c66fe1.svg);
     --gw-app-header-img-width: 156px;
     --gw-app-header-img-height: 50px;
     --adm-select-drop-down-padding-left: -10px;
@@ -28366,7 +28242,6 @@ ul.jut__NavigationContent__navigationContent {
 }
 
 .adm-branding-ford {
-    --gw-header-image: url(../assets/logo.784a7858.svg);
     --adm-font-antenna-light: "Ford Antenna Light";
     --adm-font-antenna-regular: "Ford Antenna";
     --adm-font-antenna-condensed-medium: "Ford Antenna Condensed Medium";
@@ -31246,7 +31121,6 @@ body .InfoComponent_admInlineNotificationInlineFormError__3bqAH p[class=jut__Inl
     --gw-header-image-height: 48px;
     --gw-header-image-width: 330px;
     --container-max-width: inherit;
-    --gw-default-header-image: url(../assets/logo.8feb7dc0.svg);
     --GW-SPACING: 0;
     position: relative;
     align-items: center;
@@ -45474,24 +45348,6 @@ body.MultiBannerVanComponent_themeRoot__1D3iW .MultiBannerVanComponent_jut__Drop
     line-height: var(--global-line-height-19)
 }
 
-.MultiBannerVanComponent_multibanner-wrapper-van__1vqP0 .MultiBannerVanComponent_multibanner-leftbox__1SMjd {
-    content: url(../assets/multi-Upsell-Van.d5b29157.png);
-    background-image: linear-gradient(var(--adm-multi-banner-background-color-light-blue),var(--adm-multi-banner-background-color-beige))
-}
-
-@media (max-width: 768px) {
-    .MultiBannerVanComponent_multibanner-wrapper-van__1vqP0 .MultiBannerVanComponent_multibanner-leftbox__1SMjd {
-        content:url(../assets/multi-Upsell-Van-mobile.e8e1ce7f.png);
-        background-color: var(--gw-white)
-    }
-}
-
-@media (max-width: 374px) {
-    .MultiBannerVanComponent_multibanner-wrapper-van__1vqP0 .MultiBannerVanComponent_multibanner-leftbox__1SMjd {
-        content:url(../assets/multi-Upsell-Van-mobile.e8e1ce7f.png)
-    }
-}
-
 body .MultiBannerCarComponent_jut__CheckboxField__checkboxElement__wLZaO:focus {
     border-color: var(--adm-input-border-color);
     box-shadow: none
@@ -46172,19 +46028,6 @@ body.MultiBannerCarComponent_themeRoot__FybEi .MultiBannerCarComponent_jut__Drop
 .MultiBannerCarComponent_multibanner-wrapper-car__2iSip .MultiBannerCarComponent_multibanner-leftbox__B3O_F {
     content: url(../assets/multi-Upsell-Car.6cff00ee.png);
     background-color: var(--el-di-background-color)
-}
-
-@media (max-width: 768px) {
-    .MultiBannerCarComponent_multibanner-wrapper-car__2iSip .MultiBannerCarComponent_multibanner-leftbox__B3O_F {
-        content:url(../assets/multi-Upsell-Car-mobile.35d94b0c.png);
-        background-color: var(--el-di-background-color)
-    }
-}
-
-@media (max-width: 374px) {
-    .MultiBannerCarComponent_multibanner-wrapper-car__2iSip .MultiBannerCarComponent_multibanner-leftbox__B3O_F {
-        content:url(../assets/multi-Upsell-Car-mobile.35d94b0c.png)
-    }
 }
 
 body .MultiBannerHomeComponent_jut__CheckboxField__checkboxElement__2VrN1:focus {
@@ -46882,37 +46725,10 @@ body.MultiBannerHomeComponent_themeRoot__NCjAy .MultiBannerHomeComponent_jut__Dr
     }
 }
 
-.MultiBannerHomeComponent_multibanner-wrapper__OozBI [class*=combined-cover] {
-    background-color: var(--adm-multi-banner-background-color-pink)
-}
-
-@media (min-width: 769px) {
-    .MultiBannerHomeComponent_multibanner-wrapper__OozBI [class*=combined-cover] {
-        content:url(../assets/multi-Upsell-Home.cbb10a88.png)
-    }
-}
-
-@media (max-width: 768px) {
-    .MultiBannerHomeComponent_multibanner-wrapper__OozBI [class*=combined-cover] {
-        content:url(../assets/multi-Upsell-Home-mobile.210f33e3.png)
-    }
-}
-
 .MultiBannerHomeComponent_multibanner-wrapper__OozBI [class*=contents-cover] {
     background-color: var(--adm-multi-banner-background-color)
 }
 
-@media (min-width: 769px) {
-    .MultiBannerHomeComponent_multibanner-wrapper__OozBI [class*=contents-cover] {
-        content:url(../assets/multi-Upsell-Content.be801ec3.png)
-    }
-}
-
-@media (max-width: 768px) {
-    .MultiBannerHomeComponent_multibanner-wrapper__OozBI [class*=contents-cover] {
-        content:url(../assets/multi-Upsell-Content-mobile.75eb6785.png)
-    }
-}
 
 .MultiBannerHomeComponent_multibanner-wrapper__OozBI .MultiBannerHomeComponent_toolTipMessageContainer__25HVQ {
     display: flex;
@@ -73329,17 +73145,6 @@ div[class*=noChangesAllowedDisclaimerContainerClass] .MotorScriptsPage_noChanges
     }
 }
 
-.VehicleDamageSelector_vehicleDamageSelectorContentClass__1DV_a .VehicleDamageSelector_vanImageClass__2F9HE {
-    content: url(../assets/img-van-damage_horizontal.f335a167.png);
-    width: 100%
-}
-
-@media (max-width: 768px) {
-    .VehicleDamageSelector_vehicleDamageSelectorContentClass__1DV_a .VehicleDamageSelector_vanImageClass__2F9HE {
-        content:url(../assets/img-van-damage.9f0bf942.png)
-    }
-}
-
 .VehicleDamageSelector_vehicleDamageSelectorContentClass__1DV_a span[class=jut__FieldLabel__primaryLabel] {
     font-size: var(--adm-font-15)
 }
@@ -85648,27 +85453,6 @@ body.MultiBannerELAndDIComponent_themeRoot__2bZ95 .MultiBannerELAndDIComponent_j
     font-weight: var(--GW-FONT-WEIGHT-LIGHT);
     letter-spacing: var(--global-letter-spacing-minus-point-one);
     line-height: var(--global-line-height-19)
-}
-
-.MultiBannerELAndDIComponent_multibanner-wrapper-el-and-di__10Syx .MultiBannerELAndDIComponent_multibanner-leftbox__3gl-y {
-    width: 35%;
-    content: url(../assets/multi-upsell-EL-andDI.25c9818f.png);
-    background-color: var(--el-di-background-color);
-    height: 100%
-}
-
-@media (max-width: 768px) {
-    .MultiBannerELAndDIComponent_multibanner-wrapper-el-and-di__10Syx .MultiBannerELAndDIComponent_multibanner-leftbox__3gl-y {
-        width:100%;
-        content: url(../assets/multi-upsell-EL-andD-mobile.9fae752d.png)
-    }
-}
-
-@media (max-width: 374px) {
-    .MultiBannerELAndDIComponent_multibanner-wrapper-el-and-di__10Syx .MultiBannerELAndDIComponent_multibanner-leftbox__3gl-y {
-        width:100%;
-        content: url(../assets/multi-upsell-EL-andD-mobile.9fae752d.png)
-    }
 }
 
 @media (min-width: 769px) {
