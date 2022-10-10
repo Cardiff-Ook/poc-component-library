@@ -1,6 +1,6 @@
 import { Config } from '@stencil/core';
 import { sass } from '@stencil/sass';
-import { angularOutputTarget } from '@stencil/angular-output-target';
+import { angularOutputTarget as angular } from '@stencil/angular-output-target';
 import { reactOutputTarget as react } from '@stencil/react-output-target';
 
 export const config: Config = {
@@ -42,7 +42,7 @@ export const config: Config = {
       dir: 'docs',
       strict: true
     },
-    angularOutputTarget({
+    angular({
       componentCorePackage: 'poc-adm-components',
       directivesProxyFile: '../angular-workspace/projects/poc-adm-components/src/lib/stencil-generated/components.ts',
       directivesArrayFile: '../angular-workspace/projects/poc-adm-components/src/lib/stencil-generated/index.ts',
