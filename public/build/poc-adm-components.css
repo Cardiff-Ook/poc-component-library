@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 @import url("https://use.fontawesome.com/releases/v5.7.1/css/all.css");
 @import url("https://p.typekit.net/p.css?s=1&k=pan6bun&ht=tk&f=6037.6039.6041.6043.6045&a=607775&app=typekit&e=css"); 
 
@@ -174,7 +174,7 @@ button.submitButton {
     --ADM-SPACING-44: 44px;
 }
 
-@charset "UTF-8";body .jut__CheckboxField__checkboxElement:focus {
+body .jut__CheckboxField__checkboxElement:focus {
     border-color: #d4d4e0;
     border-color: var(--adm-input-border-color);
     box-shadow: none
@@ -52543,10 +52543,6 @@ body.PolicyListForAccountComponent_themeRoot__aG0V4 .PolicyListForAccountCompone
     }
 }
 
-@media (max-width: 768px) {
-    margin-top:0
-}
-
 .PolicyQuoteListComponent_policySelectButton__Sc-QH {
     border: 1px solid var(--GW-COLOR-BACKGROUND-1-ACTIVE);
     --button-box-shadow: none
@@ -67391,7 +67387,7 @@ span[id=claimReferenceNumberTitle] {
 
 @media (max-width: 768px) {
     .VehicleDetails_pageContainerVehicleDetails__s_zbL .VehicleDetails_contentContainerVehicleDetails__1zbMb [class*=SectionContainer] {
-        margin:0
+        margin: 0;
     }
 }
 
@@ -73132,17 +73128,6 @@ div[class*=noChangesAllowedDisclaimerContainerClass] .MotorScriptsPage_noChanges
 .VehicleDamageSelector_themeRoot__2ZrwB {
     --GW-BREAKPOINT-PHONE: 768px;
     --GW-BREAKPOINT-TABLET: 1024px
-}
-
-.VehicleDamageSelector_vehicleDamageSelectorContentClass__1DV_a .VehicleDamageSelector_carImageClass__10kWi {
-    content: url(../assets/img-car-damage_horizontal.ff29f499.png);
-    width: 100%
-}
-
-@media (max-width: 768px) {
-    .VehicleDamageSelector_vehicleDamageSelectorContentClass__1DV_a .VehicleDamageSelector_carImageClass__10kWi {
-        content:url(../assets/img-car-damage.b71873d8.png)
-    }
 }
 
 .VehicleDamageSelector_vehicleDamageSelectorContentClass__1DV_a span[class=jut__FieldLabel__primaryLabel] {
