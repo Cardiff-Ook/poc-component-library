@@ -1,0 +1,1 @@
+import{r as t,h as o}from"./p-731bf01c.js";const s=class{constructor(o){t(this,o)}render(){return o("div",{id:"policyContainer"},o("div",null),o("slot",{name:"page-title"}),o("slot",{name:"account-details"}),o("slot",{name:"policy-details"}))}};s.style=":host{display:block}";export{s as policies_container}

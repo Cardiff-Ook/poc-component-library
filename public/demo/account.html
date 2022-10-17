@@ -15,7 +15,7 @@
       <div class="admRoot">
         <main-header brand="admiral">
           <page-logo brand="admiral" slot="page-logo"></page-logo>
-          <page-header-bar name="Claire" slot="header-bar">
+          <page-header-bar name="Biff" slot="header-bar">
             <span slot="message">HERE’S YOUR ACCOUNT SETTINGS</span>
           </page-header-bar>
           <nav-bar slot="nav-bar" buttons='
@@ -34,34 +34,13 @@
         <main-page-contents>
           <policies-container slot="page-contents">
             <sub-section-title pagetitle="Your Account Information" slot="page-title"></sub-section-title>
-            <account-details slot="account-details" account=''>
-
+            <account-details slot="account-details" user='{
+              "firstName": "Biff",
+              "lastName": "Biffyson",
+              "emailAddress": "biff@biffy.com",
+              "contactNumber": "555-2433"
+            }'>
             </account-details>
-            <policy-details slot="policy-details" policies='
-              [
-                {
-                  "policytype": "car", 
-                  "id": "P34435554", 
-                  "selected": true,
-                  "startDate": "1650964427",
-                  "endDate": "1682500427",
-                  "coverList": [
-                    {
-                      "vehicleData": 
-                      {
-                        "vehicleType": "Car",
-                        "vehicleMake": "Fiat",
-                        "vehicleModel": "500",
-                        "vehicleReg": "G15 FGY" ,
-                        "coverLevel": "Comprehensive",
-                        "modifications": "None",
-                        "otherVehicles": "Policyholder Only"
-                      }
-                    }
-                  ]
-                }
-              ]'>
-            </policy-details>
           </policies-container>
         </main-page-contents>
       </div>

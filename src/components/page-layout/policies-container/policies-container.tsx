@@ -12,6 +12,7 @@ export class PoliciesContainer {
       <div id="policyContainer">
         <div></div>
         <slot name="page-title"></slot>
+        <slot name="account-details"></slot>
         <slot name="policy-details"></slot>
       </div>
     );

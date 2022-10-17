@@ -5,11 +5,16 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { UserDataInterface } from "./interfaces/userDataInterface";
 import { PolicyDataInterface } from "./interfaces/policyDataInterface";
 import { BulletPointInterface } from "./components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points";
 import { ButtonInterface } from "./components/app-layout/nav-bar/nav-bar";
 export namespace Components {
     interface AccountDetails {
+        /**
+          * Prop: user: object User Account details object
+         */
+        "user": Array<UserDataInterface> | string;
     }
     interface ContentContainer {
     }
@@ -112,6 +117,10 @@ export namespace Components {
     interface TileContainer {
         "type": string;
     }
+}
+export interface AccountDetailsCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLAccountDetailsElement;
 }
 export interface LoginFormCustomEvent<T> extends CustomEvent<T> {
     detail: T;
@@ -333,6 +342,14 @@ declare global {
 }
 declare namespace LocalJSX {
     interface AccountDetails {
+        /**
+          * Event: loginShouldOccur: EventEmitter Event to fire if data validates
+         */
+        "onEditUserDetails"?: (event: AccountDetailsCustomEvent<any>) => void;
+        /**
+          * Prop: user: object User Account details object
+         */
+        "user"?: Array<UserDataInterface> | string;
     }
     interface ContentContainer {
     }
