@@ -30,11 +30,9 @@ export class DetailsContainer {
       case "policy":
         if (this._coverDetails !== undefined)
           this._coverDetails.imageSrc =  `/assets/claim-cover-${this._coverDetails.policytype}.svg`;
-        console.log(this._coverDetails);
         break;
       case "car":
         this._car = this._coverDetails.coverList[0].vehicleData;
-        console.log(this._car);
         break;
     }
 

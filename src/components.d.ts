@@ -9,6 +9,8 @@ import { PolicyDataInterface } from "./interfaces/policyDataInterface";
 import { BulletPointInterface } from "./components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points";
 import { ButtonInterface } from "./components/app-layout/nav-bar/nav-bar";
 export namespace Components {
+    interface AccountDetails {
+    }
     interface ContentContainer {
     }
     interface CoverDetailsContainer {
@@ -116,6 +118,12 @@ export interface LoginFormCustomEvent<T> extends CustomEvent<T> {
     target: HTMLLoginFormElement;
 }
 declare global {
+    interface HTMLAccountDetailsElement extends Components.AccountDetails, HTMLStencilElement {
+    }
+    var HTMLAccountDetailsElement: {
+        prototype: HTMLAccountDetailsElement;
+        new (): HTMLAccountDetailsElement;
+    };
     interface HTMLContentContainerElement extends Components.ContentContainer, HTMLStencilElement {
     }
     var HTMLContentContainerElement: {
@@ -291,6 +299,7 @@ declare global {
         new (): HTMLTileContainerElement;
     };
     interface HTMLElementTagNameMap {
+        "account-details": HTMLAccountDetailsElement;
         "content-container": HTMLContentContainerElement;
         "cover-details-container": HTMLCoverDetailsContainerElement;
         "cover-details-tile": HTMLCoverDetailsTileElement;
@@ -323,6 +332,8 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface AccountDetails {
+    }
     interface ContentContainer {
     }
     interface CoverDetailsContainer {
@@ -429,6 +440,7 @@ declare namespace LocalJSX {
         "type"?: string;
     }
     interface IntrinsicElements {
+        "account-details": AccountDetails;
         "content-container": ContentContainer;
         "cover-details-container": CoverDetailsContainer;
         "cover-details-tile": CoverDetailsTile;
@@ -464,6 +476,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "account-details": LocalJSX.AccountDetails & JSXBase.HTMLAttributes<HTMLAccountDetailsElement>;
             "content-container": LocalJSX.ContentContainer & JSXBase.HTMLAttributes<HTMLContentContainerElement>;
             "cover-details-container": LocalJSX.CoverDetailsContainer & JSXBase.HTMLAttributes<HTMLCoverDetailsContainerElement>;
             "cover-details-tile": LocalJSX.CoverDetailsTile & JSXBase.HTMLAttributes<HTMLCoverDetailsTileElement>;

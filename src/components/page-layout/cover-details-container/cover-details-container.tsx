@@ -38,7 +38,6 @@ export class CoverDetailsContainer {
   }
 
   componentWillLoad() {
-    console.log(this.coverdetails);
     this.arrayDataWatcher(this.coverdetails);
     this.collapsed = true;
   }

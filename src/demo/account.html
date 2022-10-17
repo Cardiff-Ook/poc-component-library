@@ -16,35 +16,27 @@
         <main-header brand="admiral">
           <page-logo brand="admiral" slot="page-logo"></page-logo>
           <page-header-bar name="Claire" slot="header-bar">
-            <span slot="message">HERE’S YOUR POLICY SUMMARY</span>
+            <span slot="message">HERE’S YOUR ACCOUNT SETTINGS</span>
           </page-header-bar>
           <nav-bar slot="nav-bar" buttons='
             [
-              { "name":"My Policies", "isActive": true, "link": "./index.html" }, 
+              { "name":"My Policies", "isActive": false, "link": "./index.html" }, 
               { "name":"Documents", "isActive": false, "link": "./quote.html" }, 
               { "name":"Make A Change", "isActive": false, "link": "#" }, 
               { "name":"Claims", "isActive": false, "link": "#" }, 
               { "name":"Add to Policy", "isActive": false, "link": "#" }, 
               { "name":"Payments", "isActive": false, "link": "#" }, 
               { "name":"Help", "isActive": false, "link": "#" }, 
-              { "name":"MyAccount", "isActive": false, "link": "./account.html" }
+              { "name":"MyAccount", "isActive": true, "link": "./account.html" }
             ]'>
           </nav-bar>
         </main-header>
-        <multi-car-banner>
-          <multi-banner-title slot="banner-title">Save when you add another car</multi-banner-title>
-          <multi-banner-header slot="banner-header">Get a no obligation quote today to see how much you could save.</multi-banner-header>
-          <multi-banner-bullet-points slot="bullet-points" bullet-points='
-            [
-              {"id": "1", "title": "No need to cancel your existing cover", "text": "You can schedule your car to join at a later date"}, 
-              {"id": "2", "title": "Get your discounts immediately", "text": "You only pay for the additional car when its cover starts"}, 
-              {"id": "3", "title": "Insure family cars", "text": "Even at different addresses"}
-            ]'>
-          </multi-banner-bullet-points>
-        </multi-car-banner>
         <main-page-contents>
           <policies-container slot="page-contents">
             <sub-section-title pagetitle="Your Account Information" slot="page-title"></sub-section-title>
+            <account-details slot="account-details" account=''>
+
+            </account-details>
             <policy-details slot="policy-details" policies='
               [
                 {
