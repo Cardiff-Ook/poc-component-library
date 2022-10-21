@@ -21,11 +21,13 @@
 
 ### Depends on
 
+- [policy-term-container](../../page-layout/policy-term-container)
 - [cover-details-container](../../page-layout/cover-details-container)
 
 ### Graph
 ```mermaid
 graph TD;
+  documents-tile --> policy-term-container
   documents-tile --> cover-details-container
   cover-details-container --> cover-details-tile
   cover-details-container --> sub-section-title

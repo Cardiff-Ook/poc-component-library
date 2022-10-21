@@ -27,6 +27,7 @@ export class DocumentDetails {
 
   componentWillLoad() {
     this.arrayDataWatcher(this.policies);
+    console.log("B ", this._arrayData);
   }
 
   render() {

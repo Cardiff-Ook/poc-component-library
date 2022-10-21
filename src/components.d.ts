@@ -39,6 +39,7 @@ export namespace Components {
         "policies": Array<PolicyDataInterface> | string;
     }
     interface DocumentDetailsContainer {
+        "coverdetails": Array<PolicyDataInterface> | string;
     }
     interface DocumentsTile {
         "policydetails": PolicyDataInterface;
@@ -417,6 +418,7 @@ declare namespace LocalJSX {
         "policies"?: Array<PolicyDataInterface> | string;
     }
     interface DocumentDetailsContainer {
+        "coverdetails"?: Array<PolicyDataInterface> | string;
     }
     interface DocumentsTile {
         "policydetails"?: PolicyDataInterface;

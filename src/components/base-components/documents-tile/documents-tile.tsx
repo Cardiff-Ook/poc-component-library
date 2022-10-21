@@ -1,4 +1,4 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h, Element, State } from '@stencil/core';
 import { PolicyDataInterface } from '../../../interfaces/policyDataInterface';
 
 @Component({
@@ -10,9 +10,29 @@ export class DocumentsTile {
   @Prop() policydetails: PolicyDataInterface;
   @Prop() policyindex: number;
   private _policyIndex: string;
+  @State() collapsed: boolean;
+
+  @Element() private element: HTMLElement;
 
   componentWillLoad() {
+    console.log("A", this.policydetails);
     this._policyIndex = `policyCovers${this.policyindex}`;
+  }
+
+  toggle() {
+    var btn = this.element.querySelectorAll('button');
+    this.collapsed = !this.collapsed;
+
+    if (!!btn[0])
+      if (this.collapsed) {
+        btn[0].innerHTML = '<span id="selectedSpan"><span>View Documents</span></span>';
+        btn[0].classList.remove("SelectButton_selectButton__2EnMv");
+        btn[0].classList.remove("jut__Button__materialIcon");
+       } else {
+        btn[0].innerHTML = '<span id="selectedSpan"><span>Selected</span><i class="mir mi-done jut__Button__icon jut__Button__rightIcon"></i></span>';
+        btn[0].classList.add("SelectButton_selectButton__2EnMv");
+        btn[0].classList.add("jut__Button__materialIcon");
+       }
   }
 
   render() {
@@ -31,27 +51,18 @@ export class DocumentsTile {
                 </div>
               </div>
               <div id="policyButtonContainer" class="PolicyListComponent_policyButtonContainer__1Q9M1">
-              {
-                this.policydetails.selected ? 
-                <button type="button" class="digitalButton__button jut__Button__button digitalButton__secondary jut__Button__secondary jut__Button__materialIcon SelectButton_selectButton__2EnMv" id="selectButton" data-testid="selectButton">
-                  <span id="selectedSpan">
-                    <span>Selected</span>
-                    <i class="mir mi-done jut__Button__icon jut__Button__rightIcon"></i>
-                  </span>
-                </button> :
-                <button type="button" class="digitalButton__button jut__Button__button digitalButton__secondary jut__Button__secondary" id="selectButton" data-testid="selectButton">
-                  <span id="selectedSpan">
-                    <span>Select</span>
-                    <i class="mir mi-done jut__Button__icon jut__Button__rightIcon"></i>
-                  </span>
-                </button>
-              }
+              <button type="button" class="digitalButton__button jut__Button__button digitalButton__secondary jut__Button__secondary" id="viewButton" data-testid="viewButton" onClick={this.toggle.bind(this)}>
+                <span id="selectedSpan">
+                  <span>Selected</span>
+                  <i class="mir mi-done jut__Button__icon jut__Button__rightIcon"></i></span>
+              </button>
               </div>
               <div class="renewalBannerContainer" id="renewalBannerContainer"></div>
             </div>
+            <policy-term-container></policy-term-container>
             <cover-details-container coverdetails={[this.policydetails]}></cover-details-container>
           </div> 
-        </div>
+        </div> 
       </div>
     );
   }
