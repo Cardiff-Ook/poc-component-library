@@ -20,8 +20,8 @@
           </page-header-bar>
           <nav-bar slot="nav-bar" buttons='
             [
-              { "name":"My Policies", "isActive": true, "link": "./index.html" }, 
-              { "name":"Documents", "isActive": false, "link": "./documents.html" }, 
+              { "name":"My Policies", "isActive": false, "link": "./main.html" }, 
+              { "name":"Documents", "isActive": true, "link": "./quote.html" }, 
               { "name":"Make A Change", "isActive": false, "link": "#" }, 
               { "name":"Claims", "isActive": false, "link": "#" }, 
               { "name":"Add to Policy", "isActive": false, "link": "#" }, 
@@ -44,8 +44,8 @@
         </multi-car-banner>
         <main-page-contents>
           <policies-container slot="page-contents">
-            <sub-section-title pagetitle="Your Account Information" slot="page-title"></sub-section-title>
-            <policy-details slot="policy-details" policies='
+            <sub-section-title pagetitle="Your Policy" slot="page-title"></sub-section-title>
+            <document-details slot="policy-details" policies='
               [
                 {
                   "policytype": "car", 
@@ -69,7 +69,7 @@
                   ]
                 }
               ]'>
-            </policy-details>
+            </document-details>
           </policies-container>
         </main-page-contents>
       </div>

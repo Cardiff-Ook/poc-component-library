@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" class="adm-branding-admiral">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/poc-adm-components.esm.js"></script>
+    <script nomodule src="/build/poc-adm-components.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="/build/poc-adm-components.css" />
+  </head>
+  <body class="themeRoot digitalRoot">
+    <div id="root">
+      <div class="admRoot">
+        <login-header brand="admiral"></login-header>
+        <account-settings user='{
+          "firstName": "Biff",
+          "lastName": "Biffyson",
+          "emailAddress": "biff@biffy.com",
+          "contactNumber": "555-2433"
+        }'></account-settings>
+      </div>
+    </div>
+  </body>
+</html>

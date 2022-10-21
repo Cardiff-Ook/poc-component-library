@@ -1,5 +1,6 @@
 import { VehicleDataInterface } from "./vehicleDataInterface";
 import { PropertyDataInterface } from "./propertyDataInterface";
+import { DocumentDataInterface } from "./documentDataInterface";
 
 interface coverList {
   propertyData?: PropertyDataInterface;
@@ -14,4 +15,5 @@ export interface PolicyDataInterface {
   coverList: Array<coverList>;
   imageSrc?: string;
   selected?: boolean;
+  documents?: Array<DocumentDataInterface>;
 }

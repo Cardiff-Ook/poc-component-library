@@ -16,6 +16,12 @@ export namespace Components {
          */
         "user": Array<UserDataInterface> | string;
     }
+    interface AccountSettings {
+        /**
+          * Prop: user: object User Account details object
+         */
+        "user": Array<UserDataInterface> | string;
+    }
     interface ContentContainer {
     }
     interface CoverDetailsContainer {
@@ -28,6 +34,15 @@ export namespace Components {
     interface DetailsContainer {
         "coverdetails": PolicyDataInterface | string;
         "detailstype": string;
+    }
+    interface DocumentDetails {
+        "policies": Array<PolicyDataInterface> | string;
+    }
+    interface DocumentDetailsContainer {
+    }
+    interface DocumentsTile {
+        "policydetails": PolicyDataInterface;
+        "policyindex": number;
     }
     interface HeaderText {
     }
@@ -133,6 +148,12 @@ declare global {
         prototype: HTMLAccountDetailsElement;
         new (): HTMLAccountDetailsElement;
     };
+    interface HTMLAccountSettingsElement extends Components.AccountSettings, HTMLStencilElement {
+    }
+    var HTMLAccountSettingsElement: {
+        prototype: HTMLAccountSettingsElement;
+        new (): HTMLAccountSettingsElement;
+    };
     interface HTMLContentContainerElement extends Components.ContentContainer, HTMLStencilElement {
     }
     var HTMLContentContainerElement: {
@@ -156,6 +177,24 @@ declare global {
     var HTMLDetailsContainerElement: {
         prototype: HTMLDetailsContainerElement;
         new (): HTMLDetailsContainerElement;
+    };
+    interface HTMLDocumentDetailsElement extends Components.DocumentDetails, HTMLStencilElement {
+    }
+    var HTMLDocumentDetailsElement: {
+        prototype: HTMLDocumentDetailsElement;
+        new (): HTMLDocumentDetailsElement;
+    };
+    interface HTMLDocumentDetailsContainerElement extends Components.DocumentDetailsContainer, HTMLStencilElement {
+    }
+    var HTMLDocumentDetailsContainerElement: {
+        prototype: HTMLDocumentDetailsContainerElement;
+        new (): HTMLDocumentDetailsContainerElement;
+    };
+    interface HTMLDocumentsTileElement extends Components.DocumentsTile, HTMLStencilElement {
+    }
+    var HTMLDocumentsTileElement: {
+        prototype: HTMLDocumentsTileElement;
+        new (): HTMLDocumentsTileElement;
     };
     interface HTMLHeaderTextElement extends Components.HeaderText, HTMLStencilElement {
     }
@@ -309,10 +348,14 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "account-details": HTMLAccountDetailsElement;
+        "account-settings": HTMLAccountSettingsElement;
         "content-container": HTMLContentContainerElement;
         "cover-details-container": HTMLCoverDetailsContainerElement;
         "cover-details-tile": HTMLCoverDetailsTileElement;
         "details-container": HTMLDetailsContainerElement;
+        "document-details": HTMLDocumentDetailsElement;
+        "document-details-container": HTMLDocumentDetailsContainerElement;
+        "documents-tile": HTMLDocumentsTileElement;
         "header-text": HTMLHeaderTextElement;
         "login-footer": HTMLLoginFooterElement;
         "login-form": HTMLLoginFormElement;
@@ -351,6 +394,12 @@ declare namespace LocalJSX {
          */
         "user"?: Array<UserDataInterface> | string;
     }
+    interface AccountSettings {
+        /**
+          * Prop: user: object User Account details object
+         */
+        "user"?: Array<UserDataInterface> | string;
+    }
     interface ContentContainer {
     }
     interface CoverDetailsContainer {
@@ -363,6 +412,15 @@ declare namespace LocalJSX {
     interface DetailsContainer {
         "coverdetails"?: PolicyDataInterface | string;
         "detailstype"?: string;
+    }
+    interface DocumentDetails {
+        "policies"?: Array<PolicyDataInterface> | string;
+    }
+    interface DocumentDetailsContainer {
+    }
+    interface DocumentsTile {
+        "policydetails"?: PolicyDataInterface;
+        "policyindex"?: number;
     }
     interface HeaderText {
     }
@@ -458,10 +516,14 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "account-details": AccountDetails;
+        "account-settings": AccountSettings;
         "content-container": ContentContainer;
         "cover-details-container": CoverDetailsContainer;
         "cover-details-tile": CoverDetailsTile;
         "details-container": DetailsContainer;
+        "document-details": DocumentDetails;
+        "document-details-container": DocumentDetailsContainer;
+        "documents-tile": DocumentsTile;
         "header-text": HeaderText;
         "login-footer": LoginFooter;
         "login-form": LoginForm;
@@ -494,10 +556,14 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "account-details": LocalJSX.AccountDetails & JSXBase.HTMLAttributes<HTMLAccountDetailsElement>;
+            "account-settings": LocalJSX.AccountSettings & JSXBase.HTMLAttributes<HTMLAccountSettingsElement>;
             "content-container": LocalJSX.ContentContainer & JSXBase.HTMLAttributes<HTMLContentContainerElement>;
             "cover-details-container": LocalJSX.CoverDetailsContainer & JSXBase.HTMLAttributes<HTMLCoverDetailsContainerElement>;
             "cover-details-tile": LocalJSX.CoverDetailsTile & JSXBase.HTMLAttributes<HTMLCoverDetailsTileElement>;
             "details-container": LocalJSX.DetailsContainer & JSXBase.HTMLAttributes<HTMLDetailsContainerElement>;
+            "document-details": LocalJSX.DocumentDetails & JSXBase.HTMLAttributes<HTMLDocumentDetailsElement>;
+            "document-details-container": LocalJSX.DocumentDetailsContainer & JSXBase.HTMLAttributes<HTMLDocumentDetailsContainerElement>;
+            "documents-tile": LocalJSX.DocumentsTile & JSXBase.HTMLAttributes<HTMLDocumentsTileElement>;
             "header-text": LocalJSX.HeaderText & JSXBase.HTMLAttributes<HTMLHeaderTextElement>;
             "login-footer": LocalJSX.LoginFooter & JSXBase.HTMLAttributes<HTMLLoginFooterElement>;
             "login-form": LocalJSX.LoginForm & JSXBase.HTMLAttributes<HTMLLoginFormElement>;

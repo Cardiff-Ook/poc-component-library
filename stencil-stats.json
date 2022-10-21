@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-10-17T11:24:09",
+  "timestamp": "2022-10-21T10:26:37",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -7,246 +7,139 @@
   "app": {
     "namespace": "PocAdmComponents",
     "fsNamespace": "poc-adm-components",
-    "components": 30,
-    "entries": 30,
-    "bundles": 223,
+    "components": 34,
+    "entries": 34,
+    "bundles": 122,
     "outputs": [
       {
-        "name": "dist-collection",
-        "files": 36,
-        "generatedFiles": [
-          "./dist/collection/components/app-layout/login-footer/login-footer.js",
-          "./dist/collection/components/app-layout/login-header/login-header.js",
-          "./dist/collection/components/app-layout/login-title-wrapper/login-title-wrapper.js",
-          "./dist/collection/components/app-layout/main-header/main-header.js",
-          "./dist/collection/components/app-layout/main-page-contents/main-page-contents.js",
-          "./dist/collection/components/app-layout/multi-car-banner/multi-car-banner.js",
-          "./dist/collection/components/app-layout/nav-bar/nav-bar.js",
-          "./dist/collection/components/base-components/cover-details-tile/cover-details-tile.js",
-          "./dist/collection/components/base-components/details-container/details-container.js",
-          "./dist/collection/components/base-components/header-text/header-text.js",
-          "./dist/collection/components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points.js",
-          "./dist/collection/components/base-components/multi-banner/multi-banner-header/multi-banner-header.js",
-          "./dist/collection/components/base-components/multi-banner/muti-banner-title/multi-banner-title.js",
-          "./dist/collection/components/base-components/page-logo/page-logo.js",
-          "./dist/collection/components/base-components/policy-management-tile/policy-management-tile.js",
-          "./dist/collection/components/base-components/policy-tile/policy-tile.js",
-          "./dist/collection/components/base-components/product-tile/product-tile.js",
-          "./dist/collection/components/base-components/quote-button/quote-button.js",
-          "./dist/collection/components/base-components/sub-section-title/sub-section-title.js",
-          "./dist/collection/components/forms/login-form/login-form.js",
-          "./dist/collection/components/page-layout/account-details/account-details.js",
-          "./dist/collection/components/page-layout/content-container/content-container.js",
-          "./dist/collection/components/page-layout/cover-details-container/cover-details-container.js",
-          "./dist/collection/components/page-layout/page-header-bar/page-header-bar.js",
-          "./dist/collection/components/page-layout/policies-container/policies-container.js",
-          "./dist/collection/components/page-layout/policy-details/policy-details/policy-details.js",
-          "./dist/collection/components/page-layout/policy-details/policy-subsection-header/policy-subsection-header.js",
-          "./dist/collection/components/page-layout/policy-term-container/policy-term-container.js",
-          "./dist/collection/components/page-layout/text-title-bar/text-title-bar.js",
-          "./dist/collection/components/page-layout/tile-container/tile-container.js",
-          "./dist/collection/index.js",
-          "./dist/collection/interfaces/policyDataInterface.js",
-          "./dist/collection/interfaces/propertyDataInterface.js",
-          "./dist/collection/interfaces/userDataInterface.js",
-          "./dist/collection/interfaces/vehicleDataInterface.js",
-          "./dist/collection/utils/utils.js"
-        ]
-      },
-      {
         "name": "dist-custom-elements",
-        "files": 72,
+        "files": 35,
         "generatedFiles": [
           "./dist/components/account-details.d.ts",
-          "./dist/components/account-details.js",
+          "./dist/components/account-settings.d.ts",
           "./dist/components/content-container.d.ts",
-          "./dist/components/content-container.js",
           "./dist/components/cover-details-container.d.ts",
-          "./dist/components/cover-details-container.js",
-          "./dist/components/cover-details-container2.js",
           "./dist/components/cover-details-tile.d.ts",
-          "./dist/components/cover-details-tile.js",
-          "./dist/components/cover-details-tile2.js",
           "./dist/components/details-container.d.ts",
-          "./dist/components/details-container.js",
-          "./dist/components/details-container2.js",
+          "./dist/components/document-details-container.d.ts",
+          "./dist/components/document-details.d.ts",
+          "./dist/components/documents-tile.d.ts",
           "./dist/components/header-text.d.ts",
-          "./dist/components/header-text.js",
           "./dist/components/index.d.ts",
-          "./dist/components/index.js",
           "./dist/components/login-footer.d.ts",
-          "./dist/components/login-footer.js",
           "./dist/components/login-form.d.ts",
-          "./dist/components/login-form.js",
           "./dist/components/login-header.d.ts",
-          "./dist/components/login-header.js",
           "./dist/components/login-title-wrapper.d.ts",
-          "./dist/components/login-title-wrapper.js",
           "./dist/components/main-header.d.ts",
-          "./dist/components/main-header.js",
           "./dist/components/main-page-contents.d.ts",
-          "./dist/components/main-page-contents.js",
           "./dist/components/multi-banner-bullet-points.d.ts",
-          "./dist/components/multi-banner-bullet-points.js",
           "./dist/components/multi-banner-header.d.ts",
-          "./dist/components/multi-banner-header.js",
           "./dist/components/multi-banner-title.d.ts",
-          "./dist/components/multi-banner-title.js",
           "./dist/components/multi-car-banner.d.ts",
-          "./dist/components/multi-car-banner.js",
           "./dist/components/nav-bar.d.ts",
-          "./dist/components/nav-bar.js",
           "./dist/components/page-header-bar.d.ts",
-          "./dist/components/page-header-bar.js",
           "./dist/components/page-logo.d.ts",
-          "./dist/components/page-logo.js",
           "./dist/components/policies-container.d.ts",
-          "./dist/components/policies-container.js",
           "./dist/components/policy-details.d.ts",
-          "./dist/components/policy-details.js",
           "./dist/components/policy-management-tile.d.ts",
-          "./dist/components/policy-management-tile.js",
-          "./dist/components/policy-management-tile2.js",
           "./dist/components/policy-subsection-header.d.ts",
-          "./dist/components/policy-subsection-header.js",
-          "./dist/components/policy-subsection-header2.js",
           "./dist/components/policy-term-container.d.ts",
-          "./dist/components/policy-term-container.js",
-          "./dist/components/policy-term-container2.js",
           "./dist/components/policy-tile.d.ts",
-          "./dist/components/policy-tile.js",
-          "./dist/components/policy-tile2.js",
           "./dist/components/product-tile.d.ts",
-          "./dist/components/product-tile.js",
           "./dist/components/quote-button.d.ts",
-          "./dist/components/quote-button.js",
-          "./dist/components/quote-button2.js",
           "./dist/components/sub-section-title.d.ts",
-          "./dist/components/sub-section-title.js",
-          "./dist/components/sub-section-title2.js",
           "./dist/components/text-title-bar.d.ts",
-          "./dist/components/text-title-bar.js",
-          "./dist/components/tile-container.d.ts",
-          "./dist/components/tile-container.js",
-          "./dist/components/tile-container2.js"
+          "./dist/components/tile-container.d.ts"
         ]
       },
       {
         "name": "dist-lazy",
-        "files": 112,
+        "files": 84,
         "generatedFiles": [
-          "./dist/cjs/account-details.cjs.entry.js",
-          "./dist/cjs/content-container.cjs.entry.js",
-          "./dist/cjs/cover-details-container_7.cjs.entry.js",
-          "./dist/cjs/details-container.cjs.entry.js",
-          "./dist/cjs/header-text.cjs.entry.js",
-          "./dist/cjs/index-f2e9dcc2.js",
-          "./dist/cjs/index.cjs.js",
-          "./dist/cjs/loader.cjs.js",
-          "./dist/cjs/login-footer.cjs.entry.js",
-          "./dist/cjs/login-form.cjs.entry.js",
-          "./dist/cjs/login-header.cjs.entry.js",
-          "./dist/cjs/login-title-wrapper.cjs.entry.js",
-          "./dist/cjs/main-header.cjs.entry.js",
-          "./dist/cjs/main-page-contents.cjs.entry.js",
-          "./dist/cjs/multi-banner-bullet-points.cjs.entry.js",
-          "./dist/cjs/multi-banner-header.cjs.entry.js",
-          "./dist/cjs/multi-banner-title.cjs.entry.js",
-          "./dist/cjs/multi-car-banner.cjs.entry.js",
-          "./dist/cjs/nav-bar.cjs.entry.js",
-          "./dist/cjs/page-header-bar.cjs.entry.js",
-          "./dist/cjs/page-logo.cjs.entry.js",
-          "./dist/cjs/poc-adm-components.cjs.js",
-          "./dist/cjs/policies-container.cjs.entry.js",
-          "./dist/cjs/policy-details.cjs.entry.js",
-          "./dist/cjs/policy-tile.cjs.entry.js",
-          "./dist/cjs/product-tile.cjs.entry.js",
-          "./dist/cjs/quote-button.cjs.entry.js",
-          "./dist/cjs/text-title-bar.cjs.entry.js",
-          "./dist/esm/account-details.entry.js",
-          "./dist/esm/content-container.entry.js",
-          "./dist/esm/cover-details-container_7.entry.js",
-          "./dist/esm/details-container.entry.js",
-          "./dist/esm/header-text.entry.js",
-          "./dist/esm/index-7e961489.js",
-          "./dist/esm/index.js",
-          "./dist/esm/loader.js",
-          "./dist/esm/login-footer.entry.js",
-          "./dist/esm/login-form.entry.js",
-          "./dist/esm/login-header.entry.js",
-          "./dist/esm/login-title-wrapper.entry.js",
-          "./dist/esm/main-header.entry.js",
-          "./dist/esm/main-page-contents.entry.js",
-          "./dist/esm/multi-banner-bullet-points.entry.js",
-          "./dist/esm/multi-banner-header.entry.js",
-          "./dist/esm/multi-banner-title.entry.js",
-          "./dist/esm/multi-car-banner.entry.js",
-          "./dist/esm/nav-bar.entry.js",
-          "./dist/esm/page-header-bar.entry.js",
-          "./dist/esm/page-logo.entry.js",
-          "./dist/esm/poc-adm-components.js",
-          "./dist/esm/policies-container.entry.js",
-          "./dist/esm/policy-details.entry.js",
-          "./dist/esm/policy-tile.entry.js",
-          "./dist/esm/product-tile.entry.js",
-          "./dist/esm/quote-button.entry.js",
-          "./dist/esm/text-title-bar.entry.js",
-          "./dist/index.cjs.js",
-          "./dist/index.js",
+          "./dist/poc-adm-components/account-details.entry.js",
+          "./dist/poc-adm-components/account-settings.entry.js",
+          "./dist/poc-adm-components/app-globals-0f993ce5.js",
+          "./dist/poc-adm-components/content-container.entry.js",
+          "./dist/poc-adm-components/cover-details-container.entry.js",
+          "./dist/poc-adm-components/cover-details-tile.entry.js",
+          "./dist/poc-adm-components/css-shim-5064654c.js",
+          "./dist/poc-adm-components/details-container.entry.js",
+          "./dist/poc-adm-components/document-details-container.entry.js",
+          "./dist/poc-adm-components/document-details.entry.js",
+          "./dist/poc-adm-components/documents-tile.entry.js",
+          "./dist/poc-adm-components/dom-104fb833.js",
+          "./dist/poc-adm-components/header-text.entry.js",
+          "./dist/poc-adm-components/index-7f8b39a6.js",
+          "./dist/poc-adm-components/index-e3478a0e.js",
           "./dist/poc-adm-components/index.esm.js",
-          "./dist/poc-adm-components/p-0c7eca68.entry.js",
-          "./dist/poc-adm-components/p-151073b4.entry.js",
-          "./dist/poc-adm-components/p-16e1c35a.entry.js",
-          "./dist/poc-adm-components/p-188f204a.entry.js",
-          "./dist/poc-adm-components/p-2114d185.entry.js",
-          "./dist/poc-adm-components/p-2d00ff3d.entry.js",
-          "./dist/poc-adm-components/p-420ca604.entry.js",
-          "./dist/poc-adm-components/p-452c736d.entry.js",
-          "./dist/poc-adm-components/p-5cfc8160.entry.js",
-          "./dist/poc-adm-components/p-5d0ab44e.entry.js",
-          "./dist/poc-adm-components/p-70a65caf.entry.js",
-          "./dist/poc-adm-components/p-731bf01c.js",
-          "./dist/poc-adm-components/p-7487703f.entry.js",
-          "./dist/poc-adm-components/p-7a72ba2f.entry.js",
-          "./dist/poc-adm-components/p-8999de6c.entry.js",
-          "./dist/poc-adm-components/p-a1659d78.entry.js",
-          "./dist/poc-adm-components/p-bfeaa599.entry.js",
-          "./dist/poc-adm-components/p-c3ab1b98.entry.js",
-          "./dist/poc-adm-components/p-d646fdfe.entry.js",
-          "./dist/poc-adm-components/p-e4e12280.entry.js",
-          "./dist/poc-adm-components/p-e632cbb0.entry.js",
-          "./dist/poc-adm-components/p-e6561d0a.entry.js",
-          "./dist/poc-adm-components/p-eb51e472.entry.js",
-          "./dist/poc-adm-components/p-ec56b57c.entry.js",
-          "./dist/poc-adm-components/p-f124762f.entry.js",
+          "./dist/poc-adm-components/login-footer.entry.js",
+          "./dist/poc-adm-components/login-form.entry.js",
+          "./dist/poc-adm-components/login-header.entry.js",
+          "./dist/poc-adm-components/login-title-wrapper.entry.js",
+          "./dist/poc-adm-components/main-header.entry.js",
+          "./dist/poc-adm-components/main-page-contents.entry.js",
+          "./dist/poc-adm-components/multi-banner-bullet-points.entry.js",
+          "./dist/poc-adm-components/multi-banner-header.entry.js",
+          "./dist/poc-adm-components/multi-banner-title.entry.js",
+          "./dist/poc-adm-components/multi-car-banner.entry.js",
+          "./dist/poc-adm-components/nav-bar.entry.js",
+          "./dist/poc-adm-components/page-header-bar.entry.js",
+          "./dist/poc-adm-components/page-logo.entry.js",
           "./dist/poc-adm-components/poc-adm-components.esm.js",
+          "./dist/poc-adm-components/policies-container.entry.js",
+          "./dist/poc-adm-components/policy-details.entry.js",
+          "./dist/poc-adm-components/policy-management-tile.entry.js",
+          "./dist/poc-adm-components/policy-subsection-header.entry.js",
+          "./dist/poc-adm-components/policy-term-container.entry.js",
+          "./dist/poc-adm-components/policy-tile.entry.js",
+          "./dist/poc-adm-components/product-tile.entry.js",
+          "./dist/poc-adm-components/quote-button.entry.js",
+          "./dist/poc-adm-components/shadow-css-4261c637.js",
+          "./dist/poc-adm-components/sub-section-title.entry.js",
+          "./dist/poc-adm-components/text-title-bar.entry.js",
+          "./dist/poc-adm-components/tile-container.entry.js",
+          "./public/build/account-details.entry.js",
+          "./public/build/account-settings.entry.js",
+          "./public/build/app-globals-0f993ce5.js",
+          "./public/build/content-container.entry.js",
+          "./public/build/cover-details-container.entry.js",
+          "./public/build/cover-details-tile.entry.js",
+          "./public/build/css-shim-5064654c.js",
+          "./public/build/details-container.entry.js",
+          "./public/build/document-details-container.entry.js",
+          "./public/build/document-details.entry.js",
+          "./public/build/documents-tile.entry.js",
+          "./public/build/dom-104fb833.js",
+          "./public/build/header-text.entry.js",
+          "./public/build/index-7f8b39a6.js",
+          "./public/build/index-e3478a0e.js",
           "./public/build/index.esm.js",
-          "./public/build/p-0c7eca68.entry.js",
-          "./public/build/p-151073b4.entry.js",
-          "./public/build/p-16e1c35a.entry.js",
-          "./public/build/p-188f204a.entry.js",
-          "./public/build/p-2114d185.entry.js",
-          "./public/build/p-2d00ff3d.entry.js",
-          "./public/build/p-420ca604.entry.js",
-          "./public/build/p-452c736d.entry.js",
-          "./public/build/p-5cfc8160.entry.js",
-          "./public/build/p-5d0ab44e.entry.js",
-          "./public/build/p-70a65caf.entry.js",
-          "./public/build/p-731bf01c.js",
-          "./public/build/p-7487703f.entry.js",
-          "./public/build/p-7a72ba2f.entry.js",
-          "./public/build/p-8999de6c.entry.js",
-          "./public/build/p-a1659d78.entry.js",
-          "./public/build/p-bfeaa599.entry.js",
-          "./public/build/p-c3ab1b98.entry.js",
-          "./public/build/p-d646fdfe.entry.js",
-          "./public/build/p-e4e12280.entry.js",
-          "./public/build/p-e632cbb0.entry.js",
-          "./public/build/p-e6561d0a.entry.js",
-          "./public/build/p-eb51e472.entry.js",
-          "./public/build/p-ec56b57c.entry.js",
-          "./public/build/p-f124762f.entry.js",
-          "./public/build/poc-adm-components.esm.js"
+          "./public/build/login-footer.entry.js",
+          "./public/build/login-form.entry.js",
+          "./public/build/login-header.entry.js",
+          "./public/build/login-title-wrapper.entry.js",
+          "./public/build/main-header.entry.js",
+          "./public/build/main-page-contents.entry.js",
+          "./public/build/multi-banner-bullet-points.entry.js",
+          "./public/build/multi-banner-header.entry.js",
+          "./public/build/multi-banner-title.entry.js",
+          "./public/build/multi-car-banner.entry.js",
+          "./public/build/nav-bar.entry.js",
+          "./public/build/page-header-bar.entry.js",
+          "./public/build/page-logo.entry.js",
+          "./public/build/poc-adm-components.esm.js",
+          "./public/build/policies-container.entry.js",
+          "./public/build/policy-details.entry.js",
+          "./public/build/policy-management-tile.entry.js",
+          "./public/build/policy-subsection-header.entry.js",
+          "./public/build/policy-term-container.entry.js",
+          "./public/build/policy-tile.entry.js",
+          "./public/build/product-tile.entry.js",
+          "./public/build/quote-button.entry.js",
+          "./public/build/shadow-css-4261c637.js",
+          "./public/build/sub-section-title.entry.js",
+          "./public/build/text-title-bar.entry.js",
+          "./public/build/tile-container.entry.js"
         ]
       },
       {
@@ -267,321 +160,25 @@
     ]
   },
   "options": {
-    "minifyJs": true,
-    "minifyCss": true,
-    "hashFileNames": true,
+    "minifyJs": false,
+    "minifyCss": false,
+    "hashFileNames": false,
     "hashedFileNameLength": 8,
     "buildEs5": false
   },
   "formats": {
     "esmBrowser": [
       {
-        "key": "account-details.entry",
+        "key": "account-settings.entry",
         "components": [
-          "account-details"
+          "account-settings"
         ],
-        "bundleId": "p-2d00ff3d",
-        "fileName": "p-2d00ff3d.entry.js",
+        "bundleId": "account-settings",
+        "fileName": "account-settings.entry.js",
         "imports": [
-          "p-731bf01c.js"
+          "index-e3478a0e.js"
         ],
-        "originalByteSize": 5309
-      },
-      {
-        "key": "content-container.entry",
-        "components": [
-          "content-container"
-        ],
-        "bundleId": "p-151073b4",
-        "fileName": "p-151073b4.entry.js",
-        "imports": [
-          "p-731bf01c.js"
-        ],
-        "originalByteSize": 849
-      },
-      {
-        "key": "header-text.entry",
-        "components": [
-          "header-text"
-        ],
-        "bundleId": "p-16e1c35a",
-        "fileName": "p-16e1c35a.entry.js",
-        "imports": [
-          "p-731bf01c.js"
-        ],
-        "originalByteSize": 674
-      },
-      {
-        "key": "login-footer.entry",
-        "components": [
-          "login-footer"
-        ],
-        "bundleId": "p-c3ab1b98",
-        "fileName": "p-c3ab1b98.entry.js",
-        "imports": [
-          "p-731bf01c.js"
-        ],
-        "originalByteSize": 497
-      },
-      {
-        "key": "login-form.entry",
-        "components": [
-          "login-form"
-        ],
-        "bundleId": "p-e632cbb0",
-        "fileName": "p-e632cbb0.entry.js",
-        "imports": [
-          "p-731bf01c.js"
-        ],
-        "originalByteSize": 3744
-      },
-      {
-        "key": "login-header.entry",
-        "components": [
-          "login-header"
-        ],
-        "bundleId": "p-e6561d0a",
-        "fileName": "p-e6561d0a.entry.js",
-        "imports": [
-          "p-731bf01c.js"
-        ],
-        "originalByteSize": 1226
-      },
-      {
-        "key": "login-title-wrapper.entry",
-        "components": [
-          "login-title-wrapper"
-        ],
-        "bundleId": "p-d646fdfe",
-        "fileName": "p-d646fdfe.entry.js",
-        "imports": [
-          "p-731bf01c.js"
-        ],
-        "originalByteSize": 692
-      },
-      {
-        "key": "main-header.entry",
-        "components": [
-          "main-header"
-        ],
-        "bundleId": "p-7487703f",
-        "fileName": "p-7487703f.entry.js",
-        "imports": [
-          "p-731bf01c.js"
-        ],
-        "originalByteSize": 1016
-      },
-      {
-        "key": "main-page-contents.entry",
-        "components": [
-          "main-page-contents"
-        ],
-        "bundleId": "p-5cfc8160",
-        "fileName": "p-5cfc8160.entry.js",
-        "imports": [
-          "p-731bf01c.js"
-        ],
-        "originalByteSize": 588
-      },
-      {
-        "key": "multi-banner-bullet-points.entry",
-        "components": [
-          "multi-banner-bullet-points"
-        ],
-        "bundleId": "p-2114d185",
-        "fileName": "p-2114d185.entry.js",
-        "imports": [
-          "p-731bf01c.js"
-        ],
-        "originalByteSize": 1041
-      },
-      {
-        "key": "multi-banner-header.entry",
-        "components": [
-          "multi-banner-header"
-        ],
-        "bundleId": "p-bfeaa599",
-        "fileName": "p-bfeaa599.entry.js",
-        "imports": [
-          "p-731bf01c.js"
-        ],
-        "originalByteSize": 479
-      },
-      {
-        "key": "multi-banner-title.entry",
-        "components": [
-          "multi-banner-title"
-        ],
-        "bundleId": "p-0c7eca68",
-        "fileName": "p-0c7eca68.entry.js",
-        "imports": [
-          "p-731bf01c.js"
-        ],
-        "originalByteSize": 488
-      },
-      {
-        "key": "multi-car-banner.entry",
-        "components": [
-          "multi-car-banner"
-        ],
-        "bundleId": "p-f124762f",
-        "fileName": "p-f124762f.entry.js",
-        "imports": [
-          "p-731bf01c.js"
-        ],
-        "originalByteSize": 1073
-      },
-      {
-        "key": "nav-bar.entry",
-        "components": [
-          "nav-bar"
-        ],
-        "bundleId": "p-eb51e472",
-        "fileName": "p-eb51e472.entry.js",
-        "imports": [
-          "p-731bf01c.js"
-        ],
-        "originalByteSize": 1668
-      },
-      {
-        "key": "page-header-bar.entry",
-        "components": [
-          "page-header-bar"
-        ],
-        "bundleId": "p-a1659d78",
-        "fileName": "p-a1659d78.entry.js",
-        "imports": [
-          "p-731bf01c.js"
-        ],
-        "originalByteSize": 759
-      },
-      {
-        "key": "page-logo.entry",
-        "components": [
-          "page-logo"
-        ],
-        "bundleId": "p-8999de6c",
-        "fileName": "p-8999de6c.entry.js",
-        "imports": [
-          "p-731bf01c.js"
-        ],
-        "originalByteSize": 640
-      },
-      {
-        "key": "policies-container.entry",
-        "components": [
-          "policies-container"
-        ],
-        "bundleId": "p-ec56b57c",
-        "fileName": "p-ec56b57c.entry.js",
-        "imports": [
-          "p-731bf01c.js"
-        ],
-        "originalByteSize": 516
-      },
-      {
-        "key": "policy-details.entry",
-        "components": [
-          "policy-details"
-        ],
-        "bundleId": "p-420ca604",
-        "fileName": "p-420ca604.entry.js",
-        "imports": [
-          "p-731bf01c.js"
-        ],
-        "originalByteSize": 1672
-      },
-      {
-        "key": "product-tile.entry",
-        "components": [
-          "product-tile"
-        ],
-        "bundleId": "p-70a65caf",
-        "fileName": "p-70a65caf.entry.js",
-        "imports": [
-          "p-731bf01c.js"
-        ],
-        "originalByteSize": 739
-      },
-      {
-        "key": "text-title-bar.entry",
-        "components": [
-          "text-title-bar"
-        ],
-        "bundleId": "p-452c736d",
-        "fileName": "p-452c736d.entry.js",
-        "imports": [
-          "p-731bf01c.js"
-        ],
-        "originalByteSize": 573
-      },
-      {
-        "key": "policy-tile.entry",
-        "components": [
-          "policy-tile"
-        ],
-        "bundleId": "p-188f204a",
-        "fileName": "p-188f204a.entry.js",
-        "imports": [
-          "p-731bf01c.js"
-        ],
-        "originalByteSize": 3719
-      },
-      {
-        "key": "quote-button.entry",
-        "components": [
-          "quote-button"
-        ],
-        "bundleId": "p-e4e12280",
-        "fileName": "p-e4e12280.entry.js",
-        "imports": [
-          "p-731bf01c.js"
-        ],
-        "originalByteSize": 720
-      },
-      {
-        "key": "cover-details-container.cover-details-tile.policy-management-tile.policy-subsection-header.policy-term-container.sub-section-title.tile-container.entry",
-        "components": [
-          "cover-details-container",
-          "cover-details-tile",
-          "policy-management-tile",
-          "policy-subsection-header",
-          "policy-term-container",
-          "sub-section-title",
-          "tile-container"
-        ],
-        "bundleId": "p-5d0ab44e",
-        "fileName": "p-5d0ab44e.entry.js",
-        "imports": [
-          "p-731bf01c.js"
-        ],
-        "originalByteSize": 10162
-      },
-      {
-        "key": "details-container.entry",
-        "components": [
-          "details-container"
-        ],
-        "bundleId": "p-7a72ba2f",
-        "fileName": "p-7a72ba2f.entry.js",
-        "imports": [
-          "p-731bf01c.js"
-        ],
-        "originalByteSize": 9954
-      }
-    ],
-    "esm": [
-      {
-        "key": "account-details.entry",
-        "components": [
-          "account-details"
-        ],
-        "bundleId": "account-details",
-        "fileName": "account-details.entry.js",
-        "imports": [
-          "index-7e961489.js"
-        ],
-        "originalByteSize": 5313
+        "originalByteSize": 579
       },
       {
         "key": "content-container.entry",
@@ -591,9 +188,33 @@
         "bundleId": "content-container",
         "fileName": "content-container.entry.js",
         "imports": [
-          "index-7e961489.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 853
+      },
+      {
+        "key": "document-details.entry",
+        "components": [
+          "document-details"
+        ],
+        "bundleId": "document-details",
+        "fileName": "document-details.entry.js",
+        "imports": [
+          "index-e3478a0e.js"
+        ],
+        "originalByteSize": 1389
+      },
+      {
+        "key": "document-details-container.entry",
+        "components": [
+          "document-details-container"
+        ],
+        "bundleId": "document-details-container",
+        "fileName": "document-details-container.entry.js",
+        "imports": [
+          "index-e3478a0e.js"
+        ],
+        "originalByteSize": 439
       },
       {
         "key": "header-text.entry",
@@ -603,7 +224,7 @@
         "bundleId": "header-text",
         "fileName": "header-text.entry.js",
         "imports": [
-          "index-7e961489.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 678
       },
@@ -615,7 +236,7 @@
         "bundleId": "login-footer",
         "fileName": "login-footer.entry.js",
         "imports": [
-          "index-7e961489.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 501
       },
@@ -627,7 +248,7 @@
         "bundleId": "login-form",
         "fileName": "login-form.entry.js",
         "imports": [
-          "index-7e961489.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 3748
       },
@@ -639,7 +260,7 @@
         "bundleId": "login-header",
         "fileName": "login-header.entry.js",
         "imports": [
-          "index-7e961489.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 1230
       },
@@ -651,7 +272,7 @@
         "bundleId": "login-title-wrapper",
         "fileName": "login-title-wrapper.entry.js",
         "imports": [
-          "index-7e961489.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 696
       },
@@ -663,21 +284,9 @@
         "bundleId": "main-header",
         "fileName": "main-header.entry.js",
         "imports": [
-          "index-7e961489.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 1020
-      },
-      {
-        "key": "main-page-contents.entry",
-        "components": [
-          "main-page-contents"
-        ],
-        "bundleId": "main-page-contents",
-        "fileName": "main-page-contents.entry.js",
-        "imports": [
-          "index-7e961489.js"
-        ],
-        "originalByteSize": 592
       },
       {
         "key": "multi-banner-bullet-points.entry",
@@ -687,7 +296,7 @@
         "bundleId": "multi-banner-bullet-points",
         "fileName": "multi-banner-bullet-points.entry.js",
         "imports": [
-          "index-7e961489.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 1045
       },
@@ -699,7 +308,7 @@
         "bundleId": "multi-banner-header",
         "fileName": "multi-banner-header.entry.js",
         "imports": [
-          "index-7e961489.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 483
       },
@@ -711,7 +320,7 @@
         "bundleId": "multi-banner-title",
         "fileName": "multi-banner-title.entry.js",
         "imports": [
-          "index-7e961489.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 492
       },
@@ -723,7 +332,7 @@
         "bundleId": "multi-car-banner",
         "fileName": "multi-car-banner.entry.js",
         "imports": [
-          "index-7e961489.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 1077
       },
@@ -735,7 +344,7 @@
         "bundleId": "nav-bar",
         "fileName": "nav-bar.entry.js",
         "imports": [
-          "index-7e961489.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 1672
       },
@@ -747,7 +356,7 @@
         "bundleId": "page-header-bar",
         "fileName": "page-header-bar.entry.js",
         "imports": [
-          "index-7e961489.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 763
       },
@@ -759,21 +368,9 @@
         "bundleId": "page-logo",
         "fileName": "page-logo.entry.js",
         "imports": [
-          "index-7e961489.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 644
-      },
-      {
-        "key": "policies-container.entry",
-        "components": [
-          "policies-container"
-        ],
-        "bundleId": "policies-container",
-        "fileName": "policies-container.entry.js",
-        "imports": [
-          "index-7e961489.js"
-        ],
-        "originalByteSize": 520
       },
       {
         "key": "policy-details.entry",
@@ -783,7 +380,7 @@
         "bundleId": "policy-details",
         "fileName": "policy-details.entry.js",
         "imports": [
-          "index-7e961489.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 1676
       },
@@ -795,7 +392,7 @@
         "bundleId": "product-tile",
         "fileName": "product-tile.entry.js",
         "imports": [
-          "index-7e961489.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 743
       },
@@ -807,9 +404,57 @@
         "bundleId": "text-title-bar",
         "fileName": "text-title-bar.entry.js",
         "imports": [
-          "index-7e961489.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 577
+      },
+      {
+        "key": "account-details.entry",
+        "components": [
+          "account-details"
+        ],
+        "bundleId": "account-details",
+        "fileName": "account-details.entry.js",
+        "imports": [
+          "index-e3478a0e.js"
+        ],
+        "originalByteSize": 5313
+      },
+      {
+        "key": "documents-tile.entry",
+        "components": [
+          "documents-tile"
+        ],
+        "bundleId": "documents-tile",
+        "fileName": "documents-tile.entry.js",
+        "imports": [
+          "index-e3478a0e.js"
+        ],
+        "originalByteSize": 2721
+      },
+      {
+        "key": "main-page-contents.entry",
+        "components": [
+          "main-page-contents"
+        ],
+        "bundleId": "main-page-contents",
+        "fileName": "main-page-contents.entry.js",
+        "imports": [
+          "index-e3478a0e.js"
+        ],
+        "originalByteSize": 592
+      },
+      {
+        "key": "policies-container.entry",
+        "components": [
+          "policies-container"
+        ],
+        "bundleId": "policies-container",
+        "fileName": "policies-container.entry.js",
+        "imports": [
+          "index-e3478a0e.js"
+        ],
+        "originalByteSize": 520
       },
       {
         "key": "policy-tile.entry",
@@ -819,7 +464,7 @@
         "bundleId": "policy-tile",
         "fileName": "policy-tile.entry.js",
         "imports": [
-          "index-7e961489.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 3723
       },
@@ -831,27 +476,81 @@
         "bundleId": "quote-button",
         "fileName": "quote-button.entry.js",
         "imports": [
-          "index-7e961489.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 724
       },
       {
-        "key": "cover-details-container.cover-details-tile.policy-management-tile.policy-subsection-header.policy-term-container.sub-section-title.tile-container.entry",
+        "key": "policy-management-tile.entry",
         "components": [
-          "cover-details-container",
-          "cover-details-tile",
-          "policy-management-tile",
-          "policy-subsection-header",
-          "policy-term-container",
-          "sub-section-title",
+          "policy-management-tile"
+        ],
+        "bundleId": "policy-management-tile",
+        "fileName": "policy-management-tile.entry.js",
+        "imports": [
+          "index-e3478a0e.js"
+        ],
+        "originalByteSize": 1220
+      },
+      {
+        "key": "policy-subsection-header.entry",
+        "components": [
+          "policy-subsection-header"
+        ],
+        "bundleId": "policy-subsection-header",
+        "fileName": "policy-subsection-header.entry.js",
+        "imports": [
+          "index-e3478a0e.js"
+        ],
+        "originalByteSize": 1202
+      },
+      {
+        "key": "policy-term-container.entry",
+        "components": [
+          "policy-term-container"
+        ],
+        "bundleId": "policy-term-container",
+        "fileName": "policy-term-container.entry.js",
+        "imports": [
+          "index-e3478a0e.js"
+        ],
+        "originalByteSize": 1499
+      },
+      {
+        "key": "tile-container.entry",
+        "components": [
           "tile-container"
         ],
-        "bundleId": "cover-details-container_7",
-        "fileName": "cover-details-container_7.entry.js",
+        "bundleId": "tile-container",
+        "fileName": "tile-container.entry.js",
         "imports": [
-          "index-7e961489.js"
+          "index-e3478a0e.js"
         ],
-        "originalByteSize": 10166
+        "originalByteSize": 645
+      },
+      {
+        "key": "cover-details-container.entry",
+        "components": [
+          "cover-details-container"
+        ],
+        "bundleId": "cover-details-container",
+        "fileName": "cover-details-container.entry.js",
+        "imports": [
+          "index-e3478a0e.js"
+        ],
+        "originalByteSize": 1698
+      },
+      {
+        "key": "cover-details-tile.entry",
+        "components": [
+          "cover-details-tile"
+        ],
+        "bundleId": "cover-details-tile",
+        "fileName": "cover-details-tile.entry.js",
+        "imports": [
+          "index-e3478a0e.js"
+        ],
+        "originalByteSize": 3962
       },
       {
         "key": "details-container.entry",
@@ -861,309 +560,27 @@
         "bundleId": "details-container",
         "fileName": "details-container.entry.js",
         "imports": [
-          "index-7e961489.js"
+          "index-e3478a0e.js"
         ],
         "originalByteSize": 9958
+      },
+      {
+        "key": "sub-section-title.entry",
+        "components": [
+          "sub-section-title"
+        ],
+        "bundleId": "sub-section-title",
+        "fileName": "sub-section-title.entry.js",
+        "imports": [
+          "index-e3478a0e.js"
+        ],
+        "originalByteSize": 413
       }
     ],
+    "esm": [],
     "es5": [],
     "system": [],
-    "commonjs": [
-      {
-        "key": "account-details.entry",
-        "components": [
-          "account-details"
-        ],
-        "bundleId": "account-details.cjs",
-        "fileName": "account-details.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 5569
-      },
-      {
-        "key": "content-container.entry",
-        "components": [
-          "content-container"
-        ],
-        "bundleId": "content-container.cjs",
-        "fileName": "content-container.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 941
-      },
-      {
-        "key": "header-text.entry",
-        "components": [
-          "header-text"
-        ],
-        "bundleId": "header-text.cjs",
-        "fileName": "header-text.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 771
-      },
-      {
-        "key": "login-footer.entry",
-        "components": [
-          "login-footer"
-        ],
-        "bundleId": "login-footer.cjs",
-        "fileName": "login-footer.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 583
-      },
-      {
-        "key": "login-form.entry",
-        "components": [
-          "login-form"
-        ],
-        "bundleId": "login-form.cjs",
-        "fileName": "login-form.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 3890
-      },
-      {
-        "key": "login-header.entry",
-        "components": [
-          "login-header"
-        ],
-        "bundleId": "login-header.cjs",
-        "fileName": "login-header.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 1311
-      },
-      {
-        "key": "login-title-wrapper.entry",
-        "components": [
-          "login-title-wrapper"
-        ],
-        "bundleId": "login-title-wrapper.cjs",
-        "fileName": "login-title-wrapper.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 778
-      },
-      {
-        "key": "main-header.entry",
-        "components": [
-          "main-header"
-        ],
-        "bundleId": "main-header.cjs",
-        "fileName": "main-header.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 1126
-      },
-      {
-        "key": "main-page-contents.entry",
-        "components": [
-          "main-page-contents"
-        ],
-        "bundleId": "main-page-contents.cjs",
-        "fileName": "main-page-contents.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 679
-      },
-      {
-        "key": "multi-banner-bullet-points.entry",
-        "components": [
-          "multi-banner-bullet-points"
-        ],
-        "bundleId": "multi-banner-bullet-points.cjs",
-        "fileName": "multi-banner-bullet-points.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 1144
-      },
-      {
-        "key": "multi-banner-header.entry",
-        "components": [
-          "multi-banner-header"
-        ],
-        "bundleId": "multi-banner-header.cjs",
-        "fileName": "multi-banner-header.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 564
-      },
-      {
-        "key": "multi-banner-title.entry",
-        "components": [
-          "multi-banner-title"
-        ],
-        "bundleId": "multi-banner-title.cjs",
-        "fileName": "multi-banner-title.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 573
-      },
-      {
-        "key": "multi-car-banner.entry",
-        "components": [
-          "multi-car-banner"
-        ],
-        "bundleId": "multi-car-banner.cjs",
-        "fileName": "multi-car-banner.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 1194
-      },
-      {
-        "key": "nav-bar.entry",
-        "components": [
-          "nav-bar"
-        ],
-        "bundleId": "nav-bar.cjs",
-        "fileName": "nav-bar.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 1777
-      },
-      {
-        "key": "page-header-bar.entry",
-        "components": [
-          "page-header-bar"
-        ],
-        "bundleId": "page-header-bar.cjs",
-        "fileName": "page-header-bar.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 850
-      },
-      {
-        "key": "page-logo.entry",
-        "components": [
-          "page-logo"
-        ],
-        "bundleId": "page-logo.cjs",
-        "fileName": "page-logo.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 726
-      },
-      {
-        "key": "policies-container.entry",
-        "components": [
-          "policies-container"
-        ],
-        "bundleId": "policies-container.cjs",
-        "fileName": "policies-container.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 613
-      },
-      {
-        "key": "policy-details.entry",
-        "components": [
-          "policy-details"
-        ],
-        "bundleId": "policy-details.cjs",
-        "fileName": "policy-details.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 1773
-      },
-      {
-        "key": "product-tile.entry",
-        "components": [
-          "product-tile"
-        ],
-        "bundleId": "product-tile.cjs",
-        "fileName": "product-tile.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 817
-      },
-      {
-        "key": "text-title-bar.entry",
-        "components": [
-          "text-title-bar"
-        ],
-        "bundleId": "text-title-bar.cjs",
-        "fileName": "text-title-bar.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 658
-      },
-      {
-        "key": "policy-tile.entry",
-        "components": [
-          "policy-tile"
-        ],
-        "bundleId": "policy-tile.cjs",
-        "fileName": "policy-tile.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 3972
-      },
-      {
-        "key": "quote-button.entry",
-        "components": [
-          "quote-button"
-        ],
-        "bundleId": "quote-button.cjs",
-        "fileName": "quote-button.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 811
-      },
-      {
-        "key": "cover-details-container.cover-details-tile.policy-management-tile.policy-subsection-header.policy-term-container.sub-section-title.tile-container.entry",
-        "components": [
-          "cover-details-container",
-          "cover-details-tile",
-          "policy-management-tile",
-          "policy-subsection-header",
-          "policy-term-container",
-          "sub-section-title",
-          "tile-container"
-        ],
-        "bundleId": "cover-details-container_7.cjs",
-        "fileName": "cover-details-container_7.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 10654
-      },
-      {
-        "key": "details-container.entry",
-        "components": [
-          "details-container"
-        ],
-        "bundleId": "details-container.cjs",
-        "fileName": "details-container.cjs.entry.js",
-        "imports": [
-          "index-f2e9dcc2.js"
-        ],
-        "originalByteSize": 10405
-      }
-    ]
+    "commonjs": []
   },
   "components": [
     {
@@ -1174,9 +591,13 @@
       "componentClassName": "AccountDetails",
       "assetsDirs": [],
       "dependencies": [],
-      "dependents": [],
+      "dependents": [
+        "account-settings"
+      ],
       "directDependencies": [],
-      "directDependents": [],
+      "directDependents": [
+        "account-settings"
+      ],
       "docs": {
         "tags": [],
         "text": ""
@@ -1208,6 +629,77 @@
       "listeners": [],
       "methods": [],
       "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "user",
+          "type": "string",
+          "attribute": "user",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "Array<UserDataInterface> | string",
+            "resolved": "UserDataInterface[] | string",
+            "references": {
+              "Array": {
+                "location": "global"
+              },
+              "UserDataInterface": {
+                "location": "import",
+                "path": "../../../interfaces/userDataInterface"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop: user: object\nUser Account details object"
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": null,
+      "states": []
+    },
+    {
+      "tag": "account-settings",
+      "path": "./src/components/page-layout/account-settings/account-settings.js",
+      "source": "./src/components/page-layout/account-settings/account-settings.tsx",
+      "elementRef": null,
+      "componentClassName": "AccountSettings",
+      "assetsDirs": [],
+      "dependencies": [
+        "account-details",
+        "main-page-contents",
+        "policies-container",
+        "sub-section-title"
+      ],
+      "dependents": [],
+      "directDependencies": [
+        "main-page-contents",
+        "policies-container",
+        "sub-section-title",
+        "account-details"
+      ],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [
+        "main-page-contents",
+        "policies-container",
+        "sub-section-title",
+        "account-details"
+      ],
       "properties": [
         {
           "name": "user",
@@ -1281,6 +773,8 @@
         "sub-section-title"
       ],
       "dependents": [
+        "document-details",
+        "documents-tile",
         "policy-details",
         "policy-tile"
       ],
@@ -1289,6 +783,7 @@
         "sub-section-title"
       ],
       "directDependents": [
+        "documents-tile",
         "policy-tile"
       ],
       "docs": {
@@ -1355,6 +850,8 @@
       ],
       "dependents": [
         "cover-details-container",
+        "document-details",
+        "documents-tile",
         "policy-details",
         "policy-tile"
       ],
@@ -1442,6 +939,8 @@
       "dependents": [
         "cover-details-container",
         "cover-details-tile",
+        "document-details",
+        "documents-tile",
         "policy-details",
         "policy-tile"
       ],
@@ -1499,6 +998,186 @@
                 "path": "../../../interfaces/policyDataInterface"
               }
             }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": null,
+      "states": []
+    },
+    {
+      "tag": "document-details",
+      "path": "./src/components/page-layout/document-details/document-details.js",
+      "source": "./src/components/page-layout/document-details/document-details.tsx",
+      "elementRef": null,
+      "componentClassName": "DocumentDetails",
+      "assetsDirs": [],
+      "dependencies": [
+        "cover-details-container",
+        "cover-details-tile",
+        "details-container",
+        "documents-tile",
+        "sub-section-title"
+      ],
+      "dependents": [],
+      "directDependencies": [
+        "documents-tile",
+        "sub-section-title"
+      ],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [
+        "documents-tile",
+        "sub-section-title"
+      ],
+      "properties": [
+        {
+          "name": "policies",
+          "type": "string",
+          "attribute": "policies",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "Array<PolicyDataInterface> | string",
+            "resolved": "PolicyDataInterface[] | string",
+            "references": {
+              "Array": {
+                "location": "global"
+              },
+              "PolicyDataInterface": {
+                "location": "import",
+                "path": "../../../interfaces/policyDataInterface"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": null,
+      "states": []
+    },
+    {
+      "tag": "document-details-container",
+      "path": "./src/components/page-layout/document-details-container/document-details-container.js",
+      "source": "./src/components/page-layout/document-details-container/document-details-container.tsx",
+      "elementRef": null,
+      "componentClassName": "DocumentDetailsContainer",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "shadow",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [],
+      "shadowDelegatesFocus": false,
+      "states": []
+    },
+    {
+      "tag": "documents-tile",
+      "path": "./src/components/base-components/documents-tile/documents-tile.js",
+      "source": "./src/components/base-components/documents-tile/documents-tile.tsx",
+      "elementRef": null,
+      "componentClassName": "DocumentsTile",
+      "assetsDirs": [],
+      "dependencies": [
+        "cover-details-container",
+        "cover-details-tile",
+        "details-container",
+        "sub-section-title"
+      ],
+      "dependents": [
+        "document-details"
+      ],
+      "directDependencies": [
+        "cover-details-container"
+      ],
+      "directDependents": [
+        "document-details"
+      ],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [
+        "cover-details-container"
+      ],
+      "properties": [
+        {
+          "name": "policydetails",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "PolicyDataInterface",
+            "resolved": "PolicyDataInterface",
+            "references": {
+              "PolicyDataInterface": {
+                "location": "import",
+                "path": "../../../interfaces/policyDataInterface"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "policyindex",
+          "type": "number",
+          "attribute": "policyindex",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "number",
+            "resolved": "number",
+            "references": {}
           },
           "docs": {
             "tags": [],
@@ -1779,9 +1458,13 @@
       "componentClassName": "MainPageContents",
       "assetsDirs": [],
       "dependencies": [],
-      "dependents": [],
+      "dependents": [
+        "account-settings"
+      ],
       "directDependencies": [],
-      "directDependents": [],
+      "directDependents": [
+        "account-settings"
+      ],
       "docs": {
         "tags": [],
         "text": ""
@@ -2103,9 +1786,13 @@
       "componentClassName": "PoliciesContainer",
       "assetsDirs": [],
       "dependencies": [],
-      "dependents": [],
+      "dependents": [
+        "account-settings"
+      ],
       "directDependencies": [],
-      "directDependents": [],
+      "directDependents": [
+        "account-settings"
+      ],
       "docs": {
         "tags": [],
         "text": ""
@@ -2556,13 +2243,18 @@
       "assetsDirs": [],
       "dependencies": [],
       "dependents": [
+        "account-settings",
         "cover-details-container",
+        "document-details",
+        "documents-tile",
         "policy-details",
         "policy-tile"
       ],
       "directDependencies": [],
       "directDependents": [
+        "account-settings",
         "cover-details-container",
+        "document-details",
         "policy-details"
       ],
       "docs": {
@@ -2688,10 +2380,10 @@
     {
       "cmps": [
         {
-          "tagName": "account-details",
+          "tagName": "account-settings",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
-          "componentClassName": "AccountDetails",
+          "componentClassName": "AccountSettings",
           "elementRef": null,
           "encapsulation": "none",
           "shadowDelegatesFocus": null,
@@ -2728,42 +2420,19 @@
           "states": [],
           "methods": [],
           "listeners": [],
-          "events": [
-            {
-              "name": "editUserDetails",
-              "method": "editUserDetails",
-              "bubbles": true,
-              "cancelable": true,
-              "composed": true,
-              "docs": {
-                "tags": [],
-                "text": "Event: loginShouldOccur: EventEmitter\nEvent to fire if data validates"
-              },
-              "complexType": {
-                "original": "any",
-                "resolved": "any",
-                "references": {}
-              },
-              "internal": false
-            }
-          ],
-          "watchers": [
-            {
-              "propName": "user",
-              "methodName": "dataWatcher"
-            }
-          ],
+          "events": [],
+          "watchers": [],
           "styles": [
             {
               "modeName": "$",
-              "styleId": "ACCOUNT-DETAILS",
+              "styleId": "ACCOUNT-SETTINGS",
               "styleStr": null,
-              "styleIdentifier": "accountDetailsStyle",
+              "styleIdentifier": "accountSettingsStyle",
               "externalStyles": [
                 {
-                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/account-details/account-details.css",
-                  "relativePath": "account-details.css",
-                  "originalComponentPath": "account-details.css"
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/account-settings/account-settings.css",
+                  "relativePath": "account-settings.css",
+                  "originalComponentPath": "account-settings.css"
                 }
               ]
             }
@@ -2777,11 +2446,11 @@
             "tags": [],
             "text": ""
           },
-          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/account-details/account-details.js",
-          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/account-details/account-details.tsx",
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/account-settings/account-settings.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/account-settings/account-settings.tsx",
           "sourceMapPath": null,
           "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": true,
+          "hasComponentWillLoadFn": false,
           "hasComponentDidLoadFn": false,
           "hasComponentShouldUpdateFn": false,
           "hasComponentWillUpdateFn": false,
@@ -2792,8 +2461,8 @@
           "hasConnectedCallbackFn": false,
           "hasDisconnectedCallbackFn": false,
           "hasElement": false,
-          "hasEvent": true,
-          "hasLifecycle": true,
+          "hasEvent": false,
+          "hasLifecycle": false,
           "hasListener": false,
           "hasListenerTarget": false,
           "hasListenerTargetWindow": false,
@@ -2815,44 +2484,53 @@
           "hasStyle": true,
           "hasVdomAttribute": true,
           "hasVdomXlink": false,
-          "hasVdomClass": true,
+          "hasVdomClass": false,
           "hasVdomFunctional": false,
           "hasVdomKey": false,
-          "hasVdomListener": true,
+          "hasVdomListener": false,
           "hasVdomPropOrAttr": true,
           "hasVdomRef": false,
           "hasVdomRender": true,
           "hasVdomStyle": false,
-          "hasVdomText": true,
-          "hasWatchCallback": true,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
           "isPlain": false,
           "htmlAttrNames": [
-            "id",
-            "class",
-            "data-read-only",
-            "data-cs-mask",
-            "role",
-            "aria-hidden",
-            "type",
-            "data-testid",
-            "onClick"
+            "slot",
+            "pagetitle",
+            "user"
           ],
           "htmlTagNames": [
-            "div",
-            "h3",
-            "span",
-            "button"
+            "main-page-contents",
+            "policies-container",
+            "sub-section-title",
+            "account-details"
           ],
           "htmlParts": [],
           "isUpdateable": true,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
+          "potentialCmpRefs": [
+            "main-page-contents",
+            "policies-container",
+            "sub-section-title",
+            "account-details"
+          ],
+          "directDependencies": [
+            "main-page-contents",
+            "policies-container",
+            "sub-section-title",
+            "account-details"
+          ],
+          "dependencies": [
+            "account-details",
+            "main-page-contents",
+            "policies-container",
+            "sub-section-title"
+          ],
           "dependents": [],
           "directDependents": []
         }
       ],
-      "entryKey": "account-details.entry"
+      "entryKey": "account-settings.entry"
     },
     {
       "cmps": [
@@ -2962,6 +2640,269 @@
         }
       ],
       "entryKey": "content-container.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "document-details",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "DocumentDetails",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "policies",
+              "type": "string",
+              "attribute": "policies",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "Array<PolicyDataInterface> | string",
+                "resolved": "PolicyDataInterface[] | string",
+                "references": {
+                  "Array": {
+                    "location": "global"
+                  },
+                  "PolicyDataInterface": {
+                    "location": "import",
+                    "path": "../../../interfaces/policyDataInterface"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [
+            {
+              "propName": "policies",
+              "methodName": "arrayDataWatcher"
+            }
+          ],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "DOCUMENT-DETAILS",
+              "styleStr": null,
+              "styleIdentifier": "documentDetailsStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/document-details/document-details.css",
+                  "relativePath": "document-details.css",
+                  "originalComponentPath": "document-details.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/document-details/document-details.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/document-details/document-details.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": true,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": true,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": true,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "id",
+            "class",
+            "policydetails",
+            "policyindex",
+            "pagetitle"
+          ],
+          "htmlTagNames": [
+            "div",
+            "documents-tile",
+            "sub-section-title"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [
+            "documents-tile",
+            "sub-section-title"
+          ],
+          "directDependencies": [
+            "documents-tile",
+            "sub-section-title"
+          ],
+          "dependencies": [
+            "cover-details-container",
+            "cover-details-tile",
+            "details-container",
+            "documents-tile",
+            "sub-section-title"
+          ],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "document-details.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "document-details-container",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "DocumentDetailsContainer",
+          "elementRef": null,
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "DOCUMENT-DETAILS-CONTAINER",
+              "styleStr": null,
+              "styleIdentifier": "documentDetailsContainerStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/document-details-container/document-details-container.css",
+                  "relativePath": "document-details-container.css",
+                  "originalComponentPath": "document-details-container.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/document-details-container/document-details-container.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/document-details-container/document-details-container.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": false,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": false,
+          "hasProp": false,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": false,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": false,
+          "hasVdomXlink": false,
+          "hasVdomClass": false,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": false,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [],
+          "htmlTagNames": [
+            "slot"
+          ],
+          "htmlParts": [],
+          "isUpdateable": false,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "document-details-container.entry"
     },
     {
       "cmps": [
@@ -3731,117 +3672,6 @@
         }
       ],
       "entryKey": "main-header.entry"
-    },
-    {
-      "cmps": [
-        {
-          "tagName": "main-page-contents",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "MainPageContents",
-          "elementRef": null,
-          "encapsulation": "none",
-          "shadowDelegatesFocus": null,
-          "properties": [],
-          "virtualProperties": [],
-          "states": [],
-          "methods": [],
-          "listeners": [],
-          "events": [],
-          "watchers": [],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "MAIN-PAGE-CONTENTS",
-              "styleStr": null,
-              "styleIdentifier": "mainPageContentsStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/main-page-contents/main-page-contents.css",
-                  "relativePath": "main-page-contents.css",
-                  "originalComponentPath": "main-page-contents.css"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/main-page-contents/main-page-contents.js",
-          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/main-page-contents/main-page-contents.tsx",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
-          "hasComponentDidLoadFn": false,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": false,
-          "hasDisconnectedCallbackFn": false,
-          "hasElement": false,
-          "hasEvent": false,
-          "hasLifecycle": false,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": false,
-          "hasMethod": false,
-          "hasMode": false,
-          "hasAttribute": false,
-          "hasProp": false,
-          "hasPropNumber": false,
-          "hasPropBoolean": false,
-          "hasPropString": false,
-          "hasPropMutable": false,
-          "hasReflect": false,
-          "hasRenderFn": true,
-          "hasState": false,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": true,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
-          "hasVdomPropOrAttr": true,
-          "hasVdomRef": false,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": false,
-          "hasWatchCallback": false,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "class",
-            "id",
-            "name"
-          ],
-          "htmlTagNames": [
-            "main",
-            "div",
-            "slot"
-          ],
-          "htmlParts": [],
-          "isUpdateable": false,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
-          "dependents": [],
-          "directDependents": []
-        }
-      ],
-      "entryKey": "main-page-contents.entry"
     },
     {
       "cmps": [
@@ -4729,115 +4559,6 @@
     {
       "cmps": [
         {
-          "tagName": "policies-container",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "PoliciesContainer",
-          "elementRef": null,
-          "encapsulation": "none",
-          "shadowDelegatesFocus": null,
-          "properties": [],
-          "virtualProperties": [],
-          "states": [],
-          "methods": [],
-          "listeners": [],
-          "events": [],
-          "watchers": [],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "POLICIES-CONTAINER",
-              "styleStr": null,
-              "styleIdentifier": "policiesContainerStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policies-container/policies-container.css",
-                  "relativePath": "policies-container.css",
-                  "originalComponentPath": "policies-container.css"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policies-container/policies-container.js",
-          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policies-container/policies-container.tsx",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
-          "hasComponentDidLoadFn": false,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": false,
-          "hasDisconnectedCallbackFn": false,
-          "hasElement": false,
-          "hasEvent": false,
-          "hasLifecycle": false,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": false,
-          "hasMethod": false,
-          "hasMode": false,
-          "hasAttribute": false,
-          "hasProp": false,
-          "hasPropNumber": false,
-          "hasPropBoolean": false,
-          "hasPropString": false,
-          "hasPropMutable": false,
-          "hasReflect": false,
-          "hasRenderFn": true,
-          "hasState": false,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": false,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
-          "hasVdomPropOrAttr": true,
-          "hasVdomRef": false,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": false,
-          "hasWatchCallback": false,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "id",
-            "name"
-          ],
-          "htmlTagNames": [
-            "div",
-            "slot"
-          ],
-          "htmlParts": [],
-          "isUpdateable": false,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
-          "dependents": [],
-          "directDependents": []
-        }
-      ],
-      "entryKey": "policies-container.entry"
-    },
-    {
-      "cmps": [
-        {
           "tagName": "policy-details",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -5259,6 +4980,582 @@
     {
       "cmps": [
         {
+          "tagName": "account-details",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "AccountDetails",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "user",
+              "type": "string",
+              "attribute": "user",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "Array<UserDataInterface> | string",
+                "resolved": "UserDataInterface[] | string",
+                "references": {
+                  "Array": {
+                    "location": "global"
+                  },
+                  "UserDataInterface": {
+                    "location": "import",
+                    "path": "../../../interfaces/userDataInterface"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop: user: object\nUser Account details object"
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [
+            {
+              "name": "editUserDetails",
+              "method": "editUserDetails",
+              "bubbles": true,
+              "cancelable": true,
+              "composed": true,
+              "docs": {
+                "tags": [],
+                "text": "Event: loginShouldOccur: EventEmitter\nEvent to fire if data validates"
+              },
+              "complexType": {
+                "original": "any",
+                "resolved": "any",
+                "references": {}
+              },
+              "internal": false
+            }
+          ],
+          "watchers": [
+            {
+              "propName": "user",
+              "methodName": "dataWatcher"
+            }
+          ],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "ACCOUNT-DETAILS",
+              "styleStr": null,
+              "styleIdentifier": "accountDetailsStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/account-details/account-details.css",
+                  "relativePath": "account-details.css",
+                  "originalComponentPath": "account-details.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/account-details/account-details.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/account-details/account-details.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": true,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": true,
+          "hasLifecycle": true,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": true,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": true,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "id",
+            "class",
+            "data-read-only",
+            "data-cs-mask",
+            "role",
+            "aria-hidden",
+            "type",
+            "data-testid",
+            "onClick"
+          ],
+          "htmlTagNames": [
+            "div",
+            "h3",
+            "span",
+            "button"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [
+            "account-settings"
+          ],
+          "directDependents": [
+            "account-settings"
+          ]
+        }
+      ],
+      "entryKey": "account-details.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "documents-tile",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "DocumentsTile",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "policydetails",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "PolicyDataInterface",
+                "resolved": "PolicyDataInterface",
+                "references": {
+                  "PolicyDataInterface": {
+                    "location": "import",
+                    "path": "../../../interfaces/policyDataInterface"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "policyindex",
+              "type": "number",
+              "attribute": "policyindex",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "number",
+                "resolved": "number",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "DOCUMENTS-TILE",
+              "styleStr": null,
+              "styleIdentifier": "documentsTileStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/documents-tile/documents-tile.css",
+                  "relativePath": "documents-tile.css",
+                  "originalComponentPath": "documents-tile.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/documents-tile/documents-tile.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/documents-tile/documents-tile.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": true,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": true,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": true,
+          "hasPropBoolean": false,
+          "hasPropString": false,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": true,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "id",
+            "key",
+            "class",
+            "data-testid",
+            "src",
+            "data-cs-mask",
+            "type",
+            "coverdetails"
+          ],
+          "htmlTagNames": [
+            "div",
+            "img",
+            "span",
+            "button",
+            "i",
+            "cover-details-container"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [
+            "cover-details-container"
+          ],
+          "directDependencies": [
+            "cover-details-container"
+          ],
+          "dependencies": [
+            "cover-details-container",
+            "cover-details-tile",
+            "details-container",
+            "sub-section-title"
+          ],
+          "dependents": [
+            "document-details"
+          ],
+          "directDependents": [
+            "document-details"
+          ]
+        }
+      ],
+      "entryKey": "documents-tile.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "main-page-contents",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "MainPageContents",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "MAIN-PAGE-CONTENTS",
+              "styleStr": null,
+              "styleIdentifier": "mainPageContentsStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/main-page-contents/main-page-contents.css",
+                  "relativePath": "main-page-contents.css",
+                  "originalComponentPath": "main-page-contents.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/main-page-contents/main-page-contents.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/app-layout/main-page-contents/main-page-contents.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": false,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": false,
+          "hasProp": false,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": false,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "id",
+            "name"
+          ],
+          "htmlTagNames": [
+            "main",
+            "div",
+            "slot"
+          ],
+          "htmlParts": [],
+          "isUpdateable": false,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [
+            "account-settings"
+          ],
+          "directDependents": [
+            "account-settings"
+          ]
+        }
+      ],
+      "entryKey": "main-page-contents.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "policies-container",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "PoliciesContainer",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "POLICIES-CONTAINER",
+              "styleStr": null,
+              "styleIdentifier": "policiesContainerStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policies-container/policies-container.css",
+                  "relativePath": "policies-container.css",
+                  "originalComponentPath": "policies-container.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policies-container/policies-container.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policies-container/policies-container.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": false,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": false,
+          "hasProp": false,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": false,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": false,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "id",
+            "name"
+          ],
+          "htmlTagNames": [
+            "div",
+            "slot"
+          ],
+          "htmlParts": [],
+          "isUpdateable": false,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [
+            "account-settings"
+          ],
+          "directDependents": [
+            "account-settings"
+          ]
+        }
+      ],
+      "entryKey": "policies-container.entry"
+    },
+    {
+      "cmps": [
+        {
           "tagName": "policy-tile",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -5570,6 +5867,549 @@
     {
       "cmps": [
         {
+          "tagName": "policy-management-tile",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "PolicyManagementTile",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "linkText",
+              "type": "string",
+              "attribute": "link-text",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "The link for the product"
+              },
+              "internal": false
+            },
+            {
+              "name": "productImage",
+              "type": "string",
+              "attribute": "product-image",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "The image to display"
+              },
+              "internal": false
+            },
+            {
+              "name": "titleText",
+              "type": "string",
+              "attribute": "title-text",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "The title for the tile"
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "POLICY-MANAGEMENT-TILE",
+              "styleStr": null,
+              "styleIdentifier": "policyManagementTileStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/policy-management-tile/policy-management-tile.css",
+                  "relativePath": "policy-management-tile.css",
+                  "originalComponentPath": "policy-management-tile.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/policy-management-tile/policy-management-tile.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/policy-management-tile/policy-management-tile.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "href",
+            "id"
+          ],
+          "htmlTagNames": [
+            "div",
+            "a",
+            "i",
+            "h2",
+            "slot"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [
+            "policy-details",
+            "policy-tile"
+          ],
+          "directDependents": [
+            "policy-tile"
+          ]
+        }
+      ],
+      "entryKey": "policy-management-tile.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "policy-subsection-header",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "PolicySubsectionHeader",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "POLICY-SUBSECTION-HEADER",
+              "styleStr": null,
+              "styleIdentifier": "policySubsectionHeaderStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policy-details/policy-subsection-header/policy-subsection-header.css",
+                  "relativePath": "policy-subsection-header.css",
+                  "originalComponentPath": "policy-subsection-header.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policy-details/policy-subsection-header/policy-subsection-header.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policy-details/policy-subsection-header/policy-subsection-header.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": false,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": false,
+          "hasProp": false,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": false,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "id",
+            "data-testid",
+            "title"
+          ],
+          "htmlTagNames": [
+            "div",
+            "h1",
+            "span",
+            "slot"
+          ],
+          "htmlParts": [],
+          "isUpdateable": false,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [
+            "policy-details",
+            "policy-tile"
+          ],
+          "directDependents": [
+            "policy-tile"
+          ]
+        }
+      ],
+      "entryKey": "policy-subsection-header.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "policy-term-container",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "PolicyTermContainer",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "POLICY-TERM-CONTAINER",
+              "styleStr": null,
+              "styleIdentifier": "policyTermContainerStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policy-term-container/policy-term-container.css",
+                  "relativePath": "policy-term-container.css",
+                  "originalComponentPath": "policy-term-container.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policy-term-container/policy-term-container.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policy-term-container/policy-term-container.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": false,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": false,
+          "hasProp": false,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": false,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "id",
+            "class",
+            "role"
+          ],
+          "htmlTagNames": [
+            "div",
+            "label",
+            "span"
+          ],
+          "htmlParts": [],
+          "isUpdateable": false,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [
+            "policy-details",
+            "policy-tile"
+          ],
+          "directDependents": [
+            "policy-tile"
+          ]
+        }
+      ],
+      "entryKey": "policy-term-container.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "tile-container",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "TileContainer",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "type",
+              "type": "string",
+              "attribute": "type",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "TILE-CONTAINER",
+              "styleStr": null,
+              "styleIdentifier": "tileContainerStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/tile-container/tile-container.css",
+                  "relativePath": "tile-container.css",
+                  "originalComponentPath": "tile-container.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/tile-container/tile-container.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/tile-container/tile-container.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": true,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": true,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": false,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class"
+          ],
+          "htmlTagNames": [
+            "div",
+            "slot"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [
+            "policy-details",
+            "policy-tile"
+          ],
+          "directDependents": [
+            "policy-tile"
+          ]
+        }
+      ],
+      "entryKey": "tile-container.entry"
+    },
+    {
+      "cmps": [
+        {
           "tagName": "cover-details-container",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -5722,13 +6562,21 @@
             "sub-section-title"
           ],
           "dependents": [
+            "document-details",
+            "documents-tile",
             "policy-details",
             "policy-tile"
           ],
           "directDependents": [
+            "documents-tile",
             "policy-tile"
           ]
-        },
+        }
+      ],
+      "entryKey": "cover-details-container.entry"
+    },
+    {
+      "cmps": [
         {
           "tagName": "cover-details-tile",
           "excludeFromCollection": false,
@@ -5903,668 +6751,17 @@
           ],
           "dependents": [
             "cover-details-container",
+            "document-details",
+            "documents-tile",
             "policy-details",
             "policy-tile"
           ],
           "directDependents": [
             "cover-details-container"
           ]
-        },
-        {
-          "tagName": "policy-management-tile",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "PolicyManagementTile",
-          "elementRef": null,
-          "encapsulation": "none",
-          "shadowDelegatesFocus": null,
-          "properties": [
-            {
-              "name": "linkText",
-              "type": "string",
-              "attribute": "link-text",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "The link for the product"
-              },
-              "internal": false
-            },
-            {
-              "name": "productImage",
-              "type": "string",
-              "attribute": "product-image",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "The image to display"
-              },
-              "internal": false
-            },
-            {
-              "name": "titleText",
-              "type": "string",
-              "attribute": "title-text",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "The title for the tile"
-              },
-              "internal": false
-            }
-          ],
-          "virtualProperties": [],
-          "states": [],
-          "methods": [],
-          "listeners": [],
-          "events": [],
-          "watchers": [],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "POLICY-MANAGEMENT-TILE",
-              "styleStr": null,
-              "styleIdentifier": "policyManagementTileStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/policy-management-tile/policy-management-tile.css",
-                  "relativePath": "policy-management-tile.css",
-                  "originalComponentPath": "policy-management-tile.css"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/policy-management-tile/policy-management-tile.js",
-          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/policy-management-tile/policy-management-tile.tsx",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
-          "hasComponentDidLoadFn": false,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": false,
-          "hasDisconnectedCallbackFn": false,
-          "hasElement": false,
-          "hasEvent": false,
-          "hasLifecycle": false,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": true,
-          "hasMethod": false,
-          "hasMode": false,
-          "hasAttribute": true,
-          "hasProp": true,
-          "hasPropNumber": false,
-          "hasPropBoolean": false,
-          "hasPropString": true,
-          "hasPropMutable": false,
-          "hasReflect": false,
-          "hasRenderFn": true,
-          "hasState": false,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": true,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
-          "hasVdomPropOrAttr": true,
-          "hasVdomRef": false,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": true,
-          "hasWatchCallback": false,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "class",
-            "href",
-            "id"
-          ],
-          "htmlTagNames": [
-            "div",
-            "a",
-            "i",
-            "h2",
-            "slot"
-          ],
-          "htmlParts": [],
-          "isUpdateable": true,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
-          "dependents": [
-            "policy-details",
-            "policy-tile"
-          ],
-          "directDependents": [
-            "policy-tile"
-          ]
-        },
-        {
-          "tagName": "policy-subsection-header",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "PolicySubsectionHeader",
-          "elementRef": null,
-          "encapsulation": "none",
-          "shadowDelegatesFocus": null,
-          "properties": [],
-          "virtualProperties": [],
-          "states": [],
-          "methods": [],
-          "listeners": [],
-          "events": [],
-          "watchers": [],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "POLICY-SUBSECTION-HEADER",
-              "styleStr": null,
-              "styleIdentifier": "policySubsectionHeaderStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policy-details/policy-subsection-header/policy-subsection-header.css",
-                  "relativePath": "policy-subsection-header.css",
-                  "originalComponentPath": "policy-subsection-header.css"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policy-details/policy-subsection-header/policy-subsection-header.js",
-          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policy-details/policy-subsection-header/policy-subsection-header.tsx",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
-          "hasComponentDidLoadFn": false,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": false,
-          "hasDisconnectedCallbackFn": false,
-          "hasElement": false,
-          "hasEvent": false,
-          "hasLifecycle": false,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": false,
-          "hasMethod": false,
-          "hasMode": false,
-          "hasAttribute": false,
-          "hasProp": false,
-          "hasPropNumber": false,
-          "hasPropBoolean": false,
-          "hasPropString": false,
-          "hasPropMutable": false,
-          "hasReflect": false,
-          "hasRenderFn": true,
-          "hasState": false,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": true,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
-          "hasVdomPropOrAttr": true,
-          "hasVdomRef": false,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": false,
-          "hasWatchCallback": false,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "class",
-            "id",
-            "data-testid",
-            "title"
-          ],
-          "htmlTagNames": [
-            "div",
-            "h1",
-            "span",
-            "slot"
-          ],
-          "htmlParts": [],
-          "isUpdateable": false,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
-          "dependents": [
-            "policy-details",
-            "policy-tile"
-          ],
-          "directDependents": [
-            "policy-tile"
-          ]
-        },
-        {
-          "tagName": "policy-term-container",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "PolicyTermContainer",
-          "elementRef": null,
-          "encapsulation": "none",
-          "shadowDelegatesFocus": null,
-          "properties": [],
-          "virtualProperties": [],
-          "states": [],
-          "methods": [],
-          "listeners": [],
-          "events": [],
-          "watchers": [],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "POLICY-TERM-CONTAINER",
-              "styleStr": null,
-              "styleIdentifier": "policyTermContainerStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policy-term-container/policy-term-container.css",
-                  "relativePath": "policy-term-container.css",
-                  "originalComponentPath": "policy-term-container.css"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policy-term-container/policy-term-container.js",
-          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/policy-term-container/policy-term-container.tsx",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
-          "hasComponentDidLoadFn": false,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": false,
-          "hasDisconnectedCallbackFn": false,
-          "hasElement": false,
-          "hasEvent": false,
-          "hasLifecycle": false,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": false,
-          "hasMethod": false,
-          "hasMode": false,
-          "hasAttribute": false,
-          "hasProp": false,
-          "hasPropNumber": false,
-          "hasPropBoolean": false,
-          "hasPropString": false,
-          "hasPropMutable": false,
-          "hasReflect": false,
-          "hasRenderFn": true,
-          "hasState": false,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": true,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
-          "hasVdomPropOrAttr": true,
-          "hasVdomRef": false,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": true,
-          "hasWatchCallback": false,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "id",
-            "class",
-            "role"
-          ],
-          "htmlTagNames": [
-            "div",
-            "label",
-            "span"
-          ],
-          "htmlParts": [],
-          "isUpdateable": false,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
-          "dependents": [
-            "policy-details",
-            "policy-tile"
-          ],
-          "directDependents": [
-            "policy-tile"
-          ]
-        },
-        {
-          "tagName": "sub-section-title",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "SubSectionTitle",
-          "elementRef": null,
-          "encapsulation": "none",
-          "shadowDelegatesFocus": null,
-          "properties": [
-            {
-              "name": "pagetitle",
-              "type": "string",
-              "attribute": "pagetitle",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            }
-          ],
-          "virtualProperties": [],
-          "states": [],
-          "methods": [],
-          "listeners": [],
-          "events": [],
-          "watchers": [],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "SUB-SECTION-TITLE",
-              "styleStr": null,
-              "styleIdentifier": "subSectionTitleStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/sub-section-title/sub-section-title.css",
-                  "relativePath": "sub-section-title.css",
-                  "originalComponentPath": "sub-section-title.css"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/sub-section-title/sub-section-title.js",
-          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/sub-section-title/sub-section-title.tsx",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
-          "hasComponentDidLoadFn": false,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": false,
-          "hasDisconnectedCallbackFn": false,
-          "hasElement": false,
-          "hasEvent": false,
-          "hasLifecycle": false,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": true,
-          "hasMethod": false,
-          "hasMode": false,
-          "hasAttribute": true,
-          "hasProp": true,
-          "hasPropNumber": false,
-          "hasPropBoolean": false,
-          "hasPropString": true,
-          "hasPropMutable": false,
-          "hasReflect": false,
-          "hasRenderFn": true,
-          "hasState": false,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": true,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
-          "hasVdomPropOrAttr": true,
-          "hasVdomRef": false,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": true,
-          "hasWatchCallback": false,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "id",
-            "class"
-          ],
-          "htmlTagNames": [
-            "h4"
-          ],
-          "htmlParts": [],
-          "isUpdateable": true,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
-          "dependents": [
-            "cover-details-container",
-            "policy-details",
-            "policy-tile"
-          ],
-          "directDependents": [
-            "cover-details-container",
-            "policy-details"
-          ]
-        },
-        {
-          "tagName": "tile-container",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "TileContainer",
-          "elementRef": null,
-          "encapsulation": "none",
-          "shadowDelegatesFocus": null,
-          "properties": [
-            {
-              "name": "type",
-              "type": "string",
-              "attribute": "type",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            }
-          ],
-          "virtualProperties": [],
-          "states": [],
-          "methods": [],
-          "listeners": [],
-          "events": [],
-          "watchers": [],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "TILE-CONTAINER",
-              "styleStr": null,
-              "styleIdentifier": "tileContainerStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/tile-container/tile-container.css",
-                  "relativePath": "tile-container.css",
-                  "originalComponentPath": "tile-container.css"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/tile-container/tile-container.js",
-          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/tile-container/tile-container.tsx",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": true,
-          "hasComponentDidLoadFn": false,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": false,
-          "hasDisconnectedCallbackFn": false,
-          "hasElement": false,
-          "hasEvent": false,
-          "hasLifecycle": true,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": true,
-          "hasMethod": false,
-          "hasMode": false,
-          "hasAttribute": true,
-          "hasProp": true,
-          "hasPropNumber": false,
-          "hasPropBoolean": false,
-          "hasPropString": true,
-          "hasPropMutable": false,
-          "hasReflect": false,
-          "hasRenderFn": true,
-          "hasState": false,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": true,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
-          "hasVdomPropOrAttr": false,
-          "hasVdomRef": false,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": false,
-          "hasWatchCallback": false,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "class"
-          ],
-          "htmlTagNames": [
-            "div",
-            "slot"
-          ],
-          "htmlParts": [],
-          "isUpdateable": true,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
-          "dependents": [
-            "policy-details",
-            "policy-tile"
-          ],
-          "directDependents": [
-            "policy-tile"
-          ]
         }
       ],
-      "entryKey": "cover-details-container.cover-details-tile.policy-management-tile.policy-subsection-header.policy-term-container.sub-section-title.tile-container.entry"
+      "entryKey": "cover-details-tile.entry"
     },
     {
       "cmps": [
@@ -6731,6 +6928,8 @@
           "dependents": [
             "cover-details-container",
             "cover-details-tile",
+            "document-details",
+            "documents-tile",
             "policy-details",
             "policy-tile"
           ],
@@ -6740,136 +6939,432 @@
         }
       ],
       "entryKey": "details-container.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "sub-section-title",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "SubSectionTitle",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "pagetitle",
+              "type": "string",
+              "attribute": "pagetitle",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "SUB-SECTION-TITLE",
+              "styleStr": null,
+              "styleIdentifier": "subSectionTitleStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/sub-section-title/sub-section-title.css",
+                  "relativePath": "sub-section-title.css",
+                  "originalComponentPath": "sub-section-title.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/sub-section-title/sub-section-title.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/sub-section-title/sub-section-title.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "id",
+            "class"
+          ],
+          "htmlTagNames": [
+            "h4"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [
+            "account-settings",
+            "cover-details-container",
+            "document-details",
+            "documents-tile",
+            "policy-details",
+            "policy-tile"
+          ],
+          "directDependents": [
+            "account-settings",
+            "cover-details-container",
+            "document-details",
+            "policy-details"
+          ]
+        }
+      ],
+      "entryKey": "sub-section-title.entry"
     }
   ],
   "componentGraph": {
     "sc-account-details": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
+    ],
+    "sc-account-settings": [
+      "index-e3478a0e.js"
     ],
     "sc-content-container": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-cover-details-container": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-cover-details-tile": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-details-container": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
+    ],
+    "sc-document-details": [
+      "index-e3478a0e.js"
+    ],
+    "sc-document-details-container": [
+      "index-e3478a0e.js"
+    ],
+    "sc-documents-tile": [
+      "index-e3478a0e.js"
     ],
     "sc-header-text": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-login-footer": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-login-form": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-login-header": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-login-title-wrapper": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-main-header": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-main-page-contents": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-multi-banner-bullet-points": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-multi-banner-header": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-multi-banner-title": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-multi-car-banner": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-nav-bar": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-page-header-bar": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-page-logo": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-policies-container": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-policy-details": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-policy-management-tile": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-policy-subsection-header": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-policy-term-container": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-policy-tile": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-product-tile": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-quote-button": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-sub-section-title": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-text-title-bar": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ],
     "sc-tile-container": [
-      "p-731bf01c.js"
+      "index-e3478a0e.js"
     ]
   },
   "sourceGraph": {
     "./src/components/app-layout/login-footer/login-footer.tsx": [],
+    "./src/components/app-layout/login-footer/test/login-footer.e2e.ts": [],
+    "./src/components/app-layout/login-footer/test/login-footer.spec.tsx": [
+      "./src/components/app-layout/login-footer/login-footer"
+    ],
+    "./src/components/app-layout/login-header/login-header.e2e.ts": [],
+    "./src/components/app-layout/login-header/login-header.spec.ts": [
+      "./src/components/app-layout/login-header/login-header"
+    ],
     "./src/components/app-layout/login-header/login-header.tsx": [],
     "./src/components/app-layout/login-title-wrapper/login-title-wrapper.tsx": [],
+    "./src/components/app-layout/login-title-wrapper/test/login-title-wrapper.e2e.ts": [],
+    "./src/components/app-layout/login-title-wrapper/test/login-title-wrapper.spec.tsx": [
+      "./src/components/app-layout/login-title-wrapper/login-title-wrapper"
+    ],
     "./src/components/app-layout/main-header/main-header.tsx": [],
+    "./src/components/app-layout/main-header/test/main-header.e2e.ts": [],
+    "./src/components/app-layout/main-header/test/main-header.spec.tsx": [
+      "./src/components/app-layout/main-header/main-header"
+    ],
     "./src/components/app-layout/main-page-contents/main-page-contents.tsx": [],
+    "./src/components/app-layout/main-page-contents/test/main-page-contents.e2e.ts": [],
+    "./src/components/app-layout/main-page-contents/test/main-page-contents.spec.tsx": [
+      "./src/components/app-layout/main-page-contents/main-page-contents"
+    ],
     "./src/components/app-layout/multi-car-banner/multi-car-banner.tsx": [],
+    "./src/components/app-layout/multi-car-banner/test/multi-car-banner.e2e.ts": [],
+    "./src/components/app-layout/multi-car-banner/test/multi-car-banner.spec.tsx": [
+      "./src/components/app-layout/multi-car-banner/multi-car-banner"
+    ],
     "./src/components/app-layout/nav-bar/nav-bar.tsx": [],
+    "./src/components/app-layout/nav-bar/test/nav-bar.e2e.ts": [],
+    "./src/components/app-layout/nav-bar/test/nav-bar.spec.tsx": [
+      "./src/components/app-layout/nav-bar/nav-bar"
+    ],
     "./src/components/base-components/cover-details-tile/cover-details-tile.tsx": [],
+    "./src/components/base-components/cover-details-tile/test/cover-details-tile.e2e.ts": [],
+    "./src/components/base-components/cover-details-tile/test/cover-details-tile.spec.tsx": [
+      "./src/components/base-components/cover-details-tile/cover-details-tile"
+    ],
     "./src/components/base-components/details-container/details-container.tsx": [],
+    "./src/components/base-components/details-container/test/details-container.e2e.ts": [],
+    "./src/components/base-components/details-container/test/details-container.spec.tsx": [
+      "./src/components/base-components/details-container/details-container"
+    ],
+    "./src/components/base-components/documents-tile/documents-tile.tsx": [],
+    "./src/components/base-components/documents-tile/test/documents-tile.e2e.ts": [],
+    "./src/components/base-components/documents-tile/test/documents-tile.spec.tsx": [
+      "./src/components/base-components/documents-tile/documents-tile"
+    ],
     "./src/components/base-components/header-text/header-text.tsx": [],
+    "./src/components/base-components/header-text/test/header-text.e2e.ts": [],
+    "./src/components/base-components/header-text/test/header-text.spec.tsx": [
+      "./src/components/base-components/header-text/header-text"
+    ],
     "./src/components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points.tsx": [],
+    "./src/components/base-components/multi-banner/multi-banner-bullet-points/test/multi-banner-bullet-points.e2e.ts": [],
+    "./src/components/base-components/multi-banner/multi-banner-bullet-points/test/multi-banner-bullet-points.spec.tsx": [
+      "./src/components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points"
+    ],
     "./src/components/base-components/multi-banner/multi-banner-header/multi-banner-header.tsx": [],
+    "./src/components/base-components/multi-banner/multi-banner-header/test/multi-banner-header.e2e.ts": [],
+    "./src/components/base-components/multi-banner/multi-banner-header/test/multi-banner-header.spec.tsx": [
+      "./src/components/base-components/multi-banner/multi-banner-header/multi-banner-header"
+    ],
     "./src/components/base-components/multi-banner/muti-banner-title/multi-banner-title.tsx": [],
+    "./src/components/base-components/multi-banner/muti-banner-title/test/multi-banner-title.e2e.ts": [],
+    "./src/components/base-components/multi-banner/muti-banner-title/test/multi-banner-title.spec.tsx": [
+      "./src/components/base-components/multi-banner/muti-banner-title/multi-banner-title"
+    ],
     "./src/components/base-components/page-logo/page-logo.tsx": [],
+    "./src/components/base-components/page-logo/test/page-logo.e2e.ts": [],
+    "./src/components/base-components/page-logo/test/page-logo.spec.tsx": [
+      "./src/components/base-components/page-logo/page-logo"
+    ],
     "./src/components/base-components/policy-management-tile/policy-management-tile.tsx": [],
+    "./src/components/base-components/policy-management-tile/test/policy-management-tile.e2e.ts": [],
+    "./src/components/base-components/policy-management-tile/test/policy-management-tile.spec.tsx": [
+      "./src/components/base-components/policy-management-tile/policy-management-tile"
+    ],
     "./src/components/base-components/policy-tile/policy-tile.tsx": [],
+    "./src/components/base-components/policy-tile/test/policy-tile.e2e.ts": [],
+    "./src/components/base-components/policy-tile/test/policy-tile.spec.tsx": [
+      "./src/components/base-components/policy-tile/policy-tile"
+    ],
     "./src/components/base-components/product-tile/product-tile.tsx": [],
+    "./src/components/base-components/product-tile/test/product-tile.e2e.ts": [],
+    "./src/components/base-components/product-tile/test/product-tile.spec.tsx": [
+      "./src/components/base-components/product-tile/product-tile"
+    ],
     "./src/components/base-components/quote-button/quote-button.tsx": [],
+    "./src/components/base-components/quote-button/test/quote-button.e2e.ts": [],
+    "./src/components/base-components/quote-button/test/quote-button.spec.tsx": [
+      "./src/components/base-components/quote-button/quote-button"
+    ],
     "./src/components/base-components/sub-section-title/sub-section-title.tsx": [],
+    "./src/components/base-components/sub-section-title/test/sub-section-title.e2e.ts": [],
+    "./src/components/base-components/sub-section-title/test/sub-section-title.spec.tsx": [
+      "./src/components/base-components/sub-section-title/sub-section-title"
+    ],
     "./src/components/forms/login-form/login-form.tsx": [],
+    "./src/components/forms/login-form/test/login-form.e2e.ts": [],
+    "./src/components/forms/login-form/test/login-form.spec.tsx": [
+      "./src/components/forms/login-form/login-form"
+    ],
     "./src/components/page-layout/account-details/account-details.tsx": [],
+    "./src/components/page-layout/account-details/test/account-details.e2e.ts": [],
+    "./src/components/page-layout/account-details/test/account-details.spec.tsx": [
+      "./src/components/page-layout/account-details/account-details"
+    ],
+    "./src/components/page-layout/account-settings/account-settings.tsx": [],
+    "./src/components/page-layout/account-settings/test/account-settings.e2e.ts": [],
+    "./src/components/page-layout/account-settings/test/account-settings.spec.tsx": [
+      "./src/components/page-layout/account-settings/account-settings"
+    ],
     "./src/components/page-layout/content-container/content-container.tsx": [],
+    "./src/components/page-layout/content-container/test/content-container.e2e.ts": [],
+    "./src/components/page-layout/content-container/test/content-container.spec.tsx": [
+      "./src/components/page-layout/content-container/content-container"
+    ],
     "./src/components/page-layout/cover-details-container/cover-details-container.tsx": [],
+    "./src/components/page-layout/cover-details-container/test/cover-details-container.e2e.ts": [],
+    "./src/components/page-layout/cover-details-container/test/cover-details-container.spec.tsx": [
+      "./src/components/page-layout/cover-details-container/cover-details-container"
+    ],
+    "./src/components/page-layout/document-details-container/document-details-container.tsx": [],
+    "./src/components/page-layout/document-details-container/test/document-details-container.e2e.ts": [],
+    "./src/components/page-layout/document-details-container/test/document-details-container.spec.tsx": [
+      "./src/components/page-layout/document-details-container/document-details-container"
+    ],
+    "./src/components/page-layout/document-details/document-details.tsx": [],
+    "./src/components/page-layout/document-details/test/document-details.e2e.ts": [],
+    "./src/components/page-layout/document-details/test/document-details.spec.tsx": [
+      "./src/components/page-layout/document-details/document-details"
+    ],
     "./src/components/page-layout/page-header-bar/page-header-bar.tsx": [],
+    "./src/components/page-layout/page-header-bar/test/page-header-bar.e2e.ts": [],
+    "./src/components/page-layout/page-header-bar/test/page-header-bar.spec.tsx": [
+      "./src/components/page-layout/page-header-bar/page-header-bar"
+    ],
     "./src/components/page-layout/policies-container/policies-container.tsx": [],
+    "./src/components/page-layout/policies-container/test/policies-container.e2e.ts": [],
+    "./src/components/page-layout/policies-container/test/policies-container.spec.tsx": [
+      "./src/components/page-layout/policies-container/policies-container"
+    ],
     "./src/components/page-layout/policy-details/policy-details/policy-details.tsx": [],
+    "./src/components/page-layout/policy-details/policy-details/test/policy-details.e2e.ts": [],
+    "./src/components/page-layout/policy-details/policy-details/test/policy-details.spec.tsx": [
+      "./src/components/page-layout/policy-details/policy-details/policy-details"
+    ],
     "./src/components/page-layout/policy-details/policy-subsection-header/policy-subsection-header.tsx": [],
+    "./src/components/page-layout/policy-details/policy-subsection-header/test/policy-subsection-header.e2e.ts": [],
+    "./src/components/page-layout/policy-details/policy-subsection-header/test/policy-subsection-header.spec.tsx": [
+      "./src/components/page-layout/policy-details/policy-subsection-header/policy-subsection-header"
+    ],
     "./src/components/page-layout/policy-term-container/policy-term-container.tsx": [],
+    "./src/components/page-layout/policy-term-container/test/policy-term-container.e2e.ts": [],
+    "./src/components/page-layout/policy-term-container/test/policy-term-container.spec.tsx": [
+      "./src/components/page-layout/policy-term-container/policy-term-container"
+    ],
+    "./src/components/page-layout/text-title-bar/test/text-title-bar.e2e.ts": [],
+    "./src/components/page-layout/text-title-bar/test/text-title-bar.spec.tsx": [
+      "./src/components/page-layout/text-title-bar/text-title-bar"
+    ],
     "./src/components/page-layout/text-title-bar/text-title-bar.tsx": [],
+    "./src/components/page-layout/tile-container/test/tile-container.e2e.ts": [],
+    "./src/components/page-layout/tile-container/test/tile-container.spec.tsx": [
+      "./src/components/page-layout/tile-container/tile-container"
+    ],
     "./src/components/page-layout/tile-container/tile-container.tsx": [],
     "./src/index.ts": [],
+    "./src/interfaces/documentDataInterface.ts": [],
     "./src/interfaces/policyDataInterface.ts": [],
     "./src/interfaces/propertyDataInterface.ts": [],
     "./src/interfaces/userDataInterface.ts": [],
     "./src/interfaces/vehicleDataInterface.ts": [],
+    "./src/utils/utils.spec.ts": [
+      "./src/utils/utils"
+    ],
     "./src/utils/utils.ts": []
   },
   "collections": []

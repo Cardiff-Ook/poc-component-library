@@ -1,4 +1,4 @@
-# account-details
+# account-settings
 
 
 
@@ -12,24 +12,23 @@
 | `user`   | `user`    | Prop: user: object User Account details object | `UserDataInterface[] \| string` | `undefined` |
 
 
-## Events
-
-| Event             | Description                                                           | Type               |
-| ----------------- | --------------------------------------------------------------------- | ------------------ |
-| `editUserDetails` | Event: loginShouldOccur: EventEmitter Event to fire if data validates | `CustomEvent<any>` |
-
-
 ## Dependencies
 
-### Used by
+### Depends on
 
- - [account-settings](../account-settings)
+- [main-page-contents](../../app-layout/main-page-contents)
+- [policies-container](../policies-container)
+- [sub-section-title](../../base-components/sub-section-title)
+- [account-details](../account-details)
 
 ### Graph
 ```mermaid
 graph TD;
+  account-settings --> main-page-contents
+  account-settings --> policies-container
+  account-settings --> sub-section-title
   account-settings --> account-details
-  style account-details fill:#f9f,stroke:#333,stroke-width:4px
+  style account-settings fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------
