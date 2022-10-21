@@ -14,14 +14,22 @@
 
 ## Dependencies
 
+### Used by
+
+ - [documents-tile](../../base-components/documents-tile)
+
 ### Depends on
 
+- [document-details-tile](../../base-components/document-details-tile)
 - [sub-section-title](../../base-components/sub-section-title)
 
 ### Graph
 ```mermaid
 graph TD;
+  document-details-container --> document-details-tile
   document-details-container --> sub-section-title
+  document-details-tile --> documents-list
+  documents-tile --> document-details-container
   style document-details-container fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

@@ -60,7 +60,7 @@ export class DocumentsTile {
               <div class="renewalBannerContainer" id="renewalBannerContainer"></div>
             </div>
             <policy-term-container></policy-term-container>
-            <cover-details-container coverdetails={[this.policydetails]}></cover-details-container>
+            <document-details-container coverdetails={[this.policydetails]}></document-details-container>
           </div> 
         </div> 
       </div>

@@ -22,6 +22,7 @@ export class DocumentDetailsContainer {
     else {
       this._arrayData = newValue;
     }
+    
   }
 
 
@@ -40,7 +41,7 @@ export class DocumentDetailsContainer {
         btn[0].classList.add("jut__Button__materialIcon");
        }
   }
-  
+
   componentWillLoad() {
     console.log("document-details-container loaded");
     this.arrayDataWatcher(this.coverdetails);
@@ -49,23 +50,23 @@ export class DocumentDetailsContainer {
   }
 
   render() {
-    /*if (this._arrayData !== undefined && this._arrayData.length > 0) {
+    if (this._arrayData !== undefined && this._arrayData.length > 0) {
       return (
         <div id="coverContainerIterable" class="coverContainerGrid">
           {
             this._arrayData.map((cover:any={}, index) =>
-                <cover-details-tile coverdetails={cover} coverindex={index}></cover-details-tile>
+                <document-details-tile coverdetails={cover} coverindex={index}></document-details-tile>
             )
           }
         </div>
       );
-    } else {*/
+    } else {
       return (
         <div id="policyCoverMainContainer" class="MyPoliciesPage_policyCoverMainContainer__3bkpG">
-          <sub-section-title pagetitle="You have no policies"></sub-section-title>     
+          <sub-section-title pagetitle="You have no documents"></sub-section-title>     
         </div>
       )
-    //}
+    }
   }
 
 }

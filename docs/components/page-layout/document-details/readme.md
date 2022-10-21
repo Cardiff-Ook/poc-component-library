@@ -25,10 +25,10 @@ graph TD;
   document-details --> documents-tile
   document-details --> sub-section-title
   documents-tile --> policy-term-container
-  documents-tile --> cover-details-container
-  cover-details-container --> cover-details-tile
-  cover-details-container --> sub-section-title
-  cover-details-tile --> details-container
+  documents-tile --> document-details-container
+  document-details-container --> document-details-tile
+  document-details-container --> sub-section-title
+  document-details-tile --> documents-list
   style document-details fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
