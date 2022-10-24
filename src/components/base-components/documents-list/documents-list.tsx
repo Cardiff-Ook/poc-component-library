@@ -20,6 +20,7 @@ export class DocumentsList {
     } else {
       this._coverDetails = this.coverdetails as PolicyDataInterface;
     }
+    console.log(this._coverDetails);
     this._docsList = this._coverDetails.documents;
 
   }
@@ -53,42 +54,14 @@ export class DocumentsList {
                   <hr class="jut__TabSet__divider"></hr>
                   <div id="tabs_407108748" class="jut__TabSet__content" role="region">
                     <div id="activeTab" aria-labelledby="activeTab_50508372" role="tabpanel" aria-hidden="false" tabindex="0" />
-                      <div id="activeDocumentCard">
-                        <div id="activeDocumentDetails">
-                          <div id="activeDocumentsDetailsHead" class="YourDocumentDetails_activeDocumentsDetailsHead__2Ntyt">
-                            <p id="activeDocumentsDetailsHeadDate">Date Issued</p>
-                            <p id="activeDocumentsDetailsHeadName">Document Name</p>
-                          </div>
-                          <div class="jut__Accordion__accordion" role="menu" aria-disabled="false" aria-haspopup="true">
-                            <div id="activeDocumentContainerIterables">
-                              <div id="currentDocumentAccordionCard0" class="YourDocumentDetails_policydocument__1cDz5"><div id="currentDocumentAccordionCard0_209711427" class="jut__Accordion__cardHeading YourDocumentDetails_cardHeading__3MARG" role="menuitem" tabindex="0" aria-controls="currentDocumentAccordionCard0_407108748" aria-expanded="false">
-                                <div class="jut__Accordion__cardTitle jut__Accordion__accordionToggle">
-                                  <i class="mir mi-chevron-right jut__Chevron__chevronRight jut__Chevron__chevron jut__Chevron__chevronDefault" role="button" aria-label="Label"></i>
-                                  <span class="jut__Accordion__header"><p>16/11/21</p><p>Renewal Invitation</p></span>
-                                </div>
-                              </div>
-                              <div role="region" class="jut__Collapse__collapse jut__Collapse__collapsed" aria-expanded="false" id="currentDocumentAccordionCard0_407108748" aria-labelledby="currentDocumentAccordionCard0_209711427" aria-live="assertive">
-                                <div class="jut__Accordion__cardBody"><div class="jut__Grid__grid jut__Grid__vgapMedium jut__Grid__hgapMedium" id="activeDocumentGrid0">
-                                  <div class="jut__Grid__grid jut__Grid__vgapMedium jut__Grid__hgapNone">
-                                    <div id="currentDocumentPolicy0"></div>
-                                      <div id="activeDocSupportingInfoContainer0" class="YourDocumentDetails_docSupportingInfoContainer__1ltGe">
-                                        <p id="activeDocSupportingInfo0">This document includes:</p>
-                                        <ul id="activeDocSupportingInfoElements0" class="activeDocSupportingInfoElements">
-                                          <li>This displays key information about your renewal offer and your upcoming renewal date.</li>
-                                        </ul>
-                                        <div id="documentPolicydownloadContainer0" class="YourDocumentDetails_downloadContainer__JtW_r">
-                                          <button type="button" class="digitalButton__button jut__Button__button digitalButton__secondary jut__Button__secondary YourDocumentDetails_imageDisplay__30Emt" id="currentDocumentPolicyDownloadButton0">
-                                            <span>
-                                              <span>Download</span>
-                                            </span>
-                                          </button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                    <div id="activeDocumentCard">
+                      <div id="activeDocumentDetails">
+                        <div id="activeDocumentsDetailsHead" class="YourDocumentDetails_activeDocumentsDetailsHead__2Ntyt">
+                          <p id="activeDocumentsDetailsHeadDate">Date Issued</p>
+                          <p id="activeDocumentsDetailsHeadName">Document Name</p>
+                        </div>
+                        <div class="jut__Accordion__accordion" role="menu" aria-disabled="false" aria-haspopup="true">
+                          <div id="activeDocumentContainerIterables">
                           </div>
                         </div>
                       </div>

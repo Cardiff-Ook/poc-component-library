@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-10-21T14:25:35",
+  "timestamp": "2022-10-24T09:45:29",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -7,13 +7,13 @@
   "app": {
     "namespace": "PocAdmComponents",
     "fsNamespace": "poc-adm-components",
-    "components": 36,
-    "entries": 36,
-    "bundles": 269,
+    "components": 37,
+    "entries": 37,
+    "bundles": 276,
     "outputs": [
       {
         "name": "dist-collection",
-        "files": 43,
+        "files": 44,
         "generatedFiles": [
           "./dist/collection/components/app-layout/login-footer/login-footer.js",
           "./dist/collection/components/app-layout/login-header/login-header.js",
@@ -25,6 +25,7 @@
           "./dist/collection/components/base-components/cover-details-tile/cover-details-tile.js",
           "./dist/collection/components/base-components/details-container/details-container.js",
           "./dist/collection/components/base-components/document-details-tile/document-details-tile.js",
+          "./dist/collection/components/base-components/documents-list-item/documents-list-item.js",
           "./dist/collection/components/base-components/documents-list/documents-list.js",
           "./dist/collection/components/base-components/documents-tile/documents-tile.js",
           "./dist/collection/components/base-components/header-text/header-text.js",
@@ -62,7 +63,7 @@
       },
       {
         "name": "dist-custom-elements",
-        "files": 91,
+        "files": 93,
         "generatedFiles": [
           "./dist/components/account-details.d.ts",
           "./dist/components/account-details.js",
@@ -88,6 +89,8 @@
           "./dist/components/document-details-tile2.js",
           "./dist/components/document-details.d.ts",
           "./dist/components/document-details.js",
+          "./dist/components/documents-list-item.d.ts",
+          "./dist/components/documents-list-item.js",
           "./dist/components/documents-list.d.ts",
           "./dist/components/documents-list.js",
           "./dist/components/documents-list2.js",
@@ -159,7 +162,7 @@
       },
       {
         "name": "dist-lazy",
-        "files": 132,
+        "files": 136,
         "generatedFiles": [
           "./dist/cjs/account-details_3.cjs.entry.js",
           "./dist/cjs/account-settings.cjs.entry.js",
@@ -168,6 +171,7 @@
           "./dist/cjs/details-container.cjs.entry.js",
           "./dist/cjs/document-details-container_2.cjs.entry.js",
           "./dist/cjs/document-details.cjs.entry.js",
+          "./dist/cjs/documents-list-item.cjs.entry.js",
           "./dist/cjs/documents-list.cjs.entry.js",
           "./dist/cjs/documents-tile.cjs.entry.js",
           "./dist/cjs/header-text.cjs.entry.js",
@@ -201,6 +205,7 @@
           "./dist/esm/details-container.entry.js",
           "./dist/esm/document-details-container_2.entry.js",
           "./dist/esm/document-details.entry.js",
+          "./dist/esm/documents-list-item.entry.js",
           "./dist/esm/documents-list.entry.js",
           "./dist/esm/documents-tile.entry.js",
           "./dist/esm/header-text.entry.js",
@@ -238,14 +243,14 @@
           "./dist/poc-adm-components/p-2114d185.entry.js",
           "./dist/poc-adm-components/p-256dea59.entry.js",
           "./dist/poc-adm-components/p-420ca604.entry.js",
-          "./dist/poc-adm-components/p-451d47ec.entry.js",
           "./dist/poc-adm-components/p-452c736d.entry.js",
-          "./dist/poc-adm-components/p-454b30a2.entry.js",
           "./dist/poc-adm-components/p-55de5d4b.entry.js",
+          "./dist/poc-adm-components/p-60b48e36.entry.js",
           "./dist/poc-adm-components/p-70a65caf.entry.js",
           "./dist/poc-adm-components/p-731bf01c.js",
           "./dist/poc-adm-components/p-7487703f.entry.js",
           "./dist/poc-adm-components/p-7a72ba2f.entry.js",
+          "./dist/poc-adm-components/p-7f16f646.entry.js",
           "./dist/poc-adm-components/p-8999de6c.entry.js",
           "./dist/poc-adm-components/p-8e2c6f9d.entry.js",
           "./dist/poc-adm-components/p-a1659d78.entry.js",
@@ -260,6 +265,7 @@
           "./dist/poc-adm-components/p-e6561d0a.entry.js",
           "./dist/poc-adm-components/p-eb51e472.entry.js",
           "./dist/poc-adm-components/p-f124762f.entry.js",
+          "./dist/poc-adm-components/p-f57b42c0.entry.js",
           "./dist/poc-adm-components/poc-adm-components.esm.js",
           "./public/build/index.esm.js",
           "./public/build/p-0c7eca68.entry.js",
@@ -270,14 +276,14 @@
           "./public/build/p-2114d185.entry.js",
           "./public/build/p-256dea59.entry.js",
           "./public/build/p-420ca604.entry.js",
-          "./public/build/p-451d47ec.entry.js",
           "./public/build/p-452c736d.entry.js",
-          "./public/build/p-454b30a2.entry.js",
           "./public/build/p-55de5d4b.entry.js",
+          "./public/build/p-60b48e36.entry.js",
           "./public/build/p-70a65caf.entry.js",
           "./public/build/p-731bf01c.js",
           "./public/build/p-7487703f.entry.js",
           "./public/build/p-7a72ba2f.entry.js",
+          "./public/build/p-7f16f646.entry.js",
           "./public/build/p-8999de6c.entry.js",
           "./public/build/p-8e2c6f9d.entry.js",
           "./public/build/p-a1659d78.entry.js",
@@ -292,6 +298,7 @@
           "./public/build/p-e6561d0a.entry.js",
           "./public/build/p-eb51e472.entry.js",
           "./public/build/p-f124762f.entry.js",
+          "./public/build/p-f57b42c0.entry.js",
           "./public/build/poc-adm-components.esm.js"
         ]
       },
@@ -350,12 +357,24 @@
         "components": [
           "document-details"
         ],
-        "bundleId": "p-454b30a2",
-        "fileName": "p-454b30a2.entry.js",
+        "bundleId": "p-f57b42c0",
+        "fileName": "p-f57b42c0.entry.js",
         "imports": [
           "p-731bf01c.js"
         ],
-        "originalByteSize": 1727
+        "originalByteSize": 1759
+      },
+      {
+        "key": "documents-list-item.entry",
+        "components": [
+          "documents-list-item"
+        ],
+        "bundleId": "p-7f16f646",
+        "fileName": "p-7f16f646.entry.js",
+        "imports": [
+          "p-731bf01c.js"
+        ],
+        "originalByteSize": 2756
       },
       {
         "key": "header-text.entry",
@@ -645,12 +664,12 @@
         "components": [
           "documents-list"
         ],
-        "bundleId": "p-451d47ec",
-        "fileName": "p-451d47ec.entry.js",
+        "bundleId": "p-60b48e36",
+        "fileName": "p-60b48e36.entry.js",
         "imports": [
           "p-731bf01c.js"
         ],
-        "originalByteSize": 5277
+        "originalByteSize": 3304
       },
       {
         "key": "policy-term-container.entry",
@@ -712,7 +731,19 @@
         "imports": [
           "index-7e961489.js"
         ],
-        "originalByteSize": 1731
+        "originalByteSize": 1763
+      },
+      {
+        "key": "documents-list-item.entry",
+        "components": [
+          "documents-list-item"
+        ],
+        "bundleId": "documents-list-item",
+        "fileName": "documents-list-item.entry.js",
+        "imports": [
+          "index-7e961489.js"
+        ],
+        "originalByteSize": 2760
       },
       {
         "key": "header-text.entry",
@@ -1007,7 +1038,7 @@
         "imports": [
           "index-7e961489.js"
         ],
-        "originalByteSize": 5281
+        "originalByteSize": 3308
       },
       {
         "key": "policy-term-container.entry",
@@ -1071,7 +1102,19 @@
         "imports": [
           "index-f2e9dcc2.js"
         ],
-        "originalByteSize": 1828
+        "originalByteSize": 1860
+      },
+      {
+        "key": "documents-list-item.entry",
+        "components": [
+          "documents-list-item"
+        ],
+        "bundleId": "documents-list-item.cjs",
+        "fileName": "documents-list-item.cjs.entry.js",
+        "imports": [
+          "index-f2e9dcc2.js"
+        ],
+        "originalByteSize": 2943
       },
       {
         "key": "header-text.entry",
@@ -1366,7 +1409,7 @@
         "imports": [
           "index-f2e9dcc2.js"
         ],
-        "originalByteSize": 5596
+        "originalByteSize": 3503
       },
       {
         "key": "policy-term-container.entry",
@@ -2093,6 +2136,59 @@
               "PolicyDataInterface": {
                 "location": "import",
                 "path": "../../../interfaces/policyDataInterface"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": null,
+      "states": []
+    },
+    {
+      "tag": "documents-list-item",
+      "path": "./src/components/base-components/documents-list-item/documents-list-item.js",
+      "source": "./src/components/base-components/documents-list-item/documents-list-item.tsx",
+      "elementRef": null,
+      "componentClassName": "DocumentsListItem",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "document",
+          "type": "string",
+          "attribute": "document",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "DocumentDataInterface | string",
+            "resolved": "DocumentDataInterface | string",
+            "references": {
+              "DocumentDataInterface": {
+                "location": "import",
+                "path": "../../../interfaces/documentDataInterface"
               }
             }
           },
@@ -3812,6 +3908,158 @@
         }
       ],
       "entryKey": "document-details.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "documents-list-item",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "DocumentsListItem",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "document",
+              "type": "string",
+              "attribute": "document",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "DocumentDataInterface | string",
+                "resolved": "DocumentDataInterface | string",
+                "references": {
+                  "DocumentDataInterface": {
+                    "location": "import",
+                    "path": "../../../interfaces/documentDataInterface"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [
+            {
+              "propName": "document",
+              "methodName": "arrayDataWatcher"
+            }
+          ],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "DOCUMENTS-LIST-ITEM",
+              "styleStr": null,
+              "styleIdentifier": "documentsListItemStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/documents-list-item/documents-list-item.css",
+                  "relativePath": "documents-list-item.css",
+                  "originalComponentPath": "documents-list-item.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/documents-list-item/documents-list-item.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/documents-list-item/documents-list-item.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": true,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": true,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": true,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "id",
+            "class",
+            "role",
+            "tabindex",
+            "aria-controls",
+            "aria-expanded",
+            "aria-label",
+            "aria-labelledby",
+            "aria-live",
+            "type"
+          ],
+          "htmlTagNames": [
+            "div",
+            "i",
+            "span",
+            "p",
+            "ul",
+            "li",
+            "button"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "documents-list-item.entry"
     },
     {
       "cmps": [
@@ -8184,21 +8432,14 @@
             "aria-labelledby",
             "aria-hidden",
             "aria-disabled",
-            "aria-haspopup",
-            "aria-expanded",
-            "aria-label",
-            "aria-live"
+            "aria-haspopup"
           ],
           "htmlTagNames": [
             "div",
             "h3",
             "p",
             "button",
-            "hr",
-            "i",
-            "span",
-            "ul",
-            "li"
+            "hr"
           ],
           "htmlParts": [],
           "isUpdateable": true,
@@ -8511,6 +8752,9 @@
     "sc-documents-list": [
       "p-731bf01c.js"
     ],
+    "sc-documents-list-item": [
+      "p-731bf01c.js"
+    ],
     "sc-documents-tile": [
       "p-731bf01c.js"
     ],
@@ -8601,6 +8845,7 @@
     "./src/components/base-components/cover-details-tile/cover-details-tile.tsx": [],
     "./src/components/base-components/details-container/details-container.tsx": [],
     "./src/components/base-components/document-details-tile/document-details-tile.tsx": [],
+    "./src/components/base-components/documents-list-item/documents-list-item.tsx": [],
     "./src/components/base-components/documents-list/documents-list.tsx": [],
     "./src/components/base-components/documents-tile/documents-tile.tsx": [],
     "./src/components/base-components/header-text/header-text.tsx": [],

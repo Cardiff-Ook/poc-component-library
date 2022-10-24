@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { UserDataInterface } from "./interfaces/userDataInterface";
 import { PolicyDataInterface } from "./interfaces/policyDataInterface";
+import { DocumentDataInterface } from "./interfaces/documentDataInterface";
 import { BulletPointInterface } from "./components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points";
 import { ButtonInterface } from "./components/app-layout/nav-bar/nav-bar";
 export namespace Components {
@@ -47,6 +48,9 @@ export namespace Components {
     }
     interface DocumentsList {
         "coverdetails": PolicyDataInterface | string;
+    }
+    interface DocumentsListItem {
+        "document": DocumentDataInterface | string;
     }
     interface DocumentsTile {
         "policydetails": PolicyDataInterface;
@@ -209,6 +213,12 @@ declare global {
     var HTMLDocumentsListElement: {
         prototype: HTMLDocumentsListElement;
         new (): HTMLDocumentsListElement;
+    };
+    interface HTMLDocumentsListItemElement extends Components.DocumentsListItem, HTMLStencilElement {
+    }
+    var HTMLDocumentsListItemElement: {
+        prototype: HTMLDocumentsListItemElement;
+        new (): HTMLDocumentsListItemElement;
     };
     interface HTMLDocumentsTileElement extends Components.DocumentsTile, HTMLStencilElement {
     }
@@ -377,6 +387,7 @@ declare global {
         "document-details-container": HTMLDocumentDetailsContainerElement;
         "document-details-tile": HTMLDocumentDetailsTileElement;
         "documents-list": HTMLDocumentsListElement;
+        "documents-list-item": HTMLDocumentsListItemElement;
         "documents-tile": HTMLDocumentsTileElement;
         "header-text": HTMLHeaderTextElement;
         "login-footer": HTMLLoginFooterElement;
@@ -447,6 +458,9 @@ declare namespace LocalJSX {
     }
     interface DocumentsList {
         "coverdetails"?: PolicyDataInterface | string;
+    }
+    interface DocumentsListItem {
+        "document"?: DocumentDataInterface | string;
     }
     interface DocumentsTile {
         "policydetails"?: PolicyDataInterface;
@@ -555,6 +569,7 @@ declare namespace LocalJSX {
         "document-details-container": DocumentDetailsContainer;
         "document-details-tile": DocumentDetailsTile;
         "documents-list": DocumentsList;
+        "documents-list-item": DocumentsListItem;
         "documents-tile": DocumentsTile;
         "header-text": HeaderText;
         "login-footer": LoginFooter;
@@ -597,6 +612,7 @@ declare module "@stencil/core" {
             "document-details-container": LocalJSX.DocumentDetailsContainer & JSXBase.HTMLAttributes<HTMLDocumentDetailsContainerElement>;
             "document-details-tile": LocalJSX.DocumentDetailsTile & JSXBase.HTMLAttributes<HTMLDocumentDetailsTileElement>;
             "documents-list": LocalJSX.DocumentsList & JSXBase.HTMLAttributes<HTMLDocumentsListElement>;
+            "documents-list-item": LocalJSX.DocumentsListItem & JSXBase.HTMLAttributes<HTMLDocumentsListItemElement>;
             "documents-tile": LocalJSX.DocumentsTile & JSXBase.HTMLAttributes<HTMLDocumentsTileElement>;
             "header-text": LocalJSX.HeaderText & JSXBase.HTMLAttributes<HTMLHeaderTextElement>;
             "login-footer": LocalJSX.LoginFooter & JSXBase.HTMLAttributes<HTMLLoginFooterElement>;

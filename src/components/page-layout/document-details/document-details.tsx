@@ -26,6 +26,7 @@ export class DocumentDetails {
   }
 
   componentWillLoad() {
+    console.log(this.policies);
     this.arrayDataWatcher(this.policies);
     console.log("B ", this._arrayData);
   }
