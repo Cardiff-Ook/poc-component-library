@@ -9,8 +9,16 @@ import { VehicleDataInterface } from '../../../interfaces/vehicleDataInterface';
 })
 
 export class DetailsContainer {
-
+  /**
+   * Prop: detailstype: string
+   * Either "car" or "home"
+   */
   @Prop() detailstype: string;
+
+  /**
+   * Prop: coverdetails: PolicyDataInterface
+   * Policy Data
+   */
   @Prop() coverdetails: PolicyDataInterface | string;
 
   private _coverDetails: PolicyDataInterface;

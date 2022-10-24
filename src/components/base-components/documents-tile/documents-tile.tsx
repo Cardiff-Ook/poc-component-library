@@ -7,15 +7,25 @@ import { PolicyDataInterface } from '../../../interfaces/policyDataInterface';
   shadow: false,
 })
 export class DocumentsTile {
+    
+  /**
+   * Prop: policydetails: PolicyDataInterface
+   * Policy Data
+   */
   @Prop() policydetails: PolicyDataInterface;
+
+  /**
+   * Prop: policyindex: number
+   * Index number of the policy in the list
+   */
   @Prop() policyindex: number;
   private _policyIndex: string;
+  
   @State() collapsed: boolean;
 
   @Element() private element: HTMLElement;
 
   componentWillLoad() {
-    console.log("A", this.policydetails);
     this._policyIndex = `policyCovers${this.policyindex}`;
   }
 

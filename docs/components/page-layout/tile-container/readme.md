@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default     |
-| -------- | --------- | ----------- | -------- | ----------- |
-| `type`   | `type`    |             | `string` | `undefined` |
+| Property | Attribute | Description                                                                         | Type     | Default     |
+| -------- | --------- | ----------------------------------------------------------------------------------- | -------- | ----------- |
+| `type`   | `type`    | Prop: type: tring Sets the tyle according to the received type (options / products) | `string` | `undefined` |
 
 
 ## Dependencies

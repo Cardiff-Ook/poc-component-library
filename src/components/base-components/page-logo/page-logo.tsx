@@ -7,6 +7,10 @@ import { Component, Host, h, Prop } from '@stencil/core';
 })
 export class PageLogo {
 
+  /**
+   * Prop: brand: string
+   * Whichever brand currently being browsed
+   */
   @Prop() brand: string;
 
   render() {

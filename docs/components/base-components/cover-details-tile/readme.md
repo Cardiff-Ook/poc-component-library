@@ -7,10 +7,10 @@
 
 ## Properties
 
-| Property       | Attribute      | Description | Type                            | Default     |
-| -------------- | -------------- | ----------- | ------------------------------- | ----------- |
-| `coverdetails` | `coverdetails` |             | `PolicyDataInterface \| string` | `undefined` |
-| `coverindex`   | `coverindex`   |             | `number`                        | `undefined` |
+| Property       | Attribute      | Description                                                     | Type                            | Default     |
+| -------------- | -------------- | --------------------------------------------------------------- | ------------------------------- | ----------- |
+| `coverdetails` | `coverdetails` | Prop: coverdetails: PolicyDataInterface Policy Data             | `PolicyDataInterface \| string` | `undefined` |
+| `coverindex`   | `coverindex`   | Prop: coverindex: number Index number of the policy in the list | `number`                        | `undefined` |
 
 
 ## Dependencies

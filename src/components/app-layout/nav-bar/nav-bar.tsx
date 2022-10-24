@@ -12,6 +12,11 @@ export interface ButtonInterface {
   shadow: false,
 })
 export class NavBar {
+  
+  /**
+   * Prop: buttons: Array<ButtonInterface>
+   * Array containing all the buttons to display
+   */
 
   @Prop() buttons: Array<ButtonInterface> | string;
   private _arrayData: Array<ButtonInterface>;

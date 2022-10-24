@@ -7,10 +7,10 @@
 
 ## Properties
 
-| Property        | Attribute     | Description | Type                  | Default     |
-| --------------- | ------------- | ----------- | --------------------- | ----------- |
-| `policydetails` | --            |             | `PolicyDataInterface` | `undefined` |
-| `policyindex`   | `policyindex` |             | `number`              | `undefined` |
+| Property        | Attribute     | Description                                                      | Type                  | Default     |
+| --------------- | ------------- | ---------------------------------------------------------------- | --------------------- | ----------- |
+| `policydetails` | --            | Prop: policydetails: PolicyDataInterface Policy Data             | `PolicyDataInterface` | `undefined` |
+| `policyindex`   | `policyindex` | Prop: policyindex: number Index number of the policy in the list | `number`              | `undefined` |
 
 
 ## Dependencies

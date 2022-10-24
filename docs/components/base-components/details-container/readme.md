@@ -7,10 +7,10 @@
 
 ## Properties
 
-| Property       | Attribute      | Description | Type                            | Default     |
-| -------------- | -------------- | ----------- | ------------------------------- | ----------- |
-| `coverdetails` | `coverdetails` |             | `PolicyDataInterface \| string` | `undefined` |
-| `detailstype`  | `detailstype`  |             | `string`                        | `undefined` |
+| Property       | Attribute      | Description                                         | Type                            | Default     |
+| -------------- | -------------- | --------------------------------------------------- | ------------------------------- | ----------- |
+| `coverdetails` | `coverdetails` | Prop: coverdetails: PolicyDataInterface Policy Data | `PolicyDataInterface \| string` | `undefined` |
+| `detailstype`  | `detailstype`  | Prop: detailstype: string Either "car" or "home"    | `string`                        | `undefined` |
 
 
 ## Dependencies

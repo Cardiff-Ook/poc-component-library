@@ -16,6 +16,10 @@ export interface BulletPointInterface {
 export class MultiBannerBulletPoints {
 
 
+  /**
+   * Prop: bulletPoints: Array<BulletPointInterface>
+   * Array containing all the bullet points to display
+   */
   @Prop() bulletPoints: Array<BulletPointInterface> | string;
   private _arrayData: Array<BulletPointInterface>;
 

@@ -8,6 +8,10 @@ import { PolicyDataInterface } from '../../../interfaces/policyDataInterface';
 })
 export class DocumentsList {
 
+  /**
+   * Prop: coverdetails: PolicyDataInterface
+   * Policy Data
+   */
   @Prop() coverdetails: PolicyDataInterface | string;
   private _coverDetails: PolicyDataInterface;
   private _docsList: Array<DocumentDataInterface>;
@@ -20,7 +24,6 @@ export class DocumentsList {
     } else {
       this._coverDetails = this.coverdetails as PolicyDataInterface;
     }
-    console.log(this._coverDetails);
     this._docsList = this._coverDetails.documents;
 
   }
@@ -71,6 +74,35 @@ export class DocumentsList {
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div id="bookletIpidsContainer" class="YourDocumentDetails_buttonContainer__2_Yfk">
+              <div id="bookletIpidsInfoContaier" class="jut__InlineNotification__inlineNotification jut__InlineNotification__inlineNotificationInfo InfoComponent_admInlineNotification__3BzWU InfoComponent_admInlineNotificationInlineBlock__vbaoC InfoComponent_admInlineNotificationInlineInfo__YounC" role="alert" aria-hidden="false">
+                <span class="jut__InlineNotification__iconWrapper" aria-hidden="true">
+                  <i class="mir mi-info"></i>
+                </span>
+                <span class="jut__InlineNotification__message">
+                  <span class="jut__InlineNotification__messageDefault">
+                    <p id="statementContent">Please click below to view your Policy Booklets and Insurance Product Information Documents (IPIDs). Details of your cover can be found on the Policy Schedule(s), please refer to it to select the relevant IPIDs.</p>
+                  </span>
+                  <span></span>
+                </span>
+              </div>
+            </div>
+            <div id="expiredDocumentButtonDivContainer" class="YourDocumentDetails_buttonContainer__2_Yfk">
+              <div id="documentButtonGrid">
+                <div class="jut__Grid__grid jut__Grid__vgapNone jut__Grid__hgapMedium YourDocumentDetails_documentButtonClass__-5Q9N">
+                  <button type="button" class="digitalButton__button jut__Button__button digitalButton__secondary jut__Button__secondary YourDocumentDetails_documentButton__1VhMI" id="documentViewIpidsButton">
+                    <span >
+                      <span>View IPIDs</span>
+                    </span>
+                  </button>
+                  <button type="button" class="digitalButton__button jut__Button__button digitalButton__primary jut__Button__primary YourDocumentDetails_documentButton__1VhMI" id="documentViewPolicyBookletButton">
+                    <span>
+                      <span>View Policy Booklets</span>
+                    </span>
+                  </button>
                 </div>
               </div>
             </div>

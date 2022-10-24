@@ -1,4 +1,4 @@
-import { Component, h, Prop, Watch, State } from '@stencil/core';
+import { Component, h, Prop, Watch, State, EventEmitter, Event } from '@stencil/core';
 import { DocumentDataInterface } from '../../../interfaces/documentDataInterface';
 
 @Component({
@@ -7,7 +7,17 @@ import { DocumentDataInterface } from '../../../interfaces/documentDataInterface
   shadow: false,
 })
 export class DocumentsListItem {
+
+  /**
+   * Prop: document: object
+   * Document Details
+   */
   @Prop() document: DocumentDataInterface | string;
+
+  /**
+   * Prop: documentindex: number
+   * The document index in the document list
+   */
   @Prop() documentindex: number;
   private _document: DocumentDataInterface;
   private _documentIndex: string;
@@ -15,7 +25,18 @@ export class DocumentsListItem {
   documentData!: HTMLElement;
   chevron!: HTMLElement;
   accordian!: HTMLElement
+  
+  /**
+   * State: collapsed: boolean
+   * Indicator of wether the accordian is collapsed or not
+   */
   @State() collapsed: boolean = true;
+
+  /**
+   * Event: loginShouldOccur: EventEmitter
+   * Event to fire if data validates
+   */
+   @Event() downloadDocument: EventEmitter;
 
   @Watch('document')
 
@@ -29,16 +50,17 @@ export class DocumentsListItem {
   }
 
   componentWillLoad() {
-    console.log(this.document);
     this.arrayDataWatcher(this.document);
-    console.log("D ", this._document);
     this._documentIndex = `currentDocumentPolicy${this.documentindex}`;
     this._accordianCardIndex = `currentDocumentAccordionCard${this.documentindex}`;
   }
 
+  downloadDocumentClick() {
+    console.log("Downloading: ", this._document.publicID);
+    this.downloadDocument.emit(this._document.publicID);
+  }
+
   toggle() {
-    console.log("clicked");
-    console.log(this.documentData);
     this.collapsed = !this.collapsed;
 
     if (this.documentData) {
@@ -88,7 +110,7 @@ export class DocumentsListItem {
                             )}
                   </ul>
                   <div id="documentPolicydownloadContainer0" class="YourDocumentDetails_downloadContainer__JtW_r">
-                    <button type="button" class="digitalButton__button jut__Button__button digitalButton__secondary jut__Button__secondary YourDocumentDetails_imageDisplay__30Emt" id="currentDocumentPolicyDownloadButton0">
+                    <button type="button" class="digitalButton__button jut__Button__button digitalButton__secondary jut__Button__secondary YourDocumentDetails_imageDisplay__30Emt" id="currentDocumentPolicyDownloadButton0" onClick={() => { this.downloadDocumentClick(); }}>
                       <span>
                         <span>Download</span>
                       </span>

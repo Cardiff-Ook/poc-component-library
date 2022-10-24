@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property   | Attribute  | Description | Type                              | Default     |
-| ---------- | ---------- | ----------- | --------------------------------- | ----------- |
-| `policies` | `policies` |             | `PolicyDataInterface[] \| string` | `undefined` |
+| Property   | Attribute  | Description                                                                     | Type                              | Default     |
+| ---------- | ---------- | ------------------------------------------------------------------------------- | --------------------------------- | ----------- |
+| `policies` | `policies` | Prop: policies: Array<PolicyDataInterface> Array containing all the Policy Data | `PolicyDataInterface[] \| string` | `undefined` |
 
 
 ## Dependencies

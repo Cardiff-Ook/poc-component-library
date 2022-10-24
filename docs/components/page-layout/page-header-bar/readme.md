@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default     |
-| -------- | --------- | ----------- | -------- | ----------- |
-| `name`   | `name`    |             | `string` | `undefined` |
+| Property | Attribute | Description                                      | Type     | Default     |
+| -------- | --------- | ------------------------------------------------ | -------- | ----------- |
+| `name`   | `name`    | Prop: name: string The user name being displayed | `string` | `undefined` |
 
 
 ----------------------------------------------

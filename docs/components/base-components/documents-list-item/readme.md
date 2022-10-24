@@ -7,10 +7,17 @@
 
 ## Properties
 
-| Property        | Attribute       | Description | Type                              | Default     |
-| --------------- | --------------- | ----------- | --------------------------------- | ----------- |
-| `document`      | `document`      |             | `DocumentDataInterface \| string` | `undefined` |
-| `documentindex` | `documentindex` |             | `number`                          | `undefined` |
+| Property        | Attribute       | Description                                                         | Type                              | Default     |
+| --------------- | --------------- | ------------------------------------------------------------------- | --------------------------------- | ----------- |
+| `document`      | `document`      | Prop: document: object Document Details                             | `DocumentDataInterface \| string` | `undefined` |
+| `documentindex` | `documentindex` | Prop: documentindex: number The document index in the document list | `number`                          | `undefined` |
+
+
+## Events
+
+| Event              | Description                                                           | Type               |
+| ------------------ | --------------------------------------------------------------------- | ------------------ |
+| `downloadDocument` | Event: loginShouldOccur: EventEmitter Event to fire if data validates | `CustomEvent<any>` |
 
 
 ## Dependencies

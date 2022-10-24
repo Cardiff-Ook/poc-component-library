@@ -6,7 +6,11 @@ import { Component, Prop, h } from '@stencil/core';
   shadow: false,
 })
 export class PageHeaderBar {
-
+  
+  /**
+   * Prop: name: string
+   * The user name being displayed
+   */
   @Prop() name: string;
 
   render() {

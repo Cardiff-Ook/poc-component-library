@@ -8,7 +8,11 @@ import { PolicyDataInterface } from '../../../../interfaces/policyDataInterface'
 })
 
 export class PolicyDetails {
-
+  
+  /**
+   * Prop: policies: Array<PolicyDataInterface>
+   * Array containing all the Policy Data
+   */
   @Prop() policies: Array<PolicyDataInterface> | string;
   private _arrayData: Array<PolicyDataInterface>;
 

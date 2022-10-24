@@ -7,7 +7,11 @@ import { PolicyDataInterface } from '../../../interfaces/policyDataInterface';
   shadow: false,
 })
 export class DocumentDetailsContainer {
-
+  
+  /**
+   * Prop: coverdetails: Array<PolicyDataInterface>
+   * Array containing Policy Data
+   */
   @Prop() coverdetails: Array<PolicyDataInterface> | string;
   private _arrayData: Array<PolicyDataInterface>;
   @State() collapsed: boolean;
@@ -43,10 +47,8 @@ export class DocumentDetailsContainer {
   }
 
   componentWillLoad() {
-    console.log("document-details-container loaded");
     this.arrayDataWatcher(this.coverdetails);
     this.collapsed = true;
-    console.log("C ", this._arrayData);
   }
 
   render() {

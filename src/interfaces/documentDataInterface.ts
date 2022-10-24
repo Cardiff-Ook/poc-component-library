@@ -1,6 +1,6 @@
 export interface DocumentDataInterface {
     issueDate: string;
     documentName: string;
-    documentLink: string;
+    publicID: string;
     documentDetails?: Array<string>;
 }

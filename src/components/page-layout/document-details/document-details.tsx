@@ -7,6 +7,10 @@ import { PolicyDataInterface } from '../../../interfaces/policyDataInterface';
   shadow: false,
 })
 export class DocumentDetails {
+    /**
+   * Prop: policies: Array<PolicyDataInterface>
+   * Array containing Policy Data for the current policies
+   */
   @Prop() policies: Array<PolicyDataInterface> | string;
   private _arrayData: Array<PolicyDataInterface>;
 
@@ -26,9 +30,7 @@ export class DocumentDetails {
   }
 
   componentWillLoad() {
-    console.log(this.policies);
     this.arrayDataWatcher(this.policies);
-    console.log("B ", this._arrayData);
   }
 
   render() {

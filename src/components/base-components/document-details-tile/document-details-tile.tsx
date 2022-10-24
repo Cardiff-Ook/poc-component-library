@@ -7,7 +7,17 @@ import { PolicyDataInterface } from '../../../interfaces/policyDataInterface';
   shadow: false,
 })
 export class DocumentDetailsTile {
+    
+/**
+ * Prop: coverdetails: PolicyDataInterface
+ * Policy Data
+ */
   @Prop() coverdetails: PolicyDataInterface | string;
+
+  /**
+  * Prop: coverindex: number
+  * Index number of the policy in the list
+  */
   @Prop() coverindex: number;
   @State() collapsed: boolean;
   private _coverDetails: PolicyDataInterface;

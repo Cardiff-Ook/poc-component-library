@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property    | Attribute   | Description | Type     | Default     |
-| ----------- | ----------- | ----------- | -------- | ----------- |
-| `pagetitle` | `pagetitle` |             | `string` | `undefined` |
+| Property    | Attribute   | Description                                       | Type     | Default     |
+| ----------- | ----------- | ------------------------------------------------- | -------- | ----------- |
+| `pagetitle` | `pagetitle` | Prop: pagetitle: string The Page Title to display | `string` | `undefined` |
 
 
 ## Dependencies

@@ -8,6 +8,11 @@ import { PolicyDataInterface } from '../../../interfaces/policyDataInterface';
 })
 export class CoverDetailsContainer {
 
+
+  /**
+   * Prop: coverdetails: Array<PolicyDataInterface>
+   * The Policy Data
+   */
   @Prop() coverdetails: Array<PolicyDataInterface> | string;
   private _arrayData: Array<PolicyDataInterface>;
   @State() collapsed: boolean;

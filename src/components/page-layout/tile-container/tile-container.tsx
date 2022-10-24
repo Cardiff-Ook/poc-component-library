@@ -6,6 +6,10 @@ import { Component, h, Prop } from '@stencil/core';
   shadow: false,
 })
 export class TileContainer {
+  /**
+   * Prop: type: tring
+   * Sets the tyle according to the received type (options / products)
+   */
   @Prop() type: string;
   private _containerStyle: string;
 

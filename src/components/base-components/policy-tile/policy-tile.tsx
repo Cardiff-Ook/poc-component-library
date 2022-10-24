@@ -11,7 +11,16 @@ import { PolicyDataInterface } from '../../../interfaces/policyDataInterface';
 
 export class PolicyTile {
 
+  /**
+   * Prop: policydetails: PolicyDataInterface
+   * Policy Data
+   */
   @Prop() policydetails: PolicyDataInterface;
+
+  /**
+   * Prop: policyindex: number
+   * Index number of the policy in the list
+   */
   @Prop() policyindex: number;
   private _policyIndex: string;
 

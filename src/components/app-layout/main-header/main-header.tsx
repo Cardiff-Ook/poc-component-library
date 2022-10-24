@@ -6,7 +6,10 @@ import { Component, Host, h, Prop } from '@stencil/core';
   shadow: false,
 })
 export class MainHeader {
-
+  /**
+   * Prop: brand: string
+   * The brand currently being browsed
+   */
   @Prop() brand: string;
 
   componentWillLoad() {

@@ -26,35 +26,77 @@ export namespace Components {
     interface ContentContainer {
     }
     interface CoverDetailsContainer {
+        /**
+          * Prop: coverdetails: Array<PolicyDataInterface> The Policy Data
+         */
         "coverdetails": Array<PolicyDataInterface> | string;
     }
     interface CoverDetailsTile {
+        /**
+          * Prop: coverdetails: PolicyDataInterface Policy Data
+         */
         "coverdetails": PolicyDataInterface | string;
+        /**
+          * Prop: coverindex: number Index number of the policy in the list
+         */
         "coverindex": number;
     }
     interface DetailsContainer {
+        /**
+          * Prop: coverdetails: PolicyDataInterface Policy Data
+         */
         "coverdetails": PolicyDataInterface | string;
+        /**
+          * Prop: detailstype: string Either "car" or "home"
+         */
         "detailstype": string;
     }
     interface DocumentDetails {
+        /**
+          * Prop: policies: Array<PolicyDataInterface> Array containing Policy Data for the current policies
+         */
         "policies": Array<PolicyDataInterface> | string;
     }
     interface DocumentDetailsContainer {
+        /**
+          * Prop: coverdetails: Array<PolicyDataInterface> Array containing Policy Data
+         */
         "coverdetails": Array<PolicyDataInterface> | string;
     }
     interface DocumentDetailsTile {
+        /**
+          * Prop: coverdetails: PolicyDataInterface Policy Data
+         */
         "coverdetails": PolicyDataInterface | string;
+        /**
+          * Prop: coverindex: number Index number of the policy in the list
+         */
         "coverindex": number;
     }
     interface DocumentsList {
+        /**
+          * Prop: coverdetails: PolicyDataInterface Policy Data
+         */
         "coverdetails": PolicyDataInterface | string;
     }
     interface DocumentsListItem {
+        /**
+          * Prop: document: object Document Details
+         */
         "document": DocumentDataInterface | string;
+        /**
+          * Prop: documentindex: number The document index in the document list
+         */
         "documentindex": number;
     }
     interface DocumentsTile {
+        /**
+          * Prop: policydetails: PolicyDataInterface Policy Data
+         */
         "policydetails": PolicyDataInterface;
+        /**
+          * Prop: policyindex: number Index number of the policy in the list
+         */
         "policyindex": number;
     }
     interface HeaderText {
@@ -76,11 +118,17 @@ export namespace Components {
     interface LoginTitleWrapper {
     }
     interface MainHeader {
+        /**
+          * Prop: brand: string The brand currently being browsed
+         */
         "brand": string;
     }
     interface MainPageContents {
     }
     interface MultiBannerBulletPoints {
+        /**
+          * Prop: bulletPoints: Array<BulletPointInterface> Array containing all the bullet points to display
+         */
         "bulletPoints": Array<BulletPointInterface> | string;
     }
     interface MultiBannerHeader {
@@ -90,17 +138,29 @@ export namespace Components {
     interface MultiCarBanner {
     }
     interface NavBar {
+        /**
+          * Prop: buttons: Array<ButtonInterface> Array containing all the buttons to display
+         */
         "buttons": Array<ButtonInterface> | string;
     }
     interface PageHeaderBar {
+        /**
+          * Prop: name: string The user name being displayed
+         */
         "name": string;
     }
     interface PageLogo {
+        /**
+          * Prop: brand: string Whichever brand currently being browsed
+         */
         "brand": string;
     }
     interface PoliciesContainer {
     }
     interface PolicyDetails {
+        /**
+          * Prop: policies: Array<PolicyDataInterface> Array containing all the Policy Data
+         */
         "policies": Array<PolicyDataInterface> | string;
     }
     interface PolicyManagementTile {
@@ -122,7 +182,13 @@ export namespace Components {
     interface PolicyTermContainer {
     }
     interface PolicyTile {
+        /**
+          * Prop: policydetails: PolicyDataInterface Policy Data
+         */
         "policydetails": PolicyDataInterface;
+        /**
+          * Prop: policyindex: number Index number of the policy in the list
+         */
         "policyindex": number;
     }
     interface ProductTile {
@@ -138,17 +204,27 @@ export namespace Components {
     interface QuoteButton {
     }
     interface SubSectionTitle {
+        /**
+          * Prop: pagetitle: string The Page Title to display
+         */
         "pagetitle": string;
     }
     interface TextTitleBar {
     }
     interface TileContainer {
+        /**
+          * Prop: type: tring Sets the tyle according to the received type (options / products)
+         */
         "type": string;
     }
 }
 export interface AccountDetailsCustomEvent<T> extends CustomEvent<T> {
     detail: T;
     target: HTMLAccountDetailsElement;
+}
+export interface DocumentsListItemCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLDocumentsListItemElement;
 }
 export interface LoginFormCustomEvent<T> extends CustomEvent<T> {
     detail: T;
@@ -437,35 +513,81 @@ declare namespace LocalJSX {
     interface ContentContainer {
     }
     interface CoverDetailsContainer {
+        /**
+          * Prop: coverdetails: Array<PolicyDataInterface> The Policy Data
+         */
         "coverdetails"?: Array<PolicyDataInterface> | string;
     }
     interface CoverDetailsTile {
+        /**
+          * Prop: coverdetails: PolicyDataInterface Policy Data
+         */
         "coverdetails"?: PolicyDataInterface | string;
+        /**
+          * Prop: coverindex: number Index number of the policy in the list
+         */
         "coverindex"?: number;
     }
     interface DetailsContainer {
+        /**
+          * Prop: coverdetails: PolicyDataInterface Policy Data
+         */
         "coverdetails"?: PolicyDataInterface | string;
+        /**
+          * Prop: detailstype: string Either "car" or "home"
+         */
         "detailstype"?: string;
     }
     interface DocumentDetails {
+        /**
+          * Prop: policies: Array<PolicyDataInterface> Array containing Policy Data for the current policies
+         */
         "policies"?: Array<PolicyDataInterface> | string;
     }
     interface DocumentDetailsContainer {
+        /**
+          * Prop: coverdetails: Array<PolicyDataInterface> Array containing Policy Data
+         */
         "coverdetails"?: Array<PolicyDataInterface> | string;
     }
     interface DocumentDetailsTile {
+        /**
+          * Prop: coverdetails: PolicyDataInterface Policy Data
+         */
         "coverdetails"?: PolicyDataInterface | string;
+        /**
+          * Prop: coverindex: number Index number of the policy in the list
+         */
         "coverindex"?: number;
     }
     interface DocumentsList {
+        /**
+          * Prop: coverdetails: PolicyDataInterface Policy Data
+         */
         "coverdetails"?: PolicyDataInterface | string;
     }
     interface DocumentsListItem {
+        /**
+          * Prop: document: object Document Details
+         */
         "document"?: DocumentDataInterface | string;
+        /**
+          * Prop: documentindex: number The document index in the document list
+         */
         "documentindex"?: number;
+        /**
+          * Event: loginShouldOccur: EventEmitter Event to fire if data validates
+         */
+        "onDownloadDocument"?: (event: DocumentsListItemCustomEvent<any>) => void;
     }
     interface DocumentsTile {
+        /**
+          * Prop: policydetails: PolicyDataInterface Policy Data
+         */
         "policydetails"?: PolicyDataInterface;
+        /**
+          * Prop: policyindex: number Index number of the policy in the list
+         */
         "policyindex"?: number;
     }
     interface HeaderText {
@@ -491,11 +613,17 @@ declare namespace LocalJSX {
     interface LoginTitleWrapper {
     }
     interface MainHeader {
+        /**
+          * Prop: brand: string The brand currently being browsed
+         */
         "brand"?: string;
     }
     interface MainPageContents {
     }
     interface MultiBannerBulletPoints {
+        /**
+          * Prop: bulletPoints: Array<BulletPointInterface> Array containing all the bullet points to display
+         */
         "bulletPoints"?: Array<BulletPointInterface> | string;
     }
     interface MultiBannerHeader {
@@ -505,17 +633,29 @@ declare namespace LocalJSX {
     interface MultiCarBanner {
     }
     interface NavBar {
+        /**
+          * Prop: buttons: Array<ButtonInterface> Array containing all the buttons to display
+         */
         "buttons"?: Array<ButtonInterface> | string;
     }
     interface PageHeaderBar {
+        /**
+          * Prop: name: string The user name being displayed
+         */
         "name"?: string;
     }
     interface PageLogo {
+        /**
+          * Prop: brand: string Whichever brand currently being browsed
+         */
         "brand"?: string;
     }
     interface PoliciesContainer {
     }
     interface PolicyDetails {
+        /**
+          * Prop: policies: Array<PolicyDataInterface> Array containing all the Policy Data
+         */
         "policies"?: Array<PolicyDataInterface> | string;
     }
     interface PolicyManagementTile {
@@ -537,7 +677,13 @@ declare namespace LocalJSX {
     interface PolicyTermContainer {
     }
     interface PolicyTile {
+        /**
+          * Prop: policydetails: PolicyDataInterface Policy Data
+         */
         "policydetails"?: PolicyDataInterface;
+        /**
+          * Prop: policyindex: number Index number of the policy in the list
+         */
         "policyindex"?: number;
     }
     interface ProductTile {
@@ -553,11 +699,17 @@ declare namespace LocalJSX {
     interface QuoteButton {
     }
     interface SubSectionTitle {
+        /**
+          * Prop: pagetitle: string The Page Title to display
+         */
         "pagetitle"?: string;
     }
     interface TextTitleBar {
     }
     interface TileContainer {
+        /**
+          * Prop: type: tring Sets the tyle according to the received type (options / products)
+         */
         "type"?: string;
     }
     interface IntrinsicElements {
