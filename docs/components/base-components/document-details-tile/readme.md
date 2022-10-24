@@ -27,6 +27,7 @@
 ```mermaid
 graph TD;
   document-details-tile --> documents-list
+  documents-list --> documents-list-item
   document-details-container --> document-details-tile
   style document-details-tile fill:#f9f,stroke:#333,stroke-width:4px
 ```

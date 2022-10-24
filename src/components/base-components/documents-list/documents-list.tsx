@@ -62,6 +62,10 @@ export class DocumentsList {
                         </div>
                         <div class="jut__Accordion__accordion" role="menu" aria-disabled="false" aria-haspopup="true">
                           <div id="activeDocumentContainerIterables">
+                            {
+                              this._docsList.map((document:any={}, index) =>
+                              <documents-list-item document={document} documentindex={index}></documents-list-item>
+                            )}
                           </div>
                         </div>
                       </div>

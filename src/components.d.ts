@@ -51,6 +51,7 @@ export namespace Components {
     }
     interface DocumentsListItem {
         "document": DocumentDataInterface | string;
+        "documentindex": number;
     }
     interface DocumentsTile {
         "policydetails": PolicyDataInterface;
@@ -461,6 +462,7 @@ declare namespace LocalJSX {
     }
     interface DocumentsListItem {
         "document"?: DocumentDataInterface | string;
+        "documentindex"?: number;
     }
     interface DocumentsTile {
         "policydetails"?: PolicyDataInterface;

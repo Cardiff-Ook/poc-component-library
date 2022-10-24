@@ -32,6 +32,7 @@ graph TD;
   document-details-container --> document-details-tile
   document-details-container --> sub-section-title
   document-details-tile --> documents-list
+  documents-list --> documents-list-item
   document-details --> documents-tile
   style documents-tile fill:#f9f,stroke:#333,stroke-width:4px
 ```
