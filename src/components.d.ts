@@ -85,9 +85,9 @@ export namespace Components {
          */
         "document": DocumentDataInterface | string;
         /**
-          * Prop: documentindex: number The document index in the document list
+          * Prop: documentIndex: number The document index in the document list
          */
-        "documentindex": number;
+        "documentIndex": number;
     }
     interface DocumentsTile {
         /**
@@ -572,9 +572,9 @@ declare namespace LocalJSX {
          */
         "document"?: DocumentDataInterface | string;
         /**
-          * Prop: documentindex: number The document index in the document list
+          * Prop: documentIndex: number The document index in the document list
          */
-        "documentindex"?: number;
+        "documentIndex"?: number;
         /**
           * Event: loginShouldOccur: EventEmitter Event to fire if data validates
          */

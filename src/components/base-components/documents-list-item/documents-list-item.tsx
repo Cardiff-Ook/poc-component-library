@@ -6,6 +6,7 @@ import { DocumentDataInterface } from '../../../interfaces/documentDataInterface
   styleUrl: 'documents-list-item.css',
   shadow: false,
 })
+
 export class DocumentsListItem {
 
   /**
@@ -15,10 +16,11 @@ export class DocumentsListItem {
   @Prop() document: DocumentDataInterface | string;
 
   /**
-   * Prop: documentindex: number
+   * Prop: documentIndex: number
    * The document index in the document list
    */
-  @Prop() documentindex: number;
+  @Prop() documentIndex: number;
+
   private _document: DocumentDataInterface;
   private _documentIndex: string;
   private _accordianCardIndex: string;
@@ -51,13 +53,16 @@ export class DocumentsListItem {
 
   componentWillLoad() {
     this.arrayDataWatcher(this.document);
-    this._documentIndex = `currentDocumentPolicy${this.documentindex}`;
-    this._accordianCardIndex = `currentDocumentAccordionCard${this.documentindex}`;
+    this._documentIndex = `currentDocumentPolicy${this.documentIndex}`;
+    this._accordianCardIndex = `currentDocumentAccordionCard${this.documentIndex}`;
   }
 
   downloadDocumentClick() {
     console.log("Downloading: ", this._document.publicID);
-    this.downloadDocument.emit(this._document.publicID);
+    this.downloadDocument.emit({
+        index: this.documentIndex,
+        publicID: this._document.publicID
+    });
   }
 
   toggle() {

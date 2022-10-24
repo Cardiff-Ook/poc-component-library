@@ -7,10 +7,10 @@
 
 ## Properties
 
-| Property        | Attribute       | Description                                                         | Type                              | Default     |
-| --------------- | --------------- | ------------------------------------------------------------------- | --------------------------------- | ----------- |
-| `document`      | `document`      | Prop: document: object Document Details                             | `DocumentDataInterface \| string` | `undefined` |
-| `documentindex` | `documentindex` | Prop: documentindex: number The document index in the document list | `number`                          | `undefined` |
+| Property        | Attribute        | Description                                                         | Type                              | Default     |
+| --------------- | ---------------- | ------------------------------------------------------------------- | --------------------------------- | ----------- |
+| `document`      | `document`       | Prop: document: object Document Details                             | `DocumentDataInterface \| string` | `undefined` |
+| `documentIndex` | `document-index` | Prop: documentIndex: number The document index in the document list | `number`                          | `undefined` |
 
 
 ## Events

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-10-24T11:26:52",
+  "timestamp": "2022-10-24T12:35:04",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -247,11 +247,11 @@
           "./dist/poc-adm-components/p-4a6eba56.entry.js",
           "./dist/poc-adm-components/p-517fa69b.entry.js",
           "./dist/poc-adm-components/p-562c979e.entry.js",
+          "./dist/poc-adm-components/p-58f27cb5.entry.js",
           "./dist/poc-adm-components/p-643de932.entry.js",
           "./dist/poc-adm-components/p-65951a85.entry.js",
           "./dist/poc-adm-components/p-68bfea58.entry.js",
           "./dist/poc-adm-components/p-6cd0e6ab.entry.js",
-          "./dist/poc-adm-components/p-7255c9aa.entry.js",
           "./dist/poc-adm-components/p-81daa32d.entry.js",
           "./dist/poc-adm-components/p-894c3bf1.entry.js",
           "./dist/poc-adm-components/p-89b07451.entry.js",
@@ -279,11 +279,11 @@
           "./public/build/p-4a6eba56.entry.js",
           "./public/build/p-517fa69b.entry.js",
           "./public/build/p-562c979e.entry.js",
+          "./public/build/p-58f27cb5.entry.js",
           "./public/build/p-643de932.entry.js",
           "./public/build/p-65951a85.entry.js",
           "./public/build/p-68bfea58.entry.js",
           "./public/build/p-6cd0e6ab.entry.js",
-          "./public/build/p-7255c9aa.entry.js",
           "./public/build/p-81daa32d.entry.js",
           "./public/build/p-894c3bf1.entry.js",
           "./public/build/p-89b07451.entry.js",
@@ -650,12 +650,12 @@
           "documents-list",
           "documents-list-item"
         ],
-        "bundleId": "p-7255c9aa",
-        "fileName": "p-7255c9aa.entry.js",
+        "bundleId": "p-58f27cb5",
+        "fileName": "p-58f27cb5.entry.js",
         "imports": [
           "p-363bb2cb.js"
         ],
-        "originalByteSize": 9318
+        "originalByteSize": 9378
       },
       {
         "key": "policy-term-container.entry",
@@ -1013,7 +1013,7 @@
         "imports": [
           "index-decd0ff0.js"
         ],
-        "originalByteSize": 9322
+        "originalByteSize": 9382
       },
       {
         "key": "policy-term-container.entry",
@@ -1373,7 +1373,7 @@
         "imports": [
           "index-e84e7c20.js"
         ],
-        "originalByteSize": 9750
+        "originalByteSize": 9810
       },
       {
         "key": "policy-term-container.entry",
@@ -2198,9 +2198,9 @@
           "internal": false
         },
         {
-          "name": "documentindex",
+          "name": "documentIndex",
           "type": "number",
-          "attribute": "documentindex",
+          "attribute": "document-index",
           "reflect": false,
           "mutable": false,
           "required": false,
@@ -2212,7 +2212,7 @@
           },
           "docs": {
             "tags": [],
-            "text": "Prop: documentindex: number\nThe document index in the document list"
+            "text": "Prop: documentIndex: number\nThe document index in the document list"
           },
           "internal": false
         }
@@ -8309,7 +8309,7 @@
             "aria-disabled",
             "aria-haspopup",
             "document",
-            "documentindex"
+            "document-index"
           ],
           "htmlTagNames": [
             "div",
@@ -8376,9 +8376,9 @@
               "internal": false
             },
             {
-              "name": "documentindex",
+              "name": "documentIndex",
               "type": "number",
-              "attribute": "documentindex",
+              "attribute": "document-index",
               "reflect": false,
               "mutable": false,
               "required": false,
@@ -8390,7 +8390,7 @@
               },
               "docs": {
                 "tags": [],
-                "text": "Prop: documentindex: number\nThe document index in the document list"
+                "text": "Prop: documentIndex: number\nThe document index in the document list"
               },
               "internal": false
             }
