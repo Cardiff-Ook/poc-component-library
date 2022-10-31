@@ -35,7 +35,7 @@ export class DocumentsListItem {
   @State() collapsed: boolean = true;
 
   /**
-   * Event: loginShouldOccur: EventEmitter
+   * Event: downloadDocument: EventEmitter
    * Event to fire if data validates
    */
    @Event() downloadDocument: EventEmitter;

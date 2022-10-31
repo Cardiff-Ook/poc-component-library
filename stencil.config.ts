@@ -37,6 +37,14 @@ export const config: Config = {
       ]
     },
     {
+      type: 'docs-json',
+      file: 'docs/docs.json'
+    },
+    { 
+        type: 'docs-vscode',
+        file: 'vscode-data.json',
+    },
+    {
       type: 'docs-readme',
       footer: '*ACME documents Inc!*',
       dir: 'docs',
@@ -70,5 +78,16 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
   ],
-  plugins: [sass()]
+  plugins: [sass()],
+  buildEs5: 'prod',
+  extras: {
+    cssVarsShim: true,
+    dynamicImportShim: true,
+    shadowDomShim: true,
+    safari10: true,
+    scriptDataOpts: true,
+    appendChildSlotFix: false,
+    cloneNodeFix: false,
+    slotChildNodesFix: true,
+  }
 };

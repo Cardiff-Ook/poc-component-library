@@ -1,0 +1,1570 @@
+{
+  "timestamp": "2022-10-31T15:07:55",
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "2.18.0",
+    "typescriptVersion": "4.7.4"
+  },
+  "components": [
+    {
+      "filePath": "./src/components/page-layout/account-details/account-details.tsx",
+      "encapsulation": "none",
+      "tag": "account-details",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "user",
+          "type": "UserDataInterface[] | string",
+          "mutable": false,
+          "attr": "user",
+          "reflectToAttr": false,
+          "docs": "Prop: user: object\nUser Account details object",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "UserDataInterface[]"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [
+        {
+          "event": "editUserDetails",
+          "detail": "any",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Event: loginShouldOccur: EventEmitter\nEvent to fire if data validates",
+          "docsTags": []
+        }
+      ],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "account-settings"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "account-settings": [
+          "account-details"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/page-layout/account-settings/account-settings.tsx",
+      "encapsulation": "none",
+      "tag": "account-settings",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "user",
+          "type": "UserDataInterface[] | string",
+          "mutable": false,
+          "attr": "user",
+          "reflectToAttr": false,
+          "docs": "Prop: user: object\nUser Account details object",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "UserDataInterface[]"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [
+        "main-page-contents",
+        "policies-container",
+        "sub-section-title",
+        "account-details"
+      ],
+      "dependencyGraph": {
+        "account-settings": [
+          "main-page-contents",
+          "policies-container",
+          "sub-section-title",
+          "account-details"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/page-layout/content-container/content-container.tsx",
+      "encapsulation": "none",
+      "tag": "content-container",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/page-layout/cover-details-container/cover-details-container.tsx",
+      "encapsulation": "none",
+      "tag": "cover-details-container",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "coverdetails",
+          "type": "PolicyDataInterface[] | string",
+          "mutable": false,
+          "attr": "coverdetails",
+          "reflectToAttr": false,
+          "docs": "Prop: coverdetails: Array<PolicyDataInterface>\nThe Policy Data",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "PolicyDataInterface[]"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "policy-tile"
+      ],
+      "dependencies": [
+        "cover-details-tile",
+        "sub-section-title"
+      ],
+      "dependencyGraph": {
+        "cover-details-container": [
+          "cover-details-tile",
+          "sub-section-title"
+        ],
+        "cover-details-tile": [
+          "details-container"
+        ],
+        "policy-tile": [
+          "cover-details-container"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/base-components/cover-details-tile/cover-details-tile.tsx",
+      "encapsulation": "none",
+      "tag": "cover-details-tile",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "coverdetails",
+          "type": "PolicyDataInterface | string",
+          "mutable": false,
+          "attr": "coverdetails",
+          "reflectToAttr": false,
+          "docs": "Prop: coverdetails: PolicyDataInterface\nPolicy Data",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "PolicyDataInterface"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "coverindex",
+          "type": "number",
+          "mutable": false,
+          "attr": "coverindex",
+          "reflectToAttr": false,
+          "docs": "Prop: coverindex: number\nIndex number of the policy in the list",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "cover-details-container"
+      ],
+      "dependencies": [
+        "details-container"
+      ],
+      "dependencyGraph": {
+        "cover-details-tile": [
+          "details-container"
+        ],
+        "cover-details-container": [
+          "cover-details-tile"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/base-components/details-container/details-container.tsx",
+      "encapsulation": "none",
+      "tag": "details-container",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "coverdetails",
+          "type": "PolicyDataInterface | string",
+          "mutable": false,
+          "attr": "coverdetails",
+          "reflectToAttr": false,
+          "docs": "Prop: coverdetails: PolicyDataInterface\nPolicy Data",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "PolicyDataInterface"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "detailstype",
+          "type": "string",
+          "mutable": false,
+          "attr": "detailstype",
+          "reflectToAttr": false,
+          "docs": "Prop: detailstype: string\nEither \"car\" or \"home\"",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "cover-details-tile"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "cover-details-tile": [
+          "details-container"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/page-layout/document-details/document-details.tsx",
+      "encapsulation": "none",
+      "tag": "document-details",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "policies",
+          "type": "PolicyDataInterface[] | string",
+          "mutable": false,
+          "attr": "policies",
+          "reflectToAttr": false,
+          "docs": "Prop: policies: Array<PolicyDataInterface>\nArray containing Policy Data for the current policies",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "PolicyDataInterface[]"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [
+        "documents-tile",
+        "sub-section-title"
+      ],
+      "dependencyGraph": {
+        "document-details": [
+          "documents-tile",
+          "sub-section-title"
+        ],
+        "documents-tile": [
+          "policy-term-container",
+          "document-details-container"
+        ],
+        "document-details-container": [
+          "document-details-tile",
+          "sub-section-title"
+        ],
+        "document-details-tile": [
+          "documents-list"
+        ],
+        "documents-list": [
+          "documents-list-item"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/page-layout/document-details-container/document-details-container.tsx",
+      "encapsulation": "none",
+      "tag": "document-details-container",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "coverdetails",
+          "type": "PolicyDataInterface[] | string",
+          "mutable": false,
+          "attr": "coverdetails",
+          "reflectToAttr": false,
+          "docs": "Prop: coverdetails: Array<PolicyDataInterface>\nArray containing Policy Data",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "PolicyDataInterface[]"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "documents-tile"
+      ],
+      "dependencies": [
+        "document-details-tile",
+        "sub-section-title"
+      ],
+      "dependencyGraph": {
+        "document-details-container": [
+          "document-details-tile",
+          "sub-section-title"
+        ],
+        "document-details-tile": [
+          "documents-list"
+        ],
+        "documents-list": [
+          "documents-list-item"
+        ],
+        "documents-tile": [
+          "document-details-container"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/base-components/document-details-tile/document-details-tile.tsx",
+      "encapsulation": "none",
+      "tag": "document-details-tile",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "coverdetails",
+          "type": "PolicyDataInterface | string",
+          "mutable": false,
+          "attr": "coverdetails",
+          "reflectToAttr": false,
+          "docs": "Prop: coverdetails: PolicyDataInterface\nPolicy Data",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "PolicyDataInterface"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "coverindex",
+          "type": "number",
+          "mutable": false,
+          "attr": "coverindex",
+          "reflectToAttr": false,
+          "docs": "Prop: coverindex: number\nIndex number of the policy in the list",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "document-details-container"
+      ],
+      "dependencies": [
+        "documents-list"
+      ],
+      "dependencyGraph": {
+        "document-details-tile": [
+          "documents-list"
+        ],
+        "documents-list": [
+          "documents-list-item"
+        ],
+        "document-details-container": [
+          "document-details-tile"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/base-components/documents-list/documents-list.tsx",
+      "encapsulation": "none",
+      "tag": "documents-list",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "coverdetails",
+          "type": "PolicyDataInterface | string",
+          "mutable": false,
+          "attr": "coverdetails",
+          "reflectToAttr": false,
+          "docs": "Prop: coverdetails: PolicyDataInterface\nPolicy Data",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "PolicyDataInterface"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "document-details-tile"
+      ],
+      "dependencies": [
+        "documents-list-item"
+      ],
+      "dependencyGraph": {
+        "documents-list": [
+          "documents-list-item"
+        ],
+        "document-details-tile": [
+          "documents-list"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/base-components/documents-list-item/documents-list-item.tsx",
+      "encapsulation": "none",
+      "tag": "documents-list-item",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "document",
+          "type": "DocumentDataInterface | string",
+          "mutable": false,
+          "attr": "document",
+          "reflectToAttr": false,
+          "docs": "Prop: document: object\nDocument Details",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "DocumentDataInterface"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "documentIndex",
+          "type": "number",
+          "mutable": false,
+          "attr": "document-index",
+          "reflectToAttr": false,
+          "docs": "Prop: documentIndex: number\nThe document index in the document list",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [
+        {
+          "event": "downloadDocument",
+          "detail": "any",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Event: downloadDocument: EventEmitter\nEvent to fire if data validates",
+          "docsTags": []
+        }
+      ],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "documents-list"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "documents-list": [
+          "documents-list-item"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/base-components/documents-tile/documents-tile.tsx",
+      "encapsulation": "none",
+      "tag": "documents-tile",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "policydetails",
+          "type": "PolicyDataInterface",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "Prop: policydetails: PolicyDataInterface\nPolicy Data",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "PolicyDataInterface"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "policyindex",
+          "type": "number",
+          "mutable": false,
+          "attr": "policyindex",
+          "reflectToAttr": false,
+          "docs": "Prop: policyindex: number\nIndex number of the policy in the list",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "document-details"
+      ],
+      "dependencies": [
+        "policy-term-container",
+        "document-details-container"
+      ],
+      "dependencyGraph": {
+        "documents-tile": [
+          "policy-term-container",
+          "document-details-container"
+        ],
+        "document-details-container": [
+          "document-details-tile",
+          "sub-section-title"
+        ],
+        "document-details-tile": [
+          "documents-list"
+        ],
+        "documents-list": [
+          "documents-list-item"
+        ],
+        "document-details": [
+          "documents-tile"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/base-components/header-text/header-text.tsx",
+      "encapsulation": "shadow",
+      "tag": "header-text",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/app-layout/login-footer/login-footer.tsx",
+      "encapsulation": "shadow",
+      "tag": "login-footer",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/forms/login-form/login-form.tsx",
+      "encapsulation": "none",
+      "tag": "login-form",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "forgotPasswordUrl",
+          "type": "string",
+          "mutable": false,
+          "attr": "forgot-password-url",
+          "reflectToAttr": false,
+          "docs": "Prop: forgotPasswordUrl: string\nPage to redirect to if user se;ects forgot password",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [
+        {
+          "event": "loginShouldOccur",
+          "detail": "any",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Event: loginShouldOccur: EventEmitter\nEvent to fire if data validates",
+          "docsTags": []
+        }
+      ],
+      "listeners": [
+        {
+          "event": "keydown.enter",
+          "capture": false,
+          "passive": false
+        }
+      ],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/app-layout/login-header/login-header.tsx",
+      "encapsulation": "none",
+      "tag": "login-header",
+      "readme": "# login-header\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "brand",
+          "type": "string",
+          "mutable": false,
+          "attr": "brand",
+          "reflectToAttr": false,
+          "docs": "The brand",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/app-layout/login-title-wrapper/login-title-wrapper.tsx",
+      "encapsulation": "none",
+      "tag": "login-title-wrapper",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/app-layout/main-header/main-header.tsx",
+      "encapsulation": "none",
+      "tag": "main-header",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "brand",
+          "type": "string",
+          "mutable": false,
+          "attr": "brand",
+          "reflectToAttr": false,
+          "docs": "Prop: brand: string\nThe brand currently being browsed",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/app-layout/main-page-contents/main-page-contents.tsx",
+      "encapsulation": "none",
+      "tag": "main-page-contents",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "account-settings"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "account-settings": [
+          "main-page-contents"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points.tsx",
+      "encapsulation": "none",
+      "tag": "multi-banner-bullet-points",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "bulletPoints",
+          "type": "BulletPointInterface[] | string",
+          "mutable": false,
+          "attr": "bullet-points",
+          "reflectToAttr": false,
+          "docs": "Prop: bulletPoints: Array<BulletPointInterface>\nArray containing all the bullet points to display",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "BulletPointInterface[]"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/base-components/multi-banner/multi-banner-header/multi-banner-header.tsx",
+      "encapsulation": "none",
+      "tag": "multi-banner-header",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/base-components/multi-banner/muti-banner-title/multi-banner-title.tsx",
+      "encapsulation": "none",
+      "tag": "multi-banner-title",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/app-layout/multi-car-banner/multi-car-banner.tsx",
+      "encapsulation": "none",
+      "tag": "multi-car-banner",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [
+        "quote-button"
+      ],
+      "dependencyGraph": {
+        "multi-car-banner": [
+          "quote-button"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/app-layout/nav-bar/nav-bar.tsx",
+      "encapsulation": "none",
+      "tag": "nav-bar",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "buttons",
+          "type": "ButtonInterface[] | string",
+          "mutable": false,
+          "attr": "buttons",
+          "reflectToAttr": false,
+          "docs": "Prop: buttons: Array<ButtonInterface>\nArray containing all the buttons to display",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "ButtonInterface[]"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/page-layout/page-header-bar/page-header-bar.tsx",
+      "encapsulation": "none",
+      "tag": "page-header-bar",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "name",
+          "type": "string",
+          "mutable": false,
+          "attr": "name",
+          "reflectToAttr": false,
+          "docs": "Prop: name: string\nThe user name being displayed",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/base-components/page-logo/page-logo.tsx",
+      "encapsulation": "none",
+      "tag": "page-logo",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "brand",
+          "type": "string",
+          "mutable": false,
+          "attr": "brand",
+          "reflectToAttr": false,
+          "docs": "Prop: brand: string\nWhichever brand currently being browsed",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/page-layout/policies-container/policies-container.tsx",
+      "encapsulation": "none",
+      "tag": "policies-container",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "account-settings"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "account-settings": [
+          "policies-container"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/page-layout/policy-details/policy-details/policy-details.tsx",
+      "encapsulation": "none",
+      "tag": "policy-details",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "policies",
+          "type": "PolicyDataInterface[] | string",
+          "mutable": false,
+          "attr": "policies",
+          "reflectToAttr": false,
+          "docs": "Prop: policies: Array<PolicyDataInterface>\nArray containing all the Policy Data",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "PolicyDataInterface[]"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [
+        "policy-tile",
+        "sub-section-title"
+      ],
+      "dependencyGraph": {
+        "policy-details": [
+          "policy-tile",
+          "sub-section-title"
+        ],
+        "policy-tile": [
+          "policy-subsection-header",
+          "tile-container",
+          "policy-management-tile",
+          "policy-term-container",
+          "cover-details-container"
+        ],
+        "cover-details-container": [
+          "cover-details-tile",
+          "sub-section-title"
+        ],
+        "cover-details-tile": [
+          "details-container"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/base-components/policy-management-tile/policy-management-tile.tsx",
+      "encapsulation": "none",
+      "tag": "policy-management-tile",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "linkText",
+          "type": "string",
+          "mutable": false,
+          "attr": "link-text",
+          "reflectToAttr": false,
+          "docs": "The link for the product",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "productImage",
+          "type": "string",
+          "mutable": false,
+          "attr": "product-image",
+          "reflectToAttr": false,
+          "docs": "The image to display",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "titleText",
+          "type": "string",
+          "mutable": false,
+          "attr": "title-text",
+          "reflectToAttr": false,
+          "docs": "The title for the tile",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "policy-tile"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "policy-tile": [
+          "policy-management-tile"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/page-layout/policy-details/policy-subsection-header/policy-subsection-header.tsx",
+      "encapsulation": "none",
+      "tag": "policy-subsection-header",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "policy-tile"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "policy-tile": [
+          "policy-subsection-header"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/page-layout/policy-term-container/policy-term-container.tsx",
+      "encapsulation": "none",
+      "tag": "policy-term-container",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "documents-tile",
+        "policy-tile"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "documents-tile": [
+          "policy-term-container"
+        ],
+        "policy-tile": [
+          "policy-term-container"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/base-components/policy-tile/policy-tile.tsx",
+      "encapsulation": "none",
+      "tag": "policy-tile",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "policydetails",
+          "type": "PolicyDataInterface",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "Prop: policydetails: PolicyDataInterface\nPolicy Data",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "PolicyDataInterface"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "policyindex",
+          "type": "number",
+          "mutable": false,
+          "attr": "policyindex",
+          "reflectToAttr": false,
+          "docs": "Prop: policyindex: number\nIndex number of the policy in the list",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "policy-details"
+      ],
+      "dependencies": [
+        "policy-subsection-header",
+        "tile-container",
+        "policy-management-tile",
+        "policy-term-container",
+        "cover-details-container"
+      ],
+      "dependencyGraph": {
+        "policy-tile": [
+          "policy-subsection-header",
+          "tile-container",
+          "policy-management-tile",
+          "policy-term-container",
+          "cover-details-container"
+        ],
+        "cover-details-container": [
+          "cover-details-tile",
+          "sub-section-title"
+        ],
+        "cover-details-tile": [
+          "details-container"
+        ],
+        "policy-details": [
+          "policy-tile"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/base-components/product-tile/product-tile.tsx",
+      "encapsulation": "none",
+      "tag": "product-tile",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "linkText",
+          "type": "string",
+          "mutable": false,
+          "attr": "link-text",
+          "reflectToAttr": false,
+          "docs": "The link for the product",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "productImage",
+          "type": "string",
+          "mutable": false,
+          "attr": "product-image",
+          "reflectToAttr": false,
+          "docs": "The image to display",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/base-components/quote-button/quote-button.tsx",
+      "encapsulation": "none",
+      "tag": "quote-button",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "multi-car-banner"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "multi-car-banner": [
+          "quote-button"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/base-components/sub-section-title/sub-section-title.tsx",
+      "encapsulation": "none",
+      "tag": "sub-section-title",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "pagetitle",
+          "type": "string",
+          "mutable": false,
+          "attr": "pagetitle",
+          "reflectToAttr": false,
+          "docs": "Prop: pagetitle: string\nThe Page Title to display",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "account-settings",
+        "cover-details-container",
+        "document-details",
+        "document-details-container",
+        "policy-details"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "account-settings": [
+          "sub-section-title"
+        ],
+        "cover-details-container": [
+          "sub-section-title"
+        ],
+        "document-details": [
+          "sub-section-title"
+        ],
+        "document-details-container": [
+          "sub-section-title"
+        ],
+        "policy-details": [
+          "sub-section-title"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/page-layout/text-title-bar/text-title-bar.tsx",
+      "encapsulation": "none",
+      "tag": "text-title-bar",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/page-layout/tile-container/tile-container.tsx",
+      "encapsulation": "none",
+      "tag": "tile-container",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "type",
+          "type": "string",
+          "mutable": false,
+          "attr": "type",
+          "reflectToAttr": false,
+          "docs": "Prop: type: tring\nSets the tyle according to the received type (options / products)",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "policy-tile"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "policy-tile": [
+          "tile-container"
+        ]
+      }
+    }
+  ]
+}

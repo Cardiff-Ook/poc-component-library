@@ -17,7 +17,7 @@
 
 | Event              | Description                                                           | Type               |
 | ------------------ | --------------------------------------------------------------------- | ------------------ |
-| `downloadDocument` | Event: loginShouldOccur: EventEmitter Event to fire if data validates | `CustomEvent<any>` |
+| `downloadDocument` | Event: downloadDocument: EventEmitter Event to fire if data validates | `CustomEvent<any>` |
 
 
 ## Dependencies

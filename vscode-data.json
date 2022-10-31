@@ -1,0 +1,449 @@
+{
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "account-details",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "user",
+          "description": "Prop: user: object\nUser Account details object"
+        }
+      ]
+    },
+    {
+      "name": "account-settings",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "user",
+          "description": "Prop: user: object\nUser Account details object"
+        }
+      ]
+    },
+    {
+      "name": "content-container",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": []
+    },
+    {
+      "name": "cover-details-container",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "coverdetails",
+          "description": "Prop: coverdetails: Array<PolicyDataInterface>\nThe Policy Data"
+        }
+      ]
+    },
+    {
+      "name": "cover-details-tile",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "coverdetails",
+          "description": "Prop: coverdetails: PolicyDataInterface\nPolicy Data"
+        },
+        {
+          "name": "coverindex",
+          "description": "Prop: coverindex: number\nIndex number of the policy in the list"
+        }
+      ]
+    },
+    {
+      "name": "details-container",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "coverdetails",
+          "description": "Prop: coverdetails: PolicyDataInterface\nPolicy Data"
+        },
+        {
+          "name": "detailstype",
+          "description": "Prop: detailstype: string\nEither \"car\" or \"home\""
+        }
+      ]
+    },
+    {
+      "name": "document-details",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "policies",
+          "description": "Prop: policies: Array<PolicyDataInterface>\nArray containing Policy Data for the current policies"
+        }
+      ]
+    },
+    {
+      "name": "document-details-container",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "coverdetails",
+          "description": "Prop: coverdetails: Array<PolicyDataInterface>\nArray containing Policy Data"
+        }
+      ]
+    },
+    {
+      "name": "document-details-tile",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "coverdetails",
+          "description": "Prop: coverdetails: PolicyDataInterface\nPolicy Data"
+        },
+        {
+          "name": "coverindex",
+          "description": "Prop: coverindex: number\nIndex number of the policy in the list"
+        }
+      ]
+    },
+    {
+      "name": "documents-list",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "coverdetails",
+          "description": "Prop: coverdetails: PolicyDataInterface\nPolicy Data"
+        }
+      ]
+    },
+    {
+      "name": "documents-list-item",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "document",
+          "description": "Prop: document: object\nDocument Details"
+        },
+        {
+          "name": "document-index",
+          "description": "Prop: documentIndex: number\nThe document index in the document list"
+        }
+      ]
+    },
+    {
+      "name": "documents-tile",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "policyindex",
+          "description": "Prop: policyindex: number\nIndex number of the policy in the list"
+        }
+      ]
+    },
+    {
+      "name": "header-text",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": []
+    },
+    {
+      "name": "login-footer",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": []
+    },
+    {
+      "name": "login-form",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "forgot-password-url",
+          "description": "Prop: forgotPasswordUrl: string\nPage to redirect to if user se;ects forgot password"
+        }
+      ]
+    },
+    {
+      "name": "login-header",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "brand",
+          "description": "The brand"
+        }
+      ]
+    },
+    {
+      "name": "login-title-wrapper",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": []
+    },
+    {
+      "name": "main-header",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "brand",
+          "description": "Prop: brand: string\nThe brand currently being browsed"
+        }
+      ]
+    },
+    {
+      "name": "main-page-contents",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": []
+    },
+    {
+      "name": "multi-banner-bullet-points",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "bullet-points",
+          "description": "Prop: bulletPoints: Array<BulletPointInterface>\nArray containing all the bullet points to display"
+        }
+      ]
+    },
+    {
+      "name": "multi-banner-header",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": []
+    },
+    {
+      "name": "multi-banner-title",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": []
+    },
+    {
+      "name": "multi-car-banner",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": []
+    },
+    {
+      "name": "nav-bar",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "buttons",
+          "description": "Prop: buttons: Array<ButtonInterface>\nArray containing all the buttons to display"
+        }
+      ]
+    },
+    {
+      "name": "page-header-bar",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "name",
+          "description": "Prop: name: string\nThe user name being displayed"
+        }
+      ]
+    },
+    {
+      "name": "page-logo",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "brand",
+          "description": "Prop: brand: string\nWhichever brand currently being browsed"
+        }
+      ]
+    },
+    {
+      "name": "policies-container",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": []
+    },
+    {
+      "name": "policy-details",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "policies",
+          "description": "Prop: policies: Array<PolicyDataInterface>\nArray containing all the Policy Data"
+        }
+      ]
+    },
+    {
+      "name": "policy-management-tile",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "link-text",
+          "description": "The link for the product"
+        },
+        {
+          "name": "product-image",
+          "description": "The image to display"
+        },
+        {
+          "name": "title-text",
+          "description": "The title for the tile"
+        }
+      ]
+    },
+    {
+      "name": "policy-subsection-header",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": []
+    },
+    {
+      "name": "policy-term-container",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": []
+    },
+    {
+      "name": "policy-tile",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "policyindex",
+          "description": "Prop: policyindex: number\nIndex number of the policy in the list"
+        }
+      ]
+    },
+    {
+      "name": "product-tile",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "link-text",
+          "description": "The link for the product"
+        },
+        {
+          "name": "product-image",
+          "description": "The image to display"
+        }
+      ]
+    },
+    {
+      "name": "quote-button",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": []
+    },
+    {
+      "name": "sub-section-title",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "pagetitle",
+          "description": "Prop: pagetitle: string\nThe Page Title to display"
+        }
+      ]
+    },
+    {
+      "name": "text-title-bar",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": []
+    },
+    {
+      "name": "tile-container",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "type",
+          "description": "Prop: type: tring\nSets the tyle according to the received type (options / products)"
+        }
+      ]
+    }
+  ]
+}

@@ -576,7 +576,7 @@ declare namespace LocalJSX {
          */
         "documentIndex"?: number;
         /**
-          * Event: loginShouldOccur: EventEmitter Event to fire if data validates
+          * Event: downloadDocument: EventEmitter Event to fire if data validates
          */
         "onDownloadDocument"?: (event: DocumentsListItemCustomEvent<any>) => void;
     }
