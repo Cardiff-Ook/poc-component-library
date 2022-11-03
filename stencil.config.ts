@@ -47,7 +47,6 @@ export const config: Config = {
     {
       type: 'docs-readme',
       footer: '*ACME documents Inc!*',
-      dir: 'docs',
       strict: true
     },
     angular({

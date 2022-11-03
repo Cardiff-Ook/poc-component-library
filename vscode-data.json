@@ -420,7 +420,7 @@
       "attributes": [
         {
           "name": "pagetitle",
-          "description": "Prop: pagetitle: string\nThe Page Title to display"
+          "description": "The Page Title to display"
         }
       ]
     },

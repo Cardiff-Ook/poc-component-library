@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-10-31T15:21:19",
+  "timestamp": "2022-11-03T10:45:36",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -75,7 +75,7 @@
           "./dist/poc-adm-components/documents-tile.entry.js",
           "./dist/poc-adm-components/dom-104fb833.js",
           "./dist/poc-adm-components/header-text.entry.js",
-          "./dist/poc-adm-components/index-c3972ba8.js",
+          "./dist/poc-adm-components/index-cd495fd3.js",
           "./dist/poc-adm-components/index.esm.js",
           "./dist/poc-adm-components/login-footer.entry.js",
           "./dist/poc-adm-components/login-form.entry.js",
@@ -119,7 +119,7 @@
           "./public/build/documents-tile.entry.js",
           "./public/build/dom-104fb833.js",
           "./public/build/header-text.entry.js",
-          "./public/build/index-c3972ba8.js",
+          "./public/build/index-cd495fd3.js",
           "./public/build/index.esm.js",
           "./public/build/login-footer.entry.js",
           "./public/build/login-form.entry.js",
@@ -183,7 +183,7 @@
         "bundleId": "account-settings",
         "fileName": "account-settings.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 579
       },
@@ -195,7 +195,7 @@
         "bundleId": "content-container",
         "fileName": "content-container.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 853
       },
@@ -207,7 +207,7 @@
         "bundleId": "document-details",
         "fileName": "document-details.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 1691
       },
@@ -219,7 +219,7 @@
         "bundleId": "header-text",
         "fileName": "header-text.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 678
       },
@@ -231,7 +231,7 @@
         "bundleId": "login-footer",
         "fileName": "login-footer.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 501
       },
@@ -243,7 +243,7 @@
         "bundleId": "login-form",
         "fileName": "login-form.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 3748
       },
@@ -255,7 +255,7 @@
         "bundleId": "login-header",
         "fileName": "login-header.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 1230
       },
@@ -267,7 +267,7 @@
         "bundleId": "login-title-wrapper",
         "fileName": "login-title-wrapper.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 696
       },
@@ -279,7 +279,7 @@
         "bundleId": "main-header",
         "fileName": "main-header.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 1020
       },
@@ -291,7 +291,7 @@
         "bundleId": "multi-banner-bullet-points",
         "fileName": "multi-banner-bullet-points.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 1045
       },
@@ -303,7 +303,7 @@
         "bundleId": "multi-banner-header",
         "fileName": "multi-banner-header.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 483
       },
@@ -315,7 +315,7 @@
         "bundleId": "multi-banner-title",
         "fileName": "multi-banner-title.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 492
       },
@@ -327,7 +327,7 @@
         "bundleId": "multi-car-banner",
         "fileName": "multi-car-banner.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 1077
       },
@@ -339,7 +339,7 @@
         "bundleId": "nav-bar",
         "fileName": "nav-bar.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 1672
       },
@@ -351,7 +351,7 @@
         "bundleId": "page-header-bar",
         "fileName": "page-header-bar.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 763
       },
@@ -363,7 +363,7 @@
         "bundleId": "page-logo",
         "fileName": "page-logo.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 644
       },
@@ -375,7 +375,7 @@
         "bundleId": "policy-details",
         "fileName": "policy-details.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 1676
       },
@@ -387,7 +387,7 @@
         "bundleId": "product-tile",
         "fileName": "product-tile.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 743
       },
@@ -399,7 +399,7 @@
         "bundleId": "text-title-bar",
         "fileName": "text-title-bar.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 577
       },
@@ -411,7 +411,7 @@
         "bundleId": "account-details",
         "fileName": "account-details.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 5313
       },
@@ -423,7 +423,7 @@
         "bundleId": "documents-tile",
         "fileName": "documents-tile.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 3107
       },
@@ -435,7 +435,7 @@
         "bundleId": "main-page-contents",
         "fileName": "main-page-contents.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 592
       },
@@ -447,7 +447,7 @@
         "bundleId": "policies-container",
         "fileName": "policies-container.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 520
       },
@@ -459,7 +459,7 @@
         "bundleId": "policy-tile",
         "fileName": "policy-tile.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 3723
       },
@@ -471,7 +471,7 @@
         "bundleId": "quote-button",
         "fileName": "quote-button.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 724
       },
@@ -483,7 +483,7 @@
         "bundleId": "cover-details-container",
         "fileName": "cover-details-container.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 1698
       },
@@ -495,7 +495,7 @@
         "bundleId": "document-details-container",
         "fileName": "document-details-container.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 2017
       },
@@ -507,7 +507,7 @@
         "bundleId": "policy-management-tile",
         "fileName": "policy-management-tile.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 1220
       },
@@ -519,7 +519,7 @@
         "bundleId": "policy-subsection-header",
         "fileName": "policy-subsection-header.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 1202
       },
@@ -531,7 +531,7 @@
         "bundleId": "tile-container",
         "fileName": "tile-container.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 645
       },
@@ -543,7 +543,7 @@
         "bundleId": "cover-details-tile",
         "fileName": "cover-details-tile.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 3962
       },
@@ -555,7 +555,7 @@
         "bundleId": "document-details-tile",
         "fileName": "document-details-tile.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 4172
       },
@@ -567,7 +567,7 @@
         "bundleId": "details-container",
         "fileName": "details-container.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 9958
       },
@@ -579,7 +579,7 @@
         "bundleId": "documents-list",
         "fileName": "documents-list.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 5134
       },
@@ -591,7 +591,7 @@
         "bundleId": "policy-term-container",
         "fileName": "policy-term-container.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 1499
       },
@@ -603,7 +603,7 @@
         "bundleId": "documents-list-item",
         "fileName": "documents-list-item.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 4324
       },
@@ -615,7 +615,7 @@
         "bundleId": "sub-section-title",
         "fileName": "sub-section-title.entry.js",
         "imports": [
-          "index-c3972ba8.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 413
       }
@@ -2642,7 +2642,7 @@
           },
           "docs": {
             "tags": [],
-            "text": "Prop: pagetitle: string\nThe Page Title to display"
+            "text": "The Page Title to display"
           },
           "internal": false
         }
@@ -7952,7 +7952,7 @@
               },
               "docs": {
                 "tags": [],
-                "text": "Prop: pagetitle: string\nThe Page Title to display"
+                "text": "The Page Title to display"
               },
               "internal": false
             }
@@ -8071,115 +8071,115 @@
   ],
   "componentGraph": {
     "sc-account-details": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-account-settings": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-content-container": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-cover-details-container": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-cover-details-tile": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-details-container": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-document-details": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-document-details-container": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-document-details-tile": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-documents-list": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-documents-list-item": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-documents-tile": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-header-text": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-login-footer": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-login-form": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-login-header": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-login-title-wrapper": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-main-header": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-main-page-contents": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-multi-banner-bullet-points": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-multi-banner-header": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-multi-banner-title": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-multi-car-banner": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-nav-bar": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-page-header-bar": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-page-logo": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-policies-container": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-policy-details": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-policy-management-tile": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-policy-subsection-header": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-policy-term-container": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-policy-tile": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-product-tile": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-quote-button": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-sub-section-title": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-text-title-bar": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ],
     "sc-tile-container": [
-      "index-c3972ba8.js"
+      "index-cd495fd3.js"
     ]
   },
   "sourceGraph": {

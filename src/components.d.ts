@@ -205,7 +205,7 @@ export namespace Components {
     }
     interface SubSectionTitle {
         /**
-          * Prop: pagetitle: string The Page Title to display
+          * The Page Title to display
          */
         "pagetitle": string;
     }
@@ -700,7 +700,7 @@ declare namespace LocalJSX {
     }
     interface SubSectionTitle {
         /**
-          * Prop: pagetitle: string The Page Title to display
+          * The Page Title to display
          */
         "pagetitle"?: string;
     }

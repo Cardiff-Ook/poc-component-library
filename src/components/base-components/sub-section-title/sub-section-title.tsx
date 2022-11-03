@@ -8,7 +8,6 @@ import { Component, Prop, h } from '@stencil/core';
 export class SubSectionTitle {
 
   /**
-   * Prop: pagetitle: string
    * The Page Title to display
    */
   @Prop() pagetitle: string;
