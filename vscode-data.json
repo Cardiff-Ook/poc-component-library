@@ -277,6 +277,27 @@
       "attributes": []
     },
     {
+      "name": "my-component",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "disabled",
+          "description": "If true, the button is displayed as disabled"
+        },
+        {
+          "name": "label",
+          "description": "The text which is shown as label"
+        },
+        {
+          "name": "name",
+          "description": "Is needed to reference the form data after the form is submitted"
+        }
+      ]
+    },
+    {
       "name": "nav-bar",
       "description": {
         "kind": "markdown",

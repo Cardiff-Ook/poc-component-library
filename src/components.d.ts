@@ -9,6 +9,7 @@ import { UserDataInterface } from "./interfaces/userDataInterface";
 import { PolicyDataInterface } from "./interfaces/policyDataInterface";
 import { DocumentDataInterface } from "./interfaces/documentDataInterface";
 import { BulletPointInterface } from "./components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points";
+import { CompOption } from "./components/my-component/my-component";
 import { ButtonInterface } from "./components/app-layout/nav-bar/nav-bar";
 export namespace Components {
     interface AccountDetails {
@@ -136,6 +137,24 @@ export namespace Components {
     interface MultiBannerTitle {
     }
     interface MultiCarBanner {
+    }
+    interface MyComponent {
+        /**
+          * If true, the button is displayed as disabled
+         */
+        "disabled": boolean;
+        /**
+          * The text which is shown as label
+         */
+        "label": string;
+        /**
+          * Is needed to reference the form data after the form is submitted
+         */
+        "name": string;
+        /**
+          * Define the available options in the drop-down list
+         */
+        "options": CompOption[];
     }
     interface NavBar {
         /**
@@ -369,6 +388,12 @@ declare global {
         prototype: HTMLMultiCarBannerElement;
         new (): HTMLMultiCarBannerElement;
     };
+    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    }
+    var HTMLMyComponentElement: {
+        prototype: HTMLMyComponentElement;
+        new (): HTMLMyComponentElement;
+    };
     interface HTMLNavBarElement extends Components.NavBar, HTMLStencilElement {
     }
     var HTMLNavBarElement: {
@@ -477,6 +502,7 @@ declare global {
         "multi-banner-header": HTMLMultiBannerHeaderElement;
         "multi-banner-title": HTMLMultiBannerTitleElement;
         "multi-car-banner": HTMLMultiCarBannerElement;
+        "my-component": HTMLMyComponentElement;
         "nav-bar": HTMLNavBarElement;
         "page-header-bar": HTMLPageHeaderBarElement;
         "page-logo": HTMLPageLogoElement;
@@ -632,6 +658,24 @@ declare namespace LocalJSX {
     }
     interface MultiCarBanner {
     }
+    interface MyComponent {
+        /**
+          * If true, the button is displayed as disabled
+         */
+        "disabled"?: boolean;
+        /**
+          * The text which is shown as label
+         */
+        "label"?: string;
+        /**
+          * Is needed to reference the form data after the form is submitted
+         */
+        "name"?: string;
+        /**
+          * Define the available options in the drop-down list
+         */
+        "options"?: CompOption[];
+    }
     interface NavBar {
         /**
           * Prop: buttons: Array<ButtonInterface> Array containing all the buttons to display
@@ -736,6 +780,7 @@ declare namespace LocalJSX {
         "multi-banner-header": MultiBannerHeader;
         "multi-banner-title": MultiBannerTitle;
         "multi-car-banner": MultiCarBanner;
+        "my-component": MyComponent;
         "nav-bar": NavBar;
         "page-header-bar": PageHeaderBar;
         "page-logo": PageLogo;
@@ -779,6 +824,7 @@ declare module "@stencil/core" {
             "multi-banner-header": LocalJSX.MultiBannerHeader & JSXBase.HTMLAttributes<HTMLMultiBannerHeaderElement>;
             "multi-banner-title": LocalJSX.MultiBannerTitle & JSXBase.HTMLAttributes<HTMLMultiBannerTitleElement>;
             "multi-car-banner": LocalJSX.MultiCarBanner & JSXBase.HTMLAttributes<HTMLMultiCarBannerElement>;
+            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "nav-bar": LocalJSX.NavBar & JSXBase.HTMLAttributes<HTMLNavBarElement>;
             "page-header-bar": LocalJSX.PageHeaderBar & JSXBase.HTMLAttributes<HTMLPageHeaderBarElement>;
             "page-logo": LocalJSX.PageLogo & JSXBase.HTMLAttributes<HTMLPageLogoElement>;
