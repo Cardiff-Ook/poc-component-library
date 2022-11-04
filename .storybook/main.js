@@ -9,5 +9,6 @@ module.exports = {
     "@storybook/addon-interactions",
     "@storybook/addon-notes/register"
   ],
-  "framework": "@storybook/html"
+  "framework": "@storybook/html",
+  staticDirs: ['../dist', '../public/assets'],
 }

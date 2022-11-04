@@ -7,4 +7,4 @@ export default {
     }
   };
 
-  export const Default = () => `<page-logo brand="Admiral"></page-logo>`;
+  export const Default = () => `<page-logo brand="admiral"></page-logo>`;
