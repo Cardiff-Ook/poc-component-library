@@ -7,7 +7,8 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
-    "@storybook/addon-notes/register"
+    "@storybook/addon-notes/register",
+    "@storybook/addon-knobs"
   ],
   "framework": "@storybook/html",
   staticDirs: ['../dist', '../public/assets'],
