@@ -1,1 +1,0 @@
-import{r as a,h as r}from"./p-4abcca95.js";const n=class{constructor(r){a(this,r)}render(){return r("div",null,r("span",{class:"MultiBannerCarComponent_caveat__3TayJ",id:"multiBannerCarRightHeader"},r("slot",null)))}};n.style=":host{display:block}";export{n as multi_banner_header}

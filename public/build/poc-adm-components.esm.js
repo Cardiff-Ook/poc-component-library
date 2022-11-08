@@ -1,1 +1,129 @@
-import{p as e,w as t,d as a,N as o,a as n,b as i}from"./p-4abcca95.js";(()=>{e.t=t.__cssshim;const i=Array.from(a.querySelectorAll("script")).find((e=>new RegExp(`/${o}(\\.esm)?\\.js($|\\?|#)`).test(e.src)||e.getAttribute("data-stencil-namespace")===o)),c=i["data-opts"]||{};return"onbeforeload"in i&&!history.scrollRestoration?{then(){}}:(c.resourcesUrl=new URL(".",new URL(i.getAttribute("data-resources-url")||i.src,t.location.href)).href,((e,n)=>{const i=`__sc_import_${o.replace(/\s|-/g,"_")}`;try{t[i]=new Function("w",`return import(w);//${Math.random()}`)}catch(c){const o=new Map;t[i]=c=>{const l=new URL(c,e).href;let p=o.get(l);if(!p){const e=a.createElement("script");e.type="module",e.crossOrigin=n.crossOrigin,e.src=URL.createObjectURL(new Blob([`import * as m from '${l}'; window.${i}.m = m;`],{type:"application/javascript"})),p=new Promise((a=>{e.onload=()=>{a(t[i].m),e.remove()}})),o.set(l,p),a.head.appendChild(e)}return p}}})(c.resourcesUrl,i),t.customElements?n(c):__sc_import_poc_adm_components("./p-4c61dcad.js").then((()=>c)))})().then((e=>i([["p-84723e71",[[0,"policy-details",{policies:[1]}]]],["p-8378ec50",[[0,"document-details",{policies:[1]}]]],["p-ecea11e6",[[0,"account-settings",{user:[1]}]]],["p-754588f4",[[4,"multi-car-banner"]]],["p-eae02662",[[4,"content-container"]]],["p-0010c113",[[1,"header-text"]]],["p-46856ac5",[[1,"login-footer"]]],["p-2c8ad719",[[0,"login-form",{forgotPasswordUrl:[1,"forgot-password-url"]},[[0,"keydown.enter","handleEnter"]]]]],["p-1c4e3ed7",[[0,"login-header",{brand:[1]}]]],["p-6bcd27c7",[[4,"login-title-wrapper"]]],["p-a21a3f90",[[4,"main-header",{brand:[1]}]]],["p-a2a78ac0",[[0,"multi-banner-bullet-points",{bulletPoints:[1,"bullet-points"]}]]],["p-6faf7065",[[4,"multi-banner-header"]]],["p-a0e9723a",[[4,"multi-banner-title"]]],["p-bfa51d7b",[[1,"my-component",{label:[1],name:[513],disabled:[516],options:[16]}]]],["p-a8ed21fa",[[0,"nav-bar",{buttons:[1]}]]],["p-51ce3df0",[[4,"page-header-bar",{name:[1]}]]],["p-8730d8f9",[[0,"page-logo",{brand:[1]}]]],["p-45594a89",[[0,"product-tile",{linkText:[1,"link-text"],productImage:[1,"product-image"]}]]],["p-da22bf2f",[[4,"text-title-bar"]]],["p-cd596d84",[[0,"details-container",{detailstype:[1],coverdetails:[1]}]]],["p-1eeff798",[[0,"policy-term-container"]]],["p-4cf12c42",[[0,"sub-section-title",{pagetitle:[1]}]]],["p-4e4857db",[[0,"policy-tile",{policydetails:[16],policyindex:[2]}]]],["p-24e6102b",[[0,"documents-tile",{policydetails:[16],policyindex:[2],collapsed:[32]}]]],["p-acf403ca",[[4,"quote-button"]]],["p-ae318254",[[0,"account-details",{user:[1]}],[4,"main-page-contents"],[4,"policies-container"]]],["p-51ee7fa3",[[0,"documents-list",{coverdetails:[1]}],[0,"documents-list-item",{document:[1],documentIndex:[2,"document-index"],collapsed:[32]}]]],["p-68aedf25",[[0,"document-details-container",{coverdetails:[1],collapsed:[32]}],[0,"document-details-tile",{coverdetails:[1],coverindex:[2],collapsed:[32]}]]],["p-52dacd8d",[[0,"cover-details-container",{coverdetails:[1],collapsed:[32]}],[4,"policy-management-tile",{linkText:[1,"link-text"],productImage:[1,"product-image"],titleText:[1,"title-text"]}],[4,"policy-subsection-header"],[4,"tile-container",{type:[1]}],[0,"cover-details-tile",{coverdetails:[1],coverindex:[2],collapsed:[32]}]]]],e)));
+import { B as BUILD, c as consoleDevInfo, p as plt, w as win, H, d as doc, N as NAMESPACE, a as promiseResolve, b as bootstrapLazy } from './index-bbb3174a.js';
+import { g as globalScripts } from './app-globals-0f993ce5.js';
+
+/*
+ Stencil Client Patch Browser v2.18.0 | MIT Licensed | https://stenciljs.com
+ */
+const getDynamicImportFunction = (namespace) => `__sc_import_${namespace.replace(/\s|-/g, '_')}`;
+const patchBrowser = () => {
+    // NOTE!! This fn cannot use async/await!
+    if (BUILD.isDev && !BUILD.isTesting) {
+        consoleDevInfo('Running in development mode.');
+    }
+    if (BUILD.cssVarShim) {
+        // shim css vars
+        plt.$cssShim$ = win.__cssshim;
+    }
+    if (BUILD.cloneNodeFix) {
+        // opted-in to polyfill cloneNode() for slot polyfilled components
+        patchCloneNodeFix(H.prototype);
+    }
+    if (BUILD.profile && !performance.mark) {
+        // not all browsers support performance.mark/measure (Safari 10)
+        // because the mark/measure APIs are designed to write entries to a buffer in the browser that does not exist,
+        // simply stub the implementations out.
+        // TODO(STENCIL-323): Remove this patch when support for older browsers is removed (breaking)
+        // @ts-ignore
+        performance.mark = performance.measure = () => {
+            /*noop*/
+        };
+        performance.getEntriesByName = () => [];
+    }
+    // @ts-ignore
+    const scriptElm = BUILD.scriptDataOpts || BUILD.safari10 || BUILD.dynamicImportShim
+        ? Array.from(doc.querySelectorAll('script')).find((s) => new RegExp(`\/${NAMESPACE}(\\.esm)?\\.js($|\\?|#)`).test(s.src) ||
+            s.getAttribute('data-stencil-namespace') === NAMESPACE)
+        : null;
+    const importMeta = "";
+    const opts = BUILD.scriptDataOpts ? scriptElm['data-opts'] || {} : {};
+    if (BUILD.safari10 && 'onbeforeload' in scriptElm && !history.scrollRestoration /* IS_ESM_BUILD */) {
+        // Safari < v11 support: This IF is true if it's Safari below v11.
+        // This fn cannot use async/await since Safari didn't support it until v11,
+        // however, Safari 10 did support modules. Safari 10 also didn't support "nomodule",
+        // so both the ESM file and nomodule file would get downloaded. Only Safari
+        // has 'onbeforeload' in the script, and "history.scrollRestoration" was added
+        // to Safari in v11. Return a noop then() so the async/await ESM code doesn't continue.
+        // IS_ESM_BUILD is replaced at build time so this check doesn't happen in systemjs builds.
+        return {
+            then() {
+                /* promise noop */
+            },
+        };
+    }
+    if (!BUILD.safari10 && importMeta !== '') {
+        opts.resourcesUrl = new URL('.', importMeta).href;
+    }
+    else if (BUILD.dynamicImportShim || BUILD.safari10) {
+        opts.resourcesUrl = new URL('.', new URL(scriptElm.getAttribute('data-resources-url') || scriptElm.src, win.location.href)).href;
+        if (BUILD.dynamicImportShim) {
+            patchDynamicImport(opts.resourcesUrl, scriptElm);
+        }
+        if (BUILD.dynamicImportShim && !win.customElements) {
+            // module support, but no custom elements support (Old Edge)
+            // @ts-ignore
+            return __sc_import_poc_adm_components(/* webpackChunkName: "polyfills-dom" */ './dom-104fb833.js').then(() => opts);
+        }
+    }
+    return promiseResolve(opts);
+};
+const patchDynamicImport = (base, orgScriptElm) => {
+    const importFunctionName = getDynamicImportFunction(NAMESPACE);
+    try {
+        // test if this browser supports dynamic imports
+        // There is a caching issue in V8, that breaks using import() in Function
+        // By generating a random string, we can workaround it
+        // Check https://bugs.chromium.org/p/chromium/issues/detail?id=990810 for more info
+        win[importFunctionName] = new Function('w', `return import(w);//${Math.random()}`);
+    }
+    catch (e) {
+        // this shim is specifically for browsers that do support "esm" imports
+        // however, they do NOT support "dynamic" imports
+        // basically this code is for old Edge, v18 and below
+        const moduleMap = new Map();
+        win[importFunctionName] = (src) => {
+            const url = new URL(src, base).href;
+            let mod = moduleMap.get(url);
+            if (!mod) {
+                const script = doc.createElement('script');
+                script.type = 'module';
+                script.crossOrigin = orgScriptElm.crossOrigin;
+                script.src = URL.createObjectURL(new Blob([`import * as m from '${url}'; window.${importFunctionName}.m = m;`], {
+                    type: 'application/javascript',
+                }));
+                mod = new Promise((resolve) => {
+                    script.onload = () => {
+                        resolve(win[importFunctionName].m);
+                        script.remove();
+                    };
+                });
+                moduleMap.set(url, mod);
+                doc.head.appendChild(script);
+            }
+            return mod;
+        };
+    }
+};
+const patchCloneNodeFix = (HTMLElementPrototype) => {
+    const nativeCloneNodeFn = HTMLElementPrototype.cloneNode;
+    HTMLElementPrototype.cloneNode = function (deep) {
+        if (this.nodeName === 'TEMPLATE') {
+            return nativeCloneNodeFn.call(this, deep);
+        }
+        const clonedNode = nativeCloneNodeFn.call(this, false);
+        const srcChildNodes = this.childNodes;
+        if (deep) {
+            for (let i = 0; i < srcChildNodes.length; i++) {
+                // Node.ATTRIBUTE_NODE === 2, and checking because IE11
+                if (srcChildNodes[i].nodeType !== 2) {
+                    clonedNode.appendChild(srcChildNodes[i].cloneNode(true));
+                }
+            }
+        }
+        return clonedNode;
+    };
+};
+
+patchBrowser().then(options => {
+  globalScripts();
+  return bootstrapLazy([["policy-details",[[0,"policy-details",{"policies":[1]}]]],["document-details",[[0,"document-details",{"policies":[1]}]]],["account-settings",[[0,"account-settings",{"user":[1]}]]],["multi-car-banner",[[4,"multi-car-banner"]]],["content-container",[[4,"content-container"]]],["header-text",[[1,"header-text"]]],["login-footer",[[1,"login-footer"]]],["login-form",[[0,"login-form",{"forgotPasswordUrl":[1,"forgot-password-url"]},[[0,"keydown.enter","handleEnter"]]]]],["login-header",[[0,"login-header",{"brand":[1]}]]],["login-title-wrapper",[[4,"login-title-wrapper"]]],["main-header",[[4,"main-header",{"brand":[1]}]]],["multi-banner-bullet-points",[[0,"multi-banner-bullet-points",{"bulletPoints":[1,"bullet-points"]}]]],["multi-banner-header",[[4,"multi-banner-header"]]],["multi-banner-title",[[4,"multi-banner-title"]]],["my-component",[[1,"my-component",{"label":[1],"name":[513],"disabled":[516],"options":[16]}]]],["nav-bar",[[0,"nav-bar",{"buttons":[1]}]]],["page-header-bar",[[4,"page-header-bar",{"name":[1]}]]],["page-logo",[[0,"page-logo",{"brand":[1]}]]],["product-tile",[[0,"product-tile",{"linkText":[1,"link-text"],"productImage":[1,"product-image"]}]]],["text-title-bar",[[4,"text-title-bar"]]],["document-details-container",[[0,"document-details-container",{"coverdetails":[1],"collapsed":[32]}]]],["cover-details-container",[[0,"cover-details-container",{"coverdetails":[1],"collapsed":[32]}]]],["policy-subsection-header",[[4,"policy-subsection-header"]]],["tile-container",[[4,"tile-container",{"type":[1]}]]],["policy-tile",[[0,"policy-tile",{"policydetails":[16],"policyindex":[2]}]]],["documents-tile",[[0,"documents-tile",{"policydetails":[16],"policyindex":[2],"collapsed":[32]}]]],["account-details",[[0,"account-details",{"user":[1]}]]],["main-page-contents",[[4,"main-page-contents"]]],["policies-container",[[4,"policies-container"]]],["quote-button",[[4,"quote-button"]]],["policy-management-tile",[[4,"policy-management-tile",{"linkText":[1,"link-text"],"productImage":[1,"product-image"],"titleText":[1,"title-text"]}]]],["documents-list-item",[[0,"documents-list-item",{"document":[1],"documentIndex":[2,"document-index"],"collapsed":[32]}]]],["documents-list",[[0,"documents-list",{"coverdetails":[1]}]]],["document-details-tile",[[0,"document-details-tile",{"coverdetails":[1],"coverindex":[2],"collapsed":[32]}]]],["details-container",[[0,"details-container",{"detailstype":[1],"coverdetails":[1]}]]],["cover-details-tile",[[0,"cover-details-tile",{"coverdetails":[1],"coverindex":[2],"collapsed":[32]}]]],["policy-term-container",[[0,"policy-term-container"]]],["sub-section-title",[[0,"sub-section-title",{"pagetitle":[1]}]]]], options);
+});
