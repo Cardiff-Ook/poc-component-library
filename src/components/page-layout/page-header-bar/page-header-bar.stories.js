@@ -2,8 +2,6 @@ import readme from './readme.md';
 import { PageHeaderBar } from '../../../../dist/collection/components/page-layout/page-header-bar/page-header-bar';
 import React from 'react';
 
-import CustomMDXDocumentation from './Custom-MDX-Documentation.mdx';
-
 export default {
     title: 'page layout/page-header-bar',
     component: PageHeaderBar,
@@ -18,9 +16,6 @@ export default {
     },
     parameters: {
       notes: readme,
-      docs: {
-        page: CustomMDXDocumentation,
-      },
     }
   };
 

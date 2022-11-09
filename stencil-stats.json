@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-11-08T15:46:23",
+  "timestamp": "2022-11-09T14:13:38",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -4909,7 +4909,7 @@
               "modeName": "$",
               "styleId": "PAGE-HEADER-BAR",
               "styleStr": null,
-              "styleIdentifier": null,
+              "styleIdentifier": "pageHeaderBarStyle",
               "externalStyles": [
                 {
                   "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/page-layout/page-header-bar/page-header-bar.css",
