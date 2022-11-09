@@ -12,4 +12,19 @@ module.exports = {
   ],
   "framework": "@storybook/html",
   staticDirs: ['../dist', '../public/assets'],
+  webpackFinal: async (config) => {
+      const rules = config.module?.rules || [];
+
+          rules.push({
+              test: /.tsx$/,
+              loader: 'string-replace-loader',
+              options: {
+                  search: /\/assets\//g,
+                  replace: '/poc-component-library/assets/',
+              },
+          });
+
+      config.module.rules = rules;
+      return config;
+  },
 }
