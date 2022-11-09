@@ -1,0 +1,11 @@
+:host {
+  display: block;
+}
+
+.jut__Grid__grid jut__Grid__vgapMedium jut__Grid__hgapNone {
+  grid-template-columns: 1fr 5fr;
+}
+
+.jut__TabBar__heading.active {
+  width: 170px;
+}

@@ -1,0 +1,9 @@
+:host {
+  display: block;
+}
+
+.inlineOverride {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
