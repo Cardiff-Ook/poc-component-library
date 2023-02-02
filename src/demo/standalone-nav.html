@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" class="adm-branding-admiral">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/poc-adm-components.esm.js"></script>
+    <script nomodule src="/build/poc-adm-components.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="/build/poc-adm-components.css" />
+  </head>
+  <body class="themeRoot digitalRoot">
+    <div id="root">
+      <div class="admRoot">
+        <nav-bar buttons='
+          [
+            { "name":"My Policies", "isActive": true, "link": "./index.html" }, 
+            { "name":"Documents", "isActive": false, "link": "./documents.html" }, 
+            { "name":"Make A Change", "isActive": false, "link": "#" }, 
+            { "name":"Claims", "isActive": false, "link": "#" }, 
+            { "name":"Add to Policy", "isActive": false, "link": "#" }, 
+            { "name":"Payments", "isActive": false, "link": "#" }, 
+            { "name":"Help", "isActive": false, "link": "#" }, 
+            { "name":"MyAccount", "isActive": false, "link": "./account.html" }
+          ]'>
+        </nav-bar>
+      </div>
+    </div>
+  </body>
+</html>

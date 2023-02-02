@@ -1,7 +1,7 @@
 import readme from './readme.md';
 
 export default {
-    title: 'page layout/text-title-bar',
+    title: 'page layout/Text Title Bar',
     parameters: {
       notes: readme
     }

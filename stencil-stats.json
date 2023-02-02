@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-11-09T14:13:38",
+  "timestamp": "2023-02-02T10:52:49",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -7,13 +7,13 @@
   "app": {
     "namespace": "PocAdmComponents",
     "fsNamespace": "poc-adm-components",
-    "components": 38,
-    "entries": 38,
-    "bundles": 132,
+    "components": 37,
+    "entries": 37,
+    "bundles": 129,
     "outputs": [
       {
         "name": "dist-custom-elements",
-        "files": 39,
+        "files": 38,
         "generatedFiles": [
           "./dist/components/account-details.d.ts",
           "./dist/components/account-settings.d.ts",
@@ -39,7 +39,6 @@
           "./dist/components/multi-banner-header.d.ts",
           "./dist/components/multi-banner-title.d.ts",
           "./dist/components/multi-car-banner.d.ts",
-          "./dist/components/my-component.d.ts",
           "./dist/components/nav-bar.d.ts",
           "./dist/components/page-header-bar.d.ts",
           "./dist/components/page-logo.d.ts",
@@ -58,7 +57,7 @@
       },
       {
         "name": "dist-lazy",
-        "files": 90,
+        "files": 88,
         "generatedFiles": [
           "./dist/poc-adm-components/account-details.entry.js",
           "./dist/poc-adm-components/account-settings.entry.js",
@@ -76,7 +75,7 @@
           "./dist/poc-adm-components/documents-tile.entry.js",
           "./dist/poc-adm-components/dom-104fb833.js",
           "./dist/poc-adm-components/header-text.entry.js",
-          "./dist/poc-adm-components/index-bbb3174a.js",
+          "./dist/poc-adm-components/index-cd495fd3.js",
           "./dist/poc-adm-components/index.esm.js",
           "./dist/poc-adm-components/login-footer.entry.js",
           "./dist/poc-adm-components/login-form.entry.js",
@@ -88,7 +87,6 @@
           "./dist/poc-adm-components/multi-banner-header.entry.js",
           "./dist/poc-adm-components/multi-banner-title.entry.js",
           "./dist/poc-adm-components/multi-car-banner.entry.js",
-          "./dist/poc-adm-components/my-component.entry.js",
           "./dist/poc-adm-components/nav-bar.entry.js",
           "./dist/poc-adm-components/page-header-bar.entry.js",
           "./dist/poc-adm-components/page-logo.entry.js",
@@ -121,7 +119,7 @@
           "./public/build/documents-tile.entry.js",
           "./public/build/dom-104fb833.js",
           "./public/build/header-text.entry.js",
-          "./public/build/index-bbb3174a.js",
+          "./public/build/index-cd495fd3.js",
           "./public/build/index.esm.js",
           "./public/build/login-footer.entry.js",
           "./public/build/login-form.entry.js",
@@ -133,7 +131,6 @@
           "./public/build/multi-banner-header.entry.js",
           "./public/build/multi-banner-title.entry.js",
           "./public/build/multi-car-banner.entry.js",
-          "./public/build/my-component.entry.js",
           "./public/build/nav-bar.entry.js",
           "./public/build/page-header-bar.entry.js",
           "./public/build/page-logo.entry.js",
@@ -186,7 +183,7 @@
         "bundleId": "account-settings",
         "fileName": "account-settings.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 579
       },
@@ -198,7 +195,7 @@
         "bundleId": "content-container",
         "fileName": "content-container.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 853
       },
@@ -210,7 +207,7 @@
         "bundleId": "document-details",
         "fileName": "document-details.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 1691
       },
@@ -222,7 +219,7 @@
         "bundleId": "header-text",
         "fileName": "header-text.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 678
       },
@@ -234,7 +231,7 @@
         "bundleId": "login-footer",
         "fileName": "login-footer.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 501
       },
@@ -246,7 +243,7 @@
         "bundleId": "login-form",
         "fileName": "login-form.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 3748
       },
@@ -258,7 +255,7 @@
         "bundleId": "login-header",
         "fileName": "login-header.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 1230
       },
@@ -270,7 +267,7 @@
         "bundleId": "login-title-wrapper",
         "fileName": "login-title-wrapper.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 696
       },
@@ -282,7 +279,7 @@
         "bundleId": "main-header",
         "fileName": "main-header.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 1020
       },
@@ -294,7 +291,7 @@
         "bundleId": "multi-banner-bullet-points",
         "fileName": "multi-banner-bullet-points.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 1045
       },
@@ -306,7 +303,7 @@
         "bundleId": "multi-banner-header",
         "fileName": "multi-banner-header.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 483
       },
@@ -318,7 +315,7 @@
         "bundleId": "multi-banner-title",
         "fileName": "multi-banner-title.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 492
       },
@@ -330,21 +327,9 @@
         "bundleId": "multi-car-banner",
         "fileName": "multi-car-banner.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 1077
-      },
-      {
-        "key": "my-component.entry",
-        "components": [
-          "my-component"
-        ],
-        "bundleId": "my-component",
-        "fileName": "my-component.entry.js",
-        "imports": [
-          "index-bbb3174a.js"
-        ],
-        "originalByteSize": 720
       },
       {
         "key": "nav-bar.entry",
@@ -354,7 +339,7 @@
         "bundleId": "nav-bar",
         "fileName": "nav-bar.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 1672
       },
@@ -366,7 +351,7 @@
         "bundleId": "page-header-bar",
         "fileName": "page-header-bar.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 763
       },
@@ -378,7 +363,7 @@
         "bundleId": "page-logo",
         "fileName": "page-logo.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 644
       },
@@ -390,7 +375,7 @@
         "bundleId": "policy-details",
         "fileName": "policy-details.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 1676
       },
@@ -402,7 +387,7 @@
         "bundleId": "product-tile",
         "fileName": "product-tile.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 756
       },
@@ -414,7 +399,7 @@
         "bundleId": "text-title-bar",
         "fileName": "text-title-bar.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 577
       },
@@ -426,7 +411,7 @@
         "bundleId": "account-details",
         "fileName": "account-details.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 5313
       },
@@ -438,7 +423,7 @@
         "bundleId": "documents-tile",
         "fileName": "documents-tile.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 3107
       },
@@ -450,7 +435,7 @@
         "bundleId": "main-page-contents",
         "fileName": "main-page-contents.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 592
       },
@@ -462,7 +447,7 @@
         "bundleId": "policies-container",
         "fileName": "policies-container.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 520
       },
@@ -474,7 +459,7 @@
         "bundleId": "policy-tile",
         "fileName": "policy-tile.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 3723
       },
@@ -486,7 +471,7 @@
         "bundleId": "quote-button",
         "fileName": "quote-button.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 724
       },
@@ -498,7 +483,7 @@
         "bundleId": "cover-details-container",
         "fileName": "cover-details-container.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 1698
       },
@@ -510,7 +495,7 @@
         "bundleId": "document-details-container",
         "fileName": "document-details-container.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 2017
       },
@@ -522,7 +507,7 @@
         "bundleId": "policy-management-tile",
         "fileName": "policy-management-tile.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 1220
       },
@@ -534,7 +519,7 @@
         "bundleId": "policy-subsection-header",
         "fileName": "policy-subsection-header.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 1202
       },
@@ -546,7 +531,7 @@
         "bundleId": "tile-container",
         "fileName": "tile-container.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 645
       },
@@ -558,7 +543,7 @@
         "bundleId": "cover-details-tile",
         "fileName": "cover-details-tile.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 3962
       },
@@ -570,7 +555,7 @@
         "bundleId": "document-details-tile",
         "fileName": "document-details-tile.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 4172
       },
@@ -582,7 +567,7 @@
         "bundleId": "details-container",
         "fileName": "details-container.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 9958
       },
@@ -594,7 +579,7 @@
         "bundleId": "documents-list",
         "fileName": "documents-list.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 5134
       },
@@ -606,7 +591,7 @@
         "bundleId": "policy-term-container",
         "fileName": "policy-term-container.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 1499
       },
@@ -618,7 +603,7 @@
         "bundleId": "documents-list-item",
         "fileName": "documents-list-item.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 4324
       },
@@ -630,7 +615,7 @@
         "bundleId": "sub-section-title",
         "fileName": "sub-section-title.entry.js",
         "imports": [
-          "index-bbb3174a.js"
+          "index-cd495fd3.js"
         ],
         "originalByteSize": 413
       }
@@ -1991,116 +1976,6 @@
       ],
       "properties": [],
       "shadowDelegatesFocus": null,
-      "states": []
-    },
-    {
-      "tag": "my-component",
-      "path": "./src/components/my-component/my-component.js",
-      "source": "./src/components/my-component/my-component.tsx",
-      "elementRef": null,
-      "componentClassName": "MyComponent",
-      "assetsDirs": [],
-      "dependencies": [],
-      "dependents": [],
-      "directDependencies": [],
-      "directDependents": [],
-      "docs": {
-        "tags": [],
-        "text": ""
-      },
-      "encapsulation": "shadow",
-      "excludeFromCollection": false,
-      "events": [],
-      "internal": false,
-      "legacyConnect": [],
-      "legacyContext": [],
-      "listeners": [],
-      "methods": [],
-      "potentialCmpRefs": [],
-      "properties": [
-        {
-          "name": "label",
-          "type": "string",
-          "attribute": "label",
-          "reflect": false,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "complexType": {
-            "original": "string",
-            "resolved": "string",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": "The text which is shown as label"
-          },
-          "internal": false
-        },
-        {
-          "name": "name",
-          "type": "string",
-          "attribute": "name",
-          "reflect": true,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "complexType": {
-            "original": "string",
-            "resolved": "string",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": "Is needed to reference the form data after the form is submitted"
-          },
-          "internal": false
-        },
-        {
-          "name": "disabled",
-          "type": "boolean",
-          "attribute": "disabled",
-          "reflect": true,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "defaultValue": "false",
-          "complexType": {
-            "original": "boolean",
-            "resolved": "boolean",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": "If true, the button is displayed as disabled"
-          },
-          "internal": false
-        },
-        {
-          "name": "options",
-          "type": "unknown",
-          "reflect": false,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "defaultValue": "[]",
-          "complexType": {
-            "original": "CompOption[]",
-            "resolved": "CompOption[]",
-            "references": {
-              "CompOption": {
-                "location": "local"
-              }
-            }
-          },
-          "docs": {
-            "tags": [],
-            "text": "Define the available options in the drop-down list"
-          },
-          "internal": false
-        }
-      ],
-      "shadowDelegatesFocus": false,
       "states": []
     },
     {
@@ -4527,202 +4402,6 @@
         }
       ],
       "entryKey": "multi-car-banner.entry"
-    },
-    {
-      "cmps": [
-        {
-          "tagName": "my-component",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "MyComponent",
-          "elementRef": null,
-          "encapsulation": "shadow",
-          "shadowDelegatesFocus": false,
-          "properties": [
-            {
-              "name": "label",
-              "type": "string",
-              "attribute": "label",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "The text which is shown as label"
-              },
-              "internal": false
-            },
-            {
-              "name": "name",
-              "type": "string",
-              "attribute": "name",
-              "reflect": true,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Is needed to reference the form data after the form is submitted"
-              },
-              "internal": false
-            },
-            {
-              "name": "disabled",
-              "type": "boolean",
-              "attribute": "disabled",
-              "reflect": true,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "If true, the button is displayed as disabled"
-              },
-              "internal": false
-            },
-            {
-              "name": "options",
-              "type": "unknown",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "[]",
-              "complexType": {
-                "original": "CompOption[]",
-                "resolved": "CompOption[]",
-                "references": {
-                  "CompOption": {
-                    "location": "local"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": "Define the available options in the drop-down list"
-              },
-              "internal": false
-            }
-          ],
-          "virtualProperties": [],
-          "states": [],
-          "methods": [],
-          "listeners": [],
-          "events": [],
-          "watchers": [],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "MY-COMPONENT",
-              "styleStr": null,
-              "styleIdentifier": "myComponentStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/my-component/my-component.css",
-                  "relativePath": "my-component.css",
-                  "originalComponentPath": "my-component.css"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/my-component/my-component.js",
-          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/my-component/my-component.tsx",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
-          "hasComponentDidLoadFn": false,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": false,
-          "hasDisconnectedCallbackFn": false,
-          "hasElement": false,
-          "hasEvent": false,
-          "hasLifecycle": false,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": true,
-          "hasMethod": false,
-          "hasMode": false,
-          "hasAttribute": true,
-          "hasProp": true,
-          "hasPropNumber": false,
-          "hasPropBoolean": true,
-          "hasPropString": true,
-          "hasPropMutable": false,
-          "hasReflect": true,
-          "hasRenderFn": true,
-          "hasState": false,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": false,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
-          "hasVdomPropOrAttr": true,
-          "hasVdomRef": false,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": true,
-          "hasWatchCallback": false,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "htmlFor",
-            "name",
-            "id",
-            "disabled",
-            "value"
-          ],
-          "htmlTagNames": [
-            "div",
-            "label",
-            "select",
-            "option"
-          ],
-          "htmlParts": [],
-          "isUpdateable": true,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
-          "dependents": [],
-          "directDependents": []
-        }
-      ],
-      "entryKey": "my-component.entry"
     },
     {
       "cmps": [
@@ -8392,118 +8071,115 @@
   ],
   "componentGraph": {
     "sc-account-details": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-account-settings": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-content-container": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-cover-details-container": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-cover-details-tile": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-details-container": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-document-details": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-document-details-container": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-document-details-tile": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-documents-list": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-documents-list-item": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-documents-tile": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-header-text": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-login-footer": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-login-form": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-login-header": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-login-title-wrapper": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-main-header": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-main-page-contents": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-multi-banner-bullet-points": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-multi-banner-header": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-multi-banner-title": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-multi-car-banner": [
-      "index-bbb3174a.js"
-    ],
-    "sc-my-component": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-nav-bar": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-page-header-bar": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-page-logo": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-policies-container": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-policy-details": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-policy-management-tile": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-policy-subsection-header": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-policy-term-container": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-policy-tile": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-product-tile": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-quote-button": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-sub-section-title": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-text-title-bar": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ],
     "sc-tile-container": [
-      "index-bbb3174a.js"
+      "index-cd495fd3.js"
     ]
   },
   "sourceGraph": {
@@ -8531,7 +8207,6 @@
     "./src/components/base-components/quote-button/quote-button.tsx": [],
     "./src/components/base-components/sub-section-title/sub-section-title.tsx": [],
     "./src/components/forms/login-form/login-form.tsx": [],
-    "./src/components/my-component/my-component.tsx": [],
     "./src/components/page-layout/account-details/account-details.tsx": [],
     "./src/components/page-layout/account-settings/account-settings.tsx": [],
     "./src/components/page-layout/content-container/content-container.tsx": [],

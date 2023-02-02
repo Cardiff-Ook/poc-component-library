@@ -1,1 +1,0 @@
-import{r as s,h as t}from"./p-4abcca95.js";const a=class{constructor(t){s(this,t)}render(){return t("h4",{id:"pageTitle",class:"adm-page-title"},this.pagetitle)}};a.style=":host{display:block}";export{a as sub_section_title}

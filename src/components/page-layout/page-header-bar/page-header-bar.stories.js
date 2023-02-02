@@ -3,7 +3,7 @@ import { PageHeaderBar } from '../../../../dist/collection/components/page-layou
 import React from 'react';
 
 export default {
-    title: 'page layout/page-header-bar',
+    title: 'page layout/Page Header Bar',
     component: PageHeaderBar,
     argTypes: {
       name: {
