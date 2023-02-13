@@ -1,6 +1,6 @@
 {
   "name": "poc-adm-components",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Component Library for PoC",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
