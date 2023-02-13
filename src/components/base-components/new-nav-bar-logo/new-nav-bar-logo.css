@@ -1,0 +1,6 @@
+:host {
+  display: block;
+}
+:host.adm-navbar__logo {
+  flex: 1 1 auto
+}
