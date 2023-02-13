@@ -1,5 +1,5 @@
 {
-  "timestamp": "2023-02-13T15:24:53",
+  "timestamp": "2023-02-13T17:14:46",
   "compiler": {
     "name": "@stencil/core",
     "version": "2.18.0",
@@ -1045,8 +1045,9 @@
     },
     {
       "filePath": "./src/components/base-components/new-nav-bar-logo/new-nav-bar-logo.tsx",
-      "encapsulation": "none",
+      "encapsulation": "shadow",
       "tag": "new-nav-bar-logo",
+      "readme": "# new-nav-bar-logo\n\n\n",
       "docs": "",
       "docsTags": [],
       "usage": {},
