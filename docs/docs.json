@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-11-09T13:44:04",
+  "timestamp": "2023-02-13T15:24:53",
   "compiler": {
     "name": "@stencil/core",
     "version": "2.18.0",
@@ -1005,91 +1005,6 @@
       }
     },
     {
-      "filePath": "./src/components/my-component/my-component.tsx",
-      "encapsulation": "shadow",
-      "tag": "my-component",
-      "readme": "# my-component\n\n\n",
-      "docs": "",
-      "docsTags": [],
-      "usage": {},
-      "props": [
-        {
-          "name": "disabled",
-          "type": "boolean",
-          "mutable": false,
-          "attr": "disabled",
-          "reflectToAttr": true,
-          "docs": "If true, the button is displayed as disabled",
-          "docsTags": [],
-          "default": "false",
-          "values": [
-            {
-              "type": "boolean"
-            }
-          ],
-          "optional": false,
-          "required": false
-        },
-        {
-          "name": "label",
-          "type": "string",
-          "mutable": false,
-          "attr": "label",
-          "reflectToAttr": false,
-          "docs": "The text which is shown as label",
-          "docsTags": [],
-          "values": [
-            {
-              "type": "string"
-            }
-          ],
-          "optional": false,
-          "required": false
-        },
-        {
-          "name": "name",
-          "type": "string",
-          "mutable": false,
-          "attr": "name",
-          "reflectToAttr": true,
-          "docs": "Is needed to reference the form data after the form is submitted",
-          "docsTags": [],
-          "values": [
-            {
-              "type": "string"
-            }
-          ],
-          "optional": false,
-          "required": false
-        },
-        {
-          "name": "options",
-          "type": "CompOption[]",
-          "mutable": false,
-          "reflectToAttr": false,
-          "docs": "Define the available options in the drop-down list",
-          "docsTags": [],
-          "default": "[]",
-          "values": [
-            {
-              "type": "CompOption[]"
-            }
-          ],
-          "optional": false,
-          "required": false
-        }
-      ],
-      "methods": [],
-      "events": [],
-      "listeners": [],
-      "styles": [],
-      "slots": [],
-      "parts": [],
-      "dependents": [],
-      "dependencies": [],
-      "dependencyGraph": {}
-    },
-    {
       "filePath": "./src/components/app-layout/nav-bar/nav-bar.tsx",
       "encapsulation": "none",
       "tag": "nav-bar",
@@ -1118,6 +1033,24 @@
           "required": false
         }
       ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/base-components/new-nav-bar-logo/new-nav-bar-logo.tsx",
+      "encapsulation": "none",
+      "tag": "new-nav-bar-logo",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
       "methods": [],
       "events": [],
       "listeners": [],
