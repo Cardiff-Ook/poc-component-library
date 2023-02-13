@@ -3,7 +3,7 @@ import { Component, Host, h } from '@stencil/core';
 @Component({
   tag: 'new-nav-bar-logo',
   styleUrl: 'new-nav-bar-logo.css',
-  shadow: true,
+  shadow: false,
 })
 export class NewNavBarLogo {
 
