@@ -290,6 +290,23 @@
       ]
     },
     {
+      "name": "new-nav-bar-img",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "alt",
+          "description": ""
+        },
+        {
+          "name": "src",
+          "description": "Prop: src: string\nThe image source"
+        }
+      ]
+    },
+    {
       "name": "new-nav-bar-logo",
       "description": {
         "kind": "markdown",

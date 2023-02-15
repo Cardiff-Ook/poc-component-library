@@ -1,0 +1,1 @@
+import{r as e,h as s,H as t}from"./p-a4af608c.js";const n=class{constructor(s){e(this,s)}render(){return s(t,null,s("img",{src:this.src,alt:this.alt}))}};n.style="new-nav-bar-img{display:block;height:auto;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:6.25em}img{display:block;width:100%}";export{n as new_nav_bar_img}

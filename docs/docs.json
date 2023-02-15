@@ -1,5 +1,5 @@
 {
-  "timestamp": "2023-02-13T17:18:22",
+  "timestamp": "2023-02-15T14:28:25",
   "compiler": {
     "name": "@stencil/core",
     "version": "2.18.0",
@@ -1025,6 +1025,58 @@
             {
               "type": "ButtonInterface[]"
             },
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/base-components/new-nav-bar-img/new-nav-bar-img.tsx",
+      "encapsulation": "none",
+      "tag": "new-nav-bar-img",
+      "readme": "# new-nav-bar-img\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "alt",
+          "type": "string",
+          "mutable": false,
+          "attr": "alt",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "src",
+          "type": "string",
+          "mutable": false,
+          "attr": "src",
+          "reflectToAttr": false,
+          "docs": "Prop: src: string\nThe image source",
+          "docsTags": [],
+          "values": [
             {
               "type": "string"
             }
