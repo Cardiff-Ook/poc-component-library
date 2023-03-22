@@ -1,5 +1,5 @@
 {
-  "timestamp": "2023-02-15T14:30:23",
+  "timestamp": "2023-03-22T12:32:10",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -7,13 +7,13 @@
   "app": {
     "namespace": "PocAdmComponents",
     "fsNamespace": "poc-adm-components",
-    "components": 39,
-    "entries": 39,
-    "bundles": 135,
+    "components": 40,
+    "entries": 40,
+    "bundles": 138,
     "outputs": [
       {
         "name": "dist-custom-elements",
-        "files": 40,
+        "files": 41,
         "generatedFiles": [
           "./dist/components/account-details.d.ts",
           "./dist/components/account-settings.d.ts",
@@ -27,6 +27,7 @@
           "./dist/components/documents-list-item.d.ts",
           "./dist/components/documents-list.d.ts",
           "./dist/components/documents-tile.d.ts",
+          "./dist/components/error-message.d.ts",
           "./dist/components/header-text.d.ts",
           "./dist/components/index.d.ts",
           "./dist/components/login-footer.d.ts",
@@ -59,7 +60,7 @@
       },
       {
         "name": "dist-lazy",
-        "files": 92,
+        "files": 94,
         "generatedFiles": [
           "./dist/poc-adm-components/account-details.entry.js",
           "./dist/poc-adm-components/account-settings.entry.js",
@@ -76,6 +77,7 @@
           "./dist/poc-adm-components/documents-list.entry.js",
           "./dist/poc-adm-components/documents-tile.entry.js",
           "./dist/poc-adm-components/dom-104fb833.js",
+          "./dist/poc-adm-components/error-message.entry.js",
           "./dist/poc-adm-components/header-text.entry.js",
           "./dist/poc-adm-components/index-cd495fd3.js",
           "./dist/poc-adm-components/index.esm.js",
@@ -122,6 +124,7 @@
           "./public/build/documents-list.entry.js",
           "./public/build/documents-tile.entry.js",
           "./public/build/dom-104fb833.js",
+          "./public/build/error-message.entry.js",
           "./public/build/header-text.entry.js",
           "./public/build/index-cd495fd3.js",
           "./public/build/index.esm.js",
@@ -251,7 +254,7 @@
         "imports": [
           "index-cd495fd3.js"
         ],
-        "originalByteSize": 3748
+        "originalByteSize": 4098
       },
       {
         "key": "login-header.entry",
@@ -456,6 +459,18 @@
           "index-cd495fd3.js"
         ],
         "originalByteSize": 3107
+      },
+      {
+        "key": "error-message.entry",
+        "components": [
+          "error-message"
+        ],
+        "bundleId": "error-message",
+        "fileName": "error-message.entry.js",
+        "imports": [
+          "index-cd495fd3.js"
+        ],
+        "originalByteSize": 878
       },
       {
         "key": "main-page-contents.entry",
@@ -1571,6 +1586,58 @@
       ]
     },
     {
+      "tag": "error-message",
+      "path": "./src/components/base-components/error-message/error-message.js",
+      "source": "./src/components/base-components/error-message/error-message.tsx",
+      "elementRef": null,
+      "componentClassName": "ErrorMessage",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [
+        "login-form"
+      ],
+      "directDependencies": [],
+      "directDependents": [
+        "login-form"
+      ],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "errorMessage",
+          "type": "string",
+          "attribute": "error-message",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop: errorMessage: string\nThe error message to display"
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": null,
+      "states": []
+    },
+    {
       "tag": "header-text",
       "path": "./src/components/base-components/header-text/header-text.js",
       "source": "./src/components/base-components/header-text/header-text.tsx",
@@ -1633,9 +1700,13 @@
       "elementRef": "host",
       "componentClassName": "LoginForm",
       "assetsDirs": [],
-      "dependencies": [],
+      "dependencies": [
+        "error-message"
+      ],
       "dependents": [],
-      "directDependencies": [],
+      "directDependencies": [
+        "error-message"
+      ],
       "directDependents": [],
       "docs": {
         "tags": [],
@@ -1675,6 +1746,7 @@
       ],
       "methods": [],
       "potentialCmpRefs": [
+        "error-message",
         "stencil-route-link"
       ],
       "properties": [
@@ -1699,7 +1771,11 @@
         }
       ],
       "shadowDelegatesFocus": null,
-      "states": []
+      "states": [
+        {
+          "name": "showError"
+        }
+      ]
     },
     {
       "tag": "login-header",
@@ -3537,7 +3613,11 @@
             }
           ],
           "virtualProperties": [],
-          "states": [],
+          "states": [
+            {
+              "name": "showError"
+            }
+          ],
           "methods": [],
           "listeners": [
             {
@@ -3625,7 +3705,7 @@
           "hasPropMutable": false,
           "hasReflect": false,
           "hasRenderFn": true,
-          "hasState": false,
+          "hasState": true,
           "hasStyle": true,
           "hasVdomAttribute": true,
           "hasVdomXlink": false,
@@ -3646,6 +3726,8 @@
             "name",
             "required",
             "type",
+            "hidden",
+            "errorMessage",
             "url",
             "onClick"
           ],
@@ -3655,6 +3737,7 @@
             "label",
             "span",
             "input",
+            "error-message",
             "p",
             "stencil-route-link",
             "button"
@@ -3662,10 +3745,15 @@
           "htmlParts": [],
           "isUpdateable": true,
           "potentialCmpRefs": [
+            "error-message",
             "stencil-route-link"
           ],
-          "directDependencies": [],
-          "dependencies": [],
+          "directDependencies": [
+            "error-message"
+          ],
+          "dependencies": [
+            "error-message"
+          ],
           "dependents": [],
           "directDependents": []
         }
@@ -5969,6 +6057,145 @@
         }
       ],
       "entryKey": "documents-tile.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "error-message",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "ErrorMessage",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "errorMessage",
+              "type": "string",
+              "attribute": "error-message",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop: errorMessage: string\nThe error message to display"
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [
+            {
+              "propName": "errorMessage",
+              "methodName": "dataWatcher"
+            }
+          ],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "ERROR-MESSAGE",
+              "styleStr": null,
+              "styleIdentifier": "errorMessageStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/error-message/error-message.css",
+                  "relativePath": "error-message.css",
+                  "originalComponentPath": "error-message.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/error-message/error-message.js",
+          "sourceFilePath": "/Users/ook/Projects/PoC/poc-component-library/src/components/base-components/error-message/error-message.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": true,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": true,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": true,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "aria-live",
+            "id",
+            "class"
+          ],
+          "htmlTagNames": [
+            "div",
+            "span"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [
+            "login-form"
+          ],
+          "directDependents": [
+            "login-form"
+          ]
+        }
+      ],
+      "entryKey": "error-message.entry"
     },
     {
       "cmps": [
@@ -8488,6 +8715,9 @@
     "sc-documents-tile": [
       "index-cd495fd3.js"
     ],
+    "sc-error-message": [
+      "index-cd495fd3.js"
+    ],
     "sc-header-text": [
       "index-cd495fd3.js"
     ],
@@ -8584,6 +8814,7 @@
     "./src/components/base-components/documents-list-item/documents-list-item.tsx": [],
     "./src/components/base-components/documents-list/documents-list.tsx": [],
     "./src/components/base-components/documents-tile/documents-tile.tsx": [],
+    "./src/components/base-components/error-message/error-message.tsx": [],
     "./src/components/base-components/header-text/header-text.tsx": [],
     "./src/components/base-components/multi-banner/multi-banner-bullet-points/multi-banner-bullet-points.tsx": [],
     "./src/components/base-components/multi-banner/multi-banner-header/multi-banner-header.tsx": [],

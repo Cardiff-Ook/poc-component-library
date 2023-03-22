@@ -1,4 +1,4 @@
-import {Component, Element, EventEmitter, Event, Listen, Prop, h} from '@stencil/core';
+import {Component, Element, EventEmitter, Event, State, Listen, Prop, h} from '@stencil/core';
 
 @Component({
   tag: 'login-form',
@@ -18,14 +18,29 @@ export class LoginForm {
    * Event to fire if data validates
    */
   @Event() loginShouldOccur: EventEmitter;
+
+  /**
+   * private: _errorMessage: string
+   * Error message to display of login fails
+   */
+  private _errorMessage: string = "";
+
+  @State() showError: boolean;
+
   @Element() host: HTMLElement;
 
   login() {
     let form = this.host.querySelector('form');
+    console.log("Here");
     if (form.reportValidity()) {
         let inputs = this.host.querySelectorAll('input');
         this.loginShouldOccur.emit({ username: inputs[0].value, password: inputs[1].value });
     }
+  }
+
+  displayError(show: boolean, errorMessage: string = '') {
+    this._errorMessage = errorMessage;
+    this.showError = !show;
   }
 
   @Listen('keydown.enter')
@@ -50,6 +65,11 @@ export class LoginForm {
                       <input name="password" type="password" required />
                     </div>
                 </div>
+
+                <error-message hidden={this.showError}
+                  errorMessage={this._errorMessage} 
+                >
+                </error-message>
               {this.forgotPasswordUrl ? 
                   <p class="forgot">
                       <stencil-route-link url={this.forgotPasswordUrl}>Forgot Password?</stencil-route-link>

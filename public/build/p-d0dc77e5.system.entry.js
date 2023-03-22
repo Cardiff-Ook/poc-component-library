@@ -1,1 +1,0 @@
-System.register(["./p-96f6b329.system.js"],(function(t){"use strict";var e,s;return{setters:[function(t){e=t.r;s=t.h}],execute:function(){var i=":host{display:block}";var n=t("sub_section_title",function(){function t(t){e(this,t)}t.prototype.render=function(){return s("h4",{id:"pageTitle",class:"adm-page-title"},this.pagetitle)};return t}());n.style=i}}}));

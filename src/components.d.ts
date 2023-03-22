@@ -99,6 +99,12 @@ export namespace Components {
          */
         "policyindex": number;
     }
+    interface ErrorMessage {
+        /**
+          * Prop: errorMessage: string The error message to display
+         */
+        "errorMessage": string;
+    }
     interface HeaderText {
     }
     interface LoginFooter {
@@ -315,6 +321,12 @@ declare global {
         prototype: HTMLDocumentsTileElement;
         new (): HTMLDocumentsTileElement;
     };
+    interface HTMLErrorMessageElement extends Components.ErrorMessage, HTMLStencilElement {
+    }
+    var HTMLErrorMessageElement: {
+        prototype: HTMLErrorMessageElement;
+        new (): HTMLErrorMessageElement;
+    };
     interface HTMLHeaderTextElement extends Components.HeaderText, HTMLStencilElement {
     }
     var HTMLHeaderTextElement: {
@@ -490,6 +502,7 @@ declare global {
         "documents-list": HTMLDocumentsListElement;
         "documents-list-item": HTMLDocumentsListItemElement;
         "documents-tile": HTMLDocumentsTileElement;
+        "error-message": HTMLErrorMessageElement;
         "header-text": HTMLHeaderTextElement;
         "login-footer": HTMLLoginFooterElement;
         "login-form": HTMLLoginFormElement;
@@ -615,6 +628,12 @@ declare namespace LocalJSX {
           * Prop: policyindex: number Index number of the policy in the list
          */
         "policyindex"?: number;
+    }
+    interface ErrorMessage {
+        /**
+          * Prop: errorMessage: string The error message to display
+         */
+        "errorMessage"?: string;
     }
     interface HeaderText {
     }
@@ -763,6 +782,7 @@ declare namespace LocalJSX {
         "documents-list": DocumentsList;
         "documents-list-item": DocumentsListItem;
         "documents-tile": DocumentsTile;
+        "error-message": ErrorMessage;
         "header-text": HeaderText;
         "login-footer": LoginFooter;
         "login-form": LoginForm;
@@ -808,6 +828,7 @@ declare module "@stencil/core" {
             "documents-list": LocalJSX.DocumentsList & JSXBase.HTMLAttributes<HTMLDocumentsListElement>;
             "documents-list-item": LocalJSX.DocumentsListItem & JSXBase.HTMLAttributes<HTMLDocumentsListItemElement>;
             "documents-tile": LocalJSX.DocumentsTile & JSXBase.HTMLAttributes<HTMLDocumentsTileElement>;
+            "error-message": LocalJSX.ErrorMessage & JSXBase.HTMLAttributes<HTMLErrorMessageElement>;
             "header-text": LocalJSX.HeaderText & JSXBase.HTMLAttributes<HTMLHeaderTextElement>;
             "login-footer": LocalJSX.LoginFooter & JSXBase.HTMLAttributes<HTMLLoginFooterElement>;
             "login-form": LocalJSX.LoginForm & JSXBase.HTMLAttributes<HTMLLoginFormElement>;
