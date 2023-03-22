@@ -1,5 +1,5 @@
 {
-  "timestamp": "2023-02-15T14:28:25",
+  "timestamp": "2023-03-22T14:20:48",
   "compiler": {
     "name": "@stencil/core",
     "version": "2.18.0",
@@ -697,6 +697,47 @@
       }
     },
     {
+      "filePath": "./src/components/base-components/error-message/error-message.tsx",
+      "encapsulation": "none",
+      "tag": "error-message",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "errorMessage",
+          "type": "string",
+          "mutable": false,
+          "attr": "error-message",
+          "reflectToAttr": false,
+          "docs": "Prop: errorMessage: string\nThe error message to display",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "login-form"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "login-form": [
+          "error-message"
+        ]
+      }
+    },
+    {
       "filePath": "./src/components/base-components/header-text/header-text.tsx",
       "encapsulation": "shadow",
       "tag": "header-text",
@@ -783,8 +824,14 @@
       "slots": [],
       "parts": [],
       "dependents": [],
-      "dependencies": [],
-      "dependencyGraph": {}
+      "dependencies": [
+        "error-message"
+      ],
+      "dependencyGraph": {
+        "login-form": [
+          "error-message"
+        ]
+      }
     },
     {
       "filePath": "./src/components/app-layout/login-header/login-header.tsx",
@@ -1058,7 +1105,7 @@
           "mutable": false,
           "attr": "alt",
           "reflectToAttr": false,
-          "docs": "",
+          "docs": "Prop: alt: string\nThe alternative text for the imafe",
           "docsTags": [],
           "values": [
             {

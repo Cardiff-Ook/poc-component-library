@@ -169,6 +169,19 @@
       ]
     },
     {
+      "name": "error-message",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "error-message",
+          "description": "Prop: errorMessage: string\nThe error message to display"
+        }
+      ]
+    },
+    {
       "name": "header-text",
       "description": {
         "kind": "markdown",
@@ -298,7 +311,7 @@
       "attributes": [
         {
           "name": "alt",
-          "description": ""
+          "description": "Prop: alt: string\nThe alternative text for the imafe"
         },
         {
           "name": "src",

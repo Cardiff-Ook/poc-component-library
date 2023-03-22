@@ -5,6 +5,11 @@ const errorMessageCss = ".markdownText{display:block;color:#d5574d;margin:10px 0
 const ErrorMessage = class {
   constructor(hostRef) {
     registerInstance(this, hostRef);
+    /**
+     * Prop: errorMessage: string
+     * The error message to display
+     */
+    this.errorMessage = '';
   }
   dataWatcher(newValue) {
     console.log("Watching: ", newValue);

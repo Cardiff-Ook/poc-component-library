@@ -129,3 +129,20 @@ label + .inputField:after {
   border-radius: 8px;
   pointer-events: none;
 }
+
+.parent_recovery_links {
+  font-style: normal;
+  font-family: jaf-facitweb, Helvetica, Arial;
+  font-weight: normal;
+  line-height: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: block;
+}
+
+.parent_recovery_links .recovery_links .markdownText {
+    color: #0078FF;
+}
+a:link, a:visited, a:hover, a:active { 
+  text-decoration: none;
+}

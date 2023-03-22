@@ -25,13 +25,12 @@ export class LoginForm {
    */
   private _errorMessage: string = "";
 
-  @State() showError: boolean;
+  @State() showError: boolean = false;
 
   @Element() host: HTMLElement;
 
   login() {
     let form = this.host.querySelector('form');
-    console.log("Here");
     if (form.reportValidity()) {
         let inputs = this.host.querySelectorAll('input');
         this.loginShouldOccur.emit({ username: inputs[0].value, password: inputs[1].value });
@@ -70,10 +69,24 @@ export class LoginForm {
                   errorMessage={this._errorMessage} 
                 >
                 </error-message>
-              {this.forgotPasswordUrl ? 
-                  <p class="forgot">
-                      <stencil-route-link url={this.forgotPasswordUrl}>Forgot Password?</stencil-route-link>
-                  </p> : ''}
+                <p class="parent_recovery_links">
+                  <a class="recovery_links" href="/myaccount/passwordreset/" target="_blank">
+                    <div class="markdownWrapper">
+                      <span class="markdownParagraph">
+                        <span class="markdownText">Forgotten Password</span>
+                      </span>
+                    </div>
+                  </a>
+                </p>
+                <p class="parent_recovery_links">
+                  <a class="recovery_links" href="/myaccount/login/help-menu" target="_blank">
+                    <div class="markdownWrapper">
+                      <span class="markdownParagraph">
+                        <span class="markdownText">Need help logging in?</span>
+                      </span>
+                    </div>
+                  </a>
+                </p>
                 <button class="submitButton" type="button" onClick={() => { this.login(); }}>
                   <span class="buttonLabel">Login</span>
                 </button>

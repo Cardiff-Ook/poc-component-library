@@ -1,5 +1,5 @@
 {
-  "timestamp": "2023-03-22T12:32:49",
+  "timestamp": "2023-03-22T16:26:50",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -254,7 +254,7 @@
         "imports": [
           "index-cd495fd3.js"
         ],
-        "originalByteSize": 4098
+        "originalByteSize": 4809
       },
       {
         "key": "login-header.entry",
@@ -470,7 +470,7 @@
         "imports": [
           "index-cd495fd3.js"
         ],
-        "originalByteSize": 878
+        "originalByteSize": 992
       },
       {
         "key": "main-page-contents.entry",
@@ -1622,6 +1622,7 @@
           "mutable": false,
           "required": false,
           "optional": false,
+          "defaultValue": "''",
           "complexType": {
             "original": "string",
             "resolved": "string",
@@ -1746,8 +1747,7 @@
       ],
       "methods": [],
       "potentialCmpRefs": [
-        "error-message",
-        "stencil-route-link"
+        "error-message"
       ],
       "properties": [
         {
@@ -3728,7 +3728,8 @@
             "type",
             "hidden",
             "errorMessage",
-            "url",
+            "href",
+            "target",
             "onClick"
           ],
           "htmlTagNames": [
@@ -3739,14 +3740,13 @@
             "input",
             "error-message",
             "p",
-            "stencil-route-link",
+            "a",
             "button"
           ],
           "htmlParts": [],
           "isUpdateable": true,
           "potentialCmpRefs": [
-            "error-message",
-            "stencil-route-link"
+            "error-message"
           ],
           "directDependencies": [
             "error-message"
@@ -6077,6 +6077,7 @@
               "mutable": false,
               "required": false,
               "optional": false,
+              "defaultValue": "''",
               "complexType": {
                 "original": "string",
                 "resolved": "string",

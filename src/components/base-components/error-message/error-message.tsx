@@ -11,7 +11,8 @@ export class ErrorMessage {
    * Prop: errorMessage: string
    * The error message to display
    */  
-  @Prop() errorMessage: string;
+  @Prop() errorMessage: string = '';
+
   private _errorMessage: string;
 
   @Watch('errorMessage')
