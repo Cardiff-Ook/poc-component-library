@@ -1,0 +1,1 @@
+System.register(["./p-96f6b329.system.js"],(function(n){"use strict";var t,e,r;return{setters:[function(n){t=n.r;e=n.h;r=n.H}],execute:function(){var o="new-nav-bar-logo{-ms-flex:1 1 auto;flex:1 1 auto}";var u=n("new_nav_bar_logo",function(){function n(n){t(this,n)}n.prototype.render=function(){return e(r,null,e("ng-content",null,e("slot",null)))};return n}());u.style=o}}}));

@@ -1,0 +1,1 @@
+import{r as n,h as o,H as a}from"./p-a4af608c.js";const l=class{constructor(o){n(this,o)}render(){return o(a,null,o("ng-content",null,o("slot",null)))}};l.style="new-nav-bar-logo{-ms-flex:1 1 auto;flex:1 1 auto}";export{l as new_nav_bar_logo}

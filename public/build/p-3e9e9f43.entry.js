@@ -1,0 +1,1 @@
+import{r as o,h as r,H as s}from"./p-a4af608c.js";const t=class{constructor(r){o(this,r)}render(){return r(s,{class:"containerBlock"},r("div",{id:"loginFooterWrapper",class:"containerBlock"},r("slot",{name:"footer-title"}),r("slot",{name:"products"})))}};t.style=":host{display:block}";export{t as login_footer}

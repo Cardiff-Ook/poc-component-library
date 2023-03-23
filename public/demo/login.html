@@ -24,9 +24,13 @@
           }
         });
       }
-      function loginClick() {
+      function loginClick(fail) {
         console.log("loginFail");
-        loginForm.dispatchEvent(loginFail);
+        if (fail) 
+          loginForm.dispatchEvent(loginFail);
+        else
+          loginForm.dispatchEvent(loginSuccess);
+
       }
     </script>
     <script nomodule src="/build/poc-adm-components.js"></script>
@@ -42,13 +46,14 @@
             alt="wibble">
           </new-nav-bar-img>
         </new-nav-bar-logo>
-        <login-header brand="admiral"></login-header>
+        <login-header brand="admiral">
+          <a href="#" onclick="loginClick(true)">Show Login Error Message</a> / 
+          <a href="#" onclick="loginClick(false)">Hide Login Error Message</a></login-header>
         <login-title-wrapper>
           <text-title-bar>For Car, Home and Van customers, login below to manage your cover</text-title-bar>
         </login-title-wrapper>
         <content-container>
           <header-text>Let's Log you into MyAccount</header-text>
-          <a href="#" onclick="loginClick()">test</a>
           <login-form></login-form>
         </content-container>
         <login-footer>

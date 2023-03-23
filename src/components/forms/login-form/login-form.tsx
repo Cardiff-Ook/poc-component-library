@@ -1,4 +1,4 @@
-import {Component, Element, EventEmitter, Event, State, Listen, Watch, Prop, h} from '@stencil/core';
+import {Component, Element, EventEmitter, Event, State, Listen, Prop, h} from '@stencil/core';
 
 @Component({
   tag: 'login-form',
@@ -20,11 +20,15 @@ export class LoginForm {
   @Event() loginShouldOccur: EventEmitter;
 
   /**
-   * private: _errorMessage: string
-   * Error message to display of login fails
+   * State: _errorMessage: string
+   * Error message to display if login fails
    */
   @State() _errorMessage: string = "";
 
+  /**
+   * State: showError: string
+   * Controller for showing error message
+   */
   @State() showError: boolean = false;
 
   @Element() host: HTMLElement;
