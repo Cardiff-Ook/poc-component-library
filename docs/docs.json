@@ -1,5 +1,5 @@
 {
-  "timestamp": "2023-03-23T09:02:06",
+  "timestamp": "2023-03-23T13:38:46",
   "compiler": {
     "name": "@stencil/core",
     "version": "2.18.0",
@@ -816,6 +816,11 @@
         }
       ],
       "listeners": [
+        {
+          "event": "loginError",
+          "capture": false,
+          "passive": false
+        },
         {
           "event": "keydown.enter",
           "capture": false,

@@ -6,11 +6,34 @@
     <title>Stencil Component Starter</title>
 
     <script type="module" src="/build/poc-adm-components.esm.js"></script>
+    <script>
+      var loginForm, loginFail, loginSuccess;
+      function initialiseVars() {
+        loginForm = document.querySelector('login-form');
+
+        loginFail = new CustomEvent("loginError", {
+          detail: {
+            show: true, 
+            text: 'unknown user / password'
+          }
+        });
+        loginSuccess = new CustomEvent("loginError", {
+          detail: { 
+            show: false, 
+            text: ''
+          }
+        });
+      }
+      function loginClick() {
+        console.log("loginFail");
+        loginForm.dispatchEvent(loginFail);
+      }
+    </script>
     <script nomodule src="/build/poc-adm-components.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="/build/poc-adm-components.css" />
   </head>
-  <body>
+  <body onload="initialiseVars()">
     <div id="root">
       <div class="mainContainer">
         <new-nav-bar-logo>
@@ -25,6 +48,7 @@
         </login-title-wrapper>
         <content-container>
           <header-text>Let's Log you into MyAccount</header-text>
+          <a href="#" onclick="loginClick()">test</a>
           <login-form></login-form>
         </content-container>
         <login-footer>

@@ -1,4 +1,4 @@
-import {Component, Element, EventEmitter, Event, State, Listen, Prop, h} from '@stencil/core';
+import {Component, Element, EventEmitter, Event, State, Listen, Watch, Prop, h} from '@stencil/core';
 
 @Component({
   tag: 'login-form',
@@ -23,7 +23,7 @@ export class LoginForm {
    * private: _errorMessage: string
    * Error message to display of login fails
    */
-  private _errorMessage: string = "";
+  @State() _errorMessage: string = "";
 
   @State() showError: boolean = false;
 
@@ -37,15 +37,17 @@ export class LoginForm {
     }
   }
 
-  displayError(show: boolean, errorMessage: string = '') {
-    this._errorMessage = errorMessage;
-    this.showError = !show;
-  }
+  @Listen('loginError') 
+    displayError(event) {
+      console.log(event);
+      this._errorMessage = event.detail.text;
+      this.showError = !event.detail.show;
+    }
 
   @Listen('keydown.enter')
-  handleEnter() {
-      this.login();
-  }
+    handleEnter() {
+        this.login();
+    }
 
   render() {
     return (
