@@ -1,5 +1,5 @@
 {
-  "timestamp": "2023-03-22T14:20:48",
+  "timestamp": "2023-03-23T09:02:06",
   "compiler": {
     "name": "@stencil/core",
     "version": "2.18.0",
@@ -700,6 +700,7 @@
       "filePath": "./src/components/base-components/error-message/error-message.tsx",
       "encapsulation": "none",
       "tag": "error-message",
+      "readme": "# error-message\n\n\n",
       "docs": "",
       "docsTags": [],
       "usage": {},
@@ -712,6 +713,7 @@
           "reflectToAttr": false,
           "docs": "Prop: errorMessage: string\nThe error message to display",
           "docsTags": [],
+          "default": "''",
           "values": [
             {
               "type": "string"

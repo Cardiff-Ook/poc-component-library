@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property       | Attribute       | Description                                             | Type     | Default     |
-| -------------- | --------------- | ------------------------------------------------------- | -------- | ----------- |
-| `errorMessage` | `error-message` | Prop: errorMessage: string The error message to display | `string` | `undefined` |
+| Property       | Attribute       | Description                                             | Type     | Default |
+| -------------- | --------------- | ------------------------------------------------------- | -------- | ------- |
+| `errorMessage` | `error-message` | Prop: errorMessage: string The error message to display | `string` | `''`    |
 
 
 ## Dependencies
