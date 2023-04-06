@@ -1,5 +1,5 @@
 {
-  "timestamp": "2023-04-06T14:15:04",
+  "timestamp": "2023-04-06T14:36:05",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -350,7 +350,7 @@
         "imports": [
           "index-cd495fd3.js"
         ],
-        "originalByteSize": 1766
+        "originalByteSize": 1758
       },
       {
         "key": "new-nav-bar-img.entry",

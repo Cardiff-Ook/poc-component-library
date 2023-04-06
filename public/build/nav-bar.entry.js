@@ -1,6 +1,6 @@
 import { r as registerInstance, h } from './index-cd495fd3.js';
 
-const navBarCss = ":host{display:block}.inlineOverride{display:inline-flex;align-items:center;justify-content:center}.jut__NavigationContent__navigationContent li:nth-last-child(3){position:relative;float:right}";
+const navBarCss = ":host{display:block}.inlineOverride{display:inline-flex;align-items:center;justify-content:center}.jut__NavigationContent__navigationContent li:nth-last-child(3){right:7rem !important}";
 
 const NavBar = class {
   constructor(hostRef) {
