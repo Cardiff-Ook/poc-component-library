@@ -7,3 +7,7 @@
   align-items: center;
   justify-content: center;
 }
+.jut__NavigationContent__navigationContent li:nth-last-child(3) {
+  position: relative;
+  float: right;
+}
