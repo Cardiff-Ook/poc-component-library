@@ -3,7 +3,7 @@ import { Component, h, Prop } from '@stencil/core';
 export interface ButtonInterface {
   namr: string;
   isActive: string;
-  link: string;
+  path: string;
 }
 
 @Component({
@@ -40,8 +40,11 @@ export class NavBar {
 
   }
 
-  menuToggle(e) {
-    console.log(e)
+  menuItemClick(e, item) {
+    console.log(`Selected link: ${e.currentTarget.href}`);
+    if (item.isActive) {
+      e.preventDefault();
+    }
   }
 
   render() {
@@ -51,7 +54,7 @@ export class NavBar {
           {
             this._arrayData.map((item:any={})=>
               <li class="jut__NavigationContent__topNavigationItem" role="none">
-                <a aria-current="page" class={this.isActive(item.isActive)} tabindex="0" role="menuitem"  onClick={(e) => this.menuToggle(e)}>
+                <a aria-current="page" class={this.isActive(item.isActive)} tabindex="0" role="menuitem"  onClick={(event) => this.menuItemClick(event, item)} href={item.path}>
                   <div class="jut__NavBarItem__titleWrapper inlineOverride" >
                     <span class="jut__NavBarItem__title">{item.name}</span>
                   </div>

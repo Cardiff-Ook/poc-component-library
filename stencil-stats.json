@@ -1,5 +1,5 @@
 {
-  "timestamp": "2023-04-06T14:44:56",
+  "timestamp": "2023-04-11T12:02:05",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -350,7 +350,7 @@
         "imports": [
           "index-cd495fd3.js"
         ],
-        "originalByteSize": 1758
+        "originalByteSize": 1897
       },
       {
         "key": "new-nav-bar-img.entry",
@@ -4758,7 +4758,8 @@
             "role",
             "tabindex",
             "aria-current",
-            "onClick"
+            "onClick",
+            "href"
           ],
           "htmlTagNames": [
             "nav",
