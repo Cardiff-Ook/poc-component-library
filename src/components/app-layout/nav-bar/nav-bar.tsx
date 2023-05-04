@@ -1,8 +1,8 @@
 import { Component, h, Prop } from '@stencil/core';
 
 export interface ButtonInterface {
-  namr: string;
-  isActive: string;
+  name: string;
+  isActive: boolean;
   path: string;
 }
 

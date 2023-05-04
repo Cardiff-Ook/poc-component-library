@@ -1,5 +1,5 @@
 {
-  "timestamp": "2023-04-11T12:02:05",
+  "timestamp": "2023-05-04T13:55:25",
   "compiler": {
     "name": "node",
     "version": "16.17.0"
@@ -398,7 +398,7 @@
         "imports": [
           "index-cd495fd3.js"
         ],
-        "originalByteSize": 644
+        "originalByteSize": 699
       },
       {
         "key": "policy-details.entry",
@@ -5279,6 +5279,7 @@
           "htmlAttrNames": [
             "class",
             "href",
+            "id",
             "alt",
             "src"
           ],
