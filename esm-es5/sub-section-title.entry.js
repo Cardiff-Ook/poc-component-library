@@ -1,0 +1,1 @@
+import{r as registerInstance,h}from"./index-76cd28ee.js";var subSectionTitleCss=":host{display:block}";var SubSectionTitle=function(){function t(t){registerInstance(this,t)}t.prototype.render=function(){return h("h4",{id:"pageTitle",class:"adm-page-title"},this.pagetitle)};return t}();SubSectionTitle.style=subSectionTitleCss;export{SubSectionTitle as sub_section_title};

@@ -1,0 +1,13 @@
+new-nav-bar-img {
+  display: block;
+  height: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  width: 6.25em;
+}
+
+img {
+  display: block;
+  width: 100%;
+}

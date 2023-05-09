@@ -1,0 +1,17 @@
+.productTile {
+  background-color: #FFF;
+  border-radius: 8px;
+  border: 1px solid #E9E9EF;
+  width: 308px;
+  height: 148px;
+  text-align: center;
+  color: #4A4643;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.productTile img {
+  width: 100%;
+}

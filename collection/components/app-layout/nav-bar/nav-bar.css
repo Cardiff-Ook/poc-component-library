@@ -1,0 +1,12 @@
+:host {
+  display: block;
+}
+
+.inlineOverride {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.jut__NavigationContent__navigationContent li:nth-last-child(3) {
+  right: 7rem !important;
+}

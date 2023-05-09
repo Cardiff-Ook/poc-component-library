@@ -1,0 +1,7 @@
+:host {
+  display: block;
+}
+
+#coverContainerDiv {
+  grid-template-columns: 3fr 2fr;
+}
